@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: pg_test
+    environment: 
+      POSTGRES_DB: pagila
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123456
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./pagila-schema.sql:/docker-entrypoint-initdb.d/01-schema.sql
+      - ./pagila-data.sql:/docker-entrypoint-initdb.d/02-data.sql
+    
+  mongodb:
+    image: mongo:latest
+    container_name: mongo_test
+    ports:
+      - "27017:27017"
+
+  migrator:
+    image: public.ecr.aws/v4d7k6c9/relational-migrator:1.13.2
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./migrator-data:/root/Migrator
+      #- ${MIGRATOR_PATH_DRIVER:-/dev/null}:/opt/mongodb-relational-migrator/lib/app/lib/driver.jar
+    depends_on:
+      - postgres
+      - mongodb
+  
+# MongoDB Relational Migrator deployed in local mode
+# Environment variables:
+# MIGRATOR_PATH_DATA - required - Path to a local folder for persisting Migrator application data
+# MIGRATOR_PATH_DRIVER - optional - Path to a local JDBC driver to mount
+# Unix example: MIGRATOR_PATH_DRIVER="/absolute/path/ojdbc11.jar" MIGRATOR_PATH_DATA="/absolute/path/data" docker compose -f docker-compose-migrator-local.yml up
+# Windows example: $env:MIGRATOR_PATH_DATA = 'C:\absolute\path\data'; docker compose -f docker-compose-migrator-local.yml up

@@ -1,0 +1,310 @@
+2025-07-01 00:39:35,769 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.2.Final
+2025-07-01 00:39:35,984 INFO o.s.b.StartupInfoLogger [main] Starting MigratorApplication v1.13.2 using Java 17.0.15 with PID 1 (/opt/mongodb-relational-migrator/lib/app/application-1.13.2.jar started by root in /)
+2025-07-01 00:39:35,987 INFO o.s.b.SpringApplication [main] The following 3 profiles are active: "unattended", "embedded", "prod"
+2025-07-01 00:39:41,364 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-07-01 00:39:41,827 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 446 ms. Found 0 MongoDB repository interfaces.
+2025-07-01 00:39:43,554 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2025-07-01 00:39:43,589 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2025-07-01 00:39:43,595 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2025-07-01 00:39:43,595 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-07-01 00:39:43,733 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-07-01 00:39:43,734 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 7568 ms
+2025-07-01 00:39:45,067 WARN c.m.m.a.c.PasswordServiceImpl [main] Initializing an in-memory credential store that won't be persisted
+2025-07-01 00:39:47,212 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [main] Adding welcome page: class path resource [static/index.html]
+2025-07-01 00:39:49,153 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 1 endpoint beneath base path '/actuator'
+2025-07-01 00:39:49,380 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2025-07-01 00:39:49,410 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path '/'
+2025-07-01 00:39:49,437 INFO o.s.b.StartupInfoLogger [main] Started MigratorApplication in 17.607 seconds (process running for 19.456)
+2025-07-01 00:39:49,502 INFO c.m.m.a.l.LifecycleTaskRunner [main] Executing lifecycle task com.mongodb.migrator.application.lifecycle.tasks.DescriptorVersionMigrationTask
+2025-07-01 00:39:49,617 INFO c.m.m.a.l.LifecycleTaskRunner [main] Executing lifecycle task com.mongodb.migrator.application.lifecycle.tasks.EmbeddedJobStatusCleanUpTask
+2025-07-01 00:39:49,844 INFO c.m.m.a.l.LifecycleTaskRunner [main] Executing lifecycle task com.mongodb.migrator.application.lifecycle.tasks.QueryExecutionResultCleanUpTask
+2025-07-01 00:43:03,047 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-01 00:43:03,052 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-07-01 00:43:03,061 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 7 ms
+2025-07-01 00:43:04,941 INFO c.m.m.a.s.j.a.SchemaCrawlerJdbcAnalysisService [http-nio-8080-exec-5] Looking for JDBC drivers
+2025-07-01 00:43:04,945 INFO c.m.m.a.s.j.a.SchemaCrawlerJdbcAnalysisService [http-nio-8080-exec-5] Predefined databases: [Oracle, SQL Server, MySQL, PostgreSQL, Db2, Sybase ASE, Cockroach DB, Yugabyte, SybaseIQ, SQL Anywhere]
+2025-07-01 00:43:04,946 INFO c.m.m.a.s.j.a.SchemaCrawlerJdbcAnalysisService [http-nio-8080-exec-5] Custom databases: []
+2025-07-01 00:43:05,240 WARN c.m.m.a.s.j.a.SchemaCrawlerJdbcAnalysisService [http-nio-8080-exec-5] Can not find JDBC driver class com.mysql.cj.jdbc.Driver for MySQL
+2025-07-01 00:43:05,247 WARN c.m.m.a.s.j.a.SchemaCrawlerJdbcAnalysisService [http-nio-8080-exec-5] Can not find JDBC driver class com.ibm.db2.jcc.DB2Driver for Db2
+2025-07-01 00:43:05,252 WARN c.m.m.a.s.j.a.SchemaCrawlerJdbcAnalysisService [http-nio-8080-exec-5] Can not find JDBC driver class com.yugabyte.Driver for Yugabyte
+2025-07-01 00:43:05,255 WARN c.m.m.a.s.j.a.SchemaCrawlerJdbcAnalysisService [http-nio-8080-exec-5] Can not find JDBC driver class com.sybase.jdbc4.jdbc.SybDriver for SybaseIQ
+2025-07-01 00:43:05,259 WARN c.m.m.a.s.j.a.SchemaCrawlerJdbcAnalysisService [http-nio-8080-exec-5] Can not find JDBC driver class sap.jdbc4.sqlanywhere.IDriver for SQL Anywhere
+2025-07-01 00:51:58,862 INFO s.t.u.SchemaCrawlerUtility [http-nio-8080-exec-4] Using SchemaCrawler database plugin for postgresql - PostgreSQL
+2025-07-01 00:51:58,996 INFO u.f.u.i.ClasspathInputResource [http-nio-8080-exec-4] Opened input reader to classpath resource, /sql2003_reserved_words.txt
+2025-07-01 00:51:59,010 INFO u.f.u.i.ClasspathInputResource [http-nio-8080-exec-4] Opened input reader to classpath resource, /sql2003_reserved_words.txt
+2025-07-01 00:51:59,067 INFO u.f.u.i.ClasspathInputResource [http-nio-8080-exec-4] Opened input reader to classpath resource, /sql2003_reserved_words.txt
+2025-07-01 00:51:59,169 INFO u.f.u.i.ClasspathInputResource [http-nio-8080-exec-4] Opened input reader to classpath resource, /help/SchemaCrawler.txt
+2025-07-01 00:51:59,175 INFO u.f.u.s.MultiThreadedTaskRunner [http-nio-8080-exec-4] Started thread pool <java.util.concurrent.ThreadPoolExecutor@23932059[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]> for <11bc9e9f-1fbf-4f18-9b50-b17701ce1e0f> with <10> threads
+2025-07-01 00:51:59,185 INFO u.f.u.s.TimedTask [pool-4-thread-1] Running <retrieve_additional_database_info> on thread <pool-4-thread-1>
+2025-07-01 00:51:59,185 INFO u.f.u.s.TimedTask [pool-4-thread-2] Running <retrieve_server_info> on thread <pool-4-thread-2>
+2025-07-01 00:51:59,186 INFO u.f.u.s.TimedTask [pool-4-thread-3] Running <retrieve_database_users> on thread <pool-4-thread-3>
+2025-07-01 00:51:59,187 INFO u.f.u.s.TaskDefinition [pool-4-thread-3] Not running task <retrieveDatabaseUsers>
+2025-07-01 00:51:59,188 INFO u.f.u.s.TimedTask [pool-4-thread-4] Running <retrieve_additional_jdbc_driver_info> on thread <pool-4-thread-4>
+2025-07-01 00:51:59,186 INFO u.f.u.s.TaskDefinition [pool-4-thread-1] Not running task <retrieveAdditionalDatabaseInfo>
+2025-07-01 00:51:59,189 INFO u.f.u.s.TaskDefinition [pool-4-thread-4] Not running task <retrieveAdditionalJdbcDriverInfo>
+2025-07-01 00:51:59,249 INFO s.c.SchemaCrawler [http-nio-8080-exec-4] 
+-- generated by: SchemaCrawler 16.21.4
+-- generated on: 2025-07-01T00:51:59.172207709
+-- database: PostgreSQL 17.5 (Debian 17.5-1.pgdg120+1)
+-- driver: PostgreSQL JDBC Driver 42.7.5
+-- operating system: Linux 6.10.14-linuxkit
+-- JVM system: Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.15+6
+
+2025-07-01 00:51:59,253 INFO u.f.u.s.TimedTask [pool-4-thread-5] Running <retrieve_schemas> on thread <pool-4-thread-5>
+2025-07-01 00:51:59,254 INFO s.c.SchemaRetriever [pool-4-thread-5] Retrieving all schemas
+2025-07-01 00:51:59,254 INFO s.c.SchemaRetriever [pool-4-thread-5] Retrieving all catalogs
+2025-07-01 00:51:59,283 INFO s.c.SchemaRetriever [pool-4-thread-5] Processed 3 schemas
+2025-07-01 00:51:59,286 INFO u.f.u.s.TimedTask [pool-4-thread-6] Running <filter_and_sort_schemas> on thread <pool-4-thread-6>
+2025-07-01 00:51:59,288 INFO s.c.SchemaCrawler [http-nio-8080-exec-4] Retrieved 1 schemas
+2025-07-01 00:51:59,290 INFO u.f.u.s.TimedTask [pool-4-thread-7] Running <retrieve_column_data_types> on thread <pool-4-thread-7>
+2025-07-01 00:51:59,290 INFO u.f.u.s.TaskDefinition [pool-4-thread-7] Not running task <retrieveColumnDataTypes>
+2025-07-01 00:51:59,292 INFO u.f.u.s.TimedTask [pool-4-thread-8] Running <retrieve_user_defined_column_data_types> on thread <pool-4-thread-8>
+2025-07-01 00:51:59,293 INFO u.f.u.s.TaskDefinition [pool-4-thread-8] Not running task <retrieveUserDefinedColumnDataTypes>
+2025-07-01 00:51:59,308 INFO u.f.u.s.TimedTask [pool-4-thread-9] Running <retrieve_tables> on thread <pool-4-thread-9>
+2025-07-01 00:51:59,309 INFO s.c.SchemaCrawler [pool-4-thread-9] Retrieving table names
+2025-07-01 00:51:59,312 INFO s.c.TableRetriever [pool-4-thread-9] Retrieving tables
+2025-07-01 00:51:59,313 INFO s.c.TableRetriever [pool-4-thread-9] Retrieving tables for schema <public>
+2025-07-01 00:51:59,360 INFO s.c.TableRetriever [pool-4-thread-9] Processed 23 tables
+2025-07-01 00:51:59,361 INFO s.c.SchemaCrawler [http-nio-8080-exec-4] Retrieved 23 tables
+2025-07-01 00:51:59,363 INFO u.f.u.s.TimedTask [pool-4-thread-10] Running <retrieve_table_columns> on thread <pool-4-thread-10>
+2025-07-01 00:51:59,363 INFO u.f.u.s.TaskDefinition [pool-4-thread-10] Not running task <retrieveTableColumns>
+2025-07-01 00:51:59,365 INFO u.f.u.s.TimedTask [pool-4-thread-4] Running <retrieve_foreign_keys> on thread <pool-4-thread-4>
+2025-07-01 00:51:59,365 INFO u.f.u.s.TimedTask [pool-4-thread-3] Running <retrieve_primary_keys> on thread <pool-4-thread-3>
+2025-07-01 00:51:59,365 INFO u.f.u.s.TimedTask [pool-4-thread-2] Running <retrieve_table_constraints> on thread <pool-4-thread-2>
+2025-07-01 00:51:59,365 INFO u.f.u.s.TimedTask [pool-4-thread-5] Running <retrieve_trigger_information> on thread <pool-4-thread-5>
+2025-07-01 00:51:59,365 INFO u.f.u.s.TimedTask [pool-4-thread-1] Running <retrieve_indexes> on thread <pool-4-thread-1>
+2025-07-01 00:51:59,366 INFO u.f.u.s.TaskDefinition [pool-4-thread-4] Not running task <retrieveForeignKeys>
+2025-07-01 00:51:59,367 INFO u.f.u.s.TaskDefinition [pool-4-thread-3] Not running task <retrievePrimaryKeys>
+2025-07-01 00:51:59,367 INFO u.f.u.s.TaskDefinition [pool-4-thread-5] Not running task <retrieveTriggerInformation>
+2025-07-01 00:51:59,367 INFO u.f.u.s.TaskDefinition [pool-4-thread-1] Not running task <retrieveIndexes>
+2025-07-01 00:51:59,367 INFO u.f.u.s.TaskDefinition [pool-4-thread-2] Not running task <retrieveTableConstraints>
+2025-07-01 00:51:59,369 INFO u.f.u.s.TimedTask [pool-4-thread-6] Running <filter_and_sort_tables> on thread <pool-4-thread-6>
+2025-07-01 00:51:59,391 INFO u.f.u.s.TimedTask [pool-4-thread-7] Running <match_table_constraints> on thread <pool-4-thread-7>
+2025-07-01 00:51:59,392 INFO u.f.u.s.TaskDefinition [pool-4-thread-7] Not running task <matchTableConstraints>
+2025-07-01 00:51:59,396 INFO u.f.u.s.TimedTask [pool-4-thread-8] Running <retrieve_table_constraint_definitions> on thread <pool-4-thread-8>
+2025-07-01 00:51:59,397 INFO u.f.u.s.TaskDefinition [pool-4-thread-8] Not running task <retrieveTableConstraintDefinitions>
+2025-07-01 00:51:59,396 INFO u.f.u.s.TimedTask [pool-4-thread-10] Running <retrieve_view_information> on thread <pool-4-thread-10>
+2025-07-01 00:51:59,396 INFO u.f.u.s.TimedTask [pool-4-thread-5] Running <retrieve_index_information> on thread <pool-4-thread-5>
+2025-07-01 00:51:59,400 INFO u.f.u.s.TaskDefinition [pool-4-thread-5] Not running task <retrieveIndexInformation>
+2025-07-01 00:51:59,399 INFO u.f.u.s.TimedTask [pool-4-thread-8] Running <retrieve_additional_column_attributes> on thread <pool-4-thread-8>
+2025-07-01 00:51:59,396 INFO u.f.u.s.TimedTask [pool-4-thread-4] Running <retrieve_view_table_usage> on thread <pool-4-thread-4>
+2025-07-01 00:51:59,396 INFO u.f.u.s.TimedTask [pool-4-thread-3] Running <retrieve_table_definitions_information> on thread <pool-4-thread-3>
+2025-07-01 00:51:59,396 INFO u.f.u.s.TimedTask [pool-4-thread-9] Running <retrieve_table_constraint_information> on thread <pool-4-thread-9>
+2025-07-01 00:51:59,397 INFO u.f.u.s.TimedTask [pool-4-thread-2] Running <retrieve_table_privileges> on thread <pool-4-thread-2>
+2025-07-01 00:51:59,397 INFO u.f.u.s.TimedTask [pool-4-thread-1] Running <retrieve_additional_table_attributes> on thread <pool-4-thread-1>
+2025-07-01 00:51:59,400 INFO u.f.u.s.TaskDefinition [pool-4-thread-10] Not running task <retrieveViewInformation>
+2025-07-01 00:51:59,399 INFO u.f.u.s.TimedTask [pool-4-thread-6] Running <retrieve_table_column_privileges> on thread <pool-4-thread-6>
+2025-07-01 00:51:59,402 INFO u.f.u.s.TaskDefinition [pool-4-thread-4] Not running task <retrieveViewTableUsage>
+2025-07-01 00:51:59,402 INFO u.f.u.s.TaskDefinition [pool-4-thread-8] Not running task <retrieveAdditionalColumnAttributes>
+2025-07-01 00:51:59,412 INFO u.f.u.s.TaskDefinition [pool-4-thread-1] Not running task <retrieveAdditionalTableAttributes>
+2025-07-01 00:51:59,412 INFO u.f.u.s.TaskDefinition [pool-4-thread-2] Not running task <retrieveTablePrivileges>
+2025-07-01 00:51:59,412 INFO u.f.u.s.TaskDefinition [pool-4-thread-3] Not running task <retrieveTableDefinitionsInformation>
+2025-07-01 00:51:59,412 INFO u.f.u.s.TaskDefinition [pool-4-thread-6] Not running task <retrieveTableColumnPrivileges>
+2025-07-01 00:51:59,412 INFO u.f.u.s.TaskDefinition [pool-4-thread-9] Not running task <retrieveTableConstraintInformation>
+2025-07-01 00:51:59,417 INFO u.f.u.s.TimedTask [pool-4-thread-7] Running <retrieve_additional_column_metadata> on thread <pool-4-thread-7>
+2025-07-01 00:51:59,419 INFO u.f.u.s.TaskDefinition [pool-4-thread-7] Not running task <retrieveAdditionalColumnMetadata>
+2025-07-01 00:51:59,420 INFO s.c.SchemaCrawler [http-nio-8080-exec-4] Not retrieving routines, since this was not requested
+2025-07-01 00:51:59,421 INFO s.c.SchemaCrawler [http-nio-8080-exec-4] Not retrieving synonyms, since this was not requested
+2025-07-01 00:51:59,421 INFO s.c.SchemaCrawler [http-nio-8080-exec-4] Not retrieving sequences, since this was not requested
+2025-07-01 00:51:59,439 INFO s.c.RetrievalTaskRunner [http-nio-8080-exec-4] Total time taken for <11bc9e9f-1fbf-4f18-9b50-b17701ce1e0f> - 00:00:00.248 hours
+-  0.8% - 00:00:00.002 - <retrieve_additional_database_info>
+- 25.0% - 00:00:00.062 - <retrieve_server_info>
+-  0.4% - 00:00:00.001 - <retrieve_database_users>
+-  0.4% - 00:00:00.001 - <retrieve_additional_jdbc_driver_info>
+- 12.1% - 00:00:00.030 - <retrieve_schemas>
+-  0.4% - 00:00:00.001 - <filter_and_sort_schemas>
+-  0.0% - 00:00:00.000 - <retrieve_column_data_types>
+-  0.0% - 00:00:00.000 - <retrieve_user_defined_column_data_types>
+- 20.6% - 00:00:00.051 - <retrieve_tables>
+-  0.0% - 00:00:00.000 - <retrieve_table_columns>
+-  0.0% - 00:00:00.000 - <retrieve_primary_keys>
+-  0.8% - 00:00:00.002 - <retrieve_foreign_keys>
+-  0.4% - 00:00:00.001 - <retrieve_indexes>
+-  0.4% - 00:00:00.001 - <retrieve_table_constraints>
+-  0.0% - 00:00:00.000 - <retrieve_trigger_information>
+-  8.1% - 00:00:00.020 - <filter_and_sort_tables>
+-  0.0% - 00:00:00.000 - <match_table_constraints>
+-  0.8% - 00:00:00.002 - <retrieve_table_constraint_definitions>
+-  4.4% - 00:00:00.011 - <retrieve_table_constraint_information>
+-  2.8% - 00:00:00.007 - <retrieve_view_information>
+-  2.4% - 00:00:00.006 - <retrieve_view_table_usage>
+-  4.4% - 00:00:00.011 - <retrieve_table_definitions_information>
+-  0.0% - 00:00:00.000 - <retrieve_index_information>
+-  2.0% - 00:00:00.005 - <retrieve_additional_table_attributes>
+-  4.0% - 00:00:00.010 - <retrieve_table_privileges>
+-  2.4% - 00:00:00.006 - <retrieve_table_column_privileges>
+-  2.4% - 00:00:00.006 - <retrieve_additional_column_attributes>
+-  0.0% - 00:00:00.000 - <retrieve_additional_column_metadata>
+
+2025-07-01 00:51:59,440 INFO s.l.a.AttributesCatalogLoader [http-nio-8080-exec-4] Retrieving catalog attributes
+2025-07-01 00:51:59,441 INFO u.f.u.s.MultiThreadedTaskRunner [http-nio-8080-exec-4] Started thread pool <java.util.concurrent.ThreadPoolExecutor@61dc1d22[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]> for <loadAttributes> with <1> threads
+2025-07-01 00:51:59,444 INFO u.f.u.s.TimedTask [pool-5-thread-1] Running <retrieve_catalog_attributes> on thread <pool-5-thread-1>
+2025-07-01 00:51:59,447 INFO s.l.a.AttributesCatalogLoader [http-nio-8080-exec-4] Total time taken for <loadAttributes> - 00:00:00.000 hours
+-  0.0% - 00:00:00.000 - <retrieve_catalog_attributes>
+
+2025-07-01 00:51:59,448 INFO s.l.c.TableRowCountsCatalogLoader [http-nio-8080-exec-4] Retrieving table row counts
+2025-07-01 00:51:59,449 INFO u.f.u.s.MultiThreadedTaskRunner [http-nio-8080-exec-4] Started thread pool <java.util.concurrent.ThreadPoolExecutor@6de82db[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]> for <loadTableRowCounts> with <1> threads
+2025-07-01 00:51:59,451 INFO u.f.u.s.TimedTask [pool-6-thread-1] Running <retrieve_table_row_counts> on thread <pool-6-thread-1>
+2025-07-01 00:51:59,452 INFO s.l.c.TableRowCountsCatalogLoader [pool-6-thread-1] Not retrieving table row counts, since this was not requested
+2025-07-01 00:51:59,453 INFO u.f.u.s.TimedTask [pool-6-thread-1] Running <filter_empty_tables> on thread <pool-6-thread-1>
+2025-07-01 00:51:59,454 INFO s.l.c.TableRowCountsCatalogLoader [http-nio-8080-exec-4] Total time taken for <loadTableRowCounts> - 00:00:00.001 hours
+-  0.0% - 00:00:00.000 - <retrieve_table_row_counts>
+-  0.0% - 00:00:00.000 - <filter_empty_tables>
+
+2025-07-01 00:51:59,455 INFO s.l.w.WeakAssociationsCatalogLoader [http-nio-8080-exec-4] Finding weak associations
+2025-07-01 00:51:59,456 INFO u.f.u.s.MultiThreadedTaskRunner [http-nio-8080-exec-4] Started thread pool <java.util.concurrent.ThreadPoolExecutor@be4088f[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]> for <loadWeakAssociations> with <1> threads
+2025-07-01 00:51:59,459 INFO u.f.u.s.TimedTask [pool-7-thread-1] Running <retrieve_weak_associations> on thread <pool-7-thread-1>
+2025-07-01 00:51:59,460 INFO s.l.w.WeakAssociationsCatalogLoader [pool-7-thread-1] Not retrieving weak associations, since this was not requested
+2025-07-01 00:51:59,462 INFO s.l.w.WeakAssociationsCatalogLoader [http-nio-8080-exec-4] Total time taken for <loadWeakAssociations> - 00:00:00.001 hours
+-100.0% - 00:00:00.001 - <retrieve_weak_associations>
+
+2025-07-01 00:52:09,413 INFO s.t.u.SchemaCrawlerUtility [http-nio-8080-exec-9] Using SchemaCrawler database plugin for postgresql - PostgreSQL
+2025-07-01 00:52:09,480 INFO u.f.u.i.ClasspathInputResource [http-nio-8080-exec-9] Opened input reader to classpath resource, /sql2003_reserved_words.txt
+2025-07-01 00:52:09,502 INFO u.f.u.i.ClasspathInputResource [http-nio-8080-exec-9] Opened input reader to classpath resource, /sql2003_reserved_words.txt
+2025-07-01 00:52:09,537 INFO u.f.u.s.MultiThreadedTaskRunner [http-nio-8080-exec-9] Started thread pool <java.util.concurrent.ThreadPoolExecutor@449d0735[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]> for <8e77dad9-89d7-47bf-bb33-f3989816983e> with <10> threads
+2025-07-01 00:52:09,539 INFO u.f.u.s.TimedTask [pool-8-thread-1] Running <retrieve_additional_database_info> on thread <pool-8-thread-1>
+2025-07-01 00:52:09,539 INFO u.f.u.s.TimedTask [pool-8-thread-2] Running <retrieve_server_info> on thread <pool-8-thread-2>
+2025-07-01 00:52:09,539 INFO u.f.u.s.TaskDefinition [pool-8-thread-1] Not running task <retrieveAdditionalDatabaseInfo>
+2025-07-01 00:52:09,539 INFO u.f.u.s.TimedTask [pool-8-thread-3] Running <retrieve_database_users> on thread <pool-8-thread-3>
+2025-07-01 00:52:09,540 INFO u.f.u.s.TimedTask [pool-8-thread-4] Running <retrieve_additional_jdbc_driver_info> on thread <pool-8-thread-4>
+2025-07-01 00:52:09,540 INFO u.f.u.s.TaskDefinition [pool-8-thread-3] Not running task <retrieveDatabaseUsers>
+2025-07-01 00:52:09,541 INFO u.f.u.s.TaskDefinition [pool-8-thread-4] Not running task <retrieveAdditionalJdbcDriverInfo>
+2025-07-01 00:52:09,562 INFO s.c.SchemaCrawler [http-nio-8080-exec-9] 
+-- generated by: SchemaCrawler 16.21.4
+-- generated on: 2025-07-01T00:52:09.536823464
+-- database: PostgreSQL 17.5 (Debian 17.5-1.pgdg120+1)
+-- driver: PostgreSQL JDBC Driver 42.7.5
+-- operating system: Linux 6.10.14-linuxkit
+-- JVM system: Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.15+6
+
+2025-07-01 00:52:09,566 INFO u.f.u.s.TimedTask [pool-8-thread-5] Running <retrieve_schemas> on thread <pool-8-thread-5>
+2025-07-01 00:52:09,566 INFO s.c.SchemaRetriever [pool-8-thread-5] Retrieving all schemas
+2025-07-01 00:52:09,567 INFO s.c.SchemaRetriever [pool-8-thread-5] Retrieving all catalogs
+2025-07-01 00:52:09,599 INFO s.c.SchemaRetriever [pool-8-thread-5] Processed 3 schemas
+2025-07-01 00:52:09,602 INFO u.f.u.s.TimedTask [pool-8-thread-6] Running <filter_and_sort_schemas> on thread <pool-8-thread-6>
+2025-07-01 00:52:09,603 INFO s.c.SchemaCrawler [http-nio-8080-exec-9] Retrieved 1 schemas
+2025-07-01 00:52:09,605 INFO u.f.u.s.TimedTask [pool-8-thread-7] Running <retrieve_column_data_types> on thread <pool-8-thread-7>
+2025-07-01 00:52:09,610 INFO u.f.u.s.TaskDefinition [pool-8-thread-7] Not running task <retrieveColumnDataTypes>
+2025-07-01 00:52:09,612 INFO u.f.u.s.TimedTask [pool-8-thread-8] Running <retrieve_user_defined_column_data_types> on thread <pool-8-thread-8>
+2025-07-01 00:52:09,612 INFO u.f.u.s.TaskDefinition [pool-8-thread-8] Not running task <retrieveUserDefinedColumnDataTypes>
+2025-07-01 00:52:09,614 INFO u.f.u.s.TimedTask [pool-8-thread-9] Running <retrieve_tables> on thread <pool-8-thread-9>
+2025-07-01 00:52:09,615 INFO s.c.SchemaCrawler [pool-8-thread-9] Retrieving table names
+2025-07-01 00:52:09,615 INFO s.c.TableRetriever [pool-8-thread-9] Retrieving tables
+2025-07-01 00:52:09,616 INFO s.c.TableRetriever [pool-8-thread-9] Retrieving tables for schema <public>
+2025-07-01 00:52:09,658 INFO s.c.TableRetriever [pool-8-thread-9] Processed 23 tables
+2025-07-01 00:52:09,658 INFO s.c.SchemaCrawler [http-nio-8080-exec-9] Retrieved 22 tables
+2025-07-01 00:52:09,659 INFO u.f.u.s.TimedTask [pool-8-thread-10] Running <retrieve_table_columns> on thread <pool-8-thread-10>
+2025-07-01 00:52:09,660 INFO s.c.TableColumnRetriever [pool-8-thread-10] No hidden table columns SQL provided
+2025-07-01 00:52:09,662 INFO s.c.TableColumnRetriever [pool-8-thread-10] Retrieving table columns
+2025-07-01 00:52:09,662 INFO u.f.u.s.MultiThreadedTaskRunner [pool-8-thread-10] Started thread pool <java.util.concurrent.ThreadPoolExecutor@621f8897[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]> for <retrieve-table-columns-from-metadata> with <5> threads
+2025-07-01 00:52:09,665 INFO u.f.u.s.TimedTask [pool-9-thread-1] Running <public.actor> on thread <pool-9-thread-1>
+2025-07-01 00:52:09,666 INFO u.f.u.s.TimedTask [pool-9-thread-3] Running <public.category> on thread <pool-9-thread-3>
+2025-07-01 00:52:09,666 INFO u.f.u.s.TimedTask [pool-9-thread-2] Running <public.address> on thread <pool-9-thread-2>
+2025-07-01 00:52:09,667 INFO u.f.u.s.TimedTask [pool-9-thread-4] Running <public.city> on thread <pool-9-thread-4>
+2025-07-01 00:52:09,667 INFO u.f.u.s.TimedTask [pool-9-thread-5] Running <public.country> on thread <pool-9-thread-5>
+2025-07-01 00:52:09,772 INFO u.f.u.s.TimedTask [pool-9-thread-3] Running <public.film> on thread <pool-9-thread-3>
+2025-07-01 00:52:09,772 INFO u.f.u.s.TimedTask [pool-9-thread-4] Running <public.customer> on thread <pool-9-thread-4>
+2025-07-01 00:52:09,775 INFO u.f.u.s.TimedTask [pool-9-thread-5] Running <public.film_actor> on thread <pool-9-thread-5>
+2025-07-01 00:52:09,775 INFO u.f.u.s.TimedTask [pool-9-thread-1] Running <public.film_category> on thread <pool-9-thread-1>
+2025-07-01 00:52:09,780 INFO u.f.u.s.TimedTask [pool-9-thread-2] Running <public.inventory> on thread <pool-9-thread-2>
+2025-07-01 00:52:09,851 INFO u.f.u.s.TimedTask [pool-9-thread-1] Running <public.payment_p2022_02> on thread <pool-9-thread-1>
+2025-07-01 00:52:09,851 INFO u.f.u.s.TimedTask [pool-9-thread-2] Running <public.payment_p2022_01> on thread <pool-9-thread-2>
+2025-07-01 00:52:09,851 INFO u.f.u.s.TimedTask [pool-9-thread-5] Running <public."language"> on thread <pool-9-thread-5>
+2025-07-01 00:52:09,891 INFO u.f.u.s.TimedTask [pool-9-thread-4] Running <public.payment_p2022_03> on thread <pool-9-thread-4>
+2025-07-01 00:52:09,918 INFO u.f.u.s.TimedTask [pool-9-thread-5] Running <public.payment_p2022_04> on thread <pool-9-thread-5>
+2025-07-01 00:52:09,920 INFO u.f.u.s.TimedTask [pool-9-thread-2] Running <public.payment_p2022_05> on thread <pool-9-thread-2>
+2025-07-01 00:52:09,921 INFO u.f.u.s.TimedTask [pool-9-thread-1] Running <public.payment_p2022_06> on thread <pool-9-thread-1>
+2025-07-01 00:52:09,921 INFO u.f.u.s.TimedTask [pool-9-thread-3] Running <public.payment_p2022_07> on thread <pool-9-thread-3>
+2025-07-01 00:52:09,937 INFO u.f.u.s.TimedTask [pool-9-thread-4] Running <public.rental> on thread <pool-9-thread-4>
+2025-07-01 00:52:09,949 INFO u.f.u.s.TimedTask [pool-9-thread-5] Running <public.staff> on thread <pool-9-thread-5>
+2025-07-01 00:52:09,950 INFO u.f.u.s.TimedTask [pool-9-thread-1] Running <public.store> on thread <pool-9-thread-1>
+2025-07-01 00:52:09,953 INFO u.f.u.s.TimedTask [pool-9-thread-2] Running <public.payment> on thread <pool-9-thread-2>
+2025-07-01 00:52:09,982 INFO u.f.u.s.TimedTask [pool-8-thread-2] Running <retrieve_table_constraints> on thread <pool-8-thread-2>
+2025-07-01 00:52:09,982 INFO u.f.u.s.TimedTask [pool-8-thread-3] Running <retrieve_foreign_keys> on thread <pool-8-thread-3>
+2025-07-01 00:52:09,981 INFO u.f.u.s.TimedTask [pool-8-thread-4] Running <retrieve_indexes> on thread <pool-8-thread-4>
+2025-07-01 00:52:09,982 INFO u.f.u.s.TimedTask [pool-8-thread-5] Running <retrieve_trigger_information> on thread <pool-8-thread-5>
+2025-07-01 00:52:09,982 INFO u.f.u.s.TimedTask [pool-8-thread-1] Running <retrieve_primary_keys> on thread <pool-8-thread-1>
+2025-07-01 00:52:09,982 INFO u.f.u.s.TaskDefinition [pool-8-thread-2] Not running task <retrieveTableConstraints>
+2025-07-01 00:52:09,983 INFO u.f.u.s.TaskDefinition [pool-8-thread-5] Not running task <retrieveTriggerInformation>
+2025-07-01 00:52:09,985 INFO s.c.ForeignKeyRetriever [pool-8-thread-3] Retrieving foreign keys
+2025-07-01 00:52:09,985 INFO s.c.PrimaryKeyRetriever [pool-8-thread-1] Retrieving primary keys
+2025-07-01 00:52:09,985 INFO s.c.IndexRetriever [pool-8-thread-4] Retrieving indexes
+2025-07-01 00:52:10,413 INFO u.f.u.s.TimedTask [pool-8-thread-6] Running <filter_and_sort_tables> on thread <pool-8-thread-6>
+2025-07-01 00:52:10,421 INFO u.f.u.s.TimedTask [pool-8-thread-7] Running <match_table_constraints> on thread <pool-8-thread-7>
+2025-07-01 00:52:10,425 INFO u.f.u.s.TimedTask [pool-8-thread-8] Running <retrieve_table_constraint_definitions> on thread <pool-8-thread-8>
+2025-07-01 00:52:10,425 INFO u.f.u.s.TimedTask [pool-8-thread-3] Running <retrieve_index_information> on thread <pool-8-thread-3>
+2025-07-01 00:52:10,427 INFO u.f.u.s.TaskDefinition [pool-8-thread-8] Not running task <retrieveTableConstraintDefinitions>
+2025-07-01 00:52:10,425 INFO u.f.u.s.TimedTask [pool-8-thread-1] Running <retrieve_additional_table_attributes> on thread <pool-8-thread-1>
+2025-07-01 00:52:10,425 INFO u.f.u.s.TimedTask [pool-8-thread-4] Running <retrieve_table_privileges> on thread <pool-8-thread-4>
+2025-07-01 00:52:10,425 INFO u.f.u.s.TimedTask [pool-8-thread-6] Running <retrieve_table_column_privileges> on thread <pool-8-thread-6>
+2025-07-01 00:52:10,425 INFO u.f.u.s.TimedTask [pool-8-thread-10] Running <retrieve_view_information> on thread <pool-8-thread-10>
+2025-07-01 00:52:10,425 INFO u.f.u.s.TimedTask [pool-8-thread-7] Running <retrieve_additional_column_attributes> on thread <pool-8-thread-7>
+2025-07-01 00:52:10,425 INFO u.f.u.s.TimedTask [pool-8-thread-9] Running <retrieve_table_constraint_information> on thread <pool-8-thread-9>
+2025-07-01 00:52:10,429 INFO u.f.u.s.TaskDefinition [pool-8-thread-6] Not running task <retrieveTableColumnPrivileges>
+2025-07-01 00:52:10,425 INFO u.f.u.s.TimedTask [pool-8-thread-5] Running <retrieve_table_definitions_information> on thread <pool-8-thread-5>
+2025-07-01 00:52:10,425 INFO u.f.u.s.TimedTask [pool-8-thread-2] Running <retrieve_view_table_usage> on thread <pool-8-thread-2>
+2025-07-01 00:52:10,428 INFO u.f.u.s.TaskDefinition [pool-8-thread-3] Not running task <retrieveIndexInformation>
+2025-07-01 00:52:10,428 INFO u.f.u.s.TaskDefinition [pool-8-thread-4] Not running task <retrieveTablePrivileges>
+2025-07-01 00:52:10,428 INFO u.f.u.s.TaskDefinition [pool-8-thread-1] Not running task <retrieveAdditionalTableAttributes>
+2025-07-01 00:52:10,433 INFO u.f.u.s.TaskDefinition [pool-8-thread-7] Not running task <retrieveAdditionalColumnAttributes>
+2025-07-01 00:52:10,433 INFO u.f.u.s.TaskDefinition [pool-8-thread-9] Not running task <retrieveTableConstraintInformation>
+2025-07-01 00:52:10,431 INFO u.f.u.s.TaskDefinition [pool-8-thread-10] Not running task <retrieveViewInformation>
+2025-07-01 00:52:10,439 INFO u.f.u.s.TaskDefinition [pool-8-thread-5] Not running task <retrieveTableDefinitionsInformation>
+2025-07-01 00:52:10,439 INFO u.f.u.s.TaskDefinition [pool-8-thread-2] Not running task <retrieveViewTableUsage>
+2025-07-01 00:52:10,447 INFO u.f.u.s.TimedTask [pool-8-thread-8] Running <retrieve_additional_column_metadata> on thread <pool-8-thread-8>
+2025-07-01 00:52:10,448 INFO u.f.u.s.TaskDefinition [pool-8-thread-8] Not running task <retrieveAdditionalColumnMetadata>
+2025-07-01 00:52:10,449 INFO s.c.SchemaCrawler [http-nio-8080-exec-9] Not retrieving routines, since this was not requested
+2025-07-01 00:52:10,450 INFO s.c.SchemaCrawler [http-nio-8080-exec-9] Not retrieving synonyms, since this was not requested
+2025-07-01 00:52:10,452 INFO s.c.SchemaCrawler [http-nio-8080-exec-9] Not retrieving sequences, since this was not requested
+2025-07-01 00:52:10,467 INFO s.c.RetrievalTaskRunner [http-nio-8080-exec-9] Total time taken for <8e77dad9-89d7-47bf-bb33-f3989816983e> - 00:00:01.679 hours
+-  0.0% - 00:00:00.000 - <retrieve_additional_database_info>
+-  1.3% - 00:00:00.021 - <retrieve_server_info>
+-  0.1% - 00:00:00.001 - <retrieve_database_users>
+-  0.1% - 00:00:00.001 - <retrieve_additional_jdbc_driver_info>
+-  2.0% - 00:00:00.033 - <retrieve_schemas>
+-  0.0% - 00:00:00.000 - <filter_and_sort_schemas>
+-  0.1% - 00:00:00.001 - <retrieve_column_data_types>
+-  0.0% - 00:00:00.000 - <retrieve_user_defined_column_data_types>
+-  2.6% - 00:00:00.043 - <retrieve_tables>
+- 19.1% - 00:00:00.320 - <retrieve_table_columns>
+- 24.1% - 00:00:00.405 - <retrieve_primary_keys>
+- 18.9% - 00:00:00.317 - <retrieve_foreign_keys>
+- 25.6% - 00:00:00.429 - <retrieve_indexes>
+-  0.1% - 00:00:00.001 - <retrieve_table_constraints>
+-  0.0% - 00:00:00.000 - <retrieve_trigger_information>
+-  0.4% - 00:00:00.006 - <filter_and_sort_tables>
+-  0.1% - 00:00:00.002 - <match_table_constraints>
+-  0.0% - 00:00:00.000 - <retrieve_table_constraint_definitions>
+-  0.5% - 00:00:00.008 - <retrieve_table_constraint_information>
+-  0.8% - 00:00:00.014 - <retrieve_view_information>
+-  0.4% - 00:00:00.006 - <retrieve_view_table_usage>
+-  0.4% - 00:00:00.006 - <retrieve_table_definitions_information>
+-  0.7% - 00:00:00.011 - <retrieve_index_information>
+-  0.6% - 00:00:00.010 - <retrieve_additional_table_attributes>
+-  0.6% - 00:00:00.010 - <retrieve_table_privileges>
+-  0.6% - 00:00:00.010 - <retrieve_table_column_privileges>
+-  0.7% - 00:00:00.012 - <retrieve_additional_column_attributes>
+-  0.0% - 00:00:00.000 - <retrieve_additional_column_metadata>
+
+2025-07-01 00:52:10,468 INFO s.l.a.AttributesCatalogLoader [http-nio-8080-exec-9] Retrieving catalog attributes
+2025-07-01 00:52:10,470 INFO u.f.u.s.MultiThreadedTaskRunner [http-nio-8080-exec-9] Started thread pool <java.util.concurrent.ThreadPoolExecutor@7469cd30[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]> for <loadAttributes> with <1> threads
+2025-07-01 00:52:10,471 INFO u.f.u.s.TimedTask [pool-10-thread-1] Running <retrieve_catalog_attributes> on thread <pool-10-thread-1>
+2025-07-01 00:52:10,472 INFO s.l.a.AttributesCatalogLoader [http-nio-8080-exec-9] Total time taken for <loadAttributes> - 00:00:00.000 hours
+-  0.0% - 00:00:00.000 - <retrieve_catalog_attributes>
+
+2025-07-01 00:52:10,472 INFO s.l.c.TableRowCountsCatalogLoader [http-nio-8080-exec-9] Retrieving table row counts
+2025-07-01 00:52:10,472 INFO u.f.u.s.MultiThreadedTaskRunner [http-nio-8080-exec-9] Started thread pool <java.util.concurrent.ThreadPoolExecutor@346e5b05[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]> for <loadTableRowCounts> with <1> threads
+2025-07-01 00:52:10,473 INFO u.f.u.s.TimedTask [pool-11-thread-1] Running <retrieve_table_row_counts> on thread <pool-11-thread-1>
+2025-07-01 00:52:10,474 INFO s.l.c.TableRowCountsCatalogLoader [pool-11-thread-1] Not retrieving table row counts, since this was not requested
+2025-07-01 00:52:10,474 INFO u.f.u.s.TimedTask [pool-11-thread-1] Running <filter_empty_tables> on thread <pool-11-thread-1>
+2025-07-01 00:52:10,474 INFO s.l.c.TableRowCountsCatalogLoader [http-nio-8080-exec-9] Total time taken for <loadTableRowCounts> - 00:00:00.000 hours
+-  0.0% - 00:00:00.000 - <retrieve_table_row_counts>
+-  0.0% - 00:00:00.000 - <filter_empty_tables>
+
+2025-07-01 00:52:10,475 INFO s.l.w.WeakAssociationsCatalogLoader [http-nio-8080-exec-9] Finding weak associations
+2025-07-01 00:52:10,476 INFO u.f.u.s.MultiThreadedTaskRunner [http-nio-8080-exec-9] Started thread pool <java.util.concurrent.ThreadPoolExecutor@7f5c7b89[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]> for <loadWeakAssociations> with <1> threads
+2025-07-01 00:52:10,477 INFO u.f.u.s.TimedTask [pool-12-thread-1] Running <retrieve_weak_associations> on thread <pool-12-thread-1>
+2025-07-01 00:52:10,478 INFO s.l.w.WeakAssociationsCatalogLoader [pool-12-thread-1] Not retrieving weak associations, since this was not requested
+2025-07-01 00:52:10,478 INFO s.l.w.WeakAssociationsCatalogLoader [http-nio-8080-exec-9] Total time taken for <loadWeakAssociations> - 00:00:00.000 hours
+-  0.0% - 00:00:00.000 - <retrieve_weak_associations>
+

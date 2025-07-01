@@ -1,0 +1,23 @@
+{
+  "id" : "60a5acde64b84642a06f765a91f269ef",
+  "type" : "POSTGRESQL",
+  "url" : "jdbc:postgresql://postgres:5432/pagila?sslmode=disable",
+  "user" : "postgres",
+  "password" : null,
+  "savePassword" : false,
+  "existingConnectionId" : null,
+  "oraclePdbName" : null,
+  "isManualUri" : false,
+  "host" : "postgres",
+  "port" : "5432",
+  "database" : "pagila",
+  "oracleIdentifier" : null,
+  "mssqlAuthentication" : null,
+  "useSSL" : null,
+  "trustServerCertificate" : null,
+  "mysqlSSLMode" : null,
+  "postgresSSLMode" : null,
+  "isError" : null,
+  "connectionType" : "NONE",
+  "name" : "postgres-PostgreSQL"
+}

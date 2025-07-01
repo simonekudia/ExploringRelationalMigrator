@@ -1,0 +1,2748 @@
+{
+  "id" : "ec347fa29de44d1fbbd2abba5cbfc79b",
+  "full" : {
+    "databases" : {
+      "pagila" : {
+        "schemas" : {
+          "public" : {
+            "tables" : {
+              "film_category" : {
+                "type" : "TABLE",
+                "size" : -1,
+                "columns" : {
+                  "category_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 2,
+                    "primaryKey" : {
+                      "name" : "film_category_pkey"
+                    },
+                    "foreignKey" : {
+                      "name" : "film_category_category_id_fkey",
+                      "schema" : "public",
+                      "table" : "category",
+                      "column" : "category_id",
+                      "cardinality" : "ZERO_TO_MANY",
+                      "synthetic" : null
+                    },
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : true
+                  },
+                  "last_update" : {
+                    "type" : {
+                      "databaseSpecificType" : "timestamptz",
+                      "precision" : 35,
+                      "scale" : 6
+                    },
+                    "ordinalPosition" : 3,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "film_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 1,
+                    "primaryKey" : {
+                      "name" : "film_category_pkey"
+                    },
+                    "foreignKey" : {
+                      "name" : "film_category_film_id_fkey",
+                      "schema" : "public",
+                      "table" : "film",
+                      "column" : "film_id",
+                      "cardinality" : "ZERO_TO_MANY",
+                      "synthetic" : null
+                    },
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : true
+                  }
+                },
+                "uniqueIndexes" : {
+                  "film_category_pkey" : [ "film_id", "category_id" ]
+                },
+                "nonUniqueIndexes" : { },
+                "filter" : null
+              },
+              "country" : {
+                "type" : "TABLE",
+                "size" : -1,
+                "columns" : {
+                  "country" : {
+                    "type" : {
+                      "databaseSpecificType" : "text",
+                      "precision" : 2147483647,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 2,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "last_update" : {
+                    "type" : {
+                      "databaseSpecificType" : "timestamptz",
+                      "precision" : 35,
+                      "scale" : 6
+                    },
+                    "ordinalPosition" : 3,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "country_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "serial",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 1,
+                    "primaryKey" : {
+                      "name" : "country_pkey"
+                    },
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : true,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : true
+                  }
+                },
+                "uniqueIndexes" : {
+                  "country_pkey" : [ "country_id" ]
+                },
+                "nonUniqueIndexes" : { },
+                "filter" : null
+              },
+              "address" : {
+                "type" : "TABLE",
+                "size" : -1,
+                "columns" : {
+                  "address" : {
+                    "type" : {
+                      "databaseSpecificType" : "text",
+                      "precision" : 2147483647,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 2,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "address2" : {
+                    "type" : {
+                      "databaseSpecificType" : "text",
+                      "precision" : 2147483647,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 3,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "phone" : {
+                    "type" : {
+                      "databaseSpecificType" : "text",
+                      "precision" : 2147483647,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 7,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "district" : {
+                    "type" : {
+                      "databaseSpecificType" : "text",
+                      "precision" : 2147483647,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 4,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "last_update" : {
+                    "type" : {
+                      "databaseSpecificType" : "timestamptz",
+                      "precision" : 35,
+                      "scale" : 6
+                    },
+                    "ordinalPosition" : 8,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "address_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "serial",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 1,
+                    "primaryKey" : {
+                      "name" : "address_pkey"
+                    },
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : true,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : true
+                  },
+                  "postal_code" : {
+                    "type" : {
+                      "databaseSpecificType" : "text",
+                      "precision" : 2147483647,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 6,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "city_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 5,
+                    "primaryKey" : null,
+                    "foreignKey" : {
+                      "name" : "address_city_id_fkey",
+                      "schema" : "public",
+                      "table" : "city",
+                      "column" : "city_id",
+                      "cardinality" : "ZERO_TO_MANY",
+                      "synthetic" : null
+                    },
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : false
+                  }
+                },
+                "uniqueIndexes" : {
+                  "address_pkey" : [ "address_id" ]
+                },
+                "nonUniqueIndexes" : {
+                  "idx_fk_city_id" : [ "city_id" ]
+                },
+                "filter" : null
+              },
+              "city" : {
+                "type" : "TABLE",
+                "size" : -1,
+                "columns" : {
+                  "city" : {
+                    "type" : {
+                      "databaseSpecificType" : "text",
+                      "precision" : 2147483647,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 2,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "last_update" : {
+                    "type" : {
+                      "databaseSpecificType" : "timestamptz",
+                      "precision" : 35,
+                      "scale" : 6
+                    },
+                    "ordinalPosition" : 4,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "country_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 3,
+                    "primaryKey" : null,
+                    "foreignKey" : {
+                      "name" : "city_country_id_fkey",
+                      "schema" : "public",
+                      "table" : "country",
+                      "column" : "country_id",
+                      "cardinality" : "ZERO_TO_MANY",
+                      "synthetic" : null
+                    },
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : false
+                  },
+                  "city_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "serial",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 1,
+                    "primaryKey" : {
+                      "name" : "city_pkey"
+                    },
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : true,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : true
+                  }
+                },
+                "uniqueIndexes" : {
+                  "city_pkey" : [ "city_id" ]
+                },
+                "nonUniqueIndexes" : {
+                  "idx_fk_country_id" : [ "country_id" ]
+                },
+                "filter" : null
+              },
+              "film_actor" : {
+                "type" : "TABLE",
+                "size" : -1,
+                "columns" : {
+                  "last_update" : {
+                    "type" : {
+                      "databaseSpecificType" : "timestamptz",
+                      "precision" : 35,
+                      "scale" : 6
+                    },
+                    "ordinalPosition" : 3,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "actor_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 1,
+                    "primaryKey" : {
+                      "name" : "film_actor_pkey"
+                    },
+                    "foreignKey" : {
+                      "name" : "film_actor_actor_id_fkey",
+                      "schema" : "public",
+                      "table" : "actor",
+                      "column" : "actor_id",
+                      "cardinality" : "ZERO_TO_MANY",
+                      "synthetic" : null
+                    },
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : true
+                  },
+                  "film_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 2,
+                    "primaryKey" : {
+                      "name" : "film_actor_pkey"
+                    },
+                    "foreignKey" : {
+                      "name" : "film_actor_film_id_fkey",
+                      "schema" : "public",
+                      "table" : "film",
+                      "column" : "film_id",
+                      "cardinality" : "ZERO_TO_MANY",
+                      "synthetic" : null
+                    },
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : true
+                  }
+                },
+                "uniqueIndexes" : {
+                  "film_actor_pkey" : [ "actor_id", "film_id" ]
+                },
+                "nonUniqueIndexes" : {
+                  "idx_fk_film_id" : [ "film_id" ]
+                },
+                "filter" : null
+              },
+              "payment_p2022_06" : {
+                "type" : "TABLE",
+                "size" : -1,
+                "columns" : {
+                  "amount" : {
+                    "type" : {
+                      "databaseSpecificType" : "numeric",
+                      "precision" : 5,
+                      "scale" : 2
+                    },
+                    "ordinalPosition" : 5,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "payment_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "serial",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 1,
+                    "primaryKey" : {
+                      "name" : "payment_p2022_06_pkey"
+                    },
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : true,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : true
+                  },
+                  "staff_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 3,
+                    "primaryKey" : null,
+                    "foreignKey" : {
+                      "name" : "payment_p2022_06_staff_id_fkey",
+                      "schema" : "public",
+                      "table" : "staff",
+                      "column" : "staff_id",
+                      "cardinality" : "ZERO_TO_MANY",
+                      "synthetic" : null
+                    },
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : false
+                  },
+                  "customer_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 2,
+                    "primaryKey" : null,
+                    "foreignKey" : {
+                      "name" : "payment_p2022_06_customer_id_fkey",
+                      "schema" : "public",
+                      "table" : "customer",
+                      "column" : "customer_id",
+                      "cardinality" : "ZERO_TO_MANY",
+                      "synthetic" : null
+                    },
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : false
+                  },
+                  "payment_date" : {
+                    "type" : {
+                      "databaseSpecificType" : "timestamptz",
+                      "precision" : 35,
+                      "scale" : 6
+                    },
+                    "ordinalPosition" : 6,
+                    "primaryKey" : {
+                      "name" : "payment_p2022_06_pkey"
+                    },
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : true
+                  },
+                  "rental_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 4,
+                    "primaryKey" : null,
+                    "foreignKey" : {
+                      "name" : "payment_p2022_06_rental_id_fkey",
+                      "schema" : "public",
+                      "table" : "rental",
+                      "column" : "rental_id",
+                      "cardinality" : "ZERO_TO_MANY",
+                      "synthetic" : null
+                    },
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  }
+                },
+                "uniqueIndexes" : {
+                  "payment_p2022_06_pkey" : [ "payment_date", "payment_id" ]
+                },
+                "nonUniqueIndexes" : {
+                  "idx_fk_payment_p2022_06_customer_id" : [ "customer_id" ],
+                  "payment_p2022_06_customer_id_idx" : [ "customer_id" ],
+                  "idx_fk_payment_p2022_06_staff_id" : [ "staff_id" ]
+                },
+                "filter" : null
+              },
+              "payment_p2022_07" : {
+                "type" : "TABLE",
+                "size" : -1,
+                "columns" : {
+                  "amount" : {
+                    "type" : {
+                      "databaseSpecificType" : "numeric",
+                      "precision" : 5,
+                      "scale" : 2
+                    },
+                    "ordinalPosition" : 5,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "payment_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "serial",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 1,
+                    "primaryKey" : {
+                      "name" : "payment_p2022_07_pkey"
+                    },
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : true,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : true
+                  },
+                  "staff_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 3,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "customer_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 2,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "payment_date" : {
+                    "type" : {
+                      "databaseSpecificType" : "timestamptz",
+                      "precision" : 35,
+                      "scale" : 6
+                    },
+                    "ordinalPosition" : 6,
+                    "primaryKey" : {
+                      "name" : "payment_p2022_07_pkey"
+                    },
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : true
+                  },
+                  "rental_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 4,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  }
+                },
+                "uniqueIndexes" : {
+                  "payment_p2022_07_pkey" : [ "payment_date", "payment_id" ]
+                },
+                "nonUniqueIndexes" : { },
+                "filter" : null
+              },
+              "language" : {
+                "type" : "TABLE",
+                "size" : -1,
+                "columns" : {
+                  "last_update" : {
+                    "type" : {
+                      "databaseSpecificType" : "timestamptz",
+                      "precision" : 35,
+                      "scale" : 6
+                    },
+                    "ordinalPosition" : 3,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "name" : {
+                    "type" : {
+                      "databaseSpecificType" : "bpchar",
+                      "precision" : 20,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 2,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "language_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "serial",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 1,
+                    "primaryKey" : {
+                      "name" : "language_pkey"
+                    },
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : true,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : true
+                  }
+                },
+                "uniqueIndexes" : {
+                  "language_pkey" : [ "language_id" ]
+                },
+                "nonUniqueIndexes" : { },
+                "filter" : null
+              },
+              "staff" : {
+                "type" : "TABLE",
+                "size" : -1,
+                "columns" : {
+                  "store_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 6,
+                    "primaryKey" : null,
+                    "foreignKey" : {
+                      "name" : "staff_store_id_fkey",
+                      "schema" : "public",
+                      "table" : "store",
+                      "column" : "store_id",
+                      "cardinality" : "ZERO_TO_MANY",
+                      "synthetic" : null
+                    },
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "password" : {
+                    "type" : {
+                      "databaseSpecificType" : "text",
+                      "precision" : 2147483647,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 9,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "staff_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "serial",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 1,
+                    "primaryKey" : {
+                      "name" : "staff_pkey"
+                    },
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : true,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : true
+                  },
+                  "last_update" : {
+                    "type" : {
+                      "databaseSpecificType" : "timestamptz",
+                      "precision" : 35,
+                      "scale" : 6
+                    },
+                    "ordinalPosition" : 10,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "address_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 4,
+                    "primaryKey" : null,
+                    "foreignKey" : {
+                      "name" : "staff_address_id_fkey",
+                      "schema" : "public",
+                      "table" : "address",
+                      "column" : "address_id",
+                      "cardinality" : "ZERO_TO_MANY",
+                      "synthetic" : null
+                    },
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "last_name" : {
+                    "type" : {
+                      "databaseSpecificType" : "text",
+                      "precision" : 2147483647,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 3,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "active" : {
+                    "type" : {
+                      "databaseSpecificType" : "bool",
+                      "precision" : 1,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 7,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "first_name" : {
+                    "type" : {
+                      "databaseSpecificType" : "text",
+                      "precision" : 2147483647,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 2,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "email" : {
+                    "type" : {
+                      "databaseSpecificType" : "text",
+                      "precision" : 2147483647,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 5,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "picture" : {
+                    "type" : {
+                      "databaseSpecificType" : "bytea",
+                      "precision" : 2147483647,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 11,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "username" : {
+                    "type" : {
+                      "databaseSpecificType" : "text",
+                      "precision" : 2147483647,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 8,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  }
+                },
+                "uniqueIndexes" : {
+                  "staff_pkey" : [ "staff_id" ]
+                },
+                "nonUniqueIndexes" : { },
+                "filter" : null
+              },
+              "film" : {
+                "type" : "TABLE",
+                "size" : -1,
+                "columns" : {
+                  "special_features" : {
+                    "type" : {
+                      "databaseSpecificType" : "_text",
+                      "precision" : 2147483647,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 13,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "rental_duration" : {
+                    "type" : {
+                      "databaseSpecificType" : "int2",
+                      "precision" : 5,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 7,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "rental_rate" : {
+                    "type" : {
+                      "databaseSpecificType" : "numeric",
+                      "precision" : 4,
+                      "scale" : 2
+                    },
+                    "ordinalPosition" : 8,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "release_year" : {
+                    "type" : {
+                      "databaseSpecificType" : "year",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 4,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "length" : {
+                    "type" : {
+                      "databaseSpecificType" : "int2",
+                      "precision" : 5,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 9,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "replacement_cost" : {
+                    "type" : {
+                      "databaseSpecificType" : "numeric",
+                      "precision" : 5,
+                      "scale" : 2
+                    },
+                    "ordinalPosition" : 10,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "rating" : {
+                    "type" : {
+                      "databaseSpecificType" : "mpaa_rating",
+                      "precision" : 2147483647,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 11,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "description" : {
+                    "type" : {
+                      "databaseSpecificType" : "text",
+                      "precision" : 2147483647,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 3,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "language_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 5,
+                    "primaryKey" : null,
+                    "foreignKey" : {
+                      "name" : "film_language_id_fkey",
+                      "schema" : "public",
+                      "table" : "language",
+                      "column" : "language_id",
+                      "cardinality" : "ZERO_TO_MANY",
+                      "synthetic" : null
+                    },
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : false
+                  },
+                  "title" : {
+                    "type" : {
+                      "databaseSpecificType" : "text",
+                      "precision" : 2147483647,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 2,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : false
+                  },
+                  "original_language_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 6,
+                    "primaryKey" : null,
+                    "foreignKey" : {
+                      "name" : "film_original_language_id_fkey",
+                      "schema" : "public",
+                      "table" : "language",
+                      "column" : "language_id",
+                      "cardinality" : "ZERO_TO_MANY",
+                      "synthetic" : null
+                    },
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : false
+                  },
+                  "last_update" : {
+                    "type" : {
+                      "databaseSpecificType" : "timestamptz",
+                      "precision" : 35,
+                      "scale" : 6
+                    },
+                    "ordinalPosition" : 12,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "fulltext" : {
+                    "type" : {
+                      "databaseSpecificType" : "tsvector",
+                      "precision" : 2147483647,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 14,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : false
+                  },
+                  "film_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "serial",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 1,
+                    "primaryKey" : {
+                      "name" : "film_pkey"
+                    },
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : true,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : true
+                  }
+                },
+                "uniqueIndexes" : {
+                  "film_pkey" : [ "film_id" ]
+                },
+                "nonUniqueIndexes" : {
+                  "idx_title" : [ "title" ],
+                  "film_fulltext_idx" : [ "fulltext" ],
+                  "idx_fk_language_id" : [ "language_id" ],
+                  "idx_fk_original_language_id" : [ "original_language_id" ]
+                },
+                "filter" : null
+              },
+              "store" : {
+                "type" : "TABLE",
+                "size" : -1,
+                "columns" : {
+                  "store_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "serial",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 1,
+                    "primaryKey" : {
+                      "name" : "store_pkey"
+                    },
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : true,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : true
+                  },
+                  "manager_staff_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 2,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : true
+                  },
+                  "last_update" : {
+                    "type" : {
+                      "databaseSpecificType" : "timestamptz",
+                      "precision" : 35,
+                      "scale" : 6
+                    },
+                    "ordinalPosition" : 4,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "address_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 3,
+                    "primaryKey" : null,
+                    "foreignKey" : {
+                      "name" : "store_address_id_fkey",
+                      "schema" : "public",
+                      "table" : "address",
+                      "column" : "address_id",
+                      "cardinality" : "ZERO_TO_MANY",
+                      "synthetic" : null
+                    },
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  }
+                },
+                "uniqueIndexes" : {
+                  "idx_unq_manager_staff_id" : [ "manager_staff_id" ],
+                  "store_pkey" : [ "store_id" ]
+                },
+                "nonUniqueIndexes" : { },
+                "filter" : null
+              },
+              "inventory" : {
+                "type" : "TABLE",
+                "size" : -1,
+                "columns" : {
+                  "store_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 3,
+                    "primaryKey" : null,
+                    "foreignKey" : {
+                      "name" : "inventory_store_id_fkey",
+                      "schema" : "public",
+                      "table" : "store",
+                      "column" : "store_id",
+                      "cardinality" : "ZERO_TO_MANY",
+                      "synthetic" : null
+                    },
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : false
+                  },
+                  "inventory_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "serial",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 1,
+                    "primaryKey" : {
+                      "name" : "inventory_pkey"
+                    },
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : true,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : true
+                  },
+                  "last_update" : {
+                    "type" : {
+                      "databaseSpecificType" : "timestamptz",
+                      "precision" : 35,
+                      "scale" : 6
+                    },
+                    "ordinalPosition" : 4,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "film_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 2,
+                    "primaryKey" : null,
+                    "foreignKey" : {
+                      "name" : "inventory_film_id_fkey",
+                      "schema" : "public",
+                      "table" : "film",
+                      "column" : "film_id",
+                      "cardinality" : "ZERO_TO_MANY",
+                      "synthetic" : null
+                    },
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : false
+                  }
+                },
+                "uniqueIndexes" : {
+                  "inventory_pkey" : [ "inventory_id" ]
+                },
+                "nonUniqueIndexes" : {
+                  "idx_store_id_film_id" : [ "store_id", "film_id" ]
+                },
+                "filter" : null
+              },
+              "rental" : {
+                "type" : "TABLE",
+                "size" : -1,
+                "columns" : {
+                  "inventory_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 3,
+                    "primaryKey" : null,
+                    "foreignKey" : {
+                      "name" : "rental_inventory_id_fkey",
+                      "schema" : "public",
+                      "table" : "inventory",
+                      "column" : "inventory_id",
+                      "cardinality" : "ZERO_TO_MANY",
+                      "synthetic" : null
+                    },
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : true
+                  },
+                  "staff_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 6,
+                    "primaryKey" : null,
+                    "foreignKey" : {
+                      "name" : "rental_staff_id_fkey",
+                      "schema" : "public",
+                      "table" : "staff",
+                      "column" : "staff_id",
+                      "cardinality" : "ZERO_TO_MANY",
+                      "synthetic" : null
+                    },
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "last_update" : {
+                    "type" : {
+                      "databaseSpecificType" : "timestamptz",
+                      "precision" : 35,
+                      "scale" : 6
+                    },
+                    "ordinalPosition" : 7,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "rental_date" : {
+                    "type" : {
+                      "databaseSpecificType" : "timestamptz",
+                      "precision" : 35,
+                      "scale" : 6
+                    },
+                    "ordinalPosition" : 2,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : true
+                  },
+                  "customer_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 4,
+                    "primaryKey" : null,
+                    "foreignKey" : {
+                      "name" : "rental_customer_id_fkey",
+                      "schema" : "public",
+                      "table" : "customer",
+                      "column" : "customer_id",
+                      "cardinality" : "ZERO_TO_MANY",
+                      "synthetic" : null
+                    },
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : true
+                  },
+                  "rental_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "serial",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 1,
+                    "primaryKey" : {
+                      "name" : "rental_pkey"
+                    },
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : true,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : true
+                  },
+                  "return_date" : {
+                    "type" : {
+                      "databaseSpecificType" : "timestamptz",
+                      "precision" : 35,
+                      "scale" : 6
+                    },
+                    "ordinalPosition" : 5,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  }
+                },
+                "uniqueIndexes" : {
+                  "rental_pkey" : [ "rental_id" ],
+                  "idx_unq_rental_rental_date_inventory_id_customer_id" : [ "rental_date", "inventory_id", "customer_id" ]
+                },
+                "nonUniqueIndexes" : {
+                  "idx_fk_inventory_id" : [ "inventory_id" ]
+                },
+                "filter" : null
+              },
+              "actor" : {
+                "type" : "TABLE",
+                "size" : -1,
+                "columns" : {
+                  "last_update" : {
+                    "type" : {
+                      "databaseSpecificType" : "timestamptz",
+                      "precision" : 35,
+                      "scale" : 6
+                    },
+                    "ordinalPosition" : 4,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "last_name" : {
+                    "type" : {
+                      "databaseSpecificType" : "text",
+                      "precision" : 2147483647,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 3,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : false
+                  },
+                  "actor_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "serial",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 1,
+                    "primaryKey" : {
+                      "name" : "actor_pkey"
+                    },
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : true,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : true
+                  },
+                  "first_name" : {
+                    "type" : {
+                      "databaseSpecificType" : "text",
+                      "precision" : 2147483647,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 2,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  }
+                },
+                "uniqueIndexes" : {
+                  "actor_pkey" : [ "actor_id" ]
+                },
+                "nonUniqueIndexes" : {
+                  "idx_actor_last_name" : [ "last_name" ]
+                },
+                "filter" : null
+              },
+              "payment_p2022_04" : {
+                "type" : "TABLE",
+                "size" : -1,
+                "columns" : {
+                  "amount" : {
+                    "type" : {
+                      "databaseSpecificType" : "numeric",
+                      "precision" : 5,
+                      "scale" : 2
+                    },
+                    "ordinalPosition" : 5,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "payment_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "serial",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 1,
+                    "primaryKey" : {
+                      "name" : "payment_p2022_04_pkey"
+                    },
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : true,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : true
+                  },
+                  "staff_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 3,
+                    "primaryKey" : null,
+                    "foreignKey" : {
+                      "name" : "payment_p2022_04_staff_id_fkey",
+                      "schema" : "public",
+                      "table" : "staff",
+                      "column" : "staff_id",
+                      "cardinality" : "ZERO_TO_MANY",
+                      "synthetic" : null
+                    },
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : false
+                  },
+                  "customer_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 2,
+                    "primaryKey" : null,
+                    "foreignKey" : {
+                      "name" : "payment_p2022_04_customer_id_fkey",
+                      "schema" : "public",
+                      "table" : "customer",
+                      "column" : "customer_id",
+                      "cardinality" : "ZERO_TO_MANY",
+                      "synthetic" : null
+                    },
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : false
+                  },
+                  "payment_date" : {
+                    "type" : {
+                      "databaseSpecificType" : "timestamptz",
+                      "precision" : 35,
+                      "scale" : 6
+                    },
+                    "ordinalPosition" : 6,
+                    "primaryKey" : {
+                      "name" : "payment_p2022_04_pkey"
+                    },
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : true
+                  },
+                  "rental_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 4,
+                    "primaryKey" : null,
+                    "foreignKey" : {
+                      "name" : "payment_p2022_04_rental_id_fkey",
+                      "schema" : "public",
+                      "table" : "rental",
+                      "column" : "rental_id",
+                      "cardinality" : "ZERO_TO_MANY",
+                      "synthetic" : null
+                    },
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  }
+                },
+                "uniqueIndexes" : {
+                  "payment_p2022_04_pkey" : [ "payment_date", "payment_id" ]
+                },
+                "nonUniqueIndexes" : {
+                  "payment_p2022_04_customer_id_idx" : [ "customer_id" ],
+                  "idx_fk_payment_p2022_04_customer_id" : [ "customer_id" ],
+                  "idx_fk_payment_p2022_04_staff_id" : [ "staff_id" ]
+                },
+                "filter" : null
+              },
+              "payment_p2022_05" : {
+                "type" : "TABLE",
+                "size" : -1,
+                "columns" : {
+                  "amount" : {
+                    "type" : {
+                      "databaseSpecificType" : "numeric",
+                      "precision" : 5,
+                      "scale" : 2
+                    },
+                    "ordinalPosition" : 5,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "payment_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "serial",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 1,
+                    "primaryKey" : {
+                      "name" : "payment_p2022_05_pkey"
+                    },
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : true,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : true
+                  },
+                  "staff_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 3,
+                    "primaryKey" : null,
+                    "foreignKey" : {
+                      "name" : "payment_p2022_05_staff_id_fkey",
+                      "schema" : "public",
+                      "table" : "staff",
+                      "column" : "staff_id",
+                      "cardinality" : "ZERO_TO_MANY",
+                      "synthetic" : null
+                    },
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : false
+                  },
+                  "customer_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 2,
+                    "primaryKey" : null,
+                    "foreignKey" : {
+                      "name" : "payment_p2022_05_customer_id_fkey",
+                      "schema" : "public",
+                      "table" : "customer",
+                      "column" : "customer_id",
+                      "cardinality" : "ZERO_TO_MANY",
+                      "synthetic" : null
+                    },
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : false
+                  },
+                  "payment_date" : {
+                    "type" : {
+                      "databaseSpecificType" : "timestamptz",
+                      "precision" : 35,
+                      "scale" : 6
+                    },
+                    "ordinalPosition" : 6,
+                    "primaryKey" : {
+                      "name" : "payment_p2022_05_pkey"
+                    },
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : true
+                  },
+                  "rental_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 4,
+                    "primaryKey" : null,
+                    "foreignKey" : {
+                      "name" : "payment_p2022_05_rental_id_fkey",
+                      "schema" : "public",
+                      "table" : "rental",
+                      "column" : "rental_id",
+                      "cardinality" : "ZERO_TO_MANY",
+                      "synthetic" : null
+                    },
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  }
+                },
+                "uniqueIndexes" : {
+                  "payment_p2022_05_pkey" : [ "payment_date", "payment_id" ]
+                },
+                "nonUniqueIndexes" : {
+                  "idx_fk_payment_p2022_05_staff_id" : [ "staff_id" ],
+                  "idx_fk_payment_p2022_05_customer_id" : [ "customer_id" ],
+                  "payment_p2022_05_customer_id_idx" : [ "customer_id" ]
+                },
+                "filter" : null
+              },
+              "payment" : {
+                "type" : "TABLE",
+                "size" : -1,
+                "columns" : {
+                  "amount" : {
+                    "type" : {
+                      "databaseSpecificType" : "numeric",
+                      "precision" : 5,
+                      "scale" : 2
+                    },
+                    "ordinalPosition" : 5,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "payment_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "serial",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 1,
+                    "primaryKey" : {
+                      "name" : "payment_pkey"
+                    },
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : true,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : true
+                  },
+                  "staff_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 3,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "customer_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 2,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "payment_date" : {
+                    "type" : {
+                      "databaseSpecificType" : "timestamptz",
+                      "precision" : 35,
+                      "scale" : 6
+                    },
+                    "ordinalPosition" : 6,
+                    "primaryKey" : {
+                      "name" : "payment_pkey"
+                    },
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : true
+                  },
+                  "rental_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 4,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  }
+                },
+                "uniqueIndexes" : {
+                  "payment_pkey" : [ "payment_date", "payment_id" ]
+                },
+                "nonUniqueIndexes" : { },
+                "filter" : null
+              },
+              "payment_p2022_02" : {
+                "type" : "TABLE",
+                "size" : -1,
+                "columns" : {
+                  "amount" : {
+                    "type" : {
+                      "databaseSpecificType" : "numeric",
+                      "precision" : 5,
+                      "scale" : 2
+                    },
+                    "ordinalPosition" : 5,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "payment_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "serial",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 1,
+                    "primaryKey" : {
+                      "name" : "payment_p2022_02_pkey"
+                    },
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : true,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : true
+                  },
+                  "staff_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 3,
+                    "primaryKey" : null,
+                    "foreignKey" : {
+                      "name" : "payment_p2022_02_staff_id_fkey",
+                      "schema" : "public",
+                      "table" : "staff",
+                      "column" : "staff_id",
+                      "cardinality" : "ZERO_TO_MANY",
+                      "synthetic" : null
+                    },
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : false
+                  },
+                  "customer_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 2,
+                    "primaryKey" : null,
+                    "foreignKey" : {
+                      "name" : "payment_p2022_02_customer_id_fkey",
+                      "schema" : "public",
+                      "table" : "customer",
+                      "column" : "customer_id",
+                      "cardinality" : "ZERO_TO_MANY",
+                      "synthetic" : null
+                    },
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : false
+                  },
+                  "payment_date" : {
+                    "type" : {
+                      "databaseSpecificType" : "timestamptz",
+                      "precision" : 35,
+                      "scale" : 6
+                    },
+                    "ordinalPosition" : 6,
+                    "primaryKey" : {
+                      "name" : "payment_p2022_02_pkey"
+                    },
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : true
+                  },
+                  "rental_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 4,
+                    "primaryKey" : null,
+                    "foreignKey" : {
+                      "name" : "payment_p2022_02_rental_id_fkey",
+                      "schema" : "public",
+                      "table" : "rental",
+                      "column" : "rental_id",
+                      "cardinality" : "ZERO_TO_MANY",
+                      "synthetic" : null
+                    },
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  }
+                },
+                "uniqueIndexes" : {
+                  "payment_p2022_02_pkey" : [ "payment_date", "payment_id" ]
+                },
+                "nonUniqueIndexes" : {
+                  "payment_p2022_02_customer_id_idx" : [ "customer_id" ],
+                  "idx_fk_payment_p2022_02_staff_id" : [ "staff_id" ],
+                  "idx_fk_payment_p2022_02_customer_id" : [ "customer_id" ]
+                },
+                "filter" : null
+              },
+              "payment_p2022_03" : {
+                "type" : "TABLE",
+                "size" : -1,
+                "columns" : {
+                  "amount" : {
+                    "type" : {
+                      "databaseSpecificType" : "numeric",
+                      "precision" : 5,
+                      "scale" : 2
+                    },
+                    "ordinalPosition" : 5,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "payment_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "serial",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 1,
+                    "primaryKey" : {
+                      "name" : "payment_p2022_03_pkey"
+                    },
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : true,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : true
+                  },
+                  "staff_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 3,
+                    "primaryKey" : null,
+                    "foreignKey" : {
+                      "name" : "payment_p2022_03_staff_id_fkey",
+                      "schema" : "public",
+                      "table" : "staff",
+                      "column" : "staff_id",
+                      "cardinality" : "ZERO_TO_MANY",
+                      "synthetic" : null
+                    },
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : false
+                  },
+                  "customer_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 2,
+                    "primaryKey" : null,
+                    "foreignKey" : {
+                      "name" : "payment_p2022_03_customer_id_fkey",
+                      "schema" : "public",
+                      "table" : "customer",
+                      "column" : "customer_id",
+                      "cardinality" : "ZERO_TO_MANY",
+                      "synthetic" : null
+                    },
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : false
+                  },
+                  "payment_date" : {
+                    "type" : {
+                      "databaseSpecificType" : "timestamptz",
+                      "precision" : 35,
+                      "scale" : 6
+                    },
+                    "ordinalPosition" : 6,
+                    "primaryKey" : {
+                      "name" : "payment_p2022_03_pkey"
+                    },
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : true
+                  },
+                  "rental_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 4,
+                    "primaryKey" : null,
+                    "foreignKey" : {
+                      "name" : "payment_p2022_03_rental_id_fkey",
+                      "schema" : "public",
+                      "table" : "rental",
+                      "column" : "rental_id",
+                      "cardinality" : "ZERO_TO_MANY",
+                      "synthetic" : null
+                    },
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  }
+                },
+                "uniqueIndexes" : {
+                  "payment_p2022_03_pkey" : [ "payment_date", "payment_id" ]
+                },
+                "nonUniqueIndexes" : {
+                  "idx_fk_payment_p2022_03_staff_id" : [ "staff_id" ],
+                  "payment_p2022_03_customer_id_idx" : [ "customer_id" ],
+                  "idx_fk_payment_p2022_03_customer_id" : [ "customer_id" ]
+                },
+                "filter" : null
+              },
+              "category" : {
+                "type" : "TABLE",
+                "size" : -1,
+                "columns" : {
+                  "category_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "serial",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 1,
+                    "primaryKey" : {
+                      "name" : "category_pkey"
+                    },
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : true,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : true
+                  },
+                  "last_update" : {
+                    "type" : {
+                      "databaseSpecificType" : "timestamptz",
+                      "precision" : 35,
+                      "scale" : 6
+                    },
+                    "ordinalPosition" : 3,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "name" : {
+                    "type" : {
+                      "databaseSpecificType" : "text",
+                      "precision" : 2147483647,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 2,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  }
+                },
+                "uniqueIndexes" : {
+                  "category_pkey" : [ "category_id" ]
+                },
+                "nonUniqueIndexes" : { },
+                "filter" : null
+              },
+              "payment_p2022_01" : {
+                "type" : "TABLE",
+                "size" : -1,
+                "columns" : {
+                  "amount" : {
+                    "type" : {
+                      "databaseSpecificType" : "numeric",
+                      "precision" : 5,
+                      "scale" : 2
+                    },
+                    "ordinalPosition" : 5,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "payment_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "serial",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 1,
+                    "primaryKey" : {
+                      "name" : "payment_p2022_01_pkey"
+                    },
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : true,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : true
+                  },
+                  "staff_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 3,
+                    "primaryKey" : null,
+                    "foreignKey" : {
+                      "name" : "payment_p2022_01_staff_id_fkey",
+                      "schema" : "public",
+                      "table" : "staff",
+                      "column" : "staff_id",
+                      "cardinality" : "ZERO_TO_MANY",
+                      "synthetic" : null
+                    },
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : false
+                  },
+                  "customer_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 2,
+                    "primaryKey" : null,
+                    "foreignKey" : {
+                      "name" : "payment_p2022_01_customer_id_fkey",
+                      "schema" : "public",
+                      "table" : "customer",
+                      "column" : "customer_id",
+                      "cardinality" : "ZERO_TO_MANY",
+                      "synthetic" : null
+                    },
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : false
+                  },
+                  "payment_date" : {
+                    "type" : {
+                      "databaseSpecificType" : "timestamptz",
+                      "precision" : 35,
+                      "scale" : 6
+                    },
+                    "ordinalPosition" : 6,
+                    "primaryKey" : {
+                      "name" : "payment_p2022_01_pkey"
+                    },
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : true
+                  },
+                  "rental_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 4,
+                    "primaryKey" : null,
+                    "foreignKey" : {
+                      "name" : "payment_p2022_01_rental_id_fkey",
+                      "schema" : "public",
+                      "table" : "rental",
+                      "column" : "rental_id",
+                      "cardinality" : "ZERO_TO_MANY",
+                      "synthetic" : null
+                    },
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  }
+                },
+                "uniqueIndexes" : {
+                  "payment_p2022_01_pkey" : [ "payment_date", "payment_id" ]
+                },
+                "nonUniqueIndexes" : {
+                  "idx_fk_payment_p2022_01_customer_id" : [ "customer_id" ],
+                  "idx_fk_payment_p2022_01_staff_id" : [ "staff_id" ],
+                  "payment_p2022_01_customer_id_idx" : [ "customer_id" ]
+                },
+                "filter" : null
+              },
+              "customer" : {
+                "type" : "TABLE",
+                "size" : -1,
+                "columns" : {
+                  "store_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 2,
+                    "primaryKey" : null,
+                    "foreignKey" : {
+                      "name" : "customer_store_id_fkey",
+                      "schema" : "public",
+                      "table" : "store",
+                      "column" : "store_id",
+                      "cardinality" : "ZERO_TO_MANY",
+                      "synthetic" : null
+                    },
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : false
+                  },
+                  "last_update" : {
+                    "type" : {
+                      "databaseSpecificType" : "timestamptz",
+                      "precision" : 35,
+                      "scale" : 6
+                    },
+                    "ordinalPosition" : 9,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "address_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 6,
+                    "primaryKey" : null,
+                    "foreignKey" : {
+                      "name" : "customer_address_id_fkey",
+                      "schema" : "public",
+                      "table" : "address",
+                      "column" : "address_id",
+                      "cardinality" : "ZERO_TO_MANY",
+                      "synthetic" : null
+                    },
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : false
+                  },
+                  "last_name" : {
+                    "type" : {
+                      "databaseSpecificType" : "text",
+                      "precision" : 2147483647,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 4,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : false
+                  },
+                  "active" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 10,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "activebool" : {
+                    "type" : {
+                      "databaseSpecificType" : "bool",
+                      "precision" : 1,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 7,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "customer_id" : {
+                    "type" : {
+                      "databaseSpecificType" : "serial",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 1,
+                    "primaryKey" : {
+                      "name" : "customer_pkey"
+                    },
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : true,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : true
+                  },
+                  "create_date" : {
+                    "type" : {
+                      "databaseSpecificType" : "date",
+                      "precision" : 13,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 8,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "first_name" : {
+                    "type" : {
+                      "databaseSpecificType" : "text",
+                      "precision" : 2147483647,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 3,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "email" : {
+                    "type" : {
+                      "databaseSpecificType" : "text",
+                      "precision" : 2147483647,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 5,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  }
+                },
+                "uniqueIndexes" : {
+                  "customer_pkey" : [ "customer_id" ]
+                },
+                "nonUniqueIndexes" : {
+                  "idx_last_name" : [ "last_name" ],
+                  "idx_fk_store_id" : [ "store_id" ],
+                  "idx_fk_address_id" : [ "address_id" ]
+                },
+                "filter" : null
+              }
+            },
+            "views" : { },
+            "routines" : { },
+            "triggers" : { },
+            "packages" : { }
+          }
+        }
+      }
+    },
+    "metadata" : {
+      "databaseType" : "POSTGRESQL",
+      "databaseVersion" : "17.5 (Debian 17.5-1.pgdg120+1)"
+    }
+  },
+  "imported" : {
+    "pagila" : {
+      "public" : {
+        "film_category" : { },
+        "country" : { },
+        "address" : { },
+        "city" : { },
+        "film_actor" : { },
+        "payment_p2022_06" : { },
+        "payment_p2022_07" : { },
+        "language" : { },
+        "staff" : { },
+        "film" : { },
+        "store" : { },
+        "inventory" : { },
+        "rental" : { },
+        "actor" : { },
+        "payment_p2022_04" : { },
+        "payment_p2022_05" : { },
+        "payment_p2022_02" : { },
+        "payment" : { },
+        "payment_p2022_03" : { },
+        "category" : { },
+        "payment_p2022_01" : { },
+        "customer" : { }
+      }
+    }
+  },
+  "all" : {
+    "pagila" : {
+      "public" : {
+        "film_category" : { },
+        "country" : { },
+        "address" : { },
+        "city" : { },
+        "film_actor" : { },
+        "payment_p2022_06" : { },
+        "payment_p2022_07" : { },
+        "language" : { },
+        "staff" : { },
+        "film" : { },
+        "store" : { },
+        "inventory" : { },
+        "rental" : { },
+        "actor" : { },
+        "payment_p2022_04" : { },
+        "payment_p2022_05" : { },
+        "payment_p2022_02" : { },
+        "payment" : { },
+        "payment_p2022_03" : { },
+        "category" : { },
+        "payment_p2022_01" : { },
+        "customer" : { }
+      }
+    }
+  }
+}
