@@ -18,5 +18,5 @@ docker-compose up
 
 Connect to database:
 
-![Relational Migrator](Screenshot%202025-06-30%20at%205.50.10%20PM.png)
+![Relational Migrator](database_connection.png)
 
