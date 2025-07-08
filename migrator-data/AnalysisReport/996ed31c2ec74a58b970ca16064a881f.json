@@ -1,0 +1,3593 @@
+{
+  "id" : "996ed31c2ec74a58b970ca16064a881f",
+  "projectId" : "7b0b3eaad24d4908ade96340648a5462",
+  "generatedAt" : "2025-07-01T20:21:38.953473671Z",
+  "preflightChecks" : [ {
+    "name" : "DB_MIN_VERSION",
+    "migrationMode" : "SNAPSHOT",
+    "passed" : true
+  }, {
+    "name" : "PERMISSION_CHECK",
+    "migrationMode" : "SNAPSHOT",
+    "passed" : true
+  }, {
+    "name" : "POSTGRES_TABLE_PUBLICATION_NAME",
+    "migrationMode" : "CDC",
+    "passed" : false
+  }, {
+    "name" : "POSTGRES_TABLE_REPLICA_IDENTITY",
+    "migrationMode" : "CDC",
+    "passed" : false
+  }, {
+    "name" : "POSTGRES_WAL",
+    "migrationMode" : "CDC",
+    "passed" : false
+  }, {
+    "name" : "DB_MIN_VERSION",
+    "migrationMode" : "CDC",
+    "passed" : true
+  }, {
+    "name" : "PERMISSION_CHECK",
+    "migrationMode" : "CDC",
+    "passed" : true
+  }, {
+    "name" : "POSTGRES_PRIMARY",
+    "migrationMode" : "CDC",
+    "passed" : true
+  } ],
+  "rules" : [ {
+    "id" : "f13edcbc55bfb1120286905f2c421f4368a38a4e",
+    "dboType" : "TABLE",
+    "ruleType" : "TASK",
+    "entityName" : "pagila.public.country",
+    "detectionText" : "Table country has an auto incrementing column.",
+    "difficulty" : "HIGH",
+    "mitigationText" : "MongoDB encourages the use of ObjectID for ID fields because incrementing IDs have difficulty sharding.\nMongoDB Relational Migrator can [migrate your keys as-is](https://dochub.mongodb.org/core/migrator-key-handling), but you will need to write code to maintain this behaviour.\nIf you're using MongoDB Atlas, you can use [Atlas Triggers to auto-increment](https://dochub.mongodb.org/core/migrator-auto-increment) your IDs.\n",
+    "category" : "SCHEMA",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "a810e99e89c5df5f136781ca080a8f4f353dd473",
+    "dboType" : "TABLE",
+    "ruleType" : "TASK",
+    "entityName" : "pagila.public.address",
+    "detectionText" : "Table address has an auto incrementing column.",
+    "difficulty" : "HIGH",
+    "mitigationText" : "MongoDB encourages the use of ObjectID for ID fields because incrementing IDs have difficulty sharding.\nMongoDB Relational Migrator can [migrate your keys as-is](https://dochub.mongodb.org/core/migrator-key-handling), but you will need to write code to maintain this behaviour.\nIf you're using MongoDB Atlas, you can use [Atlas Triggers to auto-increment](https://dochub.mongodb.org/core/migrator-auto-increment) your IDs.\n",
+    "category" : "SCHEMA",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "41eb99f39bb19faead8e1f04bbb0f54f7d131a44",
+    "dboType" : "TABLE",
+    "ruleType" : "TASK",
+    "entityName" : "pagila.public.city",
+    "detectionText" : "Table city has an auto incrementing column.",
+    "difficulty" : "HIGH",
+    "mitigationText" : "MongoDB encourages the use of ObjectID for ID fields because incrementing IDs have difficulty sharding.\nMongoDB Relational Migrator can [migrate your keys as-is](https://dochub.mongodb.org/core/migrator-key-handling), but you will need to write code to maintain this behaviour.\nIf you're using MongoDB Atlas, you can use [Atlas Triggers to auto-increment](https://dochub.mongodb.org/core/migrator-auto-increment) your IDs.\n",
+    "category" : "SCHEMA",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "351c23a834a179938850a51937d0f8dce62d2d45",
+    "dboType" : "TABLE",
+    "ruleType" : "TASK",
+    "entityName" : "pagila.public.payment_p2022_06",
+    "detectionText" : "Table payment_p2022_06 has an auto incrementing column.",
+    "difficulty" : "HIGH",
+    "mitigationText" : "MongoDB encourages the use of ObjectID for ID fields because incrementing IDs have difficulty sharding.\nMongoDB Relational Migrator can [migrate your keys as-is](https://dochub.mongodb.org/core/migrator-key-handling), but you will need to write code to maintain this behaviour.\nIf you're using MongoDB Atlas, you can use [Atlas Triggers to auto-increment](https://dochub.mongodb.org/core/migrator-auto-increment) your IDs.\n",
+    "category" : "SCHEMA",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "641c5301a1c05286f25f19c175776bba404f3289",
+    "dboType" : "TABLE",
+    "ruleType" : "TASK",
+    "entityName" : "pagila.public.payment_p2022_07",
+    "detectionText" : "Table payment_p2022_07 has an auto incrementing column.",
+    "difficulty" : "HIGH",
+    "mitigationText" : "MongoDB encourages the use of ObjectID for ID fields because incrementing IDs have difficulty sharding.\nMongoDB Relational Migrator can [migrate your keys as-is](https://dochub.mongodb.org/core/migrator-key-handling), but you will need to write code to maintain this behaviour.\nIf you're using MongoDB Atlas, you can use [Atlas Triggers to auto-increment](https://dochub.mongodb.org/core/migrator-auto-increment) your IDs.\n",
+    "category" : "SCHEMA",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "c08cb6fb011dd07e603fb458a901ff889d236f2d",
+    "dboType" : "TABLE",
+    "ruleType" : "TASK",
+    "entityName" : "pagila.public.language",
+    "detectionText" : "Table language has an auto incrementing column.",
+    "difficulty" : "HIGH",
+    "mitigationText" : "MongoDB encourages the use of ObjectID for ID fields because incrementing IDs have difficulty sharding.\nMongoDB Relational Migrator can [migrate your keys as-is](https://dochub.mongodb.org/core/migrator-key-handling), but you will need to write code to maintain this behaviour.\nIf you're using MongoDB Atlas, you can use [Atlas Triggers to auto-increment](https://dochub.mongodb.org/core/migrator-auto-increment) your IDs.\n",
+    "category" : "SCHEMA",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "6f3011cd9fc315caf12c53146f9f18e7cd8a40f2",
+    "dboType" : "TABLE",
+    "ruleType" : "TASK",
+    "entityName" : "pagila.public.staff",
+    "detectionText" : "Table staff has an auto incrementing column.",
+    "difficulty" : "HIGH",
+    "mitigationText" : "MongoDB encourages the use of ObjectID for ID fields because incrementing IDs have difficulty sharding.\nMongoDB Relational Migrator can [migrate your keys as-is](https://dochub.mongodb.org/core/migrator-key-handling), but you will need to write code to maintain this behaviour.\nIf you're using MongoDB Atlas, you can use [Atlas Triggers to auto-increment](https://dochub.mongodb.org/core/migrator-auto-increment) your IDs.\n",
+    "category" : "SCHEMA",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "2a2306d4e146486ebfbb0301e2f83a932944d05a",
+    "dboType" : "TABLE",
+    "ruleType" : "TASK",
+    "entityName" : "pagila.public.film",
+    "detectionText" : "Table film has an auto incrementing column.",
+    "difficulty" : "HIGH",
+    "mitigationText" : "MongoDB encourages the use of ObjectID for ID fields because incrementing IDs have difficulty sharding.\nMongoDB Relational Migrator can [migrate your keys as-is](https://dochub.mongodb.org/core/migrator-key-handling), but you will need to write code to maintain this behaviour.\nIf you're using MongoDB Atlas, you can use [Atlas Triggers to auto-increment](https://dochub.mongodb.org/core/migrator-auto-increment) your IDs.\n",
+    "category" : "SCHEMA",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "cc86a78257544d59961b7d4e0468c88f526974e3",
+    "dboType" : "TABLE",
+    "ruleType" : "TASK",
+    "entityName" : "pagila.public.store",
+    "detectionText" : "Table store has an auto incrementing column.",
+    "difficulty" : "HIGH",
+    "mitigationText" : "MongoDB encourages the use of ObjectID for ID fields because incrementing IDs have difficulty sharding.\nMongoDB Relational Migrator can [migrate your keys as-is](https://dochub.mongodb.org/core/migrator-key-handling), but you will need to write code to maintain this behaviour.\nIf you're using MongoDB Atlas, you can use [Atlas Triggers to auto-increment](https://dochub.mongodb.org/core/migrator-auto-increment) your IDs.\n",
+    "category" : "SCHEMA",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "77cdbd4bdfca86e4ca8bdef7a21deb47703c85f2",
+    "dboType" : "TABLE",
+    "ruleType" : "TASK",
+    "entityName" : "pagila.public.inventory",
+    "detectionText" : "Table inventory has an auto incrementing column.",
+    "difficulty" : "HIGH",
+    "mitigationText" : "MongoDB encourages the use of ObjectID for ID fields because incrementing IDs have difficulty sharding.\nMongoDB Relational Migrator can [migrate your keys as-is](https://dochub.mongodb.org/core/migrator-key-handling), but you will need to write code to maintain this behaviour.\nIf you're using MongoDB Atlas, you can use [Atlas Triggers to auto-increment](https://dochub.mongodb.org/core/migrator-auto-increment) your IDs.\n",
+    "category" : "SCHEMA",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "9dfbb3b9ddb218c23d18ea3f88c2f0e748f76f91",
+    "dboType" : "TABLE",
+    "ruleType" : "TASK",
+    "entityName" : "pagila.public.rental",
+    "detectionText" : "Table rental has an auto incrementing column.",
+    "difficulty" : "HIGH",
+    "mitigationText" : "MongoDB encourages the use of ObjectID for ID fields because incrementing IDs have difficulty sharding.\nMongoDB Relational Migrator can [migrate your keys as-is](https://dochub.mongodb.org/core/migrator-key-handling), but you will need to write code to maintain this behaviour.\nIf you're using MongoDB Atlas, you can use [Atlas Triggers to auto-increment](https://dochub.mongodb.org/core/migrator-auto-increment) your IDs.\n",
+    "category" : "SCHEMA",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "98d286e0c5774cc301ce092d045cb5795019c178",
+    "dboType" : "TABLE",
+    "ruleType" : "TASK",
+    "entityName" : "pagila.public.actor",
+    "detectionText" : "Table actor has an auto incrementing column.",
+    "difficulty" : "HIGH",
+    "mitigationText" : "MongoDB encourages the use of ObjectID for ID fields because incrementing IDs have difficulty sharding.\nMongoDB Relational Migrator can [migrate your keys as-is](https://dochub.mongodb.org/core/migrator-key-handling), but you will need to write code to maintain this behaviour.\nIf you're using MongoDB Atlas, you can use [Atlas Triggers to auto-increment](https://dochub.mongodb.org/core/migrator-auto-increment) your IDs.\n",
+    "category" : "SCHEMA",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "be2adbc935e47b21226199b8d0291225956bca0d",
+    "dboType" : "TABLE",
+    "ruleType" : "TASK",
+    "entityName" : "pagila.public.payment_p2022_04",
+    "detectionText" : "Table payment_p2022_04 has an auto incrementing column.",
+    "difficulty" : "HIGH",
+    "mitigationText" : "MongoDB encourages the use of ObjectID for ID fields because incrementing IDs have difficulty sharding.\nMongoDB Relational Migrator can [migrate your keys as-is](https://dochub.mongodb.org/core/migrator-key-handling), but you will need to write code to maintain this behaviour.\nIf you're using MongoDB Atlas, you can use [Atlas Triggers to auto-increment](https://dochub.mongodb.org/core/migrator-auto-increment) your IDs.\n",
+    "category" : "SCHEMA",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "22ee242b409c8c3db176cf9b0d275f66b61a4756",
+    "dboType" : "TABLE",
+    "ruleType" : "TASK",
+    "entityName" : "pagila.public.payment_p2022_05",
+    "detectionText" : "Table payment_p2022_05 has an auto incrementing column.",
+    "difficulty" : "HIGH",
+    "mitigationText" : "MongoDB encourages the use of ObjectID for ID fields because incrementing IDs have difficulty sharding.\nMongoDB Relational Migrator can [migrate your keys as-is](https://dochub.mongodb.org/core/migrator-key-handling), but you will need to write code to maintain this behaviour.\nIf you're using MongoDB Atlas, you can use [Atlas Triggers to auto-increment](https://dochub.mongodb.org/core/migrator-auto-increment) your IDs.\n",
+    "category" : "SCHEMA",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "fcfa380c9b5e96d1a80fc94b6dffc2d3130d133a",
+    "dboType" : "TABLE",
+    "ruleType" : "TASK",
+    "entityName" : "pagila.public.payment",
+    "detectionText" : "Table payment has an auto incrementing column.",
+    "difficulty" : "HIGH",
+    "mitigationText" : "MongoDB encourages the use of ObjectID for ID fields because incrementing IDs have difficulty sharding.\nMongoDB Relational Migrator can [migrate your keys as-is](https://dochub.mongodb.org/core/migrator-key-handling), but you will need to write code to maintain this behaviour.\nIf you're using MongoDB Atlas, you can use [Atlas Triggers to auto-increment](https://dochub.mongodb.org/core/migrator-auto-increment) your IDs.\n",
+    "category" : "SCHEMA",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "d7a9cf101cbdd8adf197ee3ef285c3497dd69cf3",
+    "dboType" : "TABLE",
+    "ruleType" : "TASK",
+    "entityName" : "pagila.public.payment_p2022_02",
+    "detectionText" : "Table payment_p2022_02 has an auto incrementing column.",
+    "difficulty" : "HIGH",
+    "mitigationText" : "MongoDB encourages the use of ObjectID for ID fields because incrementing IDs have difficulty sharding.\nMongoDB Relational Migrator can [migrate your keys as-is](https://dochub.mongodb.org/core/migrator-key-handling), but you will need to write code to maintain this behaviour.\nIf you're using MongoDB Atlas, you can use [Atlas Triggers to auto-increment](https://dochub.mongodb.org/core/migrator-auto-increment) your IDs.\n",
+    "category" : "SCHEMA",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "4a1679a0ab61973a2aa9ac616de0dc4ed1caae65",
+    "dboType" : "TABLE",
+    "ruleType" : "TASK",
+    "entityName" : "pagila.public.payment_p2022_03",
+    "detectionText" : "Table payment_p2022_03 has an auto incrementing column.",
+    "difficulty" : "HIGH",
+    "mitigationText" : "MongoDB encourages the use of ObjectID for ID fields because incrementing IDs have difficulty sharding.\nMongoDB Relational Migrator can [migrate your keys as-is](https://dochub.mongodb.org/core/migrator-key-handling), but you will need to write code to maintain this behaviour.\nIf you're using MongoDB Atlas, you can use [Atlas Triggers to auto-increment](https://dochub.mongodb.org/core/migrator-auto-increment) your IDs.\n",
+    "category" : "SCHEMA",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "1c2e35c64f0174c2714097541efea9a39658f913",
+    "dboType" : "TABLE",
+    "ruleType" : "TASK",
+    "entityName" : "pagila.public.category",
+    "detectionText" : "Table category has an auto incrementing column.",
+    "difficulty" : "HIGH",
+    "mitigationText" : "MongoDB encourages the use of ObjectID for ID fields because incrementing IDs have difficulty sharding.\nMongoDB Relational Migrator can [migrate your keys as-is](https://dochub.mongodb.org/core/migrator-key-handling), but you will need to write code to maintain this behaviour.\nIf you're using MongoDB Atlas, you can use [Atlas Triggers to auto-increment](https://dochub.mongodb.org/core/migrator-auto-increment) your IDs.\n",
+    "category" : "SCHEMA",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "3a1720ef7965e151bb74cbc783e801f2b77907f5",
+    "dboType" : "TABLE",
+    "ruleType" : "TASK",
+    "entityName" : "pagila.public.payment_p2022_01",
+    "detectionText" : "Table payment_p2022_01 has an auto incrementing column.",
+    "difficulty" : "HIGH",
+    "mitigationText" : "MongoDB encourages the use of ObjectID for ID fields because incrementing IDs have difficulty sharding.\nMongoDB Relational Migrator can [migrate your keys as-is](https://dochub.mongodb.org/core/migrator-key-handling), but you will need to write code to maintain this behaviour.\nIf you're using MongoDB Atlas, you can use [Atlas Triggers to auto-increment](https://dochub.mongodb.org/core/migrator-auto-increment) your IDs.\n",
+    "category" : "SCHEMA",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "ec80a78c3fe3321ded743e81dde45a98f81a5ded",
+    "dboType" : "TABLE",
+    "ruleType" : "TASK",
+    "entityName" : "pagila.public.customer",
+    "detectionText" : "Table customer has an auto incrementing column.",
+    "difficulty" : "HIGH",
+    "mitigationText" : "MongoDB encourages the use of ObjectID for ID fields because incrementing IDs have difficulty sharding.\nMongoDB Relational Migrator can [migrate your keys as-is](https://dochub.mongodb.org/core/migrator-key-handling), but you will need to write code to maintain this behaviour.\nIf you're using MongoDB Atlas, you can use [Atlas Triggers to auto-increment](https://dochub.mongodb.org/core/migrator-auto-increment) your IDs.\n",
+    "category" : "SCHEMA",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "64ec3608ddac371e7de20331386f17e825656d3b",
+    "dboType" : "TABLE",
+    "ruleType" : "NOTICE",
+    "entityName" : "pagila.public.payment_p2022_03",
+    "detectionText" : "Detected columns with TIMESTAMPTZ type. MongoDB stores times in UTC by default, and Relational Migrator may convert any local time representations into this form or to a direct string.\nAffected columns:\n* payment_date\n",
+    "difficulty" : "MEDIUM",
+    "mitigationText" : "MongoDB does not support storing timezones with time data. Consider converting to a desired timezone in your application or storing it as a string",
+    "category" : "DATA_TYPE",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "290402a6c9476236e414157b53fc49698ab4f23f",
+    "dboType" : "TABLE",
+    "ruleType" : "NOTICE",
+    "entityName" : "pagila.public.store",
+    "detectionText" : "Detected columns with TIMESTAMPTZ type. MongoDB stores times in UTC by default, and Relational Migrator may convert any local time representations into this form or to a direct string.\nAffected columns:\n* last_update\n",
+    "difficulty" : "MEDIUM",
+    "mitigationText" : "MongoDB does not support storing timezones with time data. Consider converting to a desired timezone in your application or storing it as a string",
+    "category" : "DATA_TYPE",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "bd6ff7d1b5402e0d149be9b9e8442b7671dadbe0",
+    "dboType" : "TABLE",
+    "ruleType" : "NOTICE",
+    "entityName" : "pagila.public.payment_p2022_04",
+    "detectionText" : "Detected columns with TIMESTAMPTZ type. MongoDB stores times in UTC by default, and Relational Migrator may convert any local time representations into this form or to a direct string.\nAffected columns:\n* payment_date\n",
+    "difficulty" : "MEDIUM",
+    "mitigationText" : "MongoDB does not support storing timezones with time data. Consider converting to a desired timezone in your application or storing it as a string",
+    "category" : "DATA_TYPE",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "14df13a78e983295ff646d8b8c869d36d667c348",
+    "dboType" : "TABLE",
+    "ruleType" : "NOTICE",
+    "entityName" : "pagila.public.payment_p2022_05",
+    "detectionText" : "Detected columns with TIMESTAMPTZ type. MongoDB stores times in UTC by default, and Relational Migrator may convert any local time representations into this form or to a direct string.\nAffected columns:\n* payment_date\n",
+    "difficulty" : "MEDIUM",
+    "mitigationText" : "MongoDB does not support storing timezones with time data. Consider converting to a desired timezone in your application or storing it as a string",
+    "category" : "DATA_TYPE",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "c8b50d8f46793bf28116192bb0d2506dd997fa8b",
+    "dboType" : "TABLE",
+    "ruleType" : "NOTICE",
+    "entityName" : "pagila.public.rental",
+    "detectionText" : "Detected columns with TIMESTAMPTZ type. MongoDB stores times in UTC by default, and Relational Migrator may convert any local time representations into this form or to a direct string.\nAffected columns:\n* last_update\n* rental_date\n* return_date\n",
+    "difficulty" : "MEDIUM",
+    "mitigationText" : "MongoDB does not support storing timezones with time data. Consider converting to a desired timezone in your application or storing it as a string",
+    "category" : "DATA_TYPE",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "5e429a9c63b89a5c3128266328e27b0fb657cb0f",
+    "dboType" : "TABLE",
+    "ruleType" : "NOTICE",
+    "entityName" : "pagila.public.payment_p2022_06",
+    "detectionText" : "Detected columns with TIMESTAMPTZ type. MongoDB stores times in UTC by default, and Relational Migrator may convert any local time representations into this form or to a direct string.\nAffected columns:\n* payment_date\n",
+    "difficulty" : "MEDIUM",
+    "mitigationText" : "MongoDB does not support storing timezones with time data. Consider converting to a desired timezone in your application or storing it as a string",
+    "category" : "DATA_TYPE",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "fea3c867528a81bcda14c331f80ea8003926dfd8",
+    "dboType" : "TABLE",
+    "ruleType" : "NOTICE",
+    "entityName" : "pagila.public.category",
+    "detectionText" : "Detected columns with TIMESTAMPTZ type. MongoDB stores times in UTC by default, and Relational Migrator may convert any local time representations into this form or to a direct string.\nAffected columns:\n* last_update\n",
+    "difficulty" : "MEDIUM",
+    "mitigationText" : "MongoDB does not support storing timezones with time data. Consider converting to a desired timezone in your application or storing it as a string",
+    "category" : "DATA_TYPE",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "a0b84e5909b6bf1be3568a3e317a691952025082",
+    "dboType" : "TABLE",
+    "ruleType" : "NOTICE",
+    "entityName" : "pagila.public.payment_p2022_01",
+    "detectionText" : "Detected columns with TIMESTAMPTZ type. MongoDB stores times in UTC by default, and Relational Migrator may convert any local time representations into this form or to a direct string.\nAffected columns:\n* payment_date\n",
+    "difficulty" : "MEDIUM",
+    "mitigationText" : "MongoDB does not support storing timezones with time data. Consider converting to a desired timezone in your application or storing it as a string",
+    "category" : "DATA_TYPE",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "214a6fefab0c20efa3a7fe76efa6ca2f2360ea58",
+    "dboType" : "TABLE",
+    "ruleType" : "NOTICE",
+    "entityName" : "pagila.public.film",
+    "detectionText" : "Detected columns with TIMESTAMPTZ type. MongoDB stores times in UTC by default, and Relational Migrator may convert any local time representations into this form or to a direct string.\nAffected columns:\n* last_update\n",
+    "difficulty" : "MEDIUM",
+    "mitigationText" : "MongoDB does not support storing timezones with time data. Consider converting to a desired timezone in your application or storing it as a string",
+    "category" : "DATA_TYPE",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "bfc8682e44210551ce86ae11aff0af0fc727ede7",
+    "dboType" : "TABLE",
+    "ruleType" : "NOTICE",
+    "entityName" : "pagila.public.payment_p2022_02",
+    "detectionText" : "Detected columns with TIMESTAMPTZ type. MongoDB stores times in UTC by default, and Relational Migrator may convert any local time representations into this form or to a direct string.\nAffected columns:\n* payment_date\n",
+    "difficulty" : "MEDIUM",
+    "mitigationText" : "MongoDB does not support storing timezones with time data. Consider converting to a desired timezone in your application or storing it as a string",
+    "category" : "DATA_TYPE",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "a86a968f0ff51cc9cf268a88151b715431bb981b",
+    "dboType" : "TABLE",
+    "ruleType" : "NOTICE",
+    "entityName" : "pagila.public.customer",
+    "detectionText" : "Detected columns with TIMESTAMPTZ type. MongoDB stores times in UTC by default, and Relational Migrator may convert any local time representations into this form or to a direct string.\nAffected columns:\n* last_update\n",
+    "difficulty" : "MEDIUM",
+    "mitigationText" : "MongoDB does not support storing timezones with time data. Consider converting to a desired timezone in your application or storing it as a string",
+    "category" : "DATA_TYPE",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "6c192dedf8715011dc4b4da635e232a72b21b44b",
+    "dboType" : "TABLE",
+    "ruleType" : "NOTICE",
+    "entityName" : "pagila.public.film_actor",
+    "detectionText" : "Detected columns with TIMESTAMPTZ type. MongoDB stores times in UTC by default, and Relational Migrator may convert any local time representations into this form or to a direct string.\nAffected columns:\n* last_update\n",
+    "difficulty" : "MEDIUM",
+    "mitigationText" : "MongoDB does not support storing timezones with time data. Consider converting to a desired timezone in your application or storing it as a string",
+    "category" : "DATA_TYPE",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "2a52ad0337bae37aa821c2b313071568ce380b54",
+    "dboType" : "TABLE",
+    "ruleType" : "NOTICE",
+    "entityName" : "pagila.public.city",
+    "detectionText" : "Detected columns with TIMESTAMPTZ type. MongoDB stores times in UTC by default, and Relational Migrator may convert any local time representations into this form or to a direct string.\nAffected columns:\n* last_update\n",
+    "difficulty" : "MEDIUM",
+    "mitigationText" : "MongoDB does not support storing timezones with time data. Consider converting to a desired timezone in your application or storing it as a string",
+    "category" : "DATA_TYPE",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "0596c7478fbdaf61bc3b2abf5c785ed5b6089739",
+    "dboType" : "TABLE",
+    "ruleType" : "NOTICE",
+    "entityName" : "pagila.public.actor",
+    "detectionText" : "Detected columns with TIMESTAMPTZ type. MongoDB stores times in UTC by default, and Relational Migrator may convert any local time representations into this form or to a direct string.\nAffected columns:\n* last_update\n",
+    "difficulty" : "MEDIUM",
+    "mitigationText" : "MongoDB does not support storing timezones with time data. Consider converting to a desired timezone in your application or storing it as a string",
+    "category" : "DATA_TYPE",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "00777f170e7992520490847a82a573128566d476",
+    "dboType" : "TABLE",
+    "ruleType" : "NOTICE",
+    "entityName" : "pagila.public.payment",
+    "detectionText" : "Detected columns with TIMESTAMPTZ type. MongoDB stores times in UTC by default, and Relational Migrator may convert any local time representations into this form or to a direct string.\nAffected columns:\n* payment_date\n",
+    "difficulty" : "MEDIUM",
+    "mitigationText" : "MongoDB does not support storing timezones with time data. Consider converting to a desired timezone in your application or storing it as a string",
+    "category" : "DATA_TYPE",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "38390f948cc058ab5d8b7739997e8474f279cd98",
+    "dboType" : "TABLE",
+    "ruleType" : "NOTICE",
+    "entityName" : "pagila.public.film_category",
+    "detectionText" : "Detected columns with TIMESTAMPTZ type. MongoDB stores times in UTC by default, and Relational Migrator may convert any local time representations into this form or to a direct string.\nAffected columns:\n* last_update\n",
+    "difficulty" : "MEDIUM",
+    "mitigationText" : "MongoDB does not support storing timezones with time data. Consider converting to a desired timezone in your application or storing it as a string",
+    "category" : "DATA_TYPE",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "7dd265aadc618b81e0d33568452dc58a54133fd0",
+    "dboType" : "TABLE",
+    "ruleType" : "NOTICE",
+    "entityName" : "pagila.public.country",
+    "detectionText" : "Detected columns with TIMESTAMPTZ type. MongoDB stores times in UTC by default, and Relational Migrator may convert any local time representations into this form or to a direct string.\nAffected columns:\n* last_update\n",
+    "difficulty" : "MEDIUM",
+    "mitigationText" : "MongoDB does not support storing timezones with time data. Consider converting to a desired timezone in your application or storing it as a string",
+    "category" : "DATA_TYPE",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "e2e46044f8b2e3508e38c3d7cc383549e1ab3e82",
+    "dboType" : "TABLE",
+    "ruleType" : "NOTICE",
+    "entityName" : "pagila.public.payment_p2022_07",
+    "detectionText" : "Detected columns with TIMESTAMPTZ type. MongoDB stores times in UTC by default, and Relational Migrator may convert any local time representations into this form or to a direct string.\nAffected columns:\n* payment_date\n",
+    "difficulty" : "MEDIUM",
+    "mitigationText" : "MongoDB does not support storing timezones with time data. Consider converting to a desired timezone in your application or storing it as a string",
+    "category" : "DATA_TYPE",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "ed37b0c2d016ac2ab37ec76d3dd676dbf712c19e",
+    "dboType" : "TABLE",
+    "ruleType" : "NOTICE",
+    "entityName" : "pagila.public.inventory",
+    "detectionText" : "Detected columns with TIMESTAMPTZ type. MongoDB stores times in UTC by default, and Relational Migrator may convert any local time representations into this form or to a direct string.\nAffected columns:\n* last_update\n",
+    "difficulty" : "MEDIUM",
+    "mitigationText" : "MongoDB does not support storing timezones with time data. Consider converting to a desired timezone in your application or storing it as a string",
+    "category" : "DATA_TYPE",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "ee006d78fc9a7eaa683a07463a41445ed75102d8",
+    "dboType" : "TABLE",
+    "ruleType" : "NOTICE",
+    "entityName" : "pagila.public.address",
+    "detectionText" : "Detected columns with TIMESTAMPTZ type. MongoDB stores times in UTC by default, and Relational Migrator may convert any local time representations into this form or to a direct string.\nAffected columns:\n* last_update\n",
+    "difficulty" : "MEDIUM",
+    "mitigationText" : "MongoDB does not support storing timezones with time data. Consider converting to a desired timezone in your application or storing it as a string",
+    "category" : "DATA_TYPE",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "b0b92612c22835402919b60d9ab4aec691fb4b26",
+    "dboType" : "TABLE",
+    "ruleType" : "NOTICE",
+    "entityName" : "pagila.public.staff",
+    "detectionText" : "Detected columns with TIMESTAMPTZ type. MongoDB stores times in UTC by default, and Relational Migrator may convert any local time representations into this form or to a direct string.\nAffected columns:\n* last_update\n",
+    "difficulty" : "MEDIUM",
+    "mitigationText" : "MongoDB does not support storing timezones with time data. Consider converting to a desired timezone in your application or storing it as a string",
+    "category" : "DATA_TYPE",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "702902ab5737d4d7695ff328491cd5c1f3847f27",
+    "dboType" : "TABLE",
+    "ruleType" : "NOTICE",
+    "entityName" : "pagila.public.language",
+    "detectionText" : "Detected columns with TIMESTAMPTZ type. MongoDB stores times in UTC by default, and Relational Migrator may convert any local time representations into this form or to a direct string.\nAffected columns:\n* last_update\n",
+    "difficulty" : "MEDIUM",
+    "mitigationText" : "MongoDB does not support storing timezones with time data. Consider converting to a desired timezone in your application or storing it as a string",
+    "category" : "DATA_TYPE",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "2c898794bb2ad6339b370021ab24a9d768949447",
+    "dboType" : "TABLE",
+    "ruleType" : "RISK",
+    "entityName" : "pagila.public.staff",
+    "detectionText" : "The table contains BYTEA columns which could exceed the 16MB limit:\n* picture\n",
+    "difficulty" : "MEDIUM",
+    "mitigationText" : "If you are storing >16MB in the record, the migration will fail as [MongoDB documents cannot exceed 16MB](https://dochub.mongodb.org/core/migrator-document-size).\n\nWe strongly advise against storing large blobs in MongoDB, but if multi-document transactions aren't required you can use [GridFS](https://dochub.mongodb.org/core/gridfs).\n",
+    "category" : "DATA_TYPE",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "5f3179293974dd25d03a92828c11bd833eb7fc12",
+    "dboType" : "TABLE",
+    "ruleType" : "RISK",
+    "entityName" : "pagila.public.category",
+    "detectionText" : "The table contains TEXT columns which could exceed the 16MB limit:\n* name\n",
+    "difficulty" : "MEDIUM",
+    "mitigationText" : "If you are storing >16MB in the record, the migration will fail as [MongoDB documents cannot exceed 16MB](https://dochub.mongodb.org/core/migrator-document-size).\n\nWe strongly advise against storing large blobs in MongoDB, but if multi-document transactions aren't required you can use [GridFS](https://dochub.mongodb.org/core/gridfs).\n",
+    "category" : "DATA_TYPE",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "cb5824db8188d69f158a757924502c76b0580ce9",
+    "dboType" : "TABLE",
+    "ruleType" : "RISK",
+    "entityName" : "pagila.public.film",
+    "detectionText" : "The table contains TEXT columns which could exceed the 16MB limit:\n* description\n* title\n",
+    "difficulty" : "MEDIUM",
+    "mitigationText" : "If you are storing >16MB in the record, the migration will fail as [MongoDB documents cannot exceed 16MB](https://dochub.mongodb.org/core/migrator-document-size).\n\nWe strongly advise against storing large blobs in MongoDB, but if multi-document transactions aren't required you can use [GridFS](https://dochub.mongodb.org/core/gridfs).\n",
+    "category" : "DATA_TYPE",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "0e344a228edbbde532eaf9742bd10c908f9f5832",
+    "dboType" : "TABLE",
+    "ruleType" : "RISK",
+    "entityName" : "pagila.public.country",
+    "detectionText" : "The table contains TEXT columns which could exceed the 16MB limit:\n* country\n",
+    "difficulty" : "MEDIUM",
+    "mitigationText" : "If you are storing >16MB in the record, the migration will fail as [MongoDB documents cannot exceed 16MB](https://dochub.mongodb.org/core/migrator-document-size).\n\nWe strongly advise against storing large blobs in MongoDB, but if multi-document transactions aren't required you can use [GridFS](https://dochub.mongodb.org/core/gridfs).\n",
+    "category" : "DATA_TYPE",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "9a742828f4ae7d29d744dc80ee56b461ae7dab15",
+    "dboType" : "TABLE",
+    "ruleType" : "RISK",
+    "entityName" : "pagila.public.customer",
+    "detectionText" : "The table contains TEXT columns which could exceed the 16MB limit:\n* last_name\n* first_name\n* email\n",
+    "difficulty" : "MEDIUM",
+    "mitigationText" : "If you are storing >16MB in the record, the migration will fail as [MongoDB documents cannot exceed 16MB](https://dochub.mongodb.org/core/migrator-document-size).\n\nWe strongly advise against storing large blobs in MongoDB, but if multi-document transactions aren't required you can use [GridFS](https://dochub.mongodb.org/core/gridfs).\n",
+    "category" : "DATA_TYPE",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "d42b8e9990dd12fb6ab080dfba13423b9be44bc3",
+    "dboType" : "TABLE",
+    "ruleType" : "RISK",
+    "entityName" : "pagila.public.city",
+    "detectionText" : "The table contains TEXT columns which could exceed the 16MB limit:\n* city\n",
+    "difficulty" : "MEDIUM",
+    "mitigationText" : "If you are storing >16MB in the record, the migration will fail as [MongoDB documents cannot exceed 16MB](https://dochub.mongodb.org/core/migrator-document-size).\n\nWe strongly advise against storing large blobs in MongoDB, but if multi-document transactions aren't required you can use [GridFS](https://dochub.mongodb.org/core/gridfs).\n",
+    "category" : "DATA_TYPE",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "3e94c34451c0e0d496c0eb920c2c1df877359b25",
+    "dboType" : "TABLE",
+    "ruleType" : "RISK",
+    "entityName" : "pagila.public.address",
+    "detectionText" : "The table contains TEXT columns which could exceed the 16MB limit:\n* address\n* address2\n* phone\n* district\n* postal_code\n",
+    "difficulty" : "MEDIUM",
+    "mitigationText" : "If you are storing >16MB in the record, the migration will fail as [MongoDB documents cannot exceed 16MB](https://dochub.mongodb.org/core/migrator-document-size).\n\nWe strongly advise against storing large blobs in MongoDB, but if multi-document transactions aren't required you can use [GridFS](https://dochub.mongodb.org/core/gridfs).\n",
+    "category" : "DATA_TYPE",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "de411cc6d8be55fb99248e6473952db45fbc6ada",
+    "dboType" : "TABLE",
+    "ruleType" : "RISK",
+    "entityName" : "pagila.public.actor",
+    "detectionText" : "The table contains TEXT columns which could exceed the 16MB limit:\n* last_name\n* first_name\n",
+    "difficulty" : "MEDIUM",
+    "mitigationText" : "If you are storing >16MB in the record, the migration will fail as [MongoDB documents cannot exceed 16MB](https://dochub.mongodb.org/core/migrator-document-size).\n\nWe strongly advise against storing large blobs in MongoDB, but if multi-document transactions aren't required you can use [GridFS](https://dochub.mongodb.org/core/gridfs).\n",
+    "category" : "DATA_TYPE",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "7dd862a243031e9ff8265997ac797d66b1e42296",
+    "dboType" : "TABLE",
+    "ruleType" : "RISK",
+    "entityName" : "pagila.public.staff",
+    "detectionText" : "The table contains TEXT columns which could exceed the 16MB limit:\n* password\n* last_name\n* first_name\n* email\n* username\n",
+    "difficulty" : "MEDIUM",
+    "mitigationText" : "If you are storing >16MB in the record, the migration will fail as [MongoDB documents cannot exceed 16MB](https://dochub.mongodb.org/core/migrator-document-size).\n\nWe strongly advise against storing large blobs in MongoDB, but if multi-document transactions aren't required you can use [GridFS](https://dochub.mongodb.org/core/gridfs).\n",
+    "category" : "DATA_TYPE",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "dd97ac775fac4df70c9b4ca9913cf28fb635d246",
+    "dboType" : "DATABASE",
+    "ruleType" : "RISK",
+    "entityName" : "pagila",
+    "detectionText" : "There were routines detected in pagila.",
+    "difficulty" : "MEDIUM",
+    "mitigationText" : "MongoDB has no native way to represent routines. Consider using [Query Converter](https://dochub.mongodb.org/core/migrator-convert-routines) to migrate your routines to application code.\n",
+    "category" : "UNSUPPORTED_FEATURE",
+    "incompatibleFeatureType" : "ROUTINE"
+  }, {
+    "id" : "4cf5d9cd081055f3c841bba3ab7628f8523a900d",
+    "dboType" : "DATABASE",
+    "ruleType" : "RISK",
+    "entityName" : "pagila",
+    "detectionText" : "The pagila database has triggers.",
+    "difficulty" : "HIGH",
+    "mitigationText" : "MongoDB has no native way to implement triggers. If you're using Atlas, consider using [Query Converter](https://dochub.mongodb.com/core/migrator-convert-triggers) to convert your existing triggers to [Atlas Triggers](https://dochub.mongodb.com/core/migrator-atlas-triggers) to replicate the existing behaviour.\n",
+    "category" : "UNSUPPORTED_FEATURE",
+    "incompatibleFeatureType" : "TRIGGERS"
+  }, {
+    "id" : "4905731e12c2135c4c23ad2e751464b4131fdc48",
+    "dboType" : "DATABASE",
+    "ruleType" : "RISK",
+    "entityName" : "pagila",
+    "detectionText" : "There were views detected in pagila.",
+    "difficulty" : "MEDIUM",
+    "mitigationText" : "Views are supported in MongoDB but they must be converted into MQL. Consider using [Query Converter](https://dochub.mongodb.com/core/migrator-convert-views) to migrate your views.\n",
+    "category" : "SCHEMA",
+    "incompatibleFeatureType" : null
+  }, {
+    "id" : "9341088db851f21012483971c5223aa32c0c9ad1",
+    "dboType" : "DATABASE",
+    "ruleType" : "TASK",
+    "entityName" : "pagila",
+    "detectionText" : "There were materialized views detected in pagila.",
+    "difficulty" : "MEDIUM",
+    "mitigationText" : "MongoDB supports [On-Demand Materialized Views](https://dochub.mongodb.org/core/materialized-views). You can either schedule their generation, or use [Atlas Triggers](https://dochub.mongodb.com/core/migrator-atlas-triggers) and `$merge` to maintain them.\n",
+    "category" : "UNSUPPORTED_FEATURE",
+    "incompatibleFeatureType" : "MATERIALIZED-VIEWS"
+  } ],
+  "dbMetrics" : {
+    "totalDbSize" : 8642560,
+    "readHeavyTables" : [ {
+      "database" : "pagila",
+      "schema" : "public",
+      "name" : "customer"
+    }, {
+      "database" : "pagila",
+      "schema" : "public",
+      "name" : "staff"
+    }, {
+      "database" : "pagila",
+      "schema" : "public",
+      "name" : "inventory"
+    } ],
+    "writeHeavyTables" : [ {
+      "database" : "pagila",
+      "schema" : "public",
+      "name" : "rental"
+    }, {
+      "database" : "pagila",
+      "schema" : "public",
+      "name" : "film_actor"
+    }, {
+      "database" : "pagila",
+      "schema" : "public",
+      "name" : "inventory"
+    } ],
+    "allTables" : [ {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "payment_p2022_04"
+      },
+      "dataSize" : 188416,
+      "rowCount" : 2547,
+      "readCount" : 8,
+      "writeCount" : 2547,
+      "readWriteClassification" : "WRITE_HEAVY",
+      "columns" : {
+        "amount" : {
+          "type" : {
+            "databaseSpecificType" : "numeric",
+            "precision" : 5,
+            "scale" : 2
+          },
+          "ordinalPosition" : 5,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "payment_id" : {
+          "type" : {
+            "databaseSpecificType" : "serial",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 1,
+          "primaryKey" : {
+            "name" : "payment_p2022_04_pkey"
+          },
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : true,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : true
+        },
+        "staff_id" : {
+          "type" : {
+            "databaseSpecificType" : "int4",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 3,
+          "primaryKey" : null,
+          "foreignKey" : {
+            "name" : "payment_p2022_04_staff_id_fkey",
+            "schema" : "public",
+            "table" : "staff",
+            "column" : "staff_id",
+            "cardinality" : "ZERO_TO_MANY",
+            "synthetic" : null
+          },
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : false
+        },
+        "customer_id" : {
+          "type" : {
+            "databaseSpecificType" : "int4",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 2,
+          "primaryKey" : null,
+          "foreignKey" : {
+            "name" : "payment_p2022_04_customer_id_fkey",
+            "schema" : "public",
+            "table" : "customer",
+            "column" : "customer_id",
+            "cardinality" : "ZERO_TO_MANY",
+            "synthetic" : null
+          },
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : false
+        },
+        "payment_date" : {
+          "type" : {
+            "databaseSpecificType" : "timestamptz",
+            "precision" : 35,
+            "scale" : 6
+          },
+          "ordinalPosition" : 6,
+          "primaryKey" : {
+            "name" : "payment_p2022_04_pkey"
+          },
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : true
+        },
+        "rental_id" : {
+          "type" : {
+            "databaseSpecificType" : "int4",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 4,
+          "primaryKey" : null,
+          "foreignKey" : {
+            "name" : "payment_p2022_04_rental_id_fkey",
+            "schema" : "public",
+            "table" : "rental",
+            "column" : "rental_id",
+            "cardinality" : "ZERO_TO_MANY",
+            "synthetic" : null
+          },
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        }
+      }
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "payment_p2022_05"
+      },
+      "dataSize" : 196608,
+      "rowCount" : 2677,
+      "readCount" : 8,
+      "writeCount" : 2677,
+      "readWriteClassification" : "WRITE_HEAVY",
+      "columns" : {
+        "amount" : {
+          "type" : {
+            "databaseSpecificType" : "numeric",
+            "precision" : 5,
+            "scale" : 2
+          },
+          "ordinalPosition" : 5,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "payment_id" : {
+          "type" : {
+            "databaseSpecificType" : "serial",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 1,
+          "primaryKey" : {
+            "name" : "payment_p2022_05_pkey"
+          },
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : true,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : true
+        },
+        "staff_id" : {
+          "type" : {
+            "databaseSpecificType" : "int4",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 3,
+          "primaryKey" : null,
+          "foreignKey" : {
+            "name" : "payment_p2022_05_staff_id_fkey",
+            "schema" : "public",
+            "table" : "staff",
+            "column" : "staff_id",
+            "cardinality" : "ZERO_TO_MANY",
+            "synthetic" : null
+          },
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : false
+        },
+        "customer_id" : {
+          "type" : {
+            "databaseSpecificType" : "int4",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 2,
+          "primaryKey" : null,
+          "foreignKey" : {
+            "name" : "payment_p2022_05_customer_id_fkey",
+            "schema" : "public",
+            "table" : "customer",
+            "column" : "customer_id",
+            "cardinality" : "ZERO_TO_MANY",
+            "synthetic" : null
+          },
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : false
+        },
+        "payment_date" : {
+          "type" : {
+            "databaseSpecificType" : "timestamptz",
+            "precision" : 35,
+            "scale" : 6
+          },
+          "ordinalPosition" : 6,
+          "primaryKey" : {
+            "name" : "payment_p2022_05_pkey"
+          },
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : true
+        },
+        "rental_id" : {
+          "type" : {
+            "databaseSpecificType" : "int4",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 4,
+          "primaryKey" : null,
+          "foreignKey" : {
+            "name" : "payment_p2022_05_rental_id_fkey",
+            "schema" : "public",
+            "table" : "rental",
+            "column" : "rental_id",
+            "cardinality" : "ZERO_TO_MANY",
+            "synthetic" : null
+          },
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        }
+      }
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "payment_p2022_06"
+      },
+      "dataSize" : 196608,
+      "rowCount" : 2654,
+      "readCount" : 8,
+      "writeCount" : 2654,
+      "readWriteClassification" : "WRITE_HEAVY",
+      "columns" : {
+        "amount" : {
+          "type" : {
+            "databaseSpecificType" : "numeric",
+            "precision" : 5,
+            "scale" : 2
+          },
+          "ordinalPosition" : 5,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "payment_id" : {
+          "type" : {
+            "databaseSpecificType" : "serial",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 1,
+          "primaryKey" : {
+            "name" : "payment_p2022_06_pkey"
+          },
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : true,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : true
+        },
+        "staff_id" : {
+          "type" : {
+            "databaseSpecificType" : "int4",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 3,
+          "primaryKey" : null,
+          "foreignKey" : {
+            "name" : "payment_p2022_06_staff_id_fkey",
+            "schema" : "public",
+            "table" : "staff",
+            "column" : "staff_id",
+            "cardinality" : "ZERO_TO_MANY",
+            "synthetic" : null
+          },
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : false
+        },
+        "customer_id" : {
+          "type" : {
+            "databaseSpecificType" : "int4",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 2,
+          "primaryKey" : null,
+          "foreignKey" : {
+            "name" : "payment_p2022_06_customer_id_fkey",
+            "schema" : "public",
+            "table" : "customer",
+            "column" : "customer_id",
+            "cardinality" : "ZERO_TO_MANY",
+            "synthetic" : null
+          },
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : false
+        },
+        "payment_date" : {
+          "type" : {
+            "databaseSpecificType" : "timestamptz",
+            "precision" : 35,
+            "scale" : 6
+          },
+          "ordinalPosition" : 6,
+          "primaryKey" : {
+            "name" : "payment_p2022_06_pkey"
+          },
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : true
+        },
+        "rental_id" : {
+          "type" : {
+            "databaseSpecificType" : "int4",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 4,
+          "primaryKey" : null,
+          "foreignKey" : {
+            "name" : "payment_p2022_06_rental_id_fkey",
+            "schema" : "public",
+            "table" : "rental",
+            "column" : "rental_id",
+            "cardinality" : "ZERO_TO_MANY",
+            "synthetic" : null
+          },
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        }
+      }
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "payment_p2022_07"
+      },
+      "dataSize" : 180224,
+      "rowCount" : 2334,
+      "readCount" : 2,
+      "writeCount" : 2334,
+      "readWriteClassification" : "WRITE_HEAVY",
+      "columns" : {
+        "amount" : {
+          "type" : {
+            "databaseSpecificType" : "numeric",
+            "precision" : 5,
+            "scale" : 2
+          },
+          "ordinalPosition" : 5,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "payment_id" : {
+          "type" : {
+            "databaseSpecificType" : "serial",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 1,
+          "primaryKey" : {
+            "name" : "payment_p2022_07_pkey"
+          },
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : true,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : true
+        },
+        "staff_id" : {
+          "type" : {
+            "databaseSpecificType" : "int4",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 3,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "customer_id" : {
+          "type" : {
+            "databaseSpecificType" : "int4",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 2,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "payment_date" : {
+          "type" : {
+            "databaseSpecificType" : "timestamptz",
+            "precision" : 35,
+            "scale" : 6
+          },
+          "ordinalPosition" : 6,
+          "primaryKey" : {
+            "name" : "payment_p2022_07_pkey"
+          },
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : true
+        },
+        "rental_id" : {
+          "type" : {
+            "databaseSpecificType" : "int4",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 4,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        }
+      }
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "rental"
+      },
+      "dataSize" : 1261568,
+      "rowCount" : 16044,
+      "readCount" : 27436,
+      "writeCount" : 16044,
+      "readWriteClassification" : "READ_AND_WRITE_HEAVY",
+      "columns" : {
+        "inventory_id" : {
+          "type" : {
+            "databaseSpecificType" : "int4",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 3,
+          "primaryKey" : null,
+          "foreignKey" : {
+            "name" : "rental_inventory_id_fkey",
+            "schema" : "public",
+            "table" : "inventory",
+            "column" : "inventory_id",
+            "cardinality" : "ZERO_TO_MANY",
+            "synthetic" : null
+          },
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : true
+        },
+        "staff_id" : {
+          "type" : {
+            "databaseSpecificType" : "int4",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 6,
+          "primaryKey" : null,
+          "foreignKey" : {
+            "name" : "rental_staff_id_fkey",
+            "schema" : "public",
+            "table" : "staff",
+            "column" : "staff_id",
+            "cardinality" : "ZERO_TO_MANY",
+            "synthetic" : null
+          },
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "last_update" : {
+          "type" : {
+            "databaseSpecificType" : "timestamptz",
+            "precision" : 35,
+            "scale" : 6
+          },
+          "ordinalPosition" : 7,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "rental_date" : {
+          "type" : {
+            "databaseSpecificType" : "timestamptz",
+            "precision" : 35,
+            "scale" : 6
+          },
+          "ordinalPosition" : 2,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : true
+        },
+        "customer_id" : {
+          "type" : {
+            "databaseSpecificType" : "int4",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 4,
+          "primaryKey" : null,
+          "foreignKey" : {
+            "name" : "rental_customer_id_fkey",
+            "schema" : "public",
+            "table" : "customer",
+            "column" : "customer_id",
+            "cardinality" : "ZERO_TO_MANY",
+            "synthetic" : null
+          },
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : true
+        },
+        "rental_id" : {
+          "type" : {
+            "databaseSpecificType" : "serial",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 1,
+          "primaryKey" : {
+            "name" : "rental_pkey"
+          },
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : true,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : true
+        },
+        "return_date" : {
+          "type" : {
+            "databaseSpecificType" : "timestamptz",
+            "precision" : 35,
+            "scale" : 6
+          },
+          "ordinalPosition" : 5,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : true,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        }
+      }
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "film"
+      },
+      "dataSize" : 557056,
+      "rowCount" : 1000,
+      "readCount" : 24827,
+      "writeCount" : 1000,
+      "readWriteClassification" : "READ_HEAVY",
+      "columns" : {
+        "special_features" : {
+          "type" : {
+            "databaseSpecificType" : "_text",
+            "precision" : 2147483647,
+            "scale" : 0
+          },
+          "ordinalPosition" : 13,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : true,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "rental_duration" : {
+          "type" : {
+            "databaseSpecificType" : "int2",
+            "precision" : 5,
+            "scale" : 0
+          },
+          "ordinalPosition" : 7,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "rental_rate" : {
+          "type" : {
+            "databaseSpecificType" : "numeric",
+            "precision" : 4,
+            "scale" : 2
+          },
+          "ordinalPosition" : 8,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "release_year" : {
+          "type" : {
+            "databaseSpecificType" : "year",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 4,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : true,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "length" : {
+          "type" : {
+            "databaseSpecificType" : "int2",
+            "precision" : 5,
+            "scale" : 0
+          },
+          "ordinalPosition" : 9,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : true,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "replacement_cost" : {
+          "type" : {
+            "databaseSpecificType" : "numeric",
+            "precision" : 5,
+            "scale" : 2
+          },
+          "ordinalPosition" : 10,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "rating" : {
+          "type" : {
+            "databaseSpecificType" : "mpaa_rating",
+            "precision" : 2147483647,
+            "scale" : 0
+          },
+          "ordinalPosition" : 11,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : true,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "description" : {
+          "type" : {
+            "databaseSpecificType" : "text",
+            "precision" : 2147483647,
+            "scale" : 0
+          },
+          "ordinalPosition" : 3,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : true,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "language_id" : {
+          "type" : {
+            "databaseSpecificType" : "int4",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 5,
+          "primaryKey" : null,
+          "foreignKey" : {
+            "name" : "film_language_id_fkey",
+            "schema" : "public",
+            "table" : "language",
+            "column" : "language_id",
+            "cardinality" : "ZERO_TO_MANY",
+            "synthetic" : null
+          },
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : false
+        },
+        "title" : {
+          "type" : {
+            "databaseSpecificType" : "text",
+            "precision" : 2147483647,
+            "scale" : 0
+          },
+          "ordinalPosition" : 2,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : false
+        },
+        "original_language_id" : {
+          "type" : {
+            "databaseSpecificType" : "int4",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 6,
+          "primaryKey" : null,
+          "foreignKey" : {
+            "name" : "film_original_language_id_fkey",
+            "schema" : "public",
+            "table" : "language",
+            "column" : "language_id",
+            "cardinality" : "ZERO_TO_MANY",
+            "synthetic" : null
+          },
+          "nullable" : true,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : false
+        },
+        "last_update" : {
+          "type" : {
+            "databaseSpecificType" : "timestamptz",
+            "precision" : 35,
+            "scale" : 6
+          },
+          "ordinalPosition" : 12,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "fulltext" : {
+          "type" : {
+            "databaseSpecificType" : "tsvector",
+            "precision" : 2147483647,
+            "scale" : 0
+          },
+          "ordinalPosition" : 14,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : false
+        },
+        "film_id" : {
+          "type" : {
+            "databaseSpecificType" : "serial",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 1,
+          "primaryKey" : {
+            "name" : "film_pkey"
+          },
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : true,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : true
+        }
+      }
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "category"
+      },
+      "dataSize" : 16384,
+      "rowCount" : -1,
+      "readCount" : 4735,
+      "writeCount" : 16,
+      "readWriteClassification" : "READ_HEAVY",
+      "columns" : {
+        "category_id" : {
+          "type" : {
+            "databaseSpecificType" : "serial",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 1,
+          "primaryKey" : {
+            "name" : "category_pkey"
+          },
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : true,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : true
+        },
+        "last_update" : {
+          "type" : {
+            "databaseSpecificType" : "timestamptz",
+            "precision" : 35,
+            "scale" : 6
+          },
+          "ordinalPosition" : 3,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "name" : {
+          "type" : {
+            "databaseSpecificType" : "text",
+            "precision" : 2147483647,
+            "scale" : 0
+          },
+          "ordinalPosition" : 2,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        }
+      }
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "payment_p2022_01"
+      },
+      "dataSize" : 73728,
+      "rowCount" : 723,
+      "readCount" : 8,
+      "writeCount" : 723,
+      "readWriteClassification" : "WRITE_HEAVY",
+      "columns" : {
+        "amount" : {
+          "type" : {
+            "databaseSpecificType" : "numeric",
+            "precision" : 5,
+            "scale" : 2
+          },
+          "ordinalPosition" : 5,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "payment_id" : {
+          "type" : {
+            "databaseSpecificType" : "serial",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 1,
+          "primaryKey" : {
+            "name" : "payment_p2022_01_pkey"
+          },
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : true,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : true
+        },
+        "staff_id" : {
+          "type" : {
+            "databaseSpecificType" : "int4",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 3,
+          "primaryKey" : null,
+          "foreignKey" : {
+            "name" : "payment_p2022_01_staff_id_fkey",
+            "schema" : "public",
+            "table" : "staff",
+            "column" : "staff_id",
+            "cardinality" : "ZERO_TO_MANY",
+            "synthetic" : null
+          },
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : false
+        },
+        "customer_id" : {
+          "type" : {
+            "databaseSpecificType" : "int4",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 2,
+          "primaryKey" : null,
+          "foreignKey" : {
+            "name" : "payment_p2022_01_customer_id_fkey",
+            "schema" : "public",
+            "table" : "customer",
+            "column" : "customer_id",
+            "cardinality" : "ZERO_TO_MANY",
+            "synthetic" : null
+          },
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : false
+        },
+        "payment_date" : {
+          "type" : {
+            "databaseSpecificType" : "timestamptz",
+            "precision" : 35,
+            "scale" : 6
+          },
+          "ordinalPosition" : 6,
+          "primaryKey" : {
+            "name" : "payment_p2022_01_pkey"
+          },
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : true
+        },
+        "rental_id" : {
+          "type" : {
+            "databaseSpecificType" : "int4",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 4,
+          "primaryKey" : null,
+          "foreignKey" : {
+            "name" : "payment_p2022_01_rental_id_fkey",
+            "schema" : "public",
+            "table" : "rental",
+            "column" : "rental_id",
+            "cardinality" : "ZERO_TO_MANY",
+            "synthetic" : null
+          },
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        }
+      }
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "payment_p2022_02"
+      },
+      "dataSize" : 180224,
+      "rowCount" : 2401,
+      "readCount" : 8,
+      "writeCount" : 2401,
+      "readWriteClassification" : "WRITE_HEAVY",
+      "columns" : {
+        "amount" : {
+          "type" : {
+            "databaseSpecificType" : "numeric",
+            "precision" : 5,
+            "scale" : 2
+          },
+          "ordinalPosition" : 5,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "payment_id" : {
+          "type" : {
+            "databaseSpecificType" : "serial",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 1,
+          "primaryKey" : {
+            "name" : "payment_p2022_02_pkey"
+          },
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : true,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : true
+        },
+        "staff_id" : {
+          "type" : {
+            "databaseSpecificType" : "int4",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 3,
+          "primaryKey" : null,
+          "foreignKey" : {
+            "name" : "payment_p2022_02_staff_id_fkey",
+            "schema" : "public",
+            "table" : "staff",
+            "column" : "staff_id",
+            "cardinality" : "ZERO_TO_MANY",
+            "synthetic" : null
+          },
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : false
+        },
+        "customer_id" : {
+          "type" : {
+            "databaseSpecificType" : "int4",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 2,
+          "primaryKey" : null,
+          "foreignKey" : {
+            "name" : "payment_p2022_02_customer_id_fkey",
+            "schema" : "public",
+            "table" : "customer",
+            "column" : "customer_id",
+            "cardinality" : "ZERO_TO_MANY",
+            "synthetic" : null
+          },
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : false
+        },
+        "payment_date" : {
+          "type" : {
+            "databaseSpecificType" : "timestamptz",
+            "precision" : 35,
+            "scale" : 6
+          },
+          "ordinalPosition" : 6,
+          "primaryKey" : {
+            "name" : "payment_p2022_02_pkey"
+          },
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : true
+        },
+        "rental_id" : {
+          "type" : {
+            "databaseSpecificType" : "int4",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 4,
+          "primaryKey" : null,
+          "foreignKey" : {
+            "name" : "payment_p2022_02_rental_id_fkey",
+            "schema" : "public",
+            "table" : "rental",
+            "column" : "rental_id",
+            "cardinality" : "ZERO_TO_MANY",
+            "synthetic" : null
+          },
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        }
+      }
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "film_category"
+      },
+      "dataSize" : 139264,
+      "rowCount" : 2367,
+      "readCount" : 3,
+      "writeCount" : 2367,
+      "readWriteClassification" : "WRITE_HEAVY",
+      "columns" : {
+        "category_id" : {
+          "type" : {
+            "databaseSpecificType" : "int4",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 2,
+          "primaryKey" : {
+            "name" : "film_category_pkey"
+          },
+          "foreignKey" : {
+            "name" : "film_category_category_id_fkey",
+            "schema" : "public",
+            "table" : "category",
+            "column" : "category_id",
+            "cardinality" : "ZERO_TO_MANY",
+            "synthetic" : null
+          },
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : true
+        },
+        "last_update" : {
+          "type" : {
+            "databaseSpecificType" : "timestamptz",
+            "precision" : 35,
+            "scale" : 6
+          },
+          "ordinalPosition" : 3,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "film_id" : {
+          "type" : {
+            "databaseSpecificType" : "int4",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 1,
+          "primaryKey" : {
+            "name" : "film_category_pkey"
+          },
+          "foreignKey" : {
+            "name" : "film_category_film_id_fkey",
+            "schema" : "public",
+            "table" : "film",
+            "column" : "film_id",
+            "cardinality" : "ZERO_TO_MANY",
+            "synthetic" : null
+          },
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : true
+        }
+      }
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "payment_p2022_03"
+      },
+      "dataSize" : 196608,
+      "rowCount" : 2713,
+      "readCount" : 8,
+      "writeCount" : 2713,
+      "readWriteClassification" : "WRITE_HEAVY",
+      "columns" : {
+        "amount" : {
+          "type" : {
+            "databaseSpecificType" : "numeric",
+            "precision" : 5,
+            "scale" : 2
+          },
+          "ordinalPosition" : 5,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "payment_id" : {
+          "type" : {
+            "databaseSpecificType" : "serial",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 1,
+          "primaryKey" : {
+            "name" : "payment_p2022_03_pkey"
+          },
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : true,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : true
+        },
+        "staff_id" : {
+          "type" : {
+            "databaseSpecificType" : "int4",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 3,
+          "primaryKey" : null,
+          "foreignKey" : {
+            "name" : "payment_p2022_03_staff_id_fkey",
+            "schema" : "public",
+            "table" : "staff",
+            "column" : "staff_id",
+            "cardinality" : "ZERO_TO_MANY",
+            "synthetic" : null
+          },
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : false
+        },
+        "customer_id" : {
+          "type" : {
+            "databaseSpecificType" : "int4",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 2,
+          "primaryKey" : null,
+          "foreignKey" : {
+            "name" : "payment_p2022_03_customer_id_fkey",
+            "schema" : "public",
+            "table" : "customer",
+            "column" : "customer_id",
+            "cardinality" : "ZERO_TO_MANY",
+            "synthetic" : null
+          },
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : false
+        },
+        "payment_date" : {
+          "type" : {
+            "databaseSpecificType" : "timestamptz",
+            "precision" : 35,
+            "scale" : 6
+          },
+          "ordinalPosition" : 6,
+          "primaryKey" : {
+            "name" : "payment_p2022_03_pkey"
+          },
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : true
+        },
+        "rental_id" : {
+          "type" : {
+            "databaseSpecificType" : "int4",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 4,
+          "primaryKey" : null,
+          "foreignKey" : {
+            "name" : "payment_p2022_03_rental_id_fkey",
+            "schema" : "public",
+            "table" : "rental",
+            "column" : "rental_id",
+            "cardinality" : "ZERO_TO_MANY",
+            "synthetic" : null
+          },
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        }
+      }
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "film_actor"
+      },
+      "dataSize" : 278528,
+      "rowCount" : 5462,
+      "readCount" : 4,
+      "writeCount" : 5462,
+      "readWriteClassification" : "WRITE_HEAVY",
+      "columns" : {
+        "last_update" : {
+          "type" : {
+            "databaseSpecificType" : "timestamptz",
+            "precision" : 35,
+            "scale" : 6
+          },
+          "ordinalPosition" : 3,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "actor_id" : {
+          "type" : {
+            "databaseSpecificType" : "int4",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 1,
+          "primaryKey" : {
+            "name" : "film_actor_pkey"
+          },
+          "foreignKey" : {
+            "name" : "film_actor_actor_id_fkey",
+            "schema" : "public",
+            "table" : "actor",
+            "column" : "actor_id",
+            "cardinality" : "ZERO_TO_MANY",
+            "synthetic" : null
+          },
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : true
+        },
+        "film_id" : {
+          "type" : {
+            "databaseSpecificType" : "int4",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 2,
+          "primaryKey" : {
+            "name" : "film_actor_pkey"
+          },
+          "foreignKey" : {
+            "name" : "film_actor_film_id_fkey",
+            "schema" : "public",
+            "table" : "film",
+            "column" : "film_id",
+            "cardinality" : "ZERO_TO_MANY",
+            "synthetic" : null
+          },
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : true
+        }
+      }
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "customer"
+      },
+      "dataSize" : 106496,
+      "rowCount" : 599,
+      "readCount" : 59524,
+      "writeCount" : 599,
+      "readWriteClassification" : "READ_HEAVY",
+      "columns" : {
+        "store_id" : {
+          "type" : {
+            "databaseSpecificType" : "int4",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 2,
+          "primaryKey" : null,
+          "foreignKey" : {
+            "name" : "customer_store_id_fkey",
+            "schema" : "public",
+            "table" : "store",
+            "column" : "store_id",
+            "cardinality" : "ZERO_TO_MANY",
+            "synthetic" : null
+          },
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : false
+        },
+        "last_update" : {
+          "type" : {
+            "databaseSpecificType" : "timestamptz",
+            "precision" : 35,
+            "scale" : 6
+          },
+          "ordinalPosition" : 9,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : true,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "address_id" : {
+          "type" : {
+            "databaseSpecificType" : "int4",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 6,
+          "primaryKey" : null,
+          "foreignKey" : {
+            "name" : "customer_address_id_fkey",
+            "schema" : "public",
+            "table" : "address",
+            "column" : "address_id",
+            "cardinality" : "ZERO_TO_MANY",
+            "synthetic" : null
+          },
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : false
+        },
+        "last_name" : {
+          "type" : {
+            "databaseSpecificType" : "text",
+            "precision" : 2147483647,
+            "scale" : 0
+          },
+          "ordinalPosition" : 4,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : false
+        },
+        "active" : {
+          "type" : {
+            "databaseSpecificType" : "int4",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 10,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : true,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "activebool" : {
+          "type" : {
+            "databaseSpecificType" : "bool",
+            "precision" : 1,
+            "scale" : 0
+          },
+          "ordinalPosition" : 7,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "customer_id" : {
+          "type" : {
+            "databaseSpecificType" : "serial",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 1,
+          "primaryKey" : {
+            "name" : "customer_pkey"
+          },
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : true,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : true
+        },
+        "create_date" : {
+          "type" : {
+            "databaseSpecificType" : "date",
+            "precision" : 13,
+            "scale" : 0
+          },
+          "ordinalPosition" : 8,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "first_name" : {
+          "type" : {
+            "databaseSpecificType" : "text",
+            "precision" : 2147483647,
+            "scale" : 0
+          },
+          "ordinalPosition" : 3,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "email" : {
+          "type" : {
+            "databaseSpecificType" : "text",
+            "precision" : 2147483647,
+            "scale" : 0
+          },
+          "ordinalPosition" : 5,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : true,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        }
+      }
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "city"
+      },
+      "dataSize" : 73728,
+      "rowCount" : 600,
+      "readCount" : 1209,
+      "writeCount" : 600,
+      "readWriteClassification" : "READ_HEAVY",
+      "columns" : {
+        "city" : {
+          "type" : {
+            "databaseSpecificType" : "text",
+            "precision" : 2147483647,
+            "scale" : 0
+          },
+          "ordinalPosition" : 2,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "last_update" : {
+          "type" : {
+            "databaseSpecificType" : "timestamptz",
+            "precision" : 35,
+            "scale" : 6
+          },
+          "ordinalPosition" : 4,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "country_id" : {
+          "type" : {
+            "databaseSpecificType" : "int4",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 3,
+          "primaryKey" : null,
+          "foreignKey" : {
+            "name" : "city_country_id_fkey",
+            "schema" : "public",
+            "table" : "country",
+            "column" : "country_id",
+            "cardinality" : "ZERO_TO_MANY",
+            "synthetic" : null
+          },
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : false
+        },
+        "city_id" : {
+          "type" : {
+            "databaseSpecificType" : "serial",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 1,
+          "primaryKey" : {
+            "name" : "city_pkey"
+          },
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : true,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : true
+        }
+      }
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "actor"
+      },
+      "dataSize" : 49152,
+      "rowCount" : 200,
+      "readCount" : 10926,
+      "writeCount" : 200,
+      "readWriteClassification" : "READ_HEAVY",
+      "columns" : {
+        "last_update" : {
+          "type" : {
+            "databaseSpecificType" : "timestamptz",
+            "precision" : 35,
+            "scale" : 6
+          },
+          "ordinalPosition" : 4,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "last_name" : {
+          "type" : {
+            "databaseSpecificType" : "text",
+            "precision" : 2147483647,
+            "scale" : 0
+          },
+          "ordinalPosition" : 3,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : false
+        },
+        "actor_id" : {
+          "type" : {
+            "databaseSpecificType" : "serial",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 1,
+          "primaryKey" : {
+            "name" : "actor_pkey"
+          },
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : true,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : true
+        },
+        "first_name" : {
+          "type" : {
+            "databaseSpecificType" : "text",
+            "precision" : 2147483647,
+            "scale" : 0
+          },
+          "ordinalPosition" : 2,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        }
+      }
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "payment"
+      },
+      "dataSize" : 0,
+      "rowCount" : -1,
+      "readCount" : 0,
+      "writeCount" : 0,
+      "readWriteClassification" : "NONE",
+      "columns" : {
+        "amount" : {
+          "type" : {
+            "databaseSpecificType" : "numeric",
+            "precision" : 5,
+            "scale" : 2
+          },
+          "ordinalPosition" : 5,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "payment_id" : {
+          "type" : {
+            "databaseSpecificType" : "serial",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 1,
+          "primaryKey" : {
+            "name" : "payment_pkey"
+          },
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : true,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : true
+        },
+        "staff_id" : {
+          "type" : {
+            "databaseSpecificType" : "int4",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 3,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "customer_id" : {
+          "type" : {
+            "databaseSpecificType" : "int4",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 2,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "payment_date" : {
+          "type" : {
+            "databaseSpecificType" : "timestamptz",
+            "precision" : 35,
+            "scale" : 6
+          },
+          "ordinalPosition" : 6,
+          "primaryKey" : {
+            "name" : "payment_pkey"
+          },
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : true
+        },
+        "rental_id" : {
+          "type" : {
+            "databaseSpecificType" : "int4",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 4,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        }
+      }
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "country"
+      },
+      "dataSize" : 16384,
+      "rowCount" : 109,
+      "readCount" : 1201,
+      "writeCount" : 109,
+      "readWriteClassification" : "READ_HEAVY",
+      "columns" : {
+        "country" : {
+          "type" : {
+            "databaseSpecificType" : "text",
+            "precision" : 2147483647,
+            "scale" : 0
+          },
+          "ordinalPosition" : 2,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "last_update" : {
+          "type" : {
+            "databaseSpecificType" : "timestamptz",
+            "precision" : 35,
+            "scale" : 6
+          },
+          "ordinalPosition" : 3,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "country_id" : {
+          "type" : {
+            "databaseSpecificType" : "serial",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 1,
+          "primaryKey" : {
+            "name" : "country_pkey"
+          },
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : true,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : true
+        }
+      }
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "address"
+      },
+      "dataSize" : 98304,
+      "rowCount" : 603,
+      "readCount" : 5201,
+      "writeCount" : 603,
+      "readWriteClassification" : "READ_HEAVY",
+      "columns" : {
+        "address" : {
+          "type" : {
+            "databaseSpecificType" : "text",
+            "precision" : 2147483647,
+            "scale" : 0
+          },
+          "ordinalPosition" : 2,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "address2" : {
+          "type" : {
+            "databaseSpecificType" : "text",
+            "precision" : 2147483647,
+            "scale" : 0
+          },
+          "ordinalPosition" : 3,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : true,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "phone" : {
+          "type" : {
+            "databaseSpecificType" : "text",
+            "precision" : 2147483647,
+            "scale" : 0
+          },
+          "ordinalPosition" : 7,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "district" : {
+          "type" : {
+            "databaseSpecificType" : "text",
+            "precision" : 2147483647,
+            "scale" : 0
+          },
+          "ordinalPosition" : 4,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "last_update" : {
+          "type" : {
+            "databaseSpecificType" : "timestamptz",
+            "precision" : 35,
+            "scale" : 6
+          },
+          "ordinalPosition" : 8,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "address_id" : {
+          "type" : {
+            "databaseSpecificType" : "serial",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 1,
+          "primaryKey" : {
+            "name" : "address_pkey"
+          },
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : true,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : true
+        },
+        "postal_code" : {
+          "type" : {
+            "databaseSpecificType" : "text",
+            "precision" : 2147483647,
+            "scale" : 0
+          },
+          "ordinalPosition" : 6,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : true,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "city_id" : {
+          "type" : {
+            "databaseSpecificType" : "int4",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 5,
+          "primaryKey" : null,
+          "foreignKey" : {
+            "name" : "address_city_id_fkey",
+            "schema" : "public",
+            "table" : "city",
+            "column" : "city_id",
+            "cardinality" : "ZERO_TO_MANY",
+            "synthetic" : null
+          },
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : false
+        }
+      }
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "inventory"
+      },
+      "dataSize" : 278528,
+      "rowCount" : 4581,
+      "readCount" : 32092,
+      "writeCount" : 4581,
+      "readWriteClassification" : "READ_HEAVY",
+      "columns" : {
+        "store_id" : {
+          "type" : {
+            "databaseSpecificType" : "int4",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 3,
+          "primaryKey" : null,
+          "foreignKey" : {
+            "name" : "inventory_store_id_fkey",
+            "schema" : "public",
+            "table" : "store",
+            "column" : "store_id",
+            "cardinality" : "ZERO_TO_MANY",
+            "synthetic" : null
+          },
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : false
+        },
+        "inventory_id" : {
+          "type" : {
+            "databaseSpecificType" : "serial",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 1,
+          "primaryKey" : {
+            "name" : "inventory_pkey"
+          },
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : true,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : true
+        },
+        "last_update" : {
+          "type" : {
+            "databaseSpecificType" : "timestamptz",
+            "precision" : 35,
+            "scale" : 6
+          },
+          "ordinalPosition" : 4,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "film_id" : {
+          "type" : {
+            "databaseSpecificType" : "int4",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 2,
+          "primaryKey" : null,
+          "foreignKey" : {
+            "name" : "inventory_film_id_fkey",
+            "schema" : "public",
+            "table" : "film",
+            "column" : "film_id",
+            "cardinality" : "ZERO_TO_MANY",
+            "synthetic" : null
+          },
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : false
+        }
+      }
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "store"
+      },
+      "dataSize" : 57344,
+      "rowCount" : 500,
+      "readCount" : 13363,
+      "writeCount" : 500,
+      "readWriteClassification" : "READ_HEAVY",
+      "columns" : {
+        "store_id" : {
+          "type" : {
+            "databaseSpecificType" : "serial",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 1,
+          "primaryKey" : {
+            "name" : "store_pkey"
+          },
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : true,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : true
+        },
+        "manager_staff_id" : {
+          "type" : {
+            "databaseSpecificType" : "int4",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 2,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : true
+        },
+        "last_update" : {
+          "type" : {
+            "databaseSpecificType" : "timestamptz",
+            "precision" : 35,
+            "scale" : 6
+          },
+          "ordinalPosition" : 4,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "address_id" : {
+          "type" : {
+            "databaseSpecificType" : "int4",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 3,
+          "primaryKey" : null,
+          "foreignKey" : {
+            "name" : "store_address_id_fkey",
+            "schema" : "public",
+            "table" : "address",
+            "column" : "address_id",
+            "cardinality" : "ZERO_TO_MANY",
+            "synthetic" : null
+          },
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        }
+      }
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "language"
+      },
+      "dataSize" : 8192,
+      "rowCount" : -1,
+      "readCount" : 2001,
+      "writeCount" : 6,
+      "readWriteClassification" : "READ_HEAVY",
+      "columns" : {
+        "last_update" : {
+          "type" : {
+            "databaseSpecificType" : "timestamptz",
+            "precision" : 35,
+            "scale" : 6
+          },
+          "ordinalPosition" : 3,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "name" : {
+          "type" : {
+            "databaseSpecificType" : "bpchar",
+            "precision" : 20,
+            "scale" : 0
+          },
+          "ordinalPosition" : 2,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "language_id" : {
+          "type" : {
+            "databaseSpecificType" : "serial",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 1,
+          "primaryKey" : {
+            "name" : "language_pkey"
+          },
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : true,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : true
+        }
+      }
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "staff"
+      },
+      "dataSize" : 294912,
+      "rowCount" : 1500,
+      "readCount" : 59521,
+      "writeCount" : 1500,
+      "readWriteClassification" : "READ_HEAVY",
+      "columns" : {
+        "store_id" : {
+          "type" : {
+            "databaseSpecificType" : "int4",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 6,
+          "primaryKey" : null,
+          "foreignKey" : {
+            "name" : "staff_store_id_fkey",
+            "schema" : "public",
+            "table" : "store",
+            "column" : "store_id",
+            "cardinality" : "ZERO_TO_MANY",
+            "synthetic" : null
+          },
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "password" : {
+          "type" : {
+            "databaseSpecificType" : "text",
+            "precision" : 2147483647,
+            "scale" : 0
+          },
+          "ordinalPosition" : 9,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : true,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "staff_id" : {
+          "type" : {
+            "databaseSpecificType" : "serial",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 1,
+          "primaryKey" : {
+            "name" : "staff_pkey"
+          },
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : true,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : true,
+          "uniqueIndexed" : true
+        },
+        "last_update" : {
+          "type" : {
+            "databaseSpecificType" : "timestamptz",
+            "precision" : 35,
+            "scale" : 6
+          },
+          "ordinalPosition" : 10,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "address_id" : {
+          "type" : {
+            "databaseSpecificType" : "int4",
+            "precision" : 10,
+            "scale" : 0
+          },
+          "ordinalPosition" : 4,
+          "primaryKey" : null,
+          "foreignKey" : {
+            "name" : "staff_address_id_fkey",
+            "schema" : "public",
+            "table" : "address",
+            "column" : "address_id",
+            "cardinality" : "ZERO_TO_MANY",
+            "synthetic" : null
+          },
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "last_name" : {
+          "type" : {
+            "databaseSpecificType" : "text",
+            "precision" : 2147483647,
+            "scale" : 0
+          },
+          "ordinalPosition" : 3,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "active" : {
+          "type" : {
+            "databaseSpecificType" : "bool",
+            "precision" : 1,
+            "scale" : 0
+          },
+          "ordinalPosition" : 7,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "first_name" : {
+          "type" : {
+            "databaseSpecificType" : "text",
+            "precision" : 2147483647,
+            "scale" : 0
+          },
+          "ordinalPosition" : 2,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "email" : {
+          "type" : {
+            "databaseSpecificType" : "text",
+            "precision" : 2147483647,
+            "scale" : 0
+          },
+          "ordinalPosition" : 5,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : true,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "picture" : {
+          "type" : {
+            "databaseSpecificType" : "bytea",
+            "precision" : 2147483647,
+            "scale" : 0
+          },
+          "ordinalPosition" : 11,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : true,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        },
+        "username" : {
+          "type" : {
+            "databaseSpecificType" : "text",
+            "precision" : 2147483647,
+            "scale" : 0
+          },
+          "ordinalPosition" : 8,
+          "primaryKey" : null,
+          "foreignKey" : null,
+          "nullable" : false,
+          "autoIncremented" : false,
+          "generated" : false,
+          "hidden" : false,
+          "indexed" : false,
+          "uniqueIndexed" : false
+        }
+      }
+    } ],
+    "allStoredProcedures" : [ {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "last_day"
+      },
+      "definition" : "CREATE OR REPLACE FUNCTION public.last_day(timestamp with time zone)\n RETURNS date\n LANGUAGE sql\n IMMUTABLE STRICT\nAS $function$\n  SELECT CASE\n    WHEN EXTRACT(MONTH FROM $1) = 12 THEN\n      (((EXTRACT(YEAR FROM $1) + 1) operator(pg_catalog.||) '-01-01')::date - INTERVAL '1 day')::date\n    ELSE\n      ((EXTRACT(YEAR FROM $1) operator(pg_catalog.||) '-' operator(pg_catalog.||) (EXTRACT(MONTH FROM $1) + 1) operator(pg_catalog.||) '-01')::date - INTERVAL '1 day')::date\n    END\n$function$\n"
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "last_updated"
+      },
+      "definition" : "CREATE OR REPLACE FUNCTION public.last_updated()\n RETURNS trigger\n LANGUAGE plpgsql\nAS $function$\nBEGIN\n    NEW.last_update = CURRENT_TIMESTAMP;\n    RETURN NEW;\nEND $function$\n"
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "film_in_stock"
+      },
+      "definition" : "CREATE OR REPLACE FUNCTION public.film_in_stock(p_film_id integer, p_store_id integer, OUT p_film_count integer)\n RETURNS SETOF integer\n LANGUAGE sql\nAS $function$\n     SELECT inventory_id\n     FROM inventory\n     WHERE film_id = $1\n     AND store_id = $2\n     AND inventory_in_stock(inventory_id);\n$function$\n"
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "_group_concat"
+      },
+      "definition" : "CREATE OR REPLACE FUNCTION public._group_concat(text, text)\n RETURNS text\n LANGUAGE sql\n IMMUTABLE\nAS $function$\nSELECT CASE\n  WHEN $2 IS NULL THEN $1\n  WHEN $1 IS NULL THEN $2\n  ELSE $1 || ', ' || $2\nEND\n$function$\n"
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "get_customer_balance"
+      },
+      "definition" : "CREATE OR REPLACE FUNCTION public.get_customer_balance(p_customer_id integer, p_effective_date timestamp with time zone)\n RETURNS numeric\n LANGUAGE plpgsql\nAS $function$\n       --#OK, WE NEED TO CALCULATE THE CURRENT BALANCE GIVEN A CUSTOMER_ID AND A DATE\n       --#THAT WE WANT THE BALANCE TO BE EFFECTIVE FOR. THE BALANCE IS:\n       --#   1) RENTAL FEES FOR ALL PREVIOUS RENTALS\n       --#   2) ONE DOLLAR FOR EVERY DAY THE PREVIOUS RENTALS ARE OVERDUE\n       --#   3) IF A FILM IS MORE THAN RENTAL_DURATION * 2 OVERDUE, CHARGE THE REPLACEMENT_COST\n       --#   4) SUBTRACT ALL PAYMENTS MADE BEFORE THE DATE SPECIFIED\nDECLARE\n    v_rentfees DECIMAL(5,2); --#FEES PAID TO RENT THE VIDEOS INITIALLY\n    v_overfees INTEGER;      --#LATE FEES FOR PRIOR RENTALS\n    v_payments DECIMAL(5,2); --#SUM OF PAYMENTS MADE PREVIOUSLY\nBEGIN\n    SELECT COALESCE(SUM(film.rental_rate),0) INTO v_rentfees\n    FROM film, inventory, rental\n    WHERE film.film_id = inventory.film_id\n      AND inventory.inventory_id = rental.inventory_id\n      AND rental.rental_date <= p_effective_date\n      AND rental.customer_id = p_customer_id;\n\n    SELECT COALESCE(SUM(IF((rental.return_date - rental.rental_date) > (film.rental_duration * '1 day'::interval),\n        ((rental.return_date - rental.rental_date) - (film.rental_duration * '1 day'::interval)),0)),0) INTO v_overfees\n    FROM rental, inventory, film\n    WHERE film.film_id = inventory.film_id\n      AND inventory.inventory_id = rental.inventory_id\n      AND rental.rental_date <= p_effective_date\n      AND rental.customer_id = p_customer_id;\n\n    SELECT COALESCE(SUM(payment.amount),0) INTO v_payments\n    FROM payment\n    WHERE payment.payment_date <= p_effective_date\n    AND payment.customer_id = p_customer_id;\n\n    RETURN v_rentfees + v_overfees - v_payments;\nEND\n$function$\n"
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "rewards_report"
+      },
+      "definition" : "CREATE OR REPLACE FUNCTION public.rewards_report(min_monthly_purchases integer, min_dollar_amount_purchased numeric)\n RETURNS SETOF customer\n LANGUAGE plpgsql\n SECURITY DEFINER\nAS $function$\nDECLARE\n    last_month_start DATE;\n    last_month_end DATE;\nrr RECORD;\ntmpSQL TEXT;\nBEGIN\n\n    /* Some sanity checks... */\n    IF min_monthly_purchases = 0 THEN\n        RAISE EXCEPTION 'Minimum monthly purchases parameter must be > 0';\n    END IF;\n    IF min_dollar_amount_purchased = 0.00 THEN\n        RAISE EXCEPTION 'Minimum monthly dollar amount purchased parameter must be > $0.00';\n    END IF;\n\n    last_month_start := CURRENT_DATE - '3 month'::interval;\n    last_month_start := to_date((extract(YEAR FROM last_month_start) || '-' || extract(MONTH FROM last_month_start) || '-01'),'YYYY-MM-DD');\n    last_month_end := LAST_DAY(last_month_start);\n\n    /*\n    Create a temporary storage area for Customer IDs.\n    */\n    CREATE TEMPORARY TABLE tmpCustomer (customer_id INTEGER NOT NULL PRIMARY KEY);\n\n    /*\n    Find all customers meeting the monthly purchase requirements\n    */\n\n    tmpSQL := 'INSERT INTO tmpCustomer (customer_id)\n        SELECT p.customer_id\n        FROM payment AS p\n        WHERE DATE(p.payment_date) BETWEEN '||quote_literal(last_month_start) ||' AND '|| quote_literal(last_month_end) || '\n        GROUP BY customer_id\n        HAVING SUM(p.amount) > '|| min_dollar_amount_purchased || '\n        AND COUNT(customer_id) > ' ||min_monthly_purchases ;\n\n    EXECUTE tmpSQL;\n\n    /*\n    Output ALL customer information of matching rewardees.\n    Customize output as needed.\n    */\n    FOR rr IN EXECUTE 'SELECT c.* FROM tmpCustomer AS t INNER JOIN customer AS c ON t.customer_id = c.customer_id' LOOP\n        RETURN NEXT rr;\n    END LOOP;\n\n    /* Clean up */\n    tmpSQL := 'DROP TABLE tmpCustomer';\n    EXECUTE tmpSQL;\n\nRETURN;\nEND\n$function$\n"
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "film_not_in_stock"
+      },
+      "definition" : "CREATE OR REPLACE FUNCTION public.film_not_in_stock(p_film_id integer, p_store_id integer, OUT p_film_count integer)\n RETURNS SETOF integer\n LANGUAGE sql\nAS $function$\n    SELECT inventory_id\n    FROM inventory\n    WHERE film_id = $1\n    AND store_id = $2\n    AND NOT inventory_in_stock(inventory_id);\n$function$\n"
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "inventory_held_by_customer"
+      },
+      "definition" : "CREATE OR REPLACE FUNCTION public.inventory_held_by_customer(p_inventory_id integer)\n RETURNS integer\n LANGUAGE plpgsql\nAS $function$\nDECLARE\n    v_customer_id INTEGER;\nBEGIN\n\n  SELECT customer_id INTO v_customer_id\n  FROM rental\n  WHERE return_date IS NULL\n  AND inventory_id = p_inventory_id;\n\n  RETURN v_customer_id;\nEND $function$\n"
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "inventory_in_stock"
+      },
+      "definition" : "CREATE OR REPLACE FUNCTION public.inventory_in_stock(p_inventory_id integer)\n RETURNS boolean\n LANGUAGE plpgsql\nAS $function$\nDECLARE\n    v_rentals INTEGER;\n    v_out     INTEGER;\nBEGIN\n    -- AN ITEM IS IN-STOCK IF THERE ARE EITHER NO ROWS IN THE rental TABLE\n    -- FOR THE ITEM OR ALL ROWS HAVE return_date POPULATED\n\n    SELECT count(*) INTO v_rentals\n    FROM rental\n    WHERE inventory_id = p_inventory_id;\n\n    IF v_rentals = 0 THEN\n      RETURN TRUE;\n    END IF;\n\n    SELECT COUNT(rental_id) INTO v_out\n    FROM inventory LEFT JOIN rental USING(inventory_id)\n    WHERE inventory.inventory_id = p_inventory_id\n    AND rental.return_date IS NULL;\n\n    IF v_out > 0 THEN\n      RETURN FALSE;\n    ELSE\n      RETURN TRUE;\n    END IF;\nEND $function$\n"
+    } ],
+    "allTriggers" : [ {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "store/last_updated"
+      },
+      "definition" : "CREATE TRIGGER last_updated\nBEFORE UPDATE\nON public.store\nFOR EACH ROW\nEXECUTE FUNCTION last_updated()"
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "film_actor/last_updated"
+      },
+      "definition" : "CREATE TRIGGER last_updated\nBEFORE UPDATE\nON public.film_actor\nFOR EACH ROW\nEXECUTE FUNCTION last_updated()"
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "film_category/last_updated"
+      },
+      "definition" : "CREATE TRIGGER last_updated\nBEFORE UPDATE\nON public.film_category\nFOR EACH ROW\nEXECUTE FUNCTION last_updated()"
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "actor/last_updated"
+      },
+      "definition" : "CREATE TRIGGER last_updated\nBEFORE UPDATE\nON public.actor\nFOR EACH ROW\nEXECUTE FUNCTION last_updated()"
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "rental/last_updated"
+      },
+      "definition" : "CREATE TRIGGER last_updated\nBEFORE UPDATE\nON public.rental\nFOR EACH ROW\nEXECUTE FUNCTION last_updated()"
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "customer/last_updated"
+      },
+      "definition" : "CREATE TRIGGER last_updated\nBEFORE UPDATE\nON public.customer\nFOR EACH ROW\nEXECUTE FUNCTION last_updated()"
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "city/last_updated"
+      },
+      "definition" : "CREATE TRIGGER last_updated\nBEFORE UPDATE\nON public.city\nFOR EACH ROW\nEXECUTE FUNCTION last_updated()"
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "inventory/last_updated"
+      },
+      "definition" : "CREATE TRIGGER last_updated\nBEFORE UPDATE\nON public.inventory\nFOR EACH ROW\nEXECUTE FUNCTION last_updated()"
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "staff/last_updated"
+      },
+      "definition" : "CREATE TRIGGER last_updated\nBEFORE UPDATE\nON public.staff\nFOR EACH ROW\nEXECUTE FUNCTION last_updated()"
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "country/last_updated"
+      },
+      "definition" : "CREATE TRIGGER last_updated\nBEFORE UPDATE\nON public.country\nFOR EACH ROW\nEXECUTE FUNCTION last_updated()"
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "film/film_fulltext_trigger"
+      },
+      "definition" : "CREATE TRIGGER film_fulltext_trigger\nBEFORE INSERT OR UPDATE\nON public.film\nFOR EACH ROW\nEXECUTE FUNCTION tsvector_update_trigger('fulltext', 'pg_catalog.english', 'title', 'description')"
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "category/last_updated"
+      },
+      "definition" : "CREATE TRIGGER last_updated\nBEFORE UPDATE\nON public.category\nFOR EACH ROW\nEXECUTE FUNCTION last_updated()"
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "language/last_updated"
+      },
+      "definition" : "CREATE TRIGGER last_updated\nBEFORE UPDATE\nON public.\"language\"\nFOR EACH ROW\nEXECUTE FUNCTION last_updated()"
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "film/last_updated"
+      },
+      "definition" : "CREATE TRIGGER last_updated\nBEFORE UPDATE\nON public.film\nFOR EACH ROW\nEXECUTE FUNCTION last_updated()"
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "address/last_updated"
+      },
+      "definition" : "CREATE TRIGGER last_updated\nBEFORE UPDATE\nON public.address\nFOR EACH ROW\nEXECUTE FUNCTION last_updated()"
+    } ],
+    "allViews" : [ {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "sales_by_film_category"
+      },
+      "definition" : " SELECT c.name AS category,\n    sum(p.amount) AS total_sales\n   FROM (((((payment p\n     JOIN rental r ON ((p.rental_id = r.rental_id)))\n     JOIN inventory i ON ((r.inventory_id = i.inventory_id)))\n     JOIN film f ON ((i.film_id = f.film_id)))\n     JOIN film_category fc ON ((f.film_id = fc.film_id)))\n     JOIN category c ON ((fc.category_id = c.category_id)))\n  GROUP BY c.name\n  ORDER BY (sum(p.amount)) DESC;"
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "film_list"
+      },
+      "definition" : " SELECT film.film_id AS fid,\n    film.title,\n    film.description,\n    category.name AS category,\n    film.rental_rate AS price,\n    film.length,\n    film.rating,\n    group_concat(((actor.first_name || ' '::text) || actor.last_name)) AS actors\n   FROM ((((category\n     LEFT JOIN film_category ON ((category.category_id = film_category.category_id)))\n     LEFT JOIN film ON ((film_category.film_id = film.film_id)))\n     JOIN film_actor ON ((film.film_id = film_actor.film_id)))\n     JOIN actor ON ((film_actor.actor_id = actor.actor_id)))\n  GROUP BY film.film_id, film.title, film.description, category.name, film.rental_rate, film.length, film.rating;"
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "customer_list"
+      },
+      "definition" : " SELECT cu.customer_id AS id,\n    ((cu.first_name || ' '::text) || cu.last_name) AS name,\n    a.address,\n    a.postal_code AS \"zip code\",\n    a.phone,\n    city.city,\n    country.country,\n        CASE\n            WHEN cu.activebool THEN 'active'::text\n            ELSE ''::text\n        END AS notes,\n    cu.store_id AS sid\n   FROM (((customer cu\n     JOIN address a ON ((cu.address_id = a.address_id)))\n     JOIN city ON ((a.city_id = city.city_id)))\n     JOIN country ON ((city.country_id = country.country_id)));"
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "staff_list"
+      },
+      "definition" : " SELECT s.staff_id AS id,\n    ((s.first_name || ' '::text) || s.last_name) AS name,\n    a.address,\n    a.postal_code AS \"zip code\",\n    a.phone,\n    city.city,\n    country.country,\n    s.store_id AS sid\n   FROM (((staff s\n     JOIN address a ON ((s.address_id = a.address_id)))\n     JOIN city ON ((a.city_id = city.city_id)))\n     JOIN country ON ((city.country_id = country.country_id)));"
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "sales_by_store"
+      },
+      "definition" : " SELECT ((c.city || ','::text) || cy.country) AS store,\n    ((m.first_name || ' '::text) || m.last_name) AS manager,\n    sum(p.amount) AS total_sales\n   FROM (((((((payment p\n     JOIN rental r ON ((p.rental_id = r.rental_id)))\n     JOIN inventory i ON ((r.inventory_id = i.inventory_id)))\n     JOIN store s ON ((i.store_id = s.store_id)))\n     JOIN address a ON ((s.address_id = a.address_id)))\n     JOIN city c ON ((a.city_id = c.city_id)))\n     JOIN country cy ON ((c.country_id = cy.country_id)))\n     JOIN staff m ON ((s.manager_staff_id = m.staff_id)))\n  GROUP BY cy.country, c.city, s.store_id, m.first_name, m.last_name\n  ORDER BY cy.country, c.city;"
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "actor_info"
+      },
+      "definition" : " SELECT a.actor_id,\n    a.first_name,\n    a.last_name,\n    group_concat(DISTINCT ((c.name || ': '::text) || ( SELECT group_concat(f.title) AS group_concat\n           FROM ((film f\n             JOIN film_category fc_1 ON ((f.film_id = fc_1.film_id)))\n             JOIN film_actor fa_1 ON ((f.film_id = fa_1.film_id)))\n          WHERE ((fc_1.category_id = c.category_id) AND (fa_1.actor_id = a.actor_id))\n          GROUP BY fa_1.actor_id))) AS film_info\n   FROM (((actor a\n     LEFT JOIN film_actor fa ON ((a.actor_id = fa.actor_id)))\n     LEFT JOIN film_category fc ON ((fa.film_id = fc.film_id)))\n     LEFT JOIN category c ON ((fc.category_id = c.category_id)))\n  GROUP BY a.actor_id, a.first_name, a.last_name;"
+    }, {
+      "path" : {
+        "database" : "pagila",
+        "schema" : "public",
+        "name" : "nicer_but_slower_film_list"
+      },
+      "definition" : " SELECT film.film_id AS fid,\n    film.title,\n    film.description,\n    category.name AS category,\n    film.rental_rate AS price,\n    film.length,\n    film.rating,\n    group_concat((((upper(\"substring\"(actor.first_name, 1, 1)) || lower(\"substring\"(actor.first_name, 2))) || upper(\"substring\"(actor.last_name, 1, 1))) || lower(\"substring\"(actor.last_name, 2)))) AS actors\n   FROM ((((category\n     LEFT JOIN film_category ON ((category.category_id = film_category.category_id)))\n     LEFT JOIN film ON ((film_category.film_id = film.film_id)))\n     JOIN film_actor ON ((film.film_id = film_actor.film_id)))\n     JOIN actor ON ((film_actor.actor_id = actor.actor_id)))\n  GROUP BY film.film_id, film.title, film.description, category.name, film.rental_rate, film.length, film.rating;"
+    } ]
+  },
+  "databaseMetadata" : {
+    "databaseVersion" : "17.5 (Debian 17.5-1.pgdg120+1)",
+    "connectionId" : "60a5acde64b84642a06f765a91f269ef",
+    "connectionName" : "postgres-PostgreSQL",
+    "connectionUrl" : "jdbc:postgresql://postgres:5432/pagila?sslmode=disable",
+    "databaseType" : "POSTGRESQL",
+    "connectionType" : "NONE"
+  },
+  "healthScore" : 0.9156327543424317,
+  "resolvedRules" : [ ],
+  "takeaways" : [ {
+    "type" : "UNSUPPORTED_FEATURE",
+    "value" : 0.0
+  }, {
+    "type" : "PERFORMANCE",
+    "value" : 1.0
+  }, {
+    "type" : "SCHEMA",
+    "value" : 0.23529411764705888
+  }, {
+    "type" : "DATA_TYPE",
+    "value" : 0.5
+  } ],
+  "uniqueDboAlerts" : {
+    "task" : 21,
+    "risk" : 0,
+    "notice" : 2,
+    "none" : 0
+  },
+  "detectionCountsByDboType" : {
+    "TABLE" : {
+      "severityCountsByDetectionCategory" : {
+        "UNSUPPORTED_FEATURE" : {
+          "task" : 0,
+          "risk" : 0,
+          "notice" : 0,
+          "none" : 0
+        },
+        "SCHEMA" : {
+          "task" : 20,
+          "risk" : 0,
+          "notice" : 0,
+          "none" : 0
+        },
+        "PERFORMANCE" : {
+          "task" : 0,
+          "risk" : 0,
+          "notice" : 0,
+          "none" : 0
+        },
+        "DATA_TYPE" : {
+          "task" : 0,
+          "risk" : 8,
+          "notice" : 14,
+          "none" : 0
+        }
+      }
+    },
+    "DATABASE" : {
+      "severityCountsByDetectionCategory" : {
+        "UNSUPPORTED_FEATURE" : {
+          "task" : 1,
+          "risk" : 0,
+          "notice" : 0,
+          "none" : 0
+        },
+        "SCHEMA" : {
+          "task" : 0,
+          "risk" : 1,
+          "notice" : 0,
+          "none" : 0
+        },
+        "PERFORMANCE" : {
+          "task" : 0,
+          "risk" : 0,
+          "notice" : 0,
+          "none" : 0
+        },
+        "DATA_TYPE" : {
+          "task" : 0,
+          "risk" : 0,
+          "notice" : 0,
+          "none" : 0
+        }
+      }
+    }
+  },
+  "errors" : [ ]
+}

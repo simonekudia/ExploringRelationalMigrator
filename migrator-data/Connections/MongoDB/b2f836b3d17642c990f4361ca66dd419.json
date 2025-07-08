@@ -1,0 +1,16 @@
+{
+  "id" : "b2f836b3d17642c990f4361ca66dd419",
+  "connectionString" : "mongodb://host.docker.internal:27017/mongodb",
+  "projectId" : "",
+  "savePassword" : false,
+  "projectName" : "",
+  "clusterName" : "",
+  "existingConnectionId" : null,
+  "clusterId" : "",
+  "database" : null,
+  "user" : null,
+  "password" : null,
+  "isError" : false,
+  "connectionType" : "NONE",
+  "name" : "mongodb connection"
+}

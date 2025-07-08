@@ -1,16 +1,16 @@
 {
-  "id" : "60a5acde64b84642a06f765a91f269ef",
+  "id" : "d57d73b078754e9a96a06ec39244761f",
   "type" : "POSTGRESQL",
-  "url" : "jdbc:postgresql://postgres:5432/pagila?sslmode=disable",
+  "url" : "jdbc:postgresql://host.docker.internal:5433/tpch?sslmode=disable",
   "user" : "postgres",
   "password" : null,
   "savePassword" : false,
   "existingConnectionId" : null,
   "oraclePdbName" : null,
   "isManualUri" : false,
-  "host" : "postgres",
-  "port" : "5432",
-  "database" : "pagila",
+  "host" : "host.docker.internal",
+  "port" : "5433",
+  "database" : "tpch",
   "oracleIdentifier" : null,
   "mssqlAuthentication" : null,
   "useSSL" : null,
@@ -19,5 +19,5 @@
   "postgresSSLMode" : null,
   "isError" : false,
   "connectionType" : "NONE",
-  "name" : "postgres-PostgreSQL"
+  "name" : "tpch dataset"
 }

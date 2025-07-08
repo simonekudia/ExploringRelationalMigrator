@@ -1,0 +1,108 @@
+{
+  "id" : "5270f87fcbeb481aa7974a8c96fe9191",
+  "projectId" : "db4e073acdfd4fbc87fdca59d40e9fe8",
+  "status" : "CANCELLED",
+  "cdcStatus" : "NOT_STARTED",
+  "verificationJobId" : null,
+  "options" : {
+    "mode" : "SNAPSHOT",
+    "dropCollections" : false,
+    "errorHandling" : "FAIL",
+    "errorTolerance" : 100
+  },
+  "jdbcConnectionString" : "jdbc:postgresql://host.docker.internal:5433/tpch?sslmode=disable",
+  "mongoDbConnectionString" : "mongodb://host.docker.internal:27017/mongodb",
+  "mongoDbProjectId" : "",
+  "mongoDbProjectName" : "",
+  "mongoDbClusterName" : "",
+  "submittedAt" : "2025-07-03T01:34:44.802447468Z",
+  "statistics" : {
+    "startedAt" : "2025-07-03T01:34:52.607Z",
+    "elapsedSeconds" : 1689,
+    "totalTableCount" : 8,
+    "processingTables" : [ "tpch.public.lineitem" ],
+    "migratedTables" : [ "tpch.public.supplier", "tpch.public.part", "tpch.public.orders", "tpch.public.customer" ],
+    "remainingTableCount" : 4,
+    "totalEventsSeen" : 2662783,
+    "completed" : false
+  },
+  "previewStatistics" : {
+    "totalTables" : 8,
+    "totalEvents" : 8661338,
+    "totalEventSize" : 1540939776
+  },
+  "cdcStatistics" : null,
+  "failureError" : null,
+  "jobUpdates" : [ {
+    "eventType" : "INFO",
+    "stage" : null,
+    "message" : "Job started",
+    "details" : null,
+    "count" : 1,
+    "timestamp" : "2025-07-03T01:34:45.04200026Z",
+    "location" : null,
+    "locationType" : null,
+    "locationName" : null,
+    "fieldName" : null,
+    "key" : null
+  }, {
+    "eventType" : "INFO",
+    "stage" : "SNAPSHOTTING",
+    "message" : "Processed snapshot of table: tpch.public.customer",
+    "details" : null,
+    "count" : 1,
+    "timestamp" : "2025-07-03T01:35:17.669185136Z",
+    "location" : null,
+    "locationType" : null,
+    "locationName" : null,
+    "fieldName" : null,
+    "key" : null
+  }, {
+    "eventType" : "INFO",
+    "stage" : "SNAPSHOTTING",
+    "message" : "Processed snapshot of table: tpch.public.orders",
+    "details" : null,
+    "count" : 1,
+    "timestamp" : "2025-07-03T01:37:37.645067506Z",
+    "location" : null,
+    "locationType" : null,
+    "locationName" : null,
+    "fieldName" : null,
+    "key" : null
+  }, {
+    "eventType" : "INFO",
+    "stage" : "SNAPSHOTTING",
+    "message" : "Processed snapshot of table: tpch.public.part",
+    "details" : null,
+    "count" : 1,
+    "timestamp" : "2025-07-03T01:37:52.646821805Z",
+    "location" : null,
+    "locationType" : null,
+    "locationName" : null,
+    "fieldName" : null,
+    "key" : null
+  }, {
+    "eventType" : "INFO",
+    "stage" : "SNAPSHOTTING",
+    "message" : "Processed snapshot of table: tpch.public.supplier",
+    "details" : null,
+    "count" : 1,
+    "timestamp" : "2025-07-03T01:37:57.647866793Z",
+    "location" : null,
+    "locationType" : null,
+    "locationName" : null,
+    "fieldName" : null,
+    "key" : null
+  } ],
+  "metadata" : {
+    "telemetryUserId" : "8f222d6c-4fad-47cd-b687-314840506038",
+    "verificationRequested" : false,
+    "verificationStatus" : null,
+    "lastCdcTelemetryEvent" : null,
+    "verificationInProgress" : false
+  },
+  "relationalTableFilters" : { },
+  "running" : false,
+  "migrationErrorCount" : 0,
+  "lastUpdate" : "2025-07-03T01:37:57.647866793Z"
+}

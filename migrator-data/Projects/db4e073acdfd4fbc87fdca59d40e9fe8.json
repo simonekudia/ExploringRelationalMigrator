@@ -1,0 +1,2033 @@
+{
+  "name" : "tpch",
+  "type" : "POSTGRESQL",
+  "lastModified" : "2025-07-07T19:02:11.151916054Z",
+  "codeId" : null,
+  "schemasId" : "440bd5297bbb4b1cb1c3107966eceeb8",
+  "jdbcId" : "d57d73b078754e9a96a06ec39244761f",
+  "mongodbId" : "b2f836b3d17642c990f4361ca66dd419",
+  "content" : {
+    "settings" : {
+      "viewMode" : null,
+      "shouldRecommendSchema" : false,
+      "casing" : "CAMEL_CASE",
+      "codegen" : null,
+      "keyHandling" : "GENERATED"
+    },
+    "collections" : {
+      "79574eb4-ce41-4a49-920e-24019f5a2bbf" : {
+        "name" : "orders",
+        "type" : "REGULAR",
+        "timeSeriesOptions" : null
+      },
+      "428fb2d7-15de-468e-bafe-0e9c6977e50b" : {
+        "name" : "customer",
+        "type" : "REGULAR",
+        "timeSeriesOptions" : null
+      },
+      "9bbf1596-746e-49d0-a384-e9687de36aa0" : {
+        "name" : "supplier",
+        "type" : "REGULAR",
+        "timeSeriesOptions" : null
+      },
+      "0695e723-e2fa-4361-a6ee-29c798a410d8" : {
+        "name" : "part",
+        "type" : "REGULAR",
+        "timeSeriesOptions" : null
+      }
+    },
+    "mappings" : {
+      "03a1cc0d-3bbd-4a0f-9b41-0901bef8db23" : {
+        "settings" : {
+          "type" : "EMBEDDED_DOCUMENT",
+          "notes" : null,
+          "embeddedPath" : "region",
+          "primitive" : null,
+          "arrayConditions" : null,
+          "foreignKeyName" : "nation_n_regionkey_fkey",
+          "ruleFilter" : null
+        },
+        "fields" : {
+          "r_regionkey" : {
+            "target" : {
+              "name" : "rRegionkey",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "r_regionkey",
+              "databaseSpecificType" : "int4",
+              "isPrimaryKey" : true
+            }
+          },
+          "r_name" : {
+            "target" : {
+              "name" : "rName",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "r_name",
+              "databaseSpecificType" : "bpchar",
+              "isPrimaryKey" : false
+            }
+          },
+          "r_comment" : {
+            "target" : {
+              "name" : "rComment",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "r_comment",
+              "databaseSpecificType" : "varchar",
+              "isPrimaryKey" : false
+            }
+          }
+        },
+        "calculatedFields" : { },
+        "collectionId" : "428fb2d7-15de-468e-bafe-0e9c6977e50b",
+        "table" : "f238b2b1-3edf-4df7-a5b6-04700eb9c311"
+      },
+      "99b70386-b682-4afe-bfcd-b8c4f2f186a4" : {
+        "settings" : {
+          "type" : "EMBEDDED_DOCUMENT_ARRAY",
+          "notes" : null,
+          "embeddedPath" : "partsupps",
+          "primitive" : null,
+          "arrayConditions" : null,
+          "foreignKeyName" : "partsupp_ps_suppkey_fkey",
+          "ruleFilter" : null
+        },
+        "fields" : {
+          "ps_partkey" : {
+            "target" : {
+              "name" : "psPartkey",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "ps_partkey",
+              "databaseSpecificType" : "int4",
+              "isPrimaryKey" : true
+            }
+          },
+          "ps_suppkey" : {
+            "target" : {
+              "name" : "psSuppkey",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "ps_suppkey",
+              "databaseSpecificType" : "int4",
+              "isPrimaryKey" : true
+            }
+          },
+          "ps_availqty" : {
+            "target" : {
+              "name" : "psAvailqty",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "ps_availqty",
+              "databaseSpecificType" : "int4",
+              "isPrimaryKey" : false
+            }
+          },
+          "ps_supplycost" : {
+            "target" : {
+              "name" : "psSupplycost",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "DECIMAL"
+            },
+            "source" : {
+              "name" : "ps_supplycost",
+              "databaseSpecificType" : "numeric",
+              "isPrimaryKey" : false
+            }
+          },
+          "ps_comment" : {
+            "target" : {
+              "name" : "psComment",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "ps_comment",
+              "databaseSpecificType" : "varchar",
+              "isPrimaryKey" : false
+            }
+          }
+        },
+        "calculatedFields" : { },
+        "collectionId" : "9bbf1596-746e-49d0-a384-e9687de36aa0",
+        "table" : "b89007d1-e967-4858-8907-94b45f674a78"
+      },
+      "62ae72c5-c73c-456f-bca6-8993a52f485d" : {
+        "settings" : {
+          "type" : "NEW_DOCUMENT",
+          "notes" : null,
+          "embeddedPath" : null,
+          "primitive" : null,
+          "arrayConditions" : null,
+          "foreignKeyName" : null,
+          "ruleFilter" : null
+        },
+        "fields" : {
+          "_id" : {
+            "target" : {
+              "name" : "_id",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "OBJECT_ID"
+            },
+            "source" : {
+              "name" : "_id",
+              "databaseSpecificType" : "NONE",
+              "isPrimaryKey" : false
+            }
+          },
+          "o_orderkey" : {
+            "target" : {
+              "name" : "oOrderkey",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "o_orderkey",
+              "databaseSpecificType" : "int4",
+              "isPrimaryKey" : true
+            }
+          },
+          "o_custkey" : {
+            "target" : {
+              "name" : "oCustkey",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "o_custkey",
+              "databaseSpecificType" : "int4",
+              "isPrimaryKey" : false
+            }
+          },
+          "o_orderstatus" : {
+            "target" : {
+              "name" : "oOrderstatus",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "o_orderstatus",
+              "databaseSpecificType" : "bpchar",
+              "isPrimaryKey" : false
+            }
+          },
+          "o_totalprice" : {
+            "target" : {
+              "name" : "oTotalprice",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "DECIMAL"
+            },
+            "source" : {
+              "name" : "o_totalprice",
+              "databaseSpecificType" : "numeric",
+              "isPrimaryKey" : false
+            }
+          },
+          "o_orderdate" : {
+            "target" : {
+              "name" : "oOrderdate",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "DATE"
+            },
+            "source" : {
+              "name" : "o_orderdate",
+              "databaseSpecificType" : "date",
+              "isPrimaryKey" : false
+            }
+          },
+          "o_orderpriority" : {
+            "target" : {
+              "name" : "oOrderpriority",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "o_orderpriority",
+              "databaseSpecificType" : "bpchar",
+              "isPrimaryKey" : false
+            }
+          },
+          "o_clerk" : {
+            "target" : {
+              "name" : "oClerk",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "o_clerk",
+              "databaseSpecificType" : "bpchar",
+              "isPrimaryKey" : false
+            }
+          },
+          "o_shippriority" : {
+            "target" : {
+              "name" : "oShippriority",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "o_shippriority",
+              "databaseSpecificType" : "int4",
+              "isPrimaryKey" : false
+            }
+          },
+          "o_comment" : {
+            "target" : {
+              "name" : "oComment",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "o_comment",
+              "databaseSpecificType" : "varchar",
+              "isPrimaryKey" : false
+            }
+          }
+        },
+        "calculatedFields" : { },
+        "collectionId" : "79574eb4-ce41-4a49-920e-24019f5a2bbf",
+        "table" : "ddb008d9-ce81-41b4-86aa-5ef11adc0c78"
+      },
+      "33259efe-b5ed-4dbe-b627-7db64905043a" : {
+        "settings" : {
+          "type" : "NEW_DOCUMENT",
+          "notes" : null,
+          "embeddedPath" : null,
+          "primitive" : null,
+          "arrayConditions" : null,
+          "foreignKeyName" : null,
+          "ruleFilter" : null
+        },
+        "fields" : {
+          "_id" : {
+            "target" : {
+              "name" : "_id",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "OBJECT_ID"
+            },
+            "source" : {
+              "name" : "_id",
+              "databaseSpecificType" : "NONE",
+              "isPrimaryKey" : false
+            }
+          },
+          "c_custkey" : {
+            "target" : {
+              "name" : "cCustkey",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "c_custkey",
+              "databaseSpecificType" : "int4",
+              "isPrimaryKey" : true
+            }
+          },
+          "c_name" : {
+            "target" : {
+              "name" : "cName",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "c_name",
+              "databaseSpecificType" : "varchar",
+              "isPrimaryKey" : false
+            }
+          },
+          "c_address" : {
+            "target" : {
+              "name" : "cAddress",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "c_address",
+              "databaseSpecificType" : "varchar",
+              "isPrimaryKey" : false
+            }
+          },
+          "c_nationkey" : {
+            "target" : {
+              "name" : "cNationkey",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "c_nationkey",
+              "databaseSpecificType" : "int4",
+              "isPrimaryKey" : false
+            }
+          },
+          "c_phone" : {
+            "target" : {
+              "name" : "cPhone",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "c_phone",
+              "databaseSpecificType" : "bpchar",
+              "isPrimaryKey" : false
+            }
+          },
+          "c_acctbal" : {
+            "target" : {
+              "name" : "cAcctbal",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "DECIMAL"
+            },
+            "source" : {
+              "name" : "c_acctbal",
+              "databaseSpecificType" : "numeric",
+              "isPrimaryKey" : false
+            }
+          },
+          "c_mktsegment" : {
+            "target" : {
+              "name" : "cMktsegment",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "c_mktsegment",
+              "databaseSpecificType" : "bpchar",
+              "isPrimaryKey" : false
+            }
+          },
+          "c_comment" : {
+            "target" : {
+              "name" : "cComment",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "c_comment",
+              "databaseSpecificType" : "varchar",
+              "isPrimaryKey" : false
+            }
+          }
+        },
+        "calculatedFields" : { },
+        "collectionId" : "428fb2d7-15de-468e-bafe-0e9c6977e50b",
+        "table" : "707e5db6-0de1-4dad-875b-c66b1be796f4"
+      },
+      "b414ef05-e4fd-4374-8839-79872727f994" : {
+        "settings" : {
+          "type" : "EMBEDDED_DOCUMENT_ARRAY",
+          "notes" : null,
+          "embeddedPath" : "partsupps",
+          "primitive" : null,
+          "arrayConditions" : null,
+          "foreignKeyName" : "partsupp_ps_partkey_fkey",
+          "ruleFilter" : null
+        },
+        "fields" : {
+          "ps_partkey" : {
+            "target" : {
+              "name" : "psPartkey",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "ps_partkey",
+              "databaseSpecificType" : "int4",
+              "isPrimaryKey" : true
+            }
+          },
+          "ps_suppkey" : {
+            "target" : {
+              "name" : "psSuppkey",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "ps_suppkey",
+              "databaseSpecificType" : "int4",
+              "isPrimaryKey" : true
+            }
+          },
+          "ps_availqty" : {
+            "target" : {
+              "name" : "psAvailqty",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "ps_availqty",
+              "databaseSpecificType" : "int4",
+              "isPrimaryKey" : false
+            }
+          },
+          "ps_supplycost" : {
+            "target" : {
+              "name" : "psSupplycost",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "DECIMAL"
+            },
+            "source" : {
+              "name" : "ps_supplycost",
+              "databaseSpecificType" : "numeric",
+              "isPrimaryKey" : false
+            }
+          },
+          "ps_comment" : {
+            "target" : {
+              "name" : "psComment",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "ps_comment",
+              "databaseSpecificType" : "varchar",
+              "isPrimaryKey" : false
+            }
+          }
+        },
+        "calculatedFields" : { },
+        "collectionId" : "0695e723-e2fa-4361-a6ee-29c798a410d8",
+        "table" : "b89007d1-e967-4858-8907-94b45f674a78"
+      },
+      "4cb6d7b0-5d9e-44d7-9a43-25fcdfded22e" : {
+        "settings" : {
+          "type" : "EMBEDDED_DOCUMENT",
+          "notes" : null,
+          "embeddedPath" : "region",
+          "primitive" : null,
+          "arrayConditions" : null,
+          "foreignKeyName" : "nation_n_regionkey_fkey",
+          "ruleFilter" : null
+        },
+        "fields" : {
+          "r_regionkey" : {
+            "target" : {
+              "name" : "rRegionkey",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "r_regionkey",
+              "databaseSpecificType" : "int4",
+              "isPrimaryKey" : true
+            }
+          },
+          "r_name" : {
+            "target" : {
+              "name" : "rName",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "r_name",
+              "databaseSpecificType" : "bpchar",
+              "isPrimaryKey" : false
+            }
+          },
+          "r_comment" : {
+            "target" : {
+              "name" : "rComment",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "r_comment",
+              "databaseSpecificType" : "varchar",
+              "isPrimaryKey" : false
+            }
+          }
+        },
+        "calculatedFields" : { },
+        "collectionId" : "9bbf1596-746e-49d0-a384-e9687de36aa0",
+        "table" : "f238b2b1-3edf-4df7-a5b6-04700eb9c311"
+      },
+      "ef515370-8234-411a-a14c-d34e5cb69df2" : {
+        "settings" : {
+          "type" : "EMBEDDED_DOCUMENT_ARRAY",
+          "notes" : null,
+          "embeddedPath" : "lineitems",
+          "primitive" : null,
+          "arrayConditions" : null,
+          "foreignKeyName" : "lineitem_l_suppkey_fkey",
+          "ruleFilter" : null
+        },
+        "fields" : {
+          "l_orderkey" : {
+            "target" : {
+              "name" : "lOrderkey",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "l_orderkey",
+              "databaseSpecificType" : "int4",
+              "isPrimaryKey" : true
+            }
+          },
+          "l_partkey" : {
+            "target" : {
+              "name" : "lPartkey",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "l_partkey",
+              "databaseSpecificType" : "int4",
+              "isPrimaryKey" : false
+            }
+          },
+          "l_suppkey" : {
+            "target" : {
+              "name" : "lSuppkey",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "l_suppkey",
+              "databaseSpecificType" : "int4",
+              "isPrimaryKey" : false
+            }
+          },
+          "l_linenumber" : {
+            "target" : {
+              "name" : "lLinenumber",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "l_linenumber",
+              "databaseSpecificType" : "int4",
+              "isPrimaryKey" : true
+            }
+          },
+          "l_quantity" : {
+            "target" : {
+              "name" : "lQuantity",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "DECIMAL"
+            },
+            "source" : {
+              "name" : "l_quantity",
+              "databaseSpecificType" : "numeric",
+              "isPrimaryKey" : false
+            }
+          },
+          "l_extendedprice" : {
+            "target" : {
+              "name" : "lExtendedprice",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "DECIMAL"
+            },
+            "source" : {
+              "name" : "l_extendedprice",
+              "databaseSpecificType" : "numeric",
+              "isPrimaryKey" : false
+            }
+          },
+          "l_discount" : {
+            "target" : {
+              "name" : "lDiscount",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "DECIMAL"
+            },
+            "source" : {
+              "name" : "l_discount",
+              "databaseSpecificType" : "numeric",
+              "isPrimaryKey" : false
+            }
+          },
+          "l_tax" : {
+            "target" : {
+              "name" : "lTax",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "DECIMAL"
+            },
+            "source" : {
+              "name" : "l_tax",
+              "databaseSpecificType" : "numeric",
+              "isPrimaryKey" : false
+            }
+          },
+          "l_returnflag" : {
+            "target" : {
+              "name" : "lReturnflag",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "l_returnflag",
+              "databaseSpecificType" : "bpchar",
+              "isPrimaryKey" : false
+            }
+          },
+          "l_linestatus" : {
+            "target" : {
+              "name" : "lLinestatus",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "l_linestatus",
+              "databaseSpecificType" : "bpchar",
+              "isPrimaryKey" : false
+            }
+          },
+          "l_shipdate" : {
+            "target" : {
+              "name" : "lShipdate",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "DATE"
+            },
+            "source" : {
+              "name" : "l_shipdate",
+              "databaseSpecificType" : "date",
+              "isPrimaryKey" : false
+            }
+          },
+          "l_commitdate" : {
+            "target" : {
+              "name" : "lCommitdate",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "DATE"
+            },
+            "source" : {
+              "name" : "l_commitdate",
+              "databaseSpecificType" : "date",
+              "isPrimaryKey" : false
+            }
+          },
+          "l_receiptdate" : {
+            "target" : {
+              "name" : "lReceiptdate",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "DATE"
+            },
+            "source" : {
+              "name" : "l_receiptdate",
+              "databaseSpecificType" : "date",
+              "isPrimaryKey" : false
+            }
+          },
+          "l_shipinstruct" : {
+            "target" : {
+              "name" : "lShipinstruct",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "l_shipinstruct",
+              "databaseSpecificType" : "bpchar",
+              "isPrimaryKey" : false
+            }
+          },
+          "l_shipmode" : {
+            "target" : {
+              "name" : "lShipmode",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "l_shipmode",
+              "databaseSpecificType" : "bpchar",
+              "isPrimaryKey" : false
+            }
+          },
+          "l_comment" : {
+            "target" : {
+              "name" : "lComment",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "l_comment",
+              "databaseSpecificType" : "varchar",
+              "isPrimaryKey" : false
+            }
+          }
+        },
+        "calculatedFields" : { },
+        "collectionId" : "9bbf1596-746e-49d0-a384-e9687de36aa0",
+        "table" : "356d28c0-9388-4253-a988-184a33072301"
+      },
+      "ba27d496-a76a-4701-a2db-ffc131479848" : {
+        "settings" : {
+          "type" : "NEW_DOCUMENT",
+          "notes" : null,
+          "embeddedPath" : null,
+          "primitive" : null,
+          "arrayConditions" : null,
+          "foreignKeyName" : null,
+          "ruleFilter" : null
+        },
+        "fields" : {
+          "_id" : {
+            "target" : {
+              "name" : "_id",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "OBJECT_ID"
+            },
+            "source" : {
+              "name" : "_id",
+              "databaseSpecificType" : "NONE",
+              "isPrimaryKey" : false
+            }
+          },
+          "s_suppkey" : {
+            "target" : {
+              "name" : "sSuppkey",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "s_suppkey",
+              "databaseSpecificType" : "int4",
+              "isPrimaryKey" : true
+            }
+          },
+          "s_name" : {
+            "target" : {
+              "name" : "sName",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "s_name",
+              "databaseSpecificType" : "bpchar",
+              "isPrimaryKey" : false
+            }
+          },
+          "s_address" : {
+            "target" : {
+              "name" : "sAddress",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "s_address",
+              "databaseSpecificType" : "varchar",
+              "isPrimaryKey" : false
+            }
+          },
+          "s_nationkey" : {
+            "target" : {
+              "name" : "sNationkey",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "s_nationkey",
+              "databaseSpecificType" : "int4",
+              "isPrimaryKey" : false
+            }
+          },
+          "s_phone" : {
+            "target" : {
+              "name" : "sPhone",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "s_phone",
+              "databaseSpecificType" : "bpchar",
+              "isPrimaryKey" : false
+            }
+          },
+          "s_acctbal" : {
+            "target" : {
+              "name" : "sAcctbal",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "DECIMAL"
+            },
+            "source" : {
+              "name" : "s_acctbal",
+              "databaseSpecificType" : "numeric",
+              "isPrimaryKey" : false
+            }
+          },
+          "s_comment" : {
+            "target" : {
+              "name" : "sComment",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "s_comment",
+              "databaseSpecificType" : "varchar",
+              "isPrimaryKey" : false
+            }
+          }
+        },
+        "calculatedFields" : { },
+        "collectionId" : "9bbf1596-746e-49d0-a384-e9687de36aa0",
+        "table" : "e524bee7-83f8-4f0d-9d01-7f3043b02dd7"
+      },
+      "4c70b0ba-f809-4c03-a681-e46e540b4acd" : {
+        "settings" : {
+          "type" : "EMBEDDED_DOCUMENT",
+          "notes" : null,
+          "embeddedPath" : "nation",
+          "primitive" : null,
+          "arrayConditions" : null,
+          "foreignKeyName" : "supplier_s_nationkey_fkey",
+          "ruleFilter" : null
+        },
+        "fields" : {
+          "n_nationkey" : {
+            "target" : {
+              "name" : "nNationkey",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "n_nationkey",
+              "databaseSpecificType" : "int4",
+              "isPrimaryKey" : true
+            }
+          },
+          "n_name" : {
+            "target" : {
+              "name" : "nName",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "n_name",
+              "databaseSpecificType" : "bpchar",
+              "isPrimaryKey" : false
+            }
+          },
+          "n_regionkey" : {
+            "target" : {
+              "name" : "nRegionkey",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "n_regionkey",
+              "databaseSpecificType" : "int4",
+              "isPrimaryKey" : false
+            }
+          },
+          "n_comment" : {
+            "target" : {
+              "name" : "nComment",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "n_comment",
+              "databaseSpecificType" : "varchar",
+              "isPrimaryKey" : false
+            }
+          }
+        },
+        "calculatedFields" : { },
+        "collectionId" : "9bbf1596-746e-49d0-a384-e9687de36aa0",
+        "table" : "8393b01f-8412-49e6-a9d1-364880b5922c"
+      },
+      "2046879d-e043-4ddb-b430-d98179fd59b9" : {
+        "settings" : {
+          "type" : "NEW_DOCUMENT",
+          "notes" : null,
+          "embeddedPath" : null,
+          "primitive" : null,
+          "arrayConditions" : null,
+          "foreignKeyName" : null,
+          "ruleFilter" : null
+        },
+        "fields" : {
+          "_id" : {
+            "target" : {
+              "name" : "_id",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "OBJECT_ID"
+            },
+            "source" : {
+              "name" : "_id",
+              "databaseSpecificType" : "NONE",
+              "isPrimaryKey" : false
+            }
+          },
+          "p_partkey" : {
+            "target" : {
+              "name" : "pPartkey",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "p_partkey",
+              "databaseSpecificType" : "int4",
+              "isPrimaryKey" : true
+            }
+          },
+          "p_name" : {
+            "target" : {
+              "name" : "pName",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "p_name",
+              "databaseSpecificType" : "varchar",
+              "isPrimaryKey" : false
+            }
+          },
+          "p_mfgr" : {
+            "target" : {
+              "name" : "pMfgr",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "p_mfgr",
+              "databaseSpecificType" : "bpchar",
+              "isPrimaryKey" : false
+            }
+          },
+          "p_brand" : {
+            "target" : {
+              "name" : "pBrand",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "p_brand",
+              "databaseSpecificType" : "bpchar",
+              "isPrimaryKey" : false
+            }
+          },
+          "p_type" : {
+            "target" : {
+              "name" : "pType",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "p_type",
+              "databaseSpecificType" : "varchar",
+              "isPrimaryKey" : false
+            }
+          },
+          "p_size" : {
+            "target" : {
+              "name" : "pSize",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "p_size",
+              "databaseSpecificType" : "int4",
+              "isPrimaryKey" : false
+            }
+          },
+          "p_container" : {
+            "target" : {
+              "name" : "pContainer",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "p_container",
+              "databaseSpecificType" : "bpchar",
+              "isPrimaryKey" : false
+            }
+          },
+          "p_retailprice" : {
+            "target" : {
+              "name" : "pRetailprice",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "DECIMAL"
+            },
+            "source" : {
+              "name" : "p_retailprice",
+              "databaseSpecificType" : "numeric",
+              "isPrimaryKey" : false
+            }
+          },
+          "p_comment" : {
+            "target" : {
+              "name" : "pComment",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "p_comment",
+              "databaseSpecificType" : "varchar",
+              "isPrimaryKey" : false
+            }
+          }
+        },
+        "calculatedFields" : { },
+        "collectionId" : "0695e723-e2fa-4361-a6ee-29c798a410d8",
+        "table" : "02e1f10c-189a-4ad2-8c7a-69780f443957"
+      },
+      "2006f298-d20e-4a14-b09f-4329a2791065" : {
+        "settings" : {
+          "type" : "EMBEDDED_DOCUMENT",
+          "notes" : null,
+          "embeddedPath" : "nation",
+          "primitive" : null,
+          "arrayConditions" : null,
+          "foreignKeyName" : "customer_c_nationkey_fkey",
+          "ruleFilter" : null
+        },
+        "fields" : {
+          "n_nationkey" : {
+            "target" : {
+              "name" : "nNationkey",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "n_nationkey",
+              "databaseSpecificType" : "int4",
+              "isPrimaryKey" : true
+            }
+          },
+          "n_name" : {
+            "target" : {
+              "name" : "nName",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "n_name",
+              "databaseSpecificType" : "bpchar",
+              "isPrimaryKey" : false
+            }
+          },
+          "n_regionkey" : {
+            "target" : {
+              "name" : "nRegionkey",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "n_regionkey",
+              "databaseSpecificType" : "int4",
+              "isPrimaryKey" : false
+            }
+          },
+          "n_comment" : {
+            "target" : {
+              "name" : "nComment",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "n_comment",
+              "databaseSpecificType" : "varchar",
+              "isPrimaryKey" : false
+            }
+          }
+        },
+        "calculatedFields" : { },
+        "collectionId" : "428fb2d7-15de-468e-bafe-0e9c6977e50b",
+        "table" : "8393b01f-8412-49e6-a9d1-364880b5922c"
+      },
+      "7f84f5f5-4375-4fba-8f15-d54835566060" : {
+        "settings" : {
+          "type" : "EMBEDDED_DOCUMENT_ARRAY",
+          "notes" : null,
+          "embeddedPath" : "lineitems",
+          "primitive" : null,
+          "arrayConditions" : null,
+          "foreignKeyName" : "lineitem_l_partkey_fkey",
+          "ruleFilter" : null
+        },
+        "fields" : {
+          "l_orderkey" : {
+            "target" : {
+              "name" : "lOrderkey",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "l_orderkey",
+              "databaseSpecificType" : "int4",
+              "isPrimaryKey" : true
+            }
+          },
+          "l_partkey" : {
+            "target" : {
+              "name" : "lPartkey",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "l_partkey",
+              "databaseSpecificType" : "int4",
+              "isPrimaryKey" : false
+            }
+          },
+          "l_suppkey" : {
+            "target" : {
+              "name" : "lSuppkey",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "l_suppkey",
+              "databaseSpecificType" : "int4",
+              "isPrimaryKey" : false
+            }
+          },
+          "l_linenumber" : {
+            "target" : {
+              "name" : "lLinenumber",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "l_linenumber",
+              "databaseSpecificType" : "int4",
+              "isPrimaryKey" : true
+            }
+          },
+          "l_quantity" : {
+            "target" : {
+              "name" : "lQuantity",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "DECIMAL"
+            },
+            "source" : {
+              "name" : "l_quantity",
+              "databaseSpecificType" : "numeric",
+              "isPrimaryKey" : false
+            }
+          },
+          "l_extendedprice" : {
+            "target" : {
+              "name" : "lExtendedprice",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "DECIMAL"
+            },
+            "source" : {
+              "name" : "l_extendedprice",
+              "databaseSpecificType" : "numeric",
+              "isPrimaryKey" : false
+            }
+          },
+          "l_discount" : {
+            "target" : {
+              "name" : "lDiscount",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "DECIMAL"
+            },
+            "source" : {
+              "name" : "l_discount",
+              "databaseSpecificType" : "numeric",
+              "isPrimaryKey" : false
+            }
+          },
+          "l_tax" : {
+            "target" : {
+              "name" : "lTax",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "DECIMAL"
+            },
+            "source" : {
+              "name" : "l_tax",
+              "databaseSpecificType" : "numeric",
+              "isPrimaryKey" : false
+            }
+          },
+          "l_returnflag" : {
+            "target" : {
+              "name" : "lReturnflag",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "l_returnflag",
+              "databaseSpecificType" : "bpchar",
+              "isPrimaryKey" : false
+            }
+          },
+          "l_linestatus" : {
+            "target" : {
+              "name" : "lLinestatus",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "l_linestatus",
+              "databaseSpecificType" : "bpchar",
+              "isPrimaryKey" : false
+            }
+          },
+          "l_shipdate" : {
+            "target" : {
+              "name" : "lShipdate",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "DATE"
+            },
+            "source" : {
+              "name" : "l_shipdate",
+              "databaseSpecificType" : "date",
+              "isPrimaryKey" : false
+            }
+          },
+          "l_commitdate" : {
+            "target" : {
+              "name" : "lCommitdate",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "DATE"
+            },
+            "source" : {
+              "name" : "l_commitdate",
+              "databaseSpecificType" : "date",
+              "isPrimaryKey" : false
+            }
+          },
+          "l_receiptdate" : {
+            "target" : {
+              "name" : "lReceiptdate",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "DATE"
+            },
+            "source" : {
+              "name" : "l_receiptdate",
+              "databaseSpecificType" : "date",
+              "isPrimaryKey" : false
+            }
+          },
+          "l_shipinstruct" : {
+            "target" : {
+              "name" : "lShipinstruct",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "l_shipinstruct",
+              "databaseSpecificType" : "bpchar",
+              "isPrimaryKey" : false
+            }
+          },
+          "l_shipmode" : {
+            "target" : {
+              "name" : "lShipmode",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "l_shipmode",
+              "databaseSpecificType" : "bpchar",
+              "isPrimaryKey" : false
+            }
+          },
+          "l_comment" : {
+            "target" : {
+              "name" : "lComment",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "l_comment",
+              "databaseSpecificType" : "varchar",
+              "isPrimaryKey" : false
+            }
+          }
+        },
+        "calculatedFields" : { },
+        "collectionId" : "0695e723-e2fa-4361-a6ee-29c798a410d8",
+        "table" : "356d28c0-9388-4253-a988-184a33072301"
+      },
+      "d5bca319-f517-4361-9c56-87b22bede44c" : {
+        "settings" : {
+          "type" : "EMBEDDED_DOCUMENT_ARRAY",
+          "notes" : null,
+          "embeddedPath" : "lineitems",
+          "primitive" : null,
+          "arrayConditions" : null,
+          "foreignKeyName" : "lineitem_l_orderkey_fkey",
+          "ruleFilter" : null
+        },
+        "fields" : {
+          "l_orderkey" : {
+            "target" : {
+              "name" : "lOrderkey",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "l_orderkey",
+              "databaseSpecificType" : "int4",
+              "isPrimaryKey" : true
+            }
+          },
+          "l_partkey" : {
+            "target" : {
+              "name" : "lPartkey",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "l_partkey",
+              "databaseSpecificType" : "int4",
+              "isPrimaryKey" : false
+            }
+          },
+          "l_suppkey" : {
+            "target" : {
+              "name" : "lSuppkey",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "l_suppkey",
+              "databaseSpecificType" : "int4",
+              "isPrimaryKey" : false
+            }
+          },
+          "l_linenumber" : {
+            "target" : {
+              "name" : "lLinenumber",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "l_linenumber",
+              "databaseSpecificType" : "int4",
+              "isPrimaryKey" : true
+            }
+          },
+          "l_quantity" : {
+            "target" : {
+              "name" : "lQuantity",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "DECIMAL"
+            },
+            "source" : {
+              "name" : "l_quantity",
+              "databaseSpecificType" : "numeric",
+              "isPrimaryKey" : false
+            }
+          },
+          "l_extendedprice" : {
+            "target" : {
+              "name" : "lExtendedprice",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "DECIMAL"
+            },
+            "source" : {
+              "name" : "l_extendedprice",
+              "databaseSpecificType" : "numeric",
+              "isPrimaryKey" : false
+            }
+          },
+          "l_discount" : {
+            "target" : {
+              "name" : "lDiscount",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "DECIMAL"
+            },
+            "source" : {
+              "name" : "l_discount",
+              "databaseSpecificType" : "numeric",
+              "isPrimaryKey" : false
+            }
+          },
+          "l_tax" : {
+            "target" : {
+              "name" : "lTax",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "DECIMAL"
+            },
+            "source" : {
+              "name" : "l_tax",
+              "databaseSpecificType" : "numeric",
+              "isPrimaryKey" : false
+            }
+          },
+          "l_returnflag" : {
+            "target" : {
+              "name" : "lReturnflag",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "l_returnflag",
+              "databaseSpecificType" : "bpchar",
+              "isPrimaryKey" : false
+            }
+          },
+          "l_linestatus" : {
+            "target" : {
+              "name" : "lLinestatus",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "l_linestatus",
+              "databaseSpecificType" : "bpchar",
+              "isPrimaryKey" : false
+            }
+          },
+          "l_shipdate" : {
+            "target" : {
+              "name" : "lShipdate",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "DATE"
+            },
+            "source" : {
+              "name" : "l_shipdate",
+              "databaseSpecificType" : "date",
+              "isPrimaryKey" : false
+            }
+          },
+          "l_commitdate" : {
+            "target" : {
+              "name" : "lCommitdate",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "DATE"
+            },
+            "source" : {
+              "name" : "l_commitdate",
+              "databaseSpecificType" : "date",
+              "isPrimaryKey" : false
+            }
+          },
+          "l_receiptdate" : {
+            "target" : {
+              "name" : "lReceiptdate",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "DATE"
+            },
+            "source" : {
+              "name" : "l_receiptdate",
+              "databaseSpecificType" : "date",
+              "isPrimaryKey" : false
+            }
+          },
+          "l_shipinstruct" : {
+            "target" : {
+              "name" : "lShipinstruct",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "l_shipinstruct",
+              "databaseSpecificType" : "bpchar",
+              "isPrimaryKey" : false
+            }
+          },
+          "l_shipmode" : {
+            "target" : {
+              "name" : "lShipmode",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "l_shipmode",
+              "databaseSpecificType" : "bpchar",
+              "isPrimaryKey" : false
+            }
+          },
+          "l_comment" : {
+            "target" : {
+              "name" : "lComment",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "l_comment",
+              "databaseSpecificType" : "varchar",
+              "isPrimaryKey" : false
+            }
+          }
+        },
+        "calculatedFields" : { },
+        "collectionId" : "79574eb4-ce41-4a49-920e-24019f5a2bbf",
+        "table" : "356d28c0-9388-4253-a988-184a33072301"
+      }
+    },
+    "relationships" : {
+      "tables" : {
+        "tpch.public.supplier" : {
+          "mappings" : [ "ba27d496-a76a-4701-a2db-ffc131479848" ]
+        },
+        "tpch.public.partsupp" : {
+          "mappings" : [ "b414ef05-e4fd-4374-8839-79872727f994", "99b70386-b682-4afe-bfcd-b8c4f2f186a4" ]
+        },
+        "tpch.public.lineitem" : {
+          "mappings" : [ "d5bca319-f517-4361-9c56-87b22bede44c", "7f84f5f5-4375-4fba-8f15-d54835566060", "ef515370-8234-411a-a14c-d34e5cb69df2" ]
+        },
+        "tpch.public.region" : {
+          "mappings" : [ "03a1cc0d-3bbd-4a0f-9b41-0901bef8db23", "4cb6d7b0-5d9e-44d7-9a43-25fcdfded22e" ]
+        },
+        "tpch.public.part" : {
+          "mappings" : [ "2046879d-e043-4ddb-b430-d98179fd59b9" ]
+        },
+        "tpch.public.nation" : {
+          "mappings" : [ "2006f298-d20e-4a14-b09f-4329a2791065", "4c70b0ba-f809-4c03-a681-e46e540b4acd" ]
+        },
+        "tpch.public.orders" : {
+          "mappings" : [ "62ae72c5-c73c-456f-bca6-8993a52f485d" ]
+        },
+        "tpch.public.customer" : {
+          "mappings" : [ "33259efe-b5ed-4dbe-b627-7db64905043a" ]
+        }
+      },
+      "collections" : {
+        "79574eb4-ce41-4a49-920e-24019f5a2bbf" : {
+          "mappings" : [ "62ae72c5-c73c-456f-bca6-8993a52f485d", "d5bca319-f517-4361-9c56-87b22bede44c" ]
+        },
+        "428fb2d7-15de-468e-bafe-0e9c6977e50b" : {
+          "mappings" : [ "33259efe-b5ed-4dbe-b627-7db64905043a", "2006f298-d20e-4a14-b09f-4329a2791065", "03a1cc0d-3bbd-4a0f-9b41-0901bef8db23" ]
+        },
+        "9bbf1596-746e-49d0-a384-e9687de36aa0" : {
+          "mappings" : [ "ba27d496-a76a-4701-a2db-ffc131479848", "4c70b0ba-f809-4c03-a681-e46e540b4acd", "99b70386-b682-4afe-bfcd-b8c4f2f186a4", "ef515370-8234-411a-a14c-d34e5cb69df2", "4cb6d7b0-5d9e-44d7-9a43-25fcdfded22e" ]
+        },
+        "0695e723-e2fa-4361-a6ee-29c798a410d8" : {
+          "mappings" : [ "2046879d-e043-4ddb-b430-d98179fd59b9", "b414ef05-e4fd-4374-8839-79872727f994", "7f84f5f5-4375-4fba-8f15-d54835566060" ]
+        }
+      },
+      "mappings" : {
+        "03a1cc0d-3bbd-4a0f-9b41-0901bef8db23" : {
+          "children" : [ ]
+        },
+        "99b70386-b682-4afe-bfcd-b8c4f2f186a4" : {
+          "children" : [ ]
+        },
+        "62ae72c5-c73c-456f-bca6-8993a52f485d" : {
+          "children" : [ "d5bca319-f517-4361-9c56-87b22bede44c" ]
+        },
+        "33259efe-b5ed-4dbe-b627-7db64905043a" : {
+          "children" : [ "2006f298-d20e-4a14-b09f-4329a2791065" ]
+        },
+        "b414ef05-e4fd-4374-8839-79872727f994" : {
+          "children" : [ ]
+        },
+        "4cb6d7b0-5d9e-44d7-9a43-25fcdfded22e" : {
+          "children" : [ ]
+        },
+        "ef515370-8234-411a-a14c-d34e5cb69df2" : {
+          "children" : [ ]
+        },
+        "ba27d496-a76a-4701-a2db-ffc131479848" : {
+          "children" : [ "4c70b0ba-f809-4c03-a681-e46e540b4acd", "99b70386-b682-4afe-bfcd-b8c4f2f186a4", "ef515370-8234-411a-a14c-d34e5cb69df2" ]
+        },
+        "4c70b0ba-f809-4c03-a681-e46e540b4acd" : {
+          "children" : [ "4cb6d7b0-5d9e-44d7-9a43-25fcdfded22e" ]
+        },
+        "2046879d-e043-4ddb-b430-d98179fd59b9" : {
+          "children" : [ "b414ef05-e4fd-4374-8839-79872727f994", "7f84f5f5-4375-4fba-8f15-d54835566060" ]
+        },
+        "2006f298-d20e-4a14-b09f-4329a2791065" : {
+          "children" : [ "03a1cc0d-3bbd-4a0f-9b41-0901bef8db23" ]
+        },
+        "7f84f5f5-4375-4fba-8f15-d54835566060" : {
+          "children" : [ ]
+        },
+        "d5bca319-f517-4361-9c56-87b22bede44c" : {
+          "children" : [ ]
+        }
+      }
+    },
+    "diagrams" : {
+      "activeTab" : "b1699c5e-a9b5-4996-b00b-cc7217fd03cb",
+      "tabs" : [ {
+        "id" : "b1699c5e-a9b5-4996-b00b-cc7217fd03cb",
+        "name" : "Main Diagram",
+        "notes" : null,
+        "relational" : {
+          "nodes" : [ {
+            "id" : "356d28c0-9388-4253-a988-184a33072301",
+            "type" : "entityCard",
+            "position" : {
+              "x" : 315.3333333333333,
+              "y" : 12
+            },
+            "width" : 244,
+            "height" : 332,
+            "hidden" : false
+          }, {
+            "id" : "b89007d1-e967-4858-8907-94b45f674a78",
+            "type" : "entityCard",
+            "position" : {
+              "x" : 700,
+              "y" : 210
+            },
+            "width" : 244,
+            "height" : 134,
+            "hidden" : false
+          }, {
+            "id" : "8393b01f-8412-49e6-a9d1-364880b5922c",
+            "type" : "entityCard",
+            "position" : {
+              "x" : 52.66666666666667,
+              "y" : 1038
+            },
+            "width" : 244,
+            "height" : 116,
+            "hidden" : false
+          }, {
+            "id" : "02e1f10c-189a-4ad2-8c7a-69780f443957",
+            "type" : "entityCard",
+            "position" : {
+              "x" : 356,
+              "y" : 444
+            },
+            "width" : 244,
+            "height" : 206,
+            "hidden" : false
+          }, {
+            "id" : "e524bee7-83f8-4f0d-9d01-7f3043b02dd7",
+            "type" : "entityCard",
+            "position" : {
+              "x" : 700,
+              "y" : 456
+            },
+            "width" : 244,
+            "height" : 170,
+            "hidden" : false
+          }, {
+            "id" : "ddb008d9-ce81-41b4-86aa-5ef11adc0c78",
+            "type" : "entityCard",
+            "position" : {
+              "x" : 12,
+              "y" : 444
+            },
+            "width" : 244,
+            "height" : 206,
+            "hidden" : false
+          }, {
+            "id" : "f238b2b1-3edf-4df7-a5b6-04700eb9c311",
+            "type" : "entityCard",
+            "position" : {
+              "x" : 52.66666666666667,
+              "y" : 1254
+            },
+            "width" : 244,
+            "height" : 98,
+            "hidden" : false
+          }, {
+            "id" : "707e5db6-0de1-4dad-875b-c66b1be796f4",
+            "type" : "entityCard",
+            "position" : {
+              "x" : 12,
+              "y" : 750
+            },
+            "width" : 244,
+            "height" : 188,
+            "hidden" : false
+          } ],
+          "edges" : [ {
+            "id" : "82008737-8d6f-40cd-9b78-a9b91f9a30f0",
+            "source" : "e524bee7-83f8-4f0d-9d01-7f3043b02dd7",
+            "target" : "356d28c0-9388-4253-a988-184a33072301",
+            "markerStart" : "START_ONE",
+            "markerEnd" : "END_MANY"
+          }, {
+            "id" : "0613eeb1-fe59-4c62-b0e6-94613aac38c7",
+            "source" : "02e1f10c-189a-4ad2-8c7a-69780f443957",
+            "target" : "356d28c0-9388-4253-a988-184a33072301",
+            "markerStart" : "START_ONE",
+            "markerEnd" : "END_MANY"
+          }, {
+            "id" : "e6db2b2b-bff9-419f-bb61-e4f0088adc49",
+            "source" : "ddb008d9-ce81-41b4-86aa-5ef11adc0c78",
+            "target" : "356d28c0-9388-4253-a988-184a33072301",
+            "markerStart" : "START_ONE",
+            "markerEnd" : "END_MANY"
+          }, {
+            "id" : "e9ff12a9-48e7-41f4-a729-eea98d6ae8fa",
+            "source" : "e524bee7-83f8-4f0d-9d01-7f3043b02dd7",
+            "target" : "b89007d1-e967-4858-8907-94b45f674a78",
+            "markerStart" : "START_ONE",
+            "markerEnd" : "END_MANY"
+          }, {
+            "id" : "9c61facc-817a-4a22-afd7-b4eb128ff68f",
+            "source" : "02e1f10c-189a-4ad2-8c7a-69780f443957",
+            "target" : "b89007d1-e967-4858-8907-94b45f674a78",
+            "markerStart" : "START_ONE",
+            "markerEnd" : "END_MANY"
+          }, {
+            "id" : "6a167e30-81e0-4bf3-9037-d0d5604007b9",
+            "source" : "f238b2b1-3edf-4df7-a5b6-04700eb9c311",
+            "target" : "8393b01f-8412-49e6-a9d1-364880b5922c",
+            "markerStart" : "START_ONE",
+            "markerEnd" : "END_MANY"
+          }, {
+            "id" : "362e9227-61f1-4d68-80e9-3229655efe70",
+            "source" : "8393b01f-8412-49e6-a9d1-364880b5922c",
+            "target" : "e524bee7-83f8-4f0d-9d01-7f3043b02dd7",
+            "markerStart" : "START_ONE",
+            "markerEnd" : "END_MANY"
+          }, {
+            "id" : "2a7d63ea-d617-425d-8c4a-6497c998ad88",
+            "source" : "707e5db6-0de1-4dad-875b-c66b1be796f4",
+            "target" : "ddb008d9-ce81-41b4-86aa-5ef11adc0c78",
+            "markerStart" : "START_ONE",
+            "markerEnd" : "END_MANY"
+          }, {
+            "id" : "c790c639-257b-4795-b385-281d9144c55b",
+            "source" : "8393b01f-8412-49e6-a9d1-364880b5922c",
+            "target" : "707e5db6-0de1-4dad-875b-c66b1be796f4",
+            "markerStart" : "START_ONE",
+            "markerEnd" : "END_MANY"
+          } ]
+        },
+        "collection" : {
+          "nodes" : [ {
+            "id" : "orders",
+            "type" : "entityCard",
+            "position" : {
+              "x" : 32.333333333333314,
+              "y" : 12
+            },
+            "width" : 244,
+            "height" : 530,
+            "hidden" : false
+          }, {
+            "id" : "customer",
+            "type" : "entityCard",
+            "position" : {
+              "x" : 93.33333333333331,
+              "y" : 642
+            },
+            "width" : 244,
+            "height" : 368,
+            "hidden" : false
+          }, {
+            "id" : "supplier",
+            "type" : "entityCard",
+            "position" : {
+              "x" : 52.66666666666666,
+              "y" : 1110
+            },
+            "width" : 244,
+            "height" : 764,
+            "hidden" : false
+          }, {
+            "id" : "part",
+            "type" : "entityCard",
+            "position" : {
+              "x" : 12,
+              "y" : 1974
+            },
+            "width" : 244,
+            "height" : 638,
+            "hidden" : false
+          } ],
+          "edges" : [ {
+            "id" : "80df7d32-3ee4-4222-8918-fcd7c68c378e",
+            "source" : "customer",
+            "target" : "orders",
+            "markerStart" : "START_ONE",
+            "markerEnd" : "END_MANY"
+          }, {
+            "id" : "4be3c5c7-88e9-45f9-9407-a757566378df",
+            "source" : "supplier",
+            "target" : "orders",
+            "markerStart" : "START_ONE_OR_MANY",
+            "markerEnd" : "END_ONE_OR_MANY"
+          }, {
+            "id" : "0cfbdc27-f2d6-4806-886b-324bf36e8b96",
+            "source" : "part",
+            "target" : "orders",
+            "markerStart" : "START_ONE_OR_MANY",
+            "markerEnd" : "END_ONE_OR_MANY"
+          }, {
+            "id" : "41de8ac5-46f0-4a56-b40d-631e1a1da808",
+            "source" : "supplier",
+            "target" : "customer",
+            "markerStart" : "START_ONE_OR_MANY",
+            "markerEnd" : "END_ONE_OR_MANY"
+          }, {
+            "id" : "a4bd24c7-8c5e-4833-8ae7-3be27496020a",
+            "source" : "part",
+            "target" : "supplier",
+            "markerStart" : "START_ONE_OR_MANY",
+            "markerEnd" : "END_ONE_OR_MANY"
+          } ]
+        }
+      } ]
+    },
+    "tables" : {
+      "356d28c0-9388-4253-a988-184a33072301" : {
+        "path" : {
+          "database" : "tpch",
+          "schema" : "public",
+          "table" : "lineitem"
+        }
+      },
+      "b89007d1-e967-4858-8907-94b45f674a78" : {
+        "path" : {
+          "database" : "tpch",
+          "schema" : "public",
+          "table" : "partsupp"
+        }
+      },
+      "8393b01f-8412-49e6-a9d1-364880b5922c" : {
+        "path" : {
+          "database" : "tpch",
+          "schema" : "public",
+          "table" : "nation"
+        }
+      },
+      "02e1f10c-189a-4ad2-8c7a-69780f443957" : {
+        "path" : {
+          "database" : "tpch",
+          "schema" : "public",
+          "table" : "part"
+        }
+      },
+      "e524bee7-83f8-4f0d-9d01-7f3043b02dd7" : {
+        "path" : {
+          "database" : "tpch",
+          "schema" : "public",
+          "table" : "supplier"
+        }
+      },
+      "ddb008d9-ce81-41b4-86aa-5ef11adc0c78" : {
+        "path" : {
+          "database" : "tpch",
+          "schema" : "public",
+          "table" : "orders"
+        }
+      },
+      "f238b2b1-3edf-4df7-a5b6-04700eb9c311" : {
+        "path" : {
+          "database" : "tpch",
+          "schema" : "public",
+          "table" : "region"
+        }
+      },
+      "707e5db6-0de1-4dad-875b-c66b1be796f4" : {
+        "path" : {
+          "database" : "tpch",
+          "schema" : "public",
+          "table" : "customer"
+        }
+      }
+    }
+  },
+  "connectionDetails" : {
+    "ddl" : null
+  },
+  "isSampleProject" : null,
+  "id" : "db4e073acdfd4fbc87fdca59d40e9fe8"
+}

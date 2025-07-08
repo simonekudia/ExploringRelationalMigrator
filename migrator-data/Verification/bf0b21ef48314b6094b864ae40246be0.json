@@ -1,0 +1,89 @@
+{
+  "id" : "bf0b21ef48314b6094b864ae40246be0",
+  "createdAt" : "2025-07-07T19:41:35.420958007Z",
+  "modifiedAt" : "2025-07-07T20:27:47.315080791Z",
+  "projectId" : "7b0b3eaad24d4908ade96340648a5462",
+  "migrationJobId" : "d41b8313ec154e65923b9046cce14659",
+  "failureError" : {
+    "encounteredAt" : "2025-07-07T20:27:47.31611Z",
+    "message" : "Java heap space"
+  },
+  "status" : "ABORTED",
+  "collections" : {
+    "country" : {
+      "documentsToVerify" : 109,
+      "documentsVerified" : 0,
+      "errorCount" : 0,
+      "completed" : false,
+      "collectionWideError" : null,
+      "collectionErrors" : [ ]
+    },
+    "address" : {
+      "documentsToVerify" : 603,
+      "documentsVerified" : 0,
+      "errorCount" : 0,
+      "completed" : false,
+      "collectionWideError" : null,
+      "collectionErrors" : [ ]
+    },
+    "city" : {
+      "documentsToVerify" : 600,
+      "documentsVerified" : 0,
+      "errorCount" : 0,
+      "completed" : false,
+      "collectionWideError" : null,
+      "collectionErrors" : [ ]
+    },
+    "staff" : {
+      "documentsToVerify" : 1500,
+      "documentsVerified" : 1500,
+      "errorCount" : 0,
+      "completed" : true,
+      "collectionWideError" : null,
+      "collectionErrors" : [ ]
+    },
+    "film" : {
+      "documentsToVerify" : 1000,
+      "documentsVerified" : 0,
+      "errorCount" : 0,
+      "completed" : false,
+      "collectionWideError" : null,
+      "collectionErrors" : [ ]
+    },
+    "store" : {
+      "documentsToVerify" : 500,
+      "documentsVerified" : 0,
+      "errorCount" : 0,
+      "completed" : false,
+      "collectionWideError" : null,
+      "collectionErrors" : [ ]
+    },
+    "inventory" : {
+      "documentsToVerify" : 4581,
+      "documentsVerified" : 0,
+      "errorCount" : 0,
+      "completed" : false,
+      "collectionWideError" : null,
+      "collectionErrors" : [ ]
+    },
+    "rental" : {
+      "documentsToVerify" : 16044,
+      "documentsVerified" : 0,
+      "errorCount" : 0,
+      "completed" : false,
+      "collectionWideError" : null,
+      "collectionErrors" : [ ]
+    },
+    "customer" : {
+      "documentsToVerify" : 150599,
+      "documentsVerified" : 0,
+      "errorCount" : 0,
+      "completed" : false,
+      "collectionWideError" : null,
+      "collectionErrors" : [ ]
+    }
+  },
+  "metadata" : {
+    "telemetryUserId" : "8f222d6c-4fad-47cd-b687-314840506038"
+  }
+}

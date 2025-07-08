@@ -1,47 +1,22 @@
 {
   "name" : "relationalMigratorTest",
   "type" : "POSTGRESQL",
-  "lastModified" : "2025-07-01T00:52:42.643422299Z",
+  "lastModified" : "2025-07-07T19:40:57.793119795Z",
   "codeId" : null,
   "schemasId" : "ec347fa29de44d1fbbd2abba5cbfc79b",
   "jdbcId" : "60a5acde64b84642a06f765a91f269ef",
-  "mongodbId" : null,
+  "mongodbId" : "b2f836b3d17642c990f4361ca66dd419",
   "content" : {
     "settings" : {
-      "viewMode" : null,
+      "viewMode" : "MONGODB",
       "shouldRecommendSchema" : true,
       "casing" : "CAMEL_CASE",
       "codegen" : null,
       "keyHandling" : "GENERATED"
     },
     "collections" : {
-      "6f2deb40-85f9-4799-965c-3c36e1bcd6f7" : {
-        "name" : "category",
-        "type" : "REGULAR",
-        "timeSeriesOptions" : null
-      },
       "6ff2f3e8-820f-4140-94a8-4cd74c5006bf" : {
         "name" : "country",
-        "type" : "REGULAR",
-        "timeSeriesOptions" : null
-      },
-      "7363c85f-a854-4004-806e-233f07f1e062" : {
-        "name" : "paymentP2022_06",
-        "type" : "REGULAR",
-        "timeSeriesOptions" : null
-      },
-      "c47b7d04-2ca2-473f-b009-1e94868a5cb9" : {
-        "name" : "actor",
-        "type" : "REGULAR",
-        "timeSeriesOptions" : null
-      },
-      "774f6ed6-1013-431a-b84e-817b9fa19e4f" : {
-        "name" : "paymentP2022_01",
-        "type" : "REGULAR",
-        "timeSeriesOptions" : null
-      },
-      "9b349a98-a629-4bec-b5fc-b90f7363a944" : {
-        "name" : "filmCategory",
         "type" : "REGULAR",
         "timeSeriesOptions" : null
       },
@@ -70,11 +45,6 @@
         "type" : "REGULAR",
         "timeSeriesOptions" : null
       },
-      "7516b948-9688-40fd-a65d-847d32775fd1" : {
-        "name" : "paymentP2022_03",
-        "type" : "REGULAR",
-        "timeSeriesOptions" : null
-      },
       "8129af4f-b17a-46f2-b0ae-413a4b16e711" : {
         "name" : "staff",
         "type" : "REGULAR",
@@ -82,41 +52,6 @@
       },
       "19a5c7e6-d40c-43c7-bf90-cbd2aa350f5c" : {
         "name" : "store",
-        "type" : "REGULAR",
-        "timeSeriesOptions" : null
-      },
-      "5a6ee7aa-6f11-4967-ab7d-195d74134433" : {
-        "name" : "filmActor",
-        "type" : "REGULAR",
-        "timeSeriesOptions" : null
-      },
-      "f3be539c-5ff3-4454-b40b-5c173c1124f0" : {
-        "name" : "paymentP2022_07",
-        "type" : "REGULAR",
-        "timeSeriesOptions" : null
-      },
-      "1aeae93a-bd93-47a9-9854-dad8ae12df58" : {
-        "name" : "paymentP2022_04",
-        "type" : "REGULAR",
-        "timeSeriesOptions" : null
-      },
-      "946d60d2-6b89-4edc-80cf-2d2815eb5b45" : {
-        "name" : "language",
-        "type" : "REGULAR",
-        "timeSeriesOptions" : null
-      },
-      "99fc1e59-ee2c-4784-a152-fe9387f7ff58" : {
-        "name" : "payment",
-        "type" : "REGULAR",
-        "timeSeriesOptions" : null
-      },
-      "c1392a3e-9bd4-4a54-9e29-2856f8d57526" : {
-        "name" : "paymentP2022_05",
-        "type" : "REGULAR",
-        "timeSeriesOptions" : null
-      },
-      "3b0f8a89-23e0-45f2-8a7b-08376f6a5208" : {
-        "name" : "paymentP2022_02",
         "type" : "REGULAR",
         "timeSeriesOptions" : null
       },
@@ -207,181 +142,6 @@
         "calculatedFields" : { },
         "collectionId" : "422355ec-e681-4c12-9a99-826f03fb729e",
         "table" : "d7922c98-31be-4ec9-bda8-33ca6431bdee"
-      },
-      "67d00199-eafd-4765-b758-05166a5c407c" : {
-        "settings" : {
-          "type" : "NEW_DOCUMENT",
-          "notes" : null,
-          "embeddedPath" : null,
-          "primitive" : null,
-          "arrayConditions" : null,
-          "foreignKeyName" : null,
-          "ruleFilter" : null
-        },
-        "fields" : {
-          "_id" : {
-            "target" : {
-              "name" : "_id",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "OBJECT_ID"
-            },
-            "source" : {
-              "name" : "_id",
-              "databaseSpecificType" : "NONE",
-              "isPrimaryKey" : false
-            }
-          },
-          "actor_id" : {
-            "target" : {
-              "name" : "actorId",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "INTEGER"
-            },
-            "source" : {
-              "name" : "actor_id",
-              "databaseSpecificType" : "int4",
-              "isPrimaryKey" : true
-            }
-          },
-          "film_id" : {
-            "target" : {
-              "name" : "filmId",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "INTEGER"
-            },
-            "source" : {
-              "name" : "film_id",
-              "databaseSpecificType" : "int4",
-              "isPrimaryKey" : true
-            }
-          },
-          "last_update" : {
-            "target" : {
-              "name" : "lastUpdate",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "STRING"
-            },
-            "source" : {
-              "name" : "last_update",
-              "databaseSpecificType" : "timestamptz",
-              "isPrimaryKey" : false
-            }
-          }
-        },
-        "calculatedFields" : { },
-        "collectionId" : "5a6ee7aa-6f11-4967-ab7d-195d74134433",
-        "table" : "78d08533-9a33-4a95-a0b6-1a163565dd99"
-      },
-      "c8bf9a04-5d12-47e7-a761-68a3ea7e0c1a" : {
-        "settings" : {
-          "type" : "NEW_DOCUMENT",
-          "notes" : null,
-          "embeddedPath" : null,
-          "primitive" : null,
-          "arrayConditions" : null,
-          "foreignKeyName" : null,
-          "ruleFilter" : null
-        },
-        "fields" : {
-          "_id" : {
-            "target" : {
-              "name" : "_id",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "OBJECT_ID"
-            },
-            "source" : {
-              "name" : "_id",
-              "databaseSpecificType" : "NONE",
-              "isPrimaryKey" : false
-            }
-          },
-          "payment_id" : {
-            "target" : {
-              "name" : "paymentId",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "INTEGER"
-            },
-            "source" : {
-              "name" : "payment_id",
-              "databaseSpecificType" : "serial",
-              "isPrimaryKey" : true
-            }
-          },
-          "customer_id" : {
-            "target" : {
-              "name" : "customerId",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "INTEGER"
-            },
-            "source" : {
-              "name" : "customer_id",
-              "databaseSpecificType" : "int4",
-              "isPrimaryKey" : false
-            }
-          },
-          "staff_id" : {
-            "target" : {
-              "name" : "staffId",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "INTEGER"
-            },
-            "source" : {
-              "name" : "staff_id",
-              "databaseSpecificType" : "int4",
-              "isPrimaryKey" : false
-            }
-          },
-          "rental_id" : {
-            "target" : {
-              "name" : "rentalId",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "INTEGER"
-            },
-            "source" : {
-              "name" : "rental_id",
-              "databaseSpecificType" : "int4",
-              "isPrimaryKey" : false
-            }
-          },
-          "amount" : {
-            "target" : {
-              "name" : "amount",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "DECIMAL"
-            },
-            "source" : {
-              "name" : "amount",
-              "databaseSpecificType" : "numeric",
-              "isPrimaryKey" : false
-            }
-          },
-          "payment_date" : {
-            "target" : {
-              "name" : "paymentDate",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "STRING"
-            },
-            "source" : {
-              "name" : "payment_date",
-              "databaseSpecificType" : "timestamptz",
-              "isPrimaryKey" : true
-            }
-          }
-        },
-        "calculatedFields" : { },
-        "collectionId" : "774f6ed6-1013-431a-b84e-817b9fa19e4f",
-        "table" : "6e3a412e-8ce3-442d-a784-b4426e56a47e"
       },
       "83a2a995-fe81-4708-a2ff-0e3200ed316b" : {
         "settings" : {
@@ -515,155 +275,6 @@
         "calculatedFields" : { },
         "collectionId" : "90cc66b6-57a9-48d1-9781-e70b5bcdfd13",
         "table" : "3795c3fd-4322-4bce-8f73-c625897a7327"
-      },
-      "058b73f6-e424-4b09-9c6e-d4ea1105781d" : {
-        "settings" : {
-          "type" : "NEW_DOCUMENT",
-          "notes" : null,
-          "embeddedPath" : null,
-          "primitive" : null,
-          "arrayConditions" : null,
-          "foreignKeyName" : null,
-          "ruleFilter" : null
-        },
-        "fields" : {
-          "_id" : {
-            "target" : {
-              "name" : "_id",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "OBJECT_ID"
-            },
-            "source" : {
-              "name" : "_id",
-              "databaseSpecificType" : "NONE",
-              "isPrimaryKey" : false
-            }
-          },
-          "film_id" : {
-            "target" : {
-              "name" : "filmId",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "INTEGER"
-            },
-            "source" : {
-              "name" : "film_id",
-              "databaseSpecificType" : "int4",
-              "isPrimaryKey" : true
-            }
-          },
-          "category_id" : {
-            "target" : {
-              "name" : "categoryId",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "INTEGER"
-            },
-            "source" : {
-              "name" : "category_id",
-              "databaseSpecificType" : "int4",
-              "isPrimaryKey" : true
-            }
-          },
-          "last_update" : {
-            "target" : {
-              "name" : "lastUpdate",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "STRING"
-            },
-            "source" : {
-              "name" : "last_update",
-              "databaseSpecificType" : "timestamptz",
-              "isPrimaryKey" : false
-            }
-          }
-        },
-        "calculatedFields" : { },
-        "collectionId" : "9b349a98-a629-4bec-b5fc-b90f7363a944",
-        "table" : "c39bd023-114b-4ec5-8a42-8888c88f7289"
-      },
-      "8c225cd0-4dfd-4423-b755-f3e6aa16b075" : {
-        "settings" : {
-          "type" : "NEW_DOCUMENT",
-          "notes" : null,
-          "embeddedPath" : null,
-          "primitive" : null,
-          "arrayConditions" : null,
-          "foreignKeyName" : null,
-          "ruleFilter" : null
-        },
-        "fields" : {
-          "_id" : {
-            "target" : {
-              "name" : "_id",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "OBJECT_ID"
-            },
-            "source" : {
-              "name" : "_id",
-              "databaseSpecificType" : "NONE",
-              "isPrimaryKey" : false
-            }
-          },
-          "actor_id" : {
-            "target" : {
-              "name" : "actorId",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "INTEGER"
-            },
-            "source" : {
-              "name" : "actor_id",
-              "databaseSpecificType" : "serial",
-              "isPrimaryKey" : true
-            }
-          },
-          "first_name" : {
-            "target" : {
-              "name" : "firstName",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "STRING"
-            },
-            "source" : {
-              "name" : "first_name",
-              "databaseSpecificType" : "text",
-              "isPrimaryKey" : false
-            }
-          },
-          "last_name" : {
-            "target" : {
-              "name" : "lastName",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "STRING"
-            },
-            "source" : {
-              "name" : "last_name",
-              "databaseSpecificType" : "text",
-              "isPrimaryKey" : false
-            }
-          },
-          "last_update" : {
-            "target" : {
-              "name" : "lastUpdate",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "STRING"
-            },
-            "source" : {
-              "name" : "last_update",
-              "databaseSpecificType" : "timestamptz",
-              "isPrimaryKey" : false
-            }
-          }
-        },
-        "calculatedFields" : { },
-        "collectionId" : "c47b7d04-2ca2-473f-b009-1e94868a5cb9",
-        "table" : "e2dfaaf3-9116-43c1-8417-8c079d38894d"
       },
       "738a397f-384d-4878-a97f-614d021661bc" : {
         "settings" : {
@@ -824,74 +435,6 @@
         "collectionId" : "913611af-b8a8-4455-b30b-533756c11c80",
         "table" : "bc815a0e-1572-43e4-bafe-dc0103c69d1f"
       },
-      "971848a9-d94b-4502-a4d0-f374341ad09b" : {
-        "settings" : {
-          "type" : "NEW_DOCUMENT",
-          "notes" : null,
-          "embeddedPath" : null,
-          "primitive" : null,
-          "arrayConditions" : null,
-          "foreignKeyName" : null,
-          "ruleFilter" : null
-        },
-        "fields" : {
-          "_id" : {
-            "target" : {
-              "name" : "_id",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "OBJECT_ID"
-            },
-            "source" : {
-              "name" : "_id",
-              "databaseSpecificType" : "NONE",
-              "isPrimaryKey" : false
-            }
-          },
-          "language_id" : {
-            "target" : {
-              "name" : "languageId",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "INTEGER"
-            },
-            "source" : {
-              "name" : "language_id",
-              "databaseSpecificType" : "serial",
-              "isPrimaryKey" : true
-            }
-          },
-          "name" : {
-            "target" : {
-              "name" : "name",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "STRING"
-            },
-            "source" : {
-              "name" : "name",
-              "databaseSpecificType" : "bpchar",
-              "isPrimaryKey" : false
-            }
-          },
-          "last_update" : {
-            "target" : {
-              "name" : "lastUpdate",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "STRING"
-            },
-            "source" : {
-              "name" : "last_update",
-              "databaseSpecificType" : "timestamptz",
-              "isPrimaryKey" : false
-            }
-          }
-        },
-        "calculatedFields" : { },
-        "collectionId" : "946d60d2-6b89-4edc-80cf-2d2815eb5b45",
-        "table" : "08ce9979-7b8b-408a-8f4e-f3cf16011acc"
-      },
       "c85e20cd-02b3-47bd-9ba1-ed4dd40a1e4b" : {
         "settings" : {
           "type" : "NEW_DOCUMENT",
@@ -1040,327 +583,6 @@
         "calculatedFields" : { },
         "collectionId" : "19a5c7e6-d40c-43c7-bf90-cbd2aa350f5c",
         "table" : "6f99f1ae-01a5-4a8a-927f-e3500e40845e"
-      },
-      "35363148-52ea-41c4-a9e4-c0cf2dca4419" : {
-        "settings" : {
-          "type" : "NEW_DOCUMENT",
-          "notes" : null,
-          "embeddedPath" : null,
-          "primitive" : null,
-          "arrayConditions" : null,
-          "foreignKeyName" : null,
-          "ruleFilter" : null
-        },
-        "fields" : {
-          "_id" : {
-            "target" : {
-              "name" : "_id",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "OBJECT_ID"
-            },
-            "source" : {
-              "name" : "_id",
-              "databaseSpecificType" : "NONE",
-              "isPrimaryKey" : false
-            }
-          },
-          "payment_id" : {
-            "target" : {
-              "name" : "paymentId",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "INTEGER"
-            },
-            "source" : {
-              "name" : "payment_id",
-              "databaseSpecificType" : "serial",
-              "isPrimaryKey" : true
-            }
-          },
-          "customer_id" : {
-            "target" : {
-              "name" : "customerId",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "INTEGER"
-            },
-            "source" : {
-              "name" : "customer_id",
-              "databaseSpecificType" : "int4",
-              "isPrimaryKey" : false
-            }
-          },
-          "staff_id" : {
-            "target" : {
-              "name" : "staffId",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "INTEGER"
-            },
-            "source" : {
-              "name" : "staff_id",
-              "databaseSpecificType" : "int4",
-              "isPrimaryKey" : false
-            }
-          },
-          "rental_id" : {
-            "target" : {
-              "name" : "rentalId",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "INTEGER"
-            },
-            "source" : {
-              "name" : "rental_id",
-              "databaseSpecificType" : "int4",
-              "isPrimaryKey" : false
-            }
-          },
-          "amount" : {
-            "target" : {
-              "name" : "amount",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "DECIMAL"
-            },
-            "source" : {
-              "name" : "amount",
-              "databaseSpecificType" : "numeric",
-              "isPrimaryKey" : false
-            }
-          },
-          "payment_date" : {
-            "target" : {
-              "name" : "paymentDate",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "STRING"
-            },
-            "source" : {
-              "name" : "payment_date",
-              "databaseSpecificType" : "timestamptz",
-              "isPrimaryKey" : true
-            }
-          }
-        },
-        "calculatedFields" : { },
-        "collectionId" : "7516b948-9688-40fd-a65d-847d32775fd1",
-        "table" : "3651ff0a-861f-4372-ac8c-7ed2fdab5512"
-      },
-      "9f212477-0caa-407e-9a07-901f9f9512b4" : {
-        "settings" : {
-          "type" : "NEW_DOCUMENT",
-          "notes" : null,
-          "embeddedPath" : null,
-          "primitive" : null,
-          "arrayConditions" : null,
-          "foreignKeyName" : null,
-          "ruleFilter" : null
-        },
-        "fields" : {
-          "_id" : {
-            "target" : {
-              "name" : "_id",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "OBJECT_ID"
-            },
-            "source" : {
-              "name" : "_id",
-              "databaseSpecificType" : "NONE",
-              "isPrimaryKey" : false
-            }
-          },
-          "payment_id" : {
-            "target" : {
-              "name" : "paymentId",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "INTEGER"
-            },
-            "source" : {
-              "name" : "payment_id",
-              "databaseSpecificType" : "serial",
-              "isPrimaryKey" : true
-            }
-          },
-          "customer_id" : {
-            "target" : {
-              "name" : "customerId",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "INTEGER"
-            },
-            "source" : {
-              "name" : "customer_id",
-              "databaseSpecificType" : "int4",
-              "isPrimaryKey" : false
-            }
-          },
-          "staff_id" : {
-            "target" : {
-              "name" : "staffId",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "INTEGER"
-            },
-            "source" : {
-              "name" : "staff_id",
-              "databaseSpecificType" : "int4",
-              "isPrimaryKey" : false
-            }
-          },
-          "rental_id" : {
-            "target" : {
-              "name" : "rentalId",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "INTEGER"
-            },
-            "source" : {
-              "name" : "rental_id",
-              "databaseSpecificType" : "int4",
-              "isPrimaryKey" : false
-            }
-          },
-          "amount" : {
-            "target" : {
-              "name" : "amount",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "DECIMAL"
-            },
-            "source" : {
-              "name" : "amount",
-              "databaseSpecificType" : "numeric",
-              "isPrimaryKey" : false
-            }
-          },
-          "payment_date" : {
-            "target" : {
-              "name" : "paymentDate",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "STRING"
-            },
-            "source" : {
-              "name" : "payment_date",
-              "databaseSpecificType" : "timestamptz",
-              "isPrimaryKey" : true
-            }
-          }
-        },
-        "calculatedFields" : { },
-        "collectionId" : "7363c85f-a854-4004-806e-233f07f1e062",
-        "table" : "a62e8757-3e6c-40d2-8cb7-47149da80401"
-      },
-      "91e63e9c-3c6e-42bf-86ae-f0d6153799c3" : {
-        "settings" : {
-          "type" : "NEW_DOCUMENT",
-          "notes" : null,
-          "embeddedPath" : null,
-          "primitive" : null,
-          "arrayConditions" : null,
-          "foreignKeyName" : null,
-          "ruleFilter" : null
-        },
-        "fields" : {
-          "_id" : {
-            "target" : {
-              "name" : "_id",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "OBJECT_ID"
-            },
-            "source" : {
-              "name" : "_id",
-              "databaseSpecificType" : "NONE",
-              "isPrimaryKey" : false
-            }
-          },
-          "payment_id" : {
-            "target" : {
-              "name" : "paymentId",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "INTEGER"
-            },
-            "source" : {
-              "name" : "payment_id",
-              "databaseSpecificType" : "serial",
-              "isPrimaryKey" : true
-            }
-          },
-          "customer_id" : {
-            "target" : {
-              "name" : "customerId",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "INTEGER"
-            },
-            "source" : {
-              "name" : "customer_id",
-              "databaseSpecificType" : "int4",
-              "isPrimaryKey" : false
-            }
-          },
-          "staff_id" : {
-            "target" : {
-              "name" : "staffId",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "INTEGER"
-            },
-            "source" : {
-              "name" : "staff_id",
-              "databaseSpecificType" : "int4",
-              "isPrimaryKey" : false
-            }
-          },
-          "rental_id" : {
-            "target" : {
-              "name" : "rentalId",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "INTEGER"
-            },
-            "source" : {
-              "name" : "rental_id",
-              "databaseSpecificType" : "int4",
-              "isPrimaryKey" : false
-            }
-          },
-          "amount" : {
-            "target" : {
-              "name" : "amount",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "DECIMAL"
-            },
-            "source" : {
-              "name" : "amount",
-              "databaseSpecificType" : "numeric",
-              "isPrimaryKey" : false
-            }
-          },
-          "payment_date" : {
-            "target" : {
-              "name" : "paymentDate",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "STRING"
-            },
-            "source" : {
-              "name" : "payment_date",
-              "databaseSpecificType" : "timestamptz",
-              "isPrimaryKey" : true
-            }
-          }
-        },
-        "calculatedFields" : { },
-        "collectionId" : "1aeae93a-bd93-47a9-9854-dad8ae12df58",
-        "table" : "5125e8ea-74d3-4cb3-acb6-dffc45ac18ca"
       },
       "8f7511df-5dea-4fcd-b1d9-62cabbe3c935" : {
         "settings" : {
@@ -1654,113 +876,6 @@
         "collectionId" : "a25b08fc-73fd-45ea-b7c8-3d2e8f09740f",
         "table" : "06653cbe-02ce-4941-a3c0-de567ac486e5"
       },
-      "b33c137a-aedb-400d-88d8-f14c49f80000" : {
-        "settings" : {
-          "type" : "NEW_DOCUMENT",
-          "notes" : null,
-          "embeddedPath" : null,
-          "primitive" : null,
-          "arrayConditions" : null,
-          "foreignKeyName" : null,
-          "ruleFilter" : null
-        },
-        "fields" : {
-          "_id" : {
-            "target" : {
-              "name" : "_id",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "OBJECT_ID"
-            },
-            "source" : {
-              "name" : "_id",
-              "databaseSpecificType" : "NONE",
-              "isPrimaryKey" : false
-            }
-          },
-          "payment_id" : {
-            "target" : {
-              "name" : "paymentId",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "INTEGER"
-            },
-            "source" : {
-              "name" : "payment_id",
-              "databaseSpecificType" : "serial",
-              "isPrimaryKey" : true
-            }
-          },
-          "customer_id" : {
-            "target" : {
-              "name" : "customerId",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "INTEGER"
-            },
-            "source" : {
-              "name" : "customer_id",
-              "databaseSpecificType" : "int4",
-              "isPrimaryKey" : false
-            }
-          },
-          "staff_id" : {
-            "target" : {
-              "name" : "staffId",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "INTEGER"
-            },
-            "source" : {
-              "name" : "staff_id",
-              "databaseSpecificType" : "int4",
-              "isPrimaryKey" : false
-            }
-          },
-          "rental_id" : {
-            "target" : {
-              "name" : "rentalId",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "INTEGER"
-            },
-            "source" : {
-              "name" : "rental_id",
-              "databaseSpecificType" : "int4",
-              "isPrimaryKey" : false
-            }
-          },
-          "amount" : {
-            "target" : {
-              "name" : "amount",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "DECIMAL"
-            },
-            "source" : {
-              "name" : "amount",
-              "databaseSpecificType" : "numeric",
-              "isPrimaryKey" : false
-            }
-          },
-          "payment_date" : {
-            "target" : {
-              "name" : "paymentDate",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "STRING"
-            },
-            "source" : {
-              "name" : "payment_date",
-              "databaseSpecificType" : "timestamptz",
-              "isPrimaryKey" : true
-            }
-          }
-        },
-        "calculatedFields" : { },
-        "collectionId" : "c1392a3e-9bd4-4a54-9e29-2856f8d57526",
-        "table" : "429a4de3-8e76-4e3f-82f5-71d4c88b7a49"
-      },
       "bce21494-1ebb-4d00-941f-b7fa01862e45" : {
         "settings" : {
           "type" : "NEW_DOCUMENT",
@@ -1933,113 +1048,6 @@
         "collectionId" : "8129af4f-b17a-46f2-b0ae-413a4b16e711",
         "table" : "550c3d2e-0e97-4b1e-bab4-a9e5a38c57cf"
       },
-      "534c48ae-8671-49ef-8630-20fada7d4d70" : {
-        "settings" : {
-          "type" : "NEW_DOCUMENT",
-          "notes" : null,
-          "embeddedPath" : null,
-          "primitive" : null,
-          "arrayConditions" : null,
-          "foreignKeyName" : null,
-          "ruleFilter" : null
-        },
-        "fields" : {
-          "_id" : {
-            "target" : {
-              "name" : "_id",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "OBJECT_ID"
-            },
-            "source" : {
-              "name" : "_id",
-              "databaseSpecificType" : "NONE",
-              "isPrimaryKey" : false
-            }
-          },
-          "payment_id" : {
-            "target" : {
-              "name" : "paymentId",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "INTEGER"
-            },
-            "source" : {
-              "name" : "payment_id",
-              "databaseSpecificType" : "serial",
-              "isPrimaryKey" : true
-            }
-          },
-          "customer_id" : {
-            "target" : {
-              "name" : "customerId",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "INTEGER"
-            },
-            "source" : {
-              "name" : "customer_id",
-              "databaseSpecificType" : "int4",
-              "isPrimaryKey" : false
-            }
-          },
-          "staff_id" : {
-            "target" : {
-              "name" : "staffId",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "INTEGER"
-            },
-            "source" : {
-              "name" : "staff_id",
-              "databaseSpecificType" : "int4",
-              "isPrimaryKey" : false
-            }
-          },
-          "rental_id" : {
-            "target" : {
-              "name" : "rentalId",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "INTEGER"
-            },
-            "source" : {
-              "name" : "rental_id",
-              "databaseSpecificType" : "int4",
-              "isPrimaryKey" : false
-            }
-          },
-          "amount" : {
-            "target" : {
-              "name" : "amount",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "DECIMAL"
-            },
-            "source" : {
-              "name" : "amount",
-              "databaseSpecificType" : "numeric",
-              "isPrimaryKey" : false
-            }
-          },
-          "payment_date" : {
-            "target" : {
-              "name" : "paymentDate",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "STRING"
-            },
-            "source" : {
-              "name" : "payment_date",
-              "databaseSpecificType" : "timestamptz",
-              "isPrimaryKey" : true
-            }
-          }
-        },
-        "calculatedFields" : { },
-        "collectionId" : "f3be539c-5ff3-4454-b40b-5c173c1124f0",
-        "table" : "e815ea26-989d-4e3b-8752-95304bbbc890"
-      },
       "a534212a-2288-4a1b-9485-887eeb0997bf" : {
         "settings" : {
           "type" : "NEW_DOCUMENT",
@@ -2160,159 +1168,438 @@
         "collectionId" : "86e98428-3452-4668-b389-4b7ca7dffa6c",
         "table" : "7591eadb-aaba-4772-a5bc-a9b349d0b792"
       },
-      "78bb3182-3148-49f2-8402-5b192c22d1e6" : {
+      "764ecb4d-5cdc-47e5-873a-4bfadd84b3cf" : {
         "settings" : {
-          "type" : "NEW_DOCUMENT",
+          "type" : "EMBEDDED_DOCUMENT",
           "notes" : null,
-          "embeddedPath" : null,
+          "embeddedPath" : "city",
           "primitive" : null,
           "arrayConditions" : null,
-          "foreignKeyName" : null,
+          "foreignKeyName" : "address_city_id_fkey",
           "ruleFilter" : null
         },
         "fields" : {
-          "_id" : {
+          "city_id" : {
             "target" : {
-              "name" : "_id",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "OBJECT_ID"
-            },
-            "source" : {
-              "name" : "_id",
-              "databaseSpecificType" : "NONE",
-              "isPrimaryKey" : false
-            }
-          },
-          "payment_id" : {
-            "target" : {
-              "name" : "paymentId",
+              "name" : "cityId",
               "included" : true,
               "isNullExcluded" : false,
               "type" : "INTEGER"
             },
             "source" : {
-              "name" : "payment_id",
+              "name" : "city_id",
               "databaseSpecificType" : "serial",
               "isPrimaryKey" : true
             }
           },
-          "customer_id" : {
+          "city" : {
             "target" : {
-              "name" : "customerId",
+              "name" : "city",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "city",
+              "databaseSpecificType" : "text",
+              "isPrimaryKey" : false
+            }
+          },
+          "country_id" : {
+            "target" : {
+              "name" : "countryId",
               "included" : true,
               "isNullExcluded" : false,
               "type" : "INTEGER"
             },
             "source" : {
-              "name" : "customer_id",
+              "name" : "country_id",
               "databaseSpecificType" : "int4",
               "isPrimaryKey" : false
             }
           },
-          "staff_id" : {
+          "last_update" : {
             "target" : {
-              "name" : "staffId",
+              "name" : "lastUpdate",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "last_update",
+              "databaseSpecificType" : "timestamptz",
+              "isPrimaryKey" : false
+            }
+          }
+        },
+        "calculatedFields" : { },
+        "collectionId" : "19a5c7e6-d40c-43c7-bf90-cbd2aa350f5c",
+        "table" : "d7922c98-31be-4ec9-bda8-33ca6431bdee"
+      },
+      "7cff8e08-335a-47e1-91b7-f514553885d0" : {
+        "settings" : {
+          "type" : "EMBEDDED_DOCUMENT_ARRAY",
+          "notes" : null,
+          "embeddedPath" : "inventories",
+          "primitive" : null,
+          "arrayConditions" : null,
+          "foreignKeyName" : "inventory_store_id_fkey",
+          "ruleFilter" : null
+        },
+        "fields" : {
+          "inventory_id" : {
+            "target" : {
+              "name" : "inventoryId",
               "included" : true,
               "isNullExcluded" : false,
               "type" : "INTEGER"
             },
             "source" : {
-              "name" : "staff_id",
-              "databaseSpecificType" : "int4",
-              "isPrimaryKey" : false
+              "name" : "inventory_id",
+              "databaseSpecificType" : "serial",
+              "isPrimaryKey" : true
             }
           },
-          "rental_id" : {
+          "film_id" : {
             "target" : {
-              "name" : "rentalId",
+              "name" : "filmId",
               "included" : true,
               "isNullExcluded" : false,
               "type" : "INTEGER"
             },
             "source" : {
-              "name" : "rental_id",
+              "name" : "film_id",
               "databaseSpecificType" : "int4",
               "isPrimaryKey" : false
             }
           },
-          "amount" : {
+          "store_id" : {
             "target" : {
-              "name" : "amount",
+              "name" : "storeId",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "store_id",
+              "databaseSpecificType" : "int4",
+              "isPrimaryKey" : false
+            }
+          },
+          "last_update" : {
+            "target" : {
+              "name" : "lastUpdate",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "last_update",
+              "databaseSpecificType" : "timestamptz",
+              "isPrimaryKey" : false
+            }
+          }
+        },
+        "calculatedFields" : { },
+        "collectionId" : "19a5c7e6-d40c-43c7-bf90-cbd2aa350f5c",
+        "table" : "06653cbe-02ce-4941-a3c0-de567ac486e5"
+      },
+      "3c8d9549-5534-4b2f-b55e-bd805ecbbed0" : {
+        "settings" : {
+          "type" : "EMBEDDED_DOCUMENT",
+          "notes" : null,
+          "embeddedPath" : "film",
+          "primitive" : null,
+          "arrayConditions" : null,
+          "foreignKeyName" : "inventory_film_id_fkey",
+          "ruleFilter" : null
+        },
+        "fields" : {
+          "film_id" : {
+            "target" : {
+              "name" : "filmId",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "film_id",
+              "databaseSpecificType" : "serial",
+              "isPrimaryKey" : true
+            }
+          },
+          "title" : {
+            "target" : {
+              "name" : "title",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "title",
+              "databaseSpecificType" : "text",
+              "isPrimaryKey" : false
+            }
+          },
+          "description" : {
+            "target" : {
+              "name" : "description",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "description",
+              "databaseSpecificType" : "text",
+              "isPrimaryKey" : false
+            }
+          },
+          "release_year" : {
+            "target" : {
+              "name" : "releaseYear",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "AUTO"
+            },
+            "source" : {
+              "name" : "release_year",
+              "databaseSpecificType" : "year",
+              "isPrimaryKey" : false
+            }
+          },
+          "language_id" : {
+            "target" : {
+              "name" : "languageId",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "language_id",
+              "databaseSpecificType" : "int4",
+              "isPrimaryKey" : false
+            }
+          },
+          "original_language_id" : {
+            "target" : {
+              "name" : "originalLanguageId",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "original_language_id",
+              "databaseSpecificType" : "int4",
+              "isPrimaryKey" : false
+            }
+          },
+          "rental_duration" : {
+            "target" : {
+              "name" : "rentalDuration",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "rental_duration",
+              "databaseSpecificType" : "int2",
+              "isPrimaryKey" : false
+            }
+          },
+          "rental_rate" : {
+            "target" : {
+              "name" : "rentalRate",
               "included" : true,
               "isNullExcluded" : false,
               "type" : "DECIMAL"
             },
             "source" : {
-              "name" : "amount",
+              "name" : "rental_rate",
               "databaseSpecificType" : "numeric",
               "isPrimaryKey" : false
             }
           },
-          "payment_date" : {
+          "length" : {
             "target" : {
-              "name" : "paymentDate",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "STRING"
-            },
-            "source" : {
-              "name" : "payment_date",
-              "databaseSpecificType" : "timestamptz",
-              "isPrimaryKey" : true
-            }
-          }
-        },
-        "calculatedFields" : { },
-        "collectionId" : "3b0f8a89-23e0-45f2-8a7b-08376f6a5208",
-        "table" : "33c0502c-8230-471d-a3e1-b7e8cf59d971"
-      },
-      "bee1a591-1355-4633-bf1f-79f44856c541" : {
-        "settings" : {
-          "type" : "NEW_DOCUMENT",
-          "notes" : null,
-          "embeddedPath" : null,
-          "primitive" : null,
-          "arrayConditions" : null,
-          "foreignKeyName" : null,
-          "ruleFilter" : null
-        },
-        "fields" : {
-          "_id" : {
-            "target" : {
-              "name" : "_id",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "OBJECT_ID"
-            },
-            "source" : {
-              "name" : "_id",
-              "databaseSpecificType" : "NONE",
-              "isPrimaryKey" : false
-            }
-          },
-          "category_id" : {
-            "target" : {
-              "name" : "categoryId",
+              "name" : "length",
               "included" : true,
               "isNullExcluded" : false,
               "type" : "INTEGER"
             },
             "source" : {
-              "name" : "category_id",
-              "databaseSpecificType" : "serial",
-              "isPrimaryKey" : true
+              "name" : "length",
+              "databaseSpecificType" : "int2",
+              "isPrimaryKey" : false
             }
           },
-          "name" : {
+          "replacement_cost" : {
             "target" : {
-              "name" : "name",
+              "name" : "replacementCost",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "DECIMAL"
+            },
+            "source" : {
+              "name" : "replacement_cost",
+              "databaseSpecificType" : "numeric",
+              "isPrimaryKey" : false
+            }
+          },
+          "rating" : {
+            "target" : {
+              "name" : "rating",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "AUTO"
+            },
+            "source" : {
+              "name" : "rating",
+              "databaseSpecificType" : "mpaa_rating",
+              "isPrimaryKey" : false
+            }
+          },
+          "last_update" : {
+            "target" : {
+              "name" : "lastUpdate",
               "included" : true,
               "isNullExcluded" : false,
               "type" : "STRING"
             },
             "source" : {
-              "name" : "name",
+              "name" : "last_update",
+              "databaseSpecificType" : "timestamptz",
+              "isPrimaryKey" : false
+            }
+          },
+          "special_features" : {
+            "target" : {
+              "name" : "specialFeatures",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "AUTO"
+            },
+            "source" : {
+              "name" : "special_features",
+              "databaseSpecificType" : "_text",
+              "isPrimaryKey" : false
+            }
+          },
+          "fulltext" : {
+            "target" : {
+              "name" : "fulltext",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "AUTO"
+            },
+            "source" : {
+              "name" : "fulltext",
+              "databaseSpecificType" : "tsvector",
+              "isPrimaryKey" : false
+            }
+          }
+        },
+        "calculatedFields" : { },
+        "collectionId" : "19a5c7e6-d40c-43c7-bf90-cbd2aa350f5c",
+        "table" : "9eb443aa-8d42-4504-801e-0f21a61b7cb6"
+      },
+      "cb048686-c86f-478a-8c9b-591eae7da9f1" : {
+        "settings" : {
+          "type" : "EMBEDDED_DOCUMENT",
+          "notes" : null,
+          "embeddedPath" : "address",
+          "primitive" : null,
+          "arrayConditions" : null,
+          "foreignKeyName" : "store_address_id_fkey",
+          "ruleFilter" : null
+        },
+        "fields" : {
+          "address_id" : {
+            "target" : {
+              "name" : "addressId",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "address_id",
+              "databaseSpecificType" : "serial",
+              "isPrimaryKey" : true
+            }
+          },
+          "address" : {
+            "target" : {
+              "name" : "address",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "address",
+              "databaseSpecificType" : "text",
+              "isPrimaryKey" : false
+            }
+          },
+          "address2" : {
+            "target" : {
+              "name" : "address2",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "address2",
+              "databaseSpecificType" : "text",
+              "isPrimaryKey" : false
+            }
+          },
+          "district" : {
+            "target" : {
+              "name" : "district",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "district",
+              "databaseSpecificType" : "text",
+              "isPrimaryKey" : false
+            }
+          },
+          "city_id" : {
+            "target" : {
+              "name" : "cityId",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "city_id",
+              "databaseSpecificType" : "int4",
+              "isPrimaryKey" : false
+            }
+          },
+          "postal_code" : {
+            "target" : {
+              "name" : "postalCode",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "postal_code",
+              "databaseSpecificType" : "text",
+              "isPrimaryKey" : false
+            }
+          },
+          "phone" : {
+            "target" : {
+              "name" : "phone",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "phone",
               "databaseSpecificType" : "text",
               "isPrimaryKey" : false
             }
@@ -2332,44 +1619,417 @@
           }
         },
         "calculatedFields" : { },
-        "collectionId" : "6f2deb40-85f9-4799-965c-3c36e1bcd6f7",
-        "table" : "87173507-e415-4fd8-963e-174c1c89b89a"
+        "collectionId" : "19a5c7e6-d40c-43c7-bf90-cbd2aa350f5c",
+        "table" : "3795c3fd-4322-4bce-8f73-c625897a7327"
       },
-      "a4215fba-207d-4532-a14a-7ff258e070db" : {
+      "d4474bbe-18f8-489a-8298-12c8e5a58a9f" : {
         "settings" : {
-          "type" : "NEW_DOCUMENT",
-          "notes" : null,
-          "embeddedPath" : null,
-          "primitive" : null,
+          "type" : "EMBEDDED_DOCUMENT",
+          "notes" : "",
+          "embeddedPath" : "country",
+          "primitive" : false,
           "arrayConditions" : null,
-          "foreignKeyName" : null,
+          "foreignKeyName" : "city_country_id_fkey",
           "ruleFilter" : null
         },
         "fields" : {
-          "_id" : {
+          "country_id" : {
             "target" : {
-              "name" : "_id",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "OBJECT_ID"
-            },
-            "source" : {
-              "name" : "_id",
-              "databaseSpecificType" : "NONE",
-              "isPrimaryKey" : false
-            }
-          },
-          "payment_id" : {
-            "target" : {
-              "name" : "paymentId",
+              "name" : "countryId",
               "included" : true,
               "isNullExcluded" : false,
               "type" : "INTEGER"
             },
             "source" : {
-              "name" : "payment_id",
+              "name" : "country_id",
               "databaseSpecificType" : "serial",
               "isPrimaryKey" : true
+            }
+          },
+          "country" : {
+            "target" : {
+              "name" : "country",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "country",
+              "databaseSpecificType" : "text",
+              "isPrimaryKey" : false
+            }
+          },
+          "last_update" : {
+            "target" : {
+              "name" : "lastUpdate",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "last_update",
+              "databaseSpecificType" : "timestamptz",
+              "isPrimaryKey" : false
+            }
+          }
+        },
+        "calculatedFields" : { },
+        "collectionId" : "19a5c7e6-d40c-43c7-bf90-cbd2aa350f5c",
+        "table" : "a03175f3-3d75-492b-ac88-a8b46ec851b0"
+      },
+      "31c5b10b-19c4-44c8-89f5-44a26e364599" : {
+        "settings" : {
+          "type" : "EMBEDDED_DOCUMENT_ARRAY",
+          "notes" : "",
+          "embeddedPath" : "staff",
+          "primitive" : false,
+          "arrayConditions" : null,
+          "foreignKeyName" : "staff_store_id_fkey",
+          "ruleFilter" : null
+        },
+        "fields" : {
+          "staff_id" : {
+            "target" : {
+              "name" : "staffId",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "staff_id",
+              "databaseSpecificType" : "serial",
+              "isPrimaryKey" : true
+            }
+          },
+          "first_name" : {
+            "target" : {
+              "name" : "firstName",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "first_name",
+              "databaseSpecificType" : "text",
+              "isPrimaryKey" : false
+            }
+          },
+          "last_name" : {
+            "target" : {
+              "name" : "lastName",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "last_name",
+              "databaseSpecificType" : "text",
+              "isPrimaryKey" : false
+            }
+          },
+          "address_id" : {
+            "target" : {
+              "name" : "addressId",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "address_id",
+              "databaseSpecificType" : "int4",
+              "isPrimaryKey" : false
+            }
+          },
+          "email" : {
+            "target" : {
+              "name" : "email",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "email",
+              "databaseSpecificType" : "text",
+              "isPrimaryKey" : false
+            }
+          },
+          "store_id" : {
+            "target" : {
+              "name" : "storeId",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "store_id",
+              "databaseSpecificType" : "int4",
+              "isPrimaryKey" : false
+            }
+          },
+          "active" : {
+            "target" : {
+              "name" : "active",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "BOOL"
+            },
+            "source" : {
+              "name" : "active",
+              "databaseSpecificType" : "bool",
+              "isPrimaryKey" : false
+            }
+          },
+          "username" : {
+            "target" : {
+              "name" : "username",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "username",
+              "databaseSpecificType" : "text",
+              "isPrimaryKey" : false
+            }
+          },
+          "password" : {
+            "target" : {
+              "name" : "password",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "password",
+              "databaseSpecificType" : "text",
+              "isPrimaryKey" : false
+            }
+          },
+          "last_update" : {
+            "target" : {
+              "name" : "lastUpdate",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "last_update",
+              "databaseSpecificType" : "timestamptz",
+              "isPrimaryKey" : false
+            }
+          },
+          "picture" : {
+            "target" : {
+              "name" : "picture",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "BIN_DATA"
+            },
+            "source" : {
+              "name" : "picture",
+              "databaseSpecificType" : "bytea",
+              "isPrimaryKey" : false
+            }
+          }
+        },
+        "calculatedFields" : { },
+        "collectionId" : "19a5c7e6-d40c-43c7-bf90-cbd2aa350f5c",
+        "table" : "550c3d2e-0e97-4b1e-bab4-a9e5a38c57cf"
+      },
+      "507e91f2-e6e9-4e39-aae4-a5c81a09c8b2" : {
+        "settings" : {
+          "type" : "EMBEDDED_DOCUMENT_ARRAY",
+          "notes" : "",
+          "embeddedPath" : "customers",
+          "primitive" : false,
+          "arrayConditions" : null,
+          "foreignKeyName" : "customer_store_id_fkey",
+          "ruleFilter" : null
+        },
+        "fields" : {
+          "customer_id" : {
+            "target" : {
+              "name" : "customerId",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "customer_id",
+              "databaseSpecificType" : "serial",
+              "isPrimaryKey" : true
+            }
+          },
+          "store_id" : {
+            "target" : {
+              "name" : "storeId",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "store_id",
+              "databaseSpecificType" : "int4",
+              "isPrimaryKey" : false
+            }
+          },
+          "first_name" : {
+            "target" : {
+              "name" : "firstName",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "first_name",
+              "databaseSpecificType" : "text",
+              "isPrimaryKey" : false
+            }
+          },
+          "last_name" : {
+            "target" : {
+              "name" : "lastName",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "last_name",
+              "databaseSpecificType" : "text",
+              "isPrimaryKey" : false
+            }
+          },
+          "email" : {
+            "target" : {
+              "name" : "email",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "email",
+              "databaseSpecificType" : "text",
+              "isPrimaryKey" : false
+            }
+          },
+          "address_id" : {
+            "target" : {
+              "name" : "addressId",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "address_id",
+              "databaseSpecificType" : "int4",
+              "isPrimaryKey" : false
+            }
+          },
+          "activebool" : {
+            "target" : {
+              "name" : "activebool",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "BOOL"
+            },
+            "source" : {
+              "name" : "activebool",
+              "databaseSpecificType" : "bool",
+              "isPrimaryKey" : false
+            }
+          },
+          "create_date" : {
+            "target" : {
+              "name" : "createDate",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "DATE"
+            },
+            "source" : {
+              "name" : "create_date",
+              "databaseSpecificType" : "date",
+              "isPrimaryKey" : false
+            }
+          },
+          "last_update" : {
+            "target" : {
+              "name" : "lastUpdate",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "last_update",
+              "databaseSpecificType" : "timestamptz",
+              "isPrimaryKey" : false
+            }
+          },
+          "active" : {
+            "target" : {
+              "name" : "active",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "active",
+              "databaseSpecificType" : "int4",
+              "isPrimaryKey" : false
+            }
+          }
+        },
+        "calculatedFields" : { },
+        "collectionId" : "19a5c7e6-d40c-43c7-bf90-cbd2aa350f5c",
+        "table" : "bc815a0e-1572-43e4-bafe-dc0103c69d1f"
+      },
+      "22303f58-03f2-41ec-9a3a-502525e69916" : {
+        "settings" : {
+          "type" : "EMBEDDED_DOCUMENT_ARRAY",
+          "notes" : "",
+          "embeddedPath" : "rentals",
+          "primitive" : false,
+          "arrayConditions" : null,
+          "foreignKeyName" : "rental_customer_id_fkey",
+          "ruleFilter" : null
+        },
+        "fields" : {
+          "rental_id" : {
+            "target" : {
+              "name" : "rentalId",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "rental_id",
+              "databaseSpecificType" : "serial",
+              "isPrimaryKey" : true
+            }
+          },
+          "rental_date" : {
+            "target" : {
+              "name" : "rentalDate",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "rental_date",
+              "databaseSpecificType" : "timestamptz",
+              "isPrimaryKey" : false
+            }
+          },
+          "inventory_id" : {
+            "target" : {
+              "name" : "inventoryId",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "INTEGER"
+            },
+            "source" : {
+              "name" : "inventory_id",
+              "databaseSpecificType" : "int4",
+              "isPrimaryKey" : false
             }
           },
           "customer_id" : {
@@ -2382,6 +2042,19 @@
             "source" : {
               "name" : "customer_id",
               "databaseSpecificType" : "int4",
+              "isPrimaryKey" : false
+            }
+          },
+          "return_date" : {
+            "target" : {
+              "name" : "returnDate",
+              "included" : true,
+              "isNullExcluded" : false,
+              "type" : "STRING"
+            },
+            "source" : {
+              "name" : "return_date",
+              "databaseSpecificType" : "timestamptz",
               "isPrimaryKey" : false
             }
           },
@@ -2398,138 +2071,58 @@
               "isPrimaryKey" : false
             }
           },
-          "rental_id" : {
+          "last_update" : {
             "target" : {
-              "name" : "rentalId",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "INTEGER"
-            },
-            "source" : {
-              "name" : "rental_id",
-              "databaseSpecificType" : "int4",
-              "isPrimaryKey" : false
-            }
-          },
-          "amount" : {
-            "target" : {
-              "name" : "amount",
-              "included" : true,
-              "isNullExcluded" : false,
-              "type" : "DECIMAL"
-            },
-            "source" : {
-              "name" : "amount",
-              "databaseSpecificType" : "numeric",
-              "isPrimaryKey" : false
-            }
-          },
-          "payment_date" : {
-            "target" : {
-              "name" : "paymentDate",
+              "name" : "lastUpdate",
               "included" : true,
               "isNullExcluded" : false,
               "type" : "STRING"
             },
             "source" : {
-              "name" : "payment_date",
+              "name" : "last_update",
               "databaseSpecificType" : "timestamptz",
-              "isPrimaryKey" : true
+              "isPrimaryKey" : false
             }
           }
         },
         "calculatedFields" : { },
-        "collectionId" : "99fc1e59-ee2c-4784-a152-fe9387f7ff58",
-        "table" : "e2e97b0c-852c-4e92-aadc-65488ba3d815"
+        "collectionId" : "19a5c7e6-d40c-43c7-bf90-cbd2aa350f5c",
+        "table" : "7591eadb-aaba-4772-a5bc-a9b349d0b792"
       }
     },
     "relationships" : {
       "tables" : {
         "pagila.public.film" : {
-          "mappings" : [ "8f7511df-5dea-4fcd-b1d9-62cabbe3c935" ]
+          "mappings" : [ "8f7511df-5dea-4fcd-b1d9-62cabbe3c935", "3c8d9549-5534-4b2f-b55e-bd805ecbbed0" ]
         },
         "pagila.public.store" : {
           "mappings" : [ "3cf83955-8684-45b5-a181-4c889c0c44bb" ]
         },
         "pagila.public.staff" : {
-          "mappings" : [ "bce21494-1ebb-4d00-941f-b7fa01862e45" ]
-        },
-        "pagila.public.language" : {
-          "mappings" : [ "971848a9-d94b-4502-a4d0-f374341ad09b" ]
-        },
-        "pagila.public.payment" : {
-          "mappings" : [ "a4215fba-207d-4532-a14a-7ff258e070db" ]
+          "mappings" : [ "bce21494-1ebb-4d00-941f-b7fa01862e45", "31c5b10b-19c4-44c8-89f5-44a26e364599" ]
         },
         "pagila.public.city" : {
-          "mappings" : [ "b0217114-ef0e-4137-b289-4dabaa575b19" ]
-        },
-        "pagila.public.payment_p2022_07" : {
-          "mappings" : [ "534c48ae-8671-49ef-8630-20fada7d4d70" ]
+          "mappings" : [ "b0217114-ef0e-4137-b289-4dabaa575b19", "764ecb4d-5cdc-47e5-873a-4bfadd84b3cf" ]
         },
         "pagila.public.country" : {
-          "mappings" : [ "c85e20cd-02b3-47bd-9ba1-ed4dd40a1e4b" ]
-        },
-        "pagila.public.actor" : {
-          "mappings" : [ "8c225cd0-4dfd-4423-b755-f3e6aa16b075" ]
-        },
-        "pagila.public.payment_p2022_04" : {
-          "mappings" : [ "91e63e9c-3c6e-42bf-86ae-f0d6153799c3" ]
-        },
-        "pagila.public.category" : {
-          "mappings" : [ "bee1a591-1355-4633-bf1f-79f44856c541" ]
-        },
-        "pagila.public.payment_p2022_03" : {
-          "mappings" : [ "35363148-52ea-41c4-a9e4-c0cf2dca4419" ]
+          "mappings" : [ "c85e20cd-02b3-47bd-9ba1-ed4dd40a1e4b", "d4474bbe-18f8-489a-8298-12c8e5a58a9f" ]
         },
         "pagila.public.address" : {
-          "mappings" : [ "83a2a995-fe81-4708-a2ff-0e3200ed316b" ]
-        },
-        "pagila.public.payment_p2022_06" : {
-          "mappings" : [ "9f212477-0caa-407e-9a07-901f9f9512b4" ]
+          "mappings" : [ "83a2a995-fe81-4708-a2ff-0e3200ed316b", "cb048686-c86f-478a-8c9b-591eae7da9f1" ]
         },
         "pagila.public.inventory" : {
-          "mappings" : [ "86d3be4f-74e5-421f-b148-98088e3ea675" ]
-        },
-        "pagila.public.payment_p2022_05" : {
-          "mappings" : [ "b33c137a-aedb-400d-88d8-f14c49f80000" ]
-        },
-        "pagila.public.payment_p2022_02" : {
-          "mappings" : [ "78bb3182-3148-49f2-8402-5b192c22d1e6" ]
+          "mappings" : [ "86d3be4f-74e5-421f-b148-98088e3ea675", "7cff8e08-335a-47e1-91b7-f514553885d0" ]
         },
         "pagila.public.customer" : {
-          "mappings" : [ "738a397f-384d-4878-a97f-614d021661bc" ]
-        },
-        "pagila.public.payment_p2022_01" : {
-          "mappings" : [ "c8bf9a04-5d12-47e7-a761-68a3ea7e0c1a" ]
-        },
-        "pagila.public.film_actor" : {
-          "mappings" : [ "67d00199-eafd-4765-b758-05166a5c407c" ]
-        },
-        "pagila.public.film_category" : {
-          "mappings" : [ "058b73f6-e424-4b09-9c6e-d4ea1105781d" ]
+          "mappings" : [ "738a397f-384d-4878-a97f-614d021661bc", "507e91f2-e6e9-4e39-aae4-a5c81a09c8b2" ]
         },
         "pagila.public.rental" : {
-          "mappings" : [ "a534212a-2288-4a1b-9485-887eeb0997bf" ]
+          "mappings" : [ "a534212a-2288-4a1b-9485-887eeb0997bf", "22303f58-03f2-41ec-9a3a-502525e69916" ]
         }
       },
       "collections" : {
-        "6f2deb40-85f9-4799-965c-3c36e1bcd6f7" : {
-          "mappings" : [ "bee1a591-1355-4633-bf1f-79f44856c541" ]
-        },
         "6ff2f3e8-820f-4140-94a8-4cd74c5006bf" : {
           "mappings" : [ "c85e20cd-02b3-47bd-9ba1-ed4dd40a1e4b" ]
-        },
-        "7363c85f-a854-4004-806e-233f07f1e062" : {
-          "mappings" : [ "9f212477-0caa-407e-9a07-901f9f9512b4" ]
-        },
-        "c47b7d04-2ca2-473f-b009-1e94868a5cb9" : {
-          "mappings" : [ "8c225cd0-4dfd-4423-b755-f3e6aa16b075" ]
-        },
-        "774f6ed6-1013-431a-b84e-817b9fa19e4f" : {
-          "mappings" : [ "c8bf9a04-5d12-47e7-a761-68a3ea7e0c1a" ]
-        },
-        "9b349a98-a629-4bec-b5fc-b90f7363a944" : {
-          "mappings" : [ "058b73f6-e424-4b09-9c6e-d4ea1105781d" ]
         },
         "913611af-b8a8-4455-b30b-533756c11c80" : {
           "mappings" : [ "738a397f-384d-4878-a97f-614d021661bc" ]
@@ -2546,35 +2139,11 @@
         "a25b08fc-73fd-45ea-b7c8-3d2e8f09740f" : {
           "mappings" : [ "86d3be4f-74e5-421f-b148-98088e3ea675" ]
         },
-        "7516b948-9688-40fd-a65d-847d32775fd1" : {
-          "mappings" : [ "35363148-52ea-41c4-a9e4-c0cf2dca4419" ]
-        },
         "8129af4f-b17a-46f2-b0ae-413a4b16e711" : {
           "mappings" : [ "bce21494-1ebb-4d00-941f-b7fa01862e45" ]
         },
         "19a5c7e6-d40c-43c7-bf90-cbd2aa350f5c" : {
-          "mappings" : [ "3cf83955-8684-45b5-a181-4c889c0c44bb" ]
-        },
-        "5a6ee7aa-6f11-4967-ab7d-195d74134433" : {
-          "mappings" : [ "67d00199-eafd-4765-b758-05166a5c407c" ]
-        },
-        "f3be539c-5ff3-4454-b40b-5c173c1124f0" : {
-          "mappings" : [ "534c48ae-8671-49ef-8630-20fada7d4d70" ]
-        },
-        "1aeae93a-bd93-47a9-9854-dad8ae12df58" : {
-          "mappings" : [ "91e63e9c-3c6e-42bf-86ae-f0d6153799c3" ]
-        },
-        "946d60d2-6b89-4edc-80cf-2d2815eb5b45" : {
-          "mappings" : [ "971848a9-d94b-4502-a4d0-f374341ad09b" ]
-        },
-        "99fc1e59-ee2c-4784-a152-fe9387f7ff58" : {
-          "mappings" : [ "a4215fba-207d-4532-a14a-7ff258e070db" ]
-        },
-        "c1392a3e-9bd4-4a54-9e29-2856f8d57526" : {
-          "mappings" : [ "b33c137a-aedb-400d-88d8-f14c49f80000" ]
-        },
-        "3b0f8a89-23e0-45f2-8a7b-08376f6a5208" : {
-          "mappings" : [ "78bb3182-3148-49f2-8402-5b192c22d1e6" ]
+          "mappings" : [ "3cf83955-8684-45b5-a181-4c889c0c44bb", "764ecb4d-5cdc-47e5-873a-4bfadd84b3cf", "7cff8e08-335a-47e1-91b7-f514553885d0", "3c8d9549-5534-4b2f-b55e-bd805ecbbed0", "cb048686-c86f-478a-8c9b-591eae7da9f1", "d4474bbe-18f8-489a-8298-12c8e5a58a9f", "31c5b10b-19c4-44c8-89f5-44a26e364599", "507e91f2-e6e9-4e39-aae4-a5c81a09c8b2", "22303f58-03f2-41ec-9a3a-502525e69916" ]
         },
         "422355ec-e681-4c12-9a99-826f03fb729e" : {
           "mappings" : [ "b0217114-ef0e-4137-b289-4dabaa575b19" ]
@@ -2584,41 +2153,17 @@
         "b0217114-ef0e-4137-b289-4dabaa575b19" : {
           "children" : [ ]
         },
-        "67d00199-eafd-4765-b758-05166a5c407c" : {
-          "children" : [ ]
-        },
-        "c8bf9a04-5d12-47e7-a761-68a3ea7e0c1a" : {
-          "children" : [ ]
-        },
         "83a2a995-fe81-4708-a2ff-0e3200ed316b" : {
           "children" : [ ]
         },
-        "058b73f6-e424-4b09-9c6e-d4ea1105781d" : {
-          "children" : [ ]
-        },
-        "8c225cd0-4dfd-4423-b755-f3e6aa16b075" : {
-          "children" : [ ]
-        },
         "738a397f-384d-4878-a97f-614d021661bc" : {
-          "children" : [ ]
-        },
-        "971848a9-d94b-4502-a4d0-f374341ad09b" : {
           "children" : [ ]
         },
         "c85e20cd-02b3-47bd-9ba1-ed4dd40a1e4b" : {
           "children" : [ ]
         },
         "3cf83955-8684-45b5-a181-4c889c0c44bb" : {
-          "children" : [ ]
-        },
-        "35363148-52ea-41c4-a9e4-c0cf2dca4419" : {
-          "children" : [ ]
-        },
-        "9f212477-0caa-407e-9a07-901f9f9512b4" : {
-          "children" : [ ]
-        },
-        "91e63e9c-3c6e-42bf-86ae-f0d6153799c3" : {
-          "children" : [ ]
+          "children" : [ "7cff8e08-335a-47e1-91b7-f514553885d0", "cb048686-c86f-478a-8c9b-591eae7da9f1", "31c5b10b-19c4-44c8-89f5-44a26e364599", "507e91f2-e6e9-4e39-aae4-a5c81a09c8b2" ]
         },
         "8f7511df-5dea-4fcd-b1d9-62cabbe3c935" : {
           "children" : [ ]
@@ -2626,25 +2171,34 @@
         "86d3be4f-74e5-421f-b148-98088e3ea675" : {
           "children" : [ ]
         },
-        "b33c137a-aedb-400d-88d8-f14c49f80000" : {
-          "children" : [ ]
-        },
         "bce21494-1ebb-4d00-941f-b7fa01862e45" : {
-          "children" : [ ]
-        },
-        "534c48ae-8671-49ef-8630-20fada7d4d70" : {
           "children" : [ ]
         },
         "a534212a-2288-4a1b-9485-887eeb0997bf" : {
           "children" : [ ]
         },
-        "78bb3182-3148-49f2-8402-5b192c22d1e6" : {
+        "764ecb4d-5cdc-47e5-873a-4bfadd84b3cf" : {
+          "children" : [ "d4474bbe-18f8-489a-8298-12c8e5a58a9f" ]
+        },
+        "cb048686-c86f-478a-8c9b-591eae7da9f1" : {
+          "children" : [ "764ecb4d-5cdc-47e5-873a-4bfadd84b3cf" ]
+        },
+        "7cff8e08-335a-47e1-91b7-f514553885d0" : {
+          "children" : [ "3c8d9549-5534-4b2f-b55e-bd805ecbbed0" ]
+        },
+        "3c8d9549-5534-4b2f-b55e-bd805ecbbed0" : {
           "children" : [ ]
         },
-        "bee1a591-1355-4633-bf1f-79f44856c541" : {
+        "d4474bbe-18f8-489a-8298-12c8e5a58a9f" : {
           "children" : [ ]
         },
-        "a4215fba-207d-4532-a14a-7ff258e070db" : {
+        "31c5b10b-19c4-44c8-89f5-44a26e364599" : {
+          "children" : [ ]
+        },
+        "507e91f2-e6e9-4e39-aae4-a5c81a09c8b2" : {
+          "children" : [ "22303f58-03f2-41ec-9a3a-502525e69916" ]
+        },
+        "22303f58-03f2-41ec-9a3a-502525e69916" : {
           "children" : [ ]
         }
       }
@@ -2657,16 +2211,6 @@
         "notes" : null,
         "relational" : {
           "nodes" : [ {
-            "id" : "c39bd023-114b-4ec5-8a42-8888c88f7289",
-            "type" : "entityCard",
-            "position" : {
-              "x" : 744.5714285714286,
-              "y" : 708
-            },
-            "width" : 244,
-            "height" : 98,
-            "hidden" : false
-          }, {
             "id" : "a03175f3-3d75-492b-ac88-a8b46ec851b0",
             "type" : "entityCard",
             "position" : {
@@ -2695,46 +2239,6 @@
             },
             "width" : 244,
             "height" : 116,
-            "hidden" : false
-          }, {
-            "id" : "78d08533-9a33-4a95-a0b6-1a163565dd99",
-            "type" : "entityCard",
-            "position" : {
-              "x" : 1088.5714285714284,
-              "y" : 708
-            },
-            "width" : 244,
-            "height" : 98,
-            "hidden" : false
-          }, {
-            "id" : "a62e8757-3e6c-40d2-8cb7-47149da80401",
-            "type" : "entityCard",
-            "position" : {
-              "x" : 1572,
-              "y" : 12
-            },
-            "width" : 244,
-            "height" : 152,
-            "hidden" : false
-          }, {
-            "id" : "e815ea26-989d-4e3b-8752-95304bbbc890",
-            "type" : "entityCard",
-            "position" : {
-              "x" : 12,
-              "y" : 12
-            },
-            "width" : 244,
-            "height" : 152,
-            "hidden" : false
-          }, {
-            "id" : "08ce9979-7b8b-408a-8f4e-f3cf16011acc",
-            "type" : "entityCard",
-            "position" : {
-              "x" : 1391.904761904762,
-              "y" : 1302
-            },
-            "width" : 244,
-            "height" : 98,
             "hidden" : false
           }, {
             "id" : "550c3d2e-0e97-4b1e-bab4-a9e5a38c57cf",
@@ -2787,86 +2291,6 @@
             "height" : 170,
             "hidden" : false
           }, {
-            "id" : "e2dfaaf3-9116-43c1-8417-8c079d38894d",
-            "type" : "entityCard",
-            "position" : {
-              "x" : 1047.904761904762,
-              "y" : 906
-            },
-            "width" : 244,
-            "height" : 116,
-            "hidden" : false
-          }, {
-            "id" : "5125e8ea-74d3-4cb3-acb6-dffc45ac18ca",
-            "type" : "entityCard",
-            "position" : {
-              "x" : 884,
-              "y" : 12
-            },
-            "width" : 244,
-            "height" : 152,
-            "hidden" : false
-          }, {
-            "id" : "429a4de3-8e76-4e3f-82f5-71d4c88b7a49",
-            "type" : "entityCard",
-            "position" : {
-              "x" : 540,
-              "y" : 12
-            },
-            "width" : 244,
-            "height" : 152,
-            "hidden" : false
-          }, {
-            "id" : "33c0502c-8230-471d-a3e1-b7e8cf59d971",
-            "type" : "entityCard",
-            "position" : {
-              "x" : 2260,
-              "y" : 12
-            },
-            "width" : 244,
-            "height" : 152,
-            "hidden" : false
-          }, {
-            "id" : "e2e97b0c-852c-4e92-aadc-65488ba3d815",
-            "type" : "entityCard",
-            "position" : {
-              "x" : 276,
-              "y" : 12
-            },
-            "width" : 244,
-            "height" : 152,
-            "hidden" : false
-          }, {
-            "id" : "3651ff0a-861f-4372-ac8c-7ed2fdab5512",
-            "type" : "entityCard",
-            "position" : {
-              "x" : 1228,
-              "y" : 12
-            },
-            "width" : 244,
-            "height" : 152,
-            "hidden" : false
-          }, {
-            "id" : "87173507-e415-4fd8-963e-174c1c89b89a",
-            "type" : "entityCard",
-            "position" : {
-              "x" : 703.9047619047619,
-              "y" : 906
-            },
-            "width" : 244,
-            "height" : 98,
-            "hidden" : false
-          }, {
-            "id" : "6e3a412e-8ce3-442d-a784-b4426e56a47e",
-            "type" : "entityCard",
-            "position" : {
-              "x" : 1916,
-              "y" : 12
-            },
-            "width" : 244,
-            "height" : 152,
-            "hidden" : false
-          }, {
             "id" : "bc815a0e-1572-43e4-bafe-dc0103c69d1f",
             "type" : "entityCard",
             "position" : {
@@ -2878,211 +2302,73 @@
             "hidden" : false
           } ],
           "edges" : [ {
-            "id" : "a05b6b20-1e22-402f-8487-7ceadb0eead1",
-            "source" : "87173507-e415-4fd8-963e-174c1c89b89a",
-            "target" : "c39bd023-114b-4ec5-8a42-8888c88f7289",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
-          }, {
-            "id" : "2977f807-dbb3-422e-8c74-dbbfdbff4e5f",
-            "source" : "9eb443aa-8d42-4504-801e-0f21a61b7cb6",
-            "target" : "c39bd023-114b-4ec5-8a42-8888c88f7289",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
-          }, {
-            "id" : "188664bb-85be-48f6-bed1-858d23ceb86a",
+            "id" : "0574f5f0-aea0-4a7c-83b9-7122885a1da9",
             "source" : "d7922c98-31be-4ec9-bda8-33ca6431bdee",
             "target" : "3795c3fd-4322-4bce-8f73-c625897a7327",
             "markerStart" : "START_ONE",
             "markerEnd" : "END_MANY"
           }, {
-            "id" : "900ee399-cd65-46fb-9f47-6c74dc23d5a3",
+            "id" : "a63ba10d-84ad-4dba-acdb-24b3fa0cf432",
             "source" : "a03175f3-3d75-492b-ac88-a8b46ec851b0",
             "target" : "d7922c98-31be-4ec9-bda8-33ca6431bdee",
             "markerStart" : "START_ONE",
             "markerEnd" : "END_MANY"
           }, {
-            "id" : "918d1242-923b-4ec4-b48e-26630f9ddd96",
-            "source" : "e2dfaaf3-9116-43c1-8417-8c079d38894d",
-            "target" : "78d08533-9a33-4a95-a0b6-1a163565dd99",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
-          }, {
-            "id" : "914e7b7e-8782-4473-a581-3781d58ae686",
-            "source" : "9eb443aa-8d42-4504-801e-0f21a61b7cb6",
-            "target" : "78d08533-9a33-4a95-a0b6-1a163565dd99",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
-          }, {
-            "id" : "7a149a06-1aeb-4eca-be57-2bf97c4b956d",
-            "source" : "550c3d2e-0e97-4b1e-bab4-a9e5a38c57cf",
-            "target" : "a62e8757-3e6c-40d2-8cb7-47149da80401",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
-          }, {
-            "id" : "6b54a1e2-efd3-49cd-af01-f04f279bbd46",
-            "source" : "bc815a0e-1572-43e4-bafe-dc0103c69d1f",
-            "target" : "a62e8757-3e6c-40d2-8cb7-47149da80401",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
-          }, {
-            "id" : "e335e203-d60a-4663-933b-022f6f1c1670",
-            "source" : "7591eadb-aaba-4772-a5bc-a9b349d0b792",
-            "target" : "a62e8757-3e6c-40d2-8cb7-47149da80401",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
-          }, {
-            "id" : "55c776e5-5d1d-41ed-9183-1f9071ccf08e",
+            "id" : "f11d26c6-34e5-4d03-9c23-07358f927f7d",
             "source" : "6f99f1ae-01a5-4a8a-927f-e3500e40845e",
             "target" : "550c3d2e-0e97-4b1e-bab4-a9e5a38c57cf",
             "markerStart" : "START_ONE",
             "markerEnd" : "END_MANY"
           }, {
-            "id" : "c69e1c8f-af26-4688-a23a-206351b66bdf",
+            "id" : "9e7f0ae4-7a42-45aa-b9d8-01a1c86dacca",
             "source" : "3795c3fd-4322-4bce-8f73-c625897a7327",
             "target" : "550c3d2e-0e97-4b1e-bab4-a9e5a38c57cf",
             "markerStart" : "START_ONE",
             "markerEnd" : "END_MANY"
           }, {
-            "id" : "8302df72-c0b2-42df-b420-5d1419199fa1",
-            "source" : "08ce9979-7b8b-408a-8f4e-f3cf16011acc",
-            "target" : "9eb443aa-8d42-4504-801e-0f21a61b7cb6",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
-          }, {
-            "id" : "a48929bd-f231-493e-8ac2-b26a030941c1",
+            "id" : "04af3505-d7c9-4ad6-a9dd-f91c146e7c50",
             "source" : "3795c3fd-4322-4bce-8f73-c625897a7327",
             "target" : "6f99f1ae-01a5-4a8a-927f-e3500e40845e",
             "markerStart" : "START_ONE",
             "markerEnd" : "END_MANY"
           }, {
-            "id" : "58c01836-d467-4548-a2da-2465f23ff03a",
+            "id" : "4939a82b-8bdf-4d29-bd39-a6c4685a721d",
             "source" : "6f99f1ae-01a5-4a8a-927f-e3500e40845e",
             "target" : "06653cbe-02ce-4941-a3c0-de567ac486e5",
             "markerStart" : "START_ONE",
             "markerEnd" : "END_MANY"
           }, {
-            "id" : "aaeb6b14-ee25-4340-a165-c595665e71bc",
+            "id" : "04d66c69-2a67-4c47-a9d0-30fbac14843b",
             "source" : "9eb443aa-8d42-4504-801e-0f21a61b7cb6",
             "target" : "06653cbe-02ce-4941-a3c0-de567ac486e5",
             "markerStart" : "START_ONE",
             "markerEnd" : "END_MANY"
           }, {
-            "id" : "67d7b33c-770b-47ab-b9e4-10eddc03497b",
+            "id" : "e364e230-3a6e-4897-8995-95306e113400",
             "source" : "06653cbe-02ce-4941-a3c0-de567ac486e5",
             "target" : "7591eadb-aaba-4772-a5bc-a9b349d0b792",
             "markerStart" : "START_ONE",
             "markerEnd" : "END_MANY"
           }, {
-            "id" : "cf075a59-df63-4273-ae18-80067bd46ab7",
+            "id" : "a9e30d2c-8e1e-43b3-911a-fbcd6aa830af",
             "source" : "550c3d2e-0e97-4b1e-bab4-a9e5a38c57cf",
             "target" : "7591eadb-aaba-4772-a5bc-a9b349d0b792",
             "markerStart" : "START_ONE",
             "markerEnd" : "END_MANY"
           }, {
-            "id" : "a56deb92-521e-437d-bf48-a060f8c09b81",
+            "id" : "f1e6487c-8da6-43ab-bab2-1a4f5a6b64e1",
             "source" : "bc815a0e-1572-43e4-bafe-dc0103c69d1f",
             "target" : "7591eadb-aaba-4772-a5bc-a9b349d0b792",
             "markerStart" : "START_ONE",
             "markerEnd" : "END_MANY"
           }, {
-            "id" : "00298039-8387-4bc9-9045-19ae86aab9f3",
-            "source" : "550c3d2e-0e97-4b1e-bab4-a9e5a38c57cf",
-            "target" : "5125e8ea-74d3-4cb3-acb6-dffc45ac18ca",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
-          }, {
-            "id" : "b594e832-1c6f-4731-a712-b603e7cbdc5f",
-            "source" : "bc815a0e-1572-43e4-bafe-dc0103c69d1f",
-            "target" : "5125e8ea-74d3-4cb3-acb6-dffc45ac18ca",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
-          }, {
-            "id" : "f2967efa-c413-4dbf-9a93-1c2797f129d5",
-            "source" : "7591eadb-aaba-4772-a5bc-a9b349d0b792",
-            "target" : "5125e8ea-74d3-4cb3-acb6-dffc45ac18ca",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
-          }, {
-            "id" : "a69d5281-9a8f-46c1-a171-9c567317412b",
-            "source" : "550c3d2e-0e97-4b1e-bab4-a9e5a38c57cf",
-            "target" : "429a4de3-8e76-4e3f-82f5-71d4c88b7a49",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
-          }, {
-            "id" : "f79e7b60-5b2b-4263-8a54-a3f6df156471",
-            "source" : "bc815a0e-1572-43e4-bafe-dc0103c69d1f",
-            "target" : "429a4de3-8e76-4e3f-82f5-71d4c88b7a49",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
-          }, {
-            "id" : "fed9893c-6b2a-4af3-b99d-79752c1d0c39",
-            "source" : "7591eadb-aaba-4772-a5bc-a9b349d0b792",
-            "target" : "429a4de3-8e76-4e3f-82f5-71d4c88b7a49",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
-          }, {
-            "id" : "39250fbf-0f6f-4a51-a717-d242b974a3c9",
-            "source" : "550c3d2e-0e97-4b1e-bab4-a9e5a38c57cf",
-            "target" : "33c0502c-8230-471d-a3e1-b7e8cf59d971",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
-          }, {
-            "id" : "6529ff2c-34c8-464d-b9ba-9887a232bfa7",
-            "source" : "bc815a0e-1572-43e4-bafe-dc0103c69d1f",
-            "target" : "33c0502c-8230-471d-a3e1-b7e8cf59d971",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
-          }, {
-            "id" : "c410a8fd-6cb5-4863-87e6-127f0c43d3da",
-            "source" : "7591eadb-aaba-4772-a5bc-a9b349d0b792",
-            "target" : "33c0502c-8230-471d-a3e1-b7e8cf59d971",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
-          }, {
-            "id" : "69acef22-05e9-4e01-9754-b9fd783e41a5",
-            "source" : "550c3d2e-0e97-4b1e-bab4-a9e5a38c57cf",
-            "target" : "3651ff0a-861f-4372-ac8c-7ed2fdab5512",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
-          }, {
-            "id" : "7e46171f-ac80-4b7b-9531-1a7a88cd7e45",
-            "source" : "bc815a0e-1572-43e4-bafe-dc0103c69d1f",
-            "target" : "3651ff0a-861f-4372-ac8c-7ed2fdab5512",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
-          }, {
-            "id" : "b237509f-598c-428d-9d51-78fdc3cf01f5",
-            "source" : "7591eadb-aaba-4772-a5bc-a9b349d0b792",
-            "target" : "3651ff0a-861f-4372-ac8c-7ed2fdab5512",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
-          }, {
-            "id" : "6e9dce3f-7b03-4db8-bcbc-0fc8f14504bf",
-            "source" : "550c3d2e-0e97-4b1e-bab4-a9e5a38c57cf",
-            "target" : "6e3a412e-8ce3-442d-a784-b4426e56a47e",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
-          }, {
-            "id" : "bbfb5964-4dff-4bb6-b541-656f61e15bff",
-            "source" : "bc815a0e-1572-43e4-bafe-dc0103c69d1f",
-            "target" : "6e3a412e-8ce3-442d-a784-b4426e56a47e",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
-          }, {
-            "id" : "cbb4f258-7fbd-4e56-8a4c-076f582ddfa5",
-            "source" : "7591eadb-aaba-4772-a5bc-a9b349d0b792",
-            "target" : "6e3a412e-8ce3-442d-a784-b4426e56a47e",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
-          }, {
-            "id" : "d894c17a-9b02-4d9b-9a67-b55fa2b21283",
+            "id" : "af69632e-6c3b-4dd3-bc43-50d73afabc1c",
             "source" : "6f99f1ae-01a5-4a8a-927f-e3500e40845e",
             "target" : "bc815a0e-1572-43e4-bafe-dc0103c69d1f",
             "markerStart" : "START_ONE",
             "markerEnd" : "END_MANY"
           }, {
-            "id" : "24d1437b-384b-49aa-b2cc-d2ef77aa04a1",
+            "id" : "46c08166-4ab8-4c41-9736-40547d0b4ec6",
             "source" : "3795c3fd-4322-4bce-8f73-c625897a7327",
             "target" : "bc815a0e-1572-43e4-bafe-dc0103c69d1f",
             "markerStart" : "START_ONE",
@@ -3091,61 +2377,11 @@
         },
         "collection" : {
           "nodes" : [ {
-            "id" : "category",
-            "type" : "entityCard",
-            "position" : {
-              "x" : 703.9047619047619,
-              "y" : 960
-            },
-            "width" : 244,
-            "height" : 116,
-            "hidden" : false
-          }, {
             "id" : "country",
             "type" : "entityCard",
             "position" : {
               "x" : 1868.9047619047617,
               "y" : 1914
-            },
-            "width" : 244,
-            "height" : 116,
-            "hidden" : false
-          }, {
-            "id" : "paymentP2022_06",
-            "type" : "entityCard",
-            "position" : {
-              "x" : 1572,
-              "y" : 12
-            },
-            "width" : 244,
-            "height" : 170,
-            "hidden" : false
-          }, {
-            "id" : "actor",
-            "type" : "entityCard",
-            "position" : {
-              "x" : 1047.904761904762,
-              "y" : 960
-            },
-            "width" : 244,
-            "height" : 134,
-            "hidden" : false
-          }, {
-            "id" : "paymentP2022_01",
-            "type" : "entityCard",
-            "position" : {
-              "x" : 884,
-              "y" : 12
-            },
-            "width" : 244,
-            "height" : 170,
-            "hidden" : false
-          }, {
-            "id" : "filmCategory",
-            "type" : "entityCard",
-            "position" : {
-              "x" : 744.5714285714286,
-              "y" : 744
             },
             "width" : 244,
             "height" : 116,
@@ -3174,8 +2410,8 @@
             "id" : "address",
             "type" : "entityCard",
             "position" : {
-              "x" : 1868.9047619047617,
-              "y" : 1374
+              "x" : 2302.7614725601097,
+              "y" : 1381.800281426361
             },
             "width" : 244,
             "height" : 206,
@@ -3201,16 +2437,6 @@
             "height" : 134,
             "hidden" : false
           }, {
-            "id" : "paymentP2022_03",
-            "type" : "entityCard",
-            "position" : {
-              "x" : 540,
-              "y" : 12
-            },
-            "width" : 244,
-            "height" : 170,
-            "hidden" : false
-          }, {
             "id" : "staff",
             "type" : "entityCard",
             "position" : {
@@ -3224,299 +2450,115 @@
             "id" : "store",
             "type" : "entityCard",
             "position" : {
-              "x" : 1868.9047619047617,
-              "y" : 1005
+              "x" : 2960.1338813411676,
+              "y" : 440.53811835273746
             },
             "width" : 244,
-            "height" : 134,
-            "hidden" : false
-          }, {
-            "id" : "filmActor",
-            "type" : "entityCard",
-            "position" : {
-              "x" : 1088.5714285714284,
-              "y" : 744
-            },
-            "width" : 244,
-            "height" : 116,
-            "hidden" : false
-          }, {
-            "id" : "paymentP2022_07",
-            "type" : "entityCard",
-            "position" : {
-              "x" : 12,
-              "y" : 12
-            },
-            "width" : 244,
-            "height" : 170,
-            "hidden" : false
-          }, {
-            "id" : "paymentP2022_04",
-            "type" : "entityCard",
-            "position" : {
-              "x" : 2260,
-              "y" : 12
-            },
-            "width" : 244,
-            "height" : 170,
-            "hidden" : false
-          }, {
-            "id" : "language",
-            "type" : "entityCard",
-            "position" : {
-              "x" : 1391.904761904762,
-              "y" : 1374
-            },
-            "width" : 244,
-            "height" : 116,
-            "hidden" : false
-          }, {
-            "id" : "payment",
-            "type" : "entityCard",
-            "position" : {
-              "x" : 276,
-              "y" : 12
-            },
-            "width" : 244,
-            "height" : 170,
-            "hidden" : false
-          }, {
-            "id" : "paymentP2022_05",
-            "type" : "entityCard",
-            "position" : {
-              "x" : 1228,
-              "y" : 12
-            },
-            "width" : 244,
-            "height" : 170,
-            "hidden" : false
-          }, {
-            "id" : "paymentP2022_02",
-            "type" : "entityCard",
-            "position" : {
-              "x" : 1916,
-              "y" : 12
-            },
-            "width" : 244,
-            "height" : 170,
+            "height" : 1376,
             "hidden" : false
           }, {
             "id" : "city",
             "type" : "entityCard",
             "position" : {
-              "x" : 1868.9047619047617,
-              "y" : 1680
+              "x" : 1865.99181285267,
+              "y" : 1696.021219786504
             },
             "width" : 244,
             "height" : 134,
             "hidden" : false
           } ],
           "edges" : [ {
-            "id" : "b177025b-695d-44fc-bab6-60bbff8bf6f3",
-            "source" : "staff",
-            "target" : "paymentP2022_06",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
-          }, {
-            "id" : "03bccb2d-d337-4bb6-a91f-3702ebba87b7",
-            "source" : "customer",
-            "target" : "paymentP2022_06",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
-          }, {
-            "id" : "7bf86317-a975-4905-836d-7075085a8ff6",
-            "source" : "rental",
-            "target" : "paymentP2022_06",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
-          }, {
-            "id" : "0f388271-f532-4251-82c9-fec46ce617ad",
-            "source" : "staff",
-            "target" : "paymentP2022_01",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
-          }, {
-            "id" : "2d54304f-e84e-47c1-b386-a4a7ebe419ee",
-            "source" : "customer",
-            "target" : "paymentP2022_01",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
-          }, {
-            "id" : "e92aa0db-5484-42f0-9b59-ca0b17b3fe36",
-            "source" : "rental",
-            "target" : "paymentP2022_01",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
-          }, {
-            "id" : "0a394f5e-e9e5-46cc-b38d-ea3b1e87878d",
-            "source" : "category",
-            "target" : "filmCategory",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
-          }, {
-            "id" : "ca369215-3d5a-4a05-a203-412f29b4d957",
-            "source" : "film",
-            "target" : "filmCategory",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
-          }, {
-            "id" : "ebfd2f4e-55b1-4c53-b94e-a0e609c5c921",
+            "id" : "7675a6c2-7041-488c-8bf0-669cd8accfbe",
             "source" : "store",
             "target" : "customer",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
+            "markerStart" : "START_ONE_OR_MANY",
+            "markerEnd" : "END_ONE_OR_MANY"
           }, {
-            "id" : "a9c0cd65-184c-4a44-9d47-d0c1e2e4ad03",
+            "id" : "de851a58-b5d0-4e5e-823d-a82e16c39a27",
             "source" : "address",
             "target" : "customer",
             "markerStart" : "START_ONE",
             "markerEnd" : "END_MANY"
           }, {
-            "id" : "c3bb3c60-ae71-4dea-9645-82820d0e084d",
+            "id" : "2ca12927-a3e9-406d-ba28-a6d401b04968",
             "source" : "inventory",
             "target" : "rental",
             "markerStart" : "START_ONE",
             "markerEnd" : "END_MANY"
           }, {
-            "id" : "b9d811e9-326d-4de2-ab83-c4fcdd93e01b",
+            "id" : "ffae1577-ed43-4a85-a96f-d30e76f3bd59",
+            "source" : "store",
+            "target" : "rental",
+            "markerStart" : "START_ONE",
+            "markerEnd" : "END_MANY"
+          }, {
+            "id" : "4412d1c5-10cb-4993-99d1-bf2cb71a1b6a",
             "source" : "staff",
             "target" : "rental",
             "markerStart" : "START_ONE",
             "markerEnd" : "END_MANY"
           }, {
-            "id" : "b8bf55e0-89d1-4825-8ad6-ca386f16120e",
+            "id" : "7f023946-abd9-4280-8c63-0a8cccade120",
             "source" : "customer",
             "target" : "rental",
             "markerStart" : "START_ONE",
             "markerEnd" : "END_MANY"
           }, {
-            "id" : "ce54f9b8-1f62-4bcb-aae5-f70d023342dd",
+            "id" : "0fe8f841-05f8-4430-a967-89dd6eb97a87",
             "source" : "city",
             "target" : "address",
             "markerStart" : "START_ONE",
             "markerEnd" : "END_MANY"
           }, {
-            "id" : "1a5506da-cb40-4350-83ba-13f714786a8f",
-            "source" : "language",
-            "target" : "film",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
+            "id" : "27eaefb6-241e-42a4-af48-ecc67ab2376f",
+            "source" : "store",
+            "target" : "address",
+            "markerStart" : "START_ONE_OR_MANY",
+            "markerEnd" : "END_ONE_OR_MANY"
           }, {
-            "id" : "7155c609-6d8e-4eb0-8608-04603b7ef57a",
+            "id" : "3ca65d01-c49c-4c95-b2eb-62cff8f095ed",
             "source" : "store",
             "target" : "inventory",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
+            "markerStart" : "START_ONE_OR_MANY",
+            "markerEnd" : "END_ONE_OR_MANY"
           }, {
-            "id" : "c3df878b-ec06-433a-a6b8-fdf653df6be8",
+            "id" : "9c4364b7-df7e-4846-98a1-bad13bc38192",
             "source" : "film",
             "target" : "inventory",
             "markerStart" : "START_ONE",
             "markerEnd" : "END_MANY"
           }, {
-            "id" : "f28b066e-e0f8-4e80-9b6d-16225a9956b3",
-            "source" : "staff",
-            "target" : "paymentP2022_03",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
-          }, {
-            "id" : "f478b3a1-5c84-444c-b314-00fc8a57aa08",
-            "source" : "customer",
-            "target" : "paymentP2022_03",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
-          }, {
-            "id" : "a01ef2d6-cac6-4025-b007-1ec1f9bd2819",
-            "source" : "rental",
-            "target" : "paymentP2022_03",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
-          }, {
-            "id" : "9dca4005-6a50-425c-a50a-42de8f315cba",
+            "id" : "999d1cc8-8062-442b-9cae-9674678609e7",
             "source" : "store",
             "target" : "staff",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
+            "markerStart" : "START_ONE_OR_MANY",
+            "markerEnd" : "END_ONE_OR_MANY"
           }, {
-            "id" : "c272e4c7-27fc-42c5-8e43-d8fa5e13f219",
+            "id" : "7674cfc2-cffd-4bde-83c3-723688649a76",
             "source" : "address",
             "target" : "staff",
             "markerStart" : "START_ONE",
             "markerEnd" : "END_MANY"
           }, {
-            "id" : "9efcab73-3c05-450f-b9ef-20bd89a2752d",
-            "source" : "address",
+            "id" : "7f6da082-f87d-4746-9d1a-5451f896b5a9",
+            "source" : "country",
             "target" : "store",
             "markerStart" : "START_ONE",
             "markerEnd" : "END_MANY"
           }, {
-            "id" : "8a2f9cd6-6314-4004-9ad2-98d29e73f570",
-            "source" : "actor",
-            "target" : "filmActor",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
-          }, {
-            "id" : "a814d5d8-68e8-4df3-bcab-d1fe04ad9d02",
+            "id" : "5a032961-7eeb-43f8-adca-efa3f844205c",
             "source" : "film",
-            "target" : "filmActor",
+            "target" : "store",
             "markerStart" : "START_ONE",
             "markerEnd" : "END_MANY"
           }, {
-            "id" : "2c0576b9-e6ec-4b6f-9a15-1cfafc7e00c1",
-            "source" : "staff",
-            "target" : "paymentP2022_04",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
+            "id" : "3b94d811-a1a0-4876-93a0-d07ceff0020a",
+            "source" : "city",
+            "target" : "store",
+            "markerStart" : "START_ONE_OR_MANY",
+            "markerEnd" : "END_ONE_OR_MANY"
           }, {
-            "id" : "f17d364e-8306-4a80-8c00-28af133d8126",
-            "source" : "customer",
-            "target" : "paymentP2022_04",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
-          }, {
-            "id" : "1d1826c1-20da-4564-bc53-63acb49b8a9c",
-            "source" : "rental",
-            "target" : "paymentP2022_04",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
-          }, {
-            "id" : "a3e51856-84a2-4715-97e0-bf33a4d95ae4",
-            "source" : "staff",
-            "target" : "paymentP2022_05",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
-          }, {
-            "id" : "d189ece3-f53a-4741-a508-54c62f50edc1",
-            "source" : "customer",
-            "target" : "paymentP2022_05",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
-          }, {
-            "id" : "3d7f38be-2b80-4cd1-961c-18001113acda",
-            "source" : "rental",
-            "target" : "paymentP2022_05",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
-          }, {
-            "id" : "3712fe7c-4043-4ba6-98a1-31cb9b467029",
-            "source" : "staff",
-            "target" : "paymentP2022_02",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
-          }, {
-            "id" : "af0e9edf-5f5e-4660-9258-c0c9a5a6a111",
-            "source" : "customer",
-            "target" : "paymentP2022_02",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
-          }, {
-            "id" : "5d95a082-5c5f-478f-8afe-5f8734135508",
-            "source" : "rental",
-            "target" : "paymentP2022_02",
-            "markerStart" : "START_ONE",
-            "markerEnd" : "END_MANY"
-          }, {
-            "id" : "db6f37c4-95b6-4f07-8a38-ac72879457a8",
+            "id" : "0dad0b82-0706-4a2b-9fac-ad255cbc5a98",
             "source" : "country",
             "target" : "city",
             "markerStart" : "START_ONE",
@@ -3526,13 +2568,6 @@
       } ]
     },
     "tables" : {
-      "c39bd023-114b-4ec5-8a42-8888c88f7289" : {
-        "path" : {
-          "database" : "pagila",
-          "schema" : "public",
-          "table" : "film_category"
-        }
-      },
       "a03175f3-3d75-492b-ac88-a8b46ec851b0" : {
         "path" : {
           "database" : "pagila",
@@ -3552,34 +2587,6 @@
           "database" : "pagila",
           "schema" : "public",
           "table" : "city"
-        }
-      },
-      "78d08533-9a33-4a95-a0b6-1a163565dd99" : {
-        "path" : {
-          "database" : "pagila",
-          "schema" : "public",
-          "table" : "film_actor"
-        }
-      },
-      "a62e8757-3e6c-40d2-8cb7-47149da80401" : {
-        "path" : {
-          "database" : "pagila",
-          "schema" : "public",
-          "table" : "payment_p2022_06"
-        }
-      },
-      "e815ea26-989d-4e3b-8752-95304bbbc890" : {
-        "path" : {
-          "database" : "pagila",
-          "schema" : "public",
-          "table" : "payment_p2022_07"
-        }
-      },
-      "08ce9979-7b8b-408a-8f4e-f3cf16011acc" : {
-        "path" : {
-          "database" : "pagila",
-          "schema" : "public",
-          "table" : "language"
         }
       },
       "550c3d2e-0e97-4b1e-bab4-a9e5a38c57cf" : {
@@ -3615,62 +2622,6 @@
           "database" : "pagila",
           "schema" : "public",
           "table" : "rental"
-        }
-      },
-      "e2dfaaf3-9116-43c1-8417-8c079d38894d" : {
-        "path" : {
-          "database" : "pagila",
-          "schema" : "public",
-          "table" : "actor"
-        }
-      },
-      "5125e8ea-74d3-4cb3-acb6-dffc45ac18ca" : {
-        "path" : {
-          "database" : "pagila",
-          "schema" : "public",
-          "table" : "payment_p2022_04"
-        }
-      },
-      "429a4de3-8e76-4e3f-82f5-71d4c88b7a49" : {
-        "path" : {
-          "database" : "pagila",
-          "schema" : "public",
-          "table" : "payment_p2022_05"
-        }
-      },
-      "33c0502c-8230-471d-a3e1-b7e8cf59d971" : {
-        "path" : {
-          "database" : "pagila",
-          "schema" : "public",
-          "table" : "payment_p2022_02"
-        }
-      },
-      "e2e97b0c-852c-4e92-aadc-65488ba3d815" : {
-        "path" : {
-          "database" : "pagila",
-          "schema" : "public",
-          "table" : "payment"
-        }
-      },
-      "3651ff0a-861f-4372-ac8c-7ed2fdab5512" : {
-        "path" : {
-          "database" : "pagila",
-          "schema" : "public",
-          "table" : "payment_p2022_03"
-        }
-      },
-      "87173507-e415-4fd8-963e-174c1c89b89a" : {
-        "path" : {
-          "database" : "pagila",
-          "schema" : "public",
-          "table" : "category"
-        }
-      },
-      "6e3a412e-8ce3-442d-a784-b4426e56a47e" : {
-        "path" : {
-          "database" : "pagila",
-          "schema" : "public",
-          "table" : "payment_p2022_01"
         }
       },
       "bc815a0e-1572-43e4-bafe-dc0103c69d1f" : {

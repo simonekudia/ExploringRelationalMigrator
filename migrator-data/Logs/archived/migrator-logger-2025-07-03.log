@@ -1,0 +1,944 @@
+2025-07-03 00:46:35,809 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.2.Final
+2025-07-03 00:46:36,053 INFO o.s.b.StartupInfoLogger [main] Starting MigratorApplication v1.13.2 using Java 17.0.15 with PID 1 (/opt/mongodb-relational-migrator/lib/app/application-1.13.2.jar started by root in /)
+2025-07-03 00:46:36,054 INFO o.s.b.SpringApplication [main] The following 3 profiles are active: "unattended", "embedded", "prod"
+2025-07-03 00:46:41,594 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-07-03 00:46:42,570 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 953 ms. Found 0 MongoDB repository interfaces.
+2025-07-03 00:46:44,807 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2025-07-03 00:46:44,847 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2025-07-03 00:46:44,853 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2025-07-03 00:46:44,854 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-07-03 00:46:45,019 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-07-03 00:46:45,020 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 8805 ms
+2025-07-03 00:46:46,625 WARN c.m.m.a.c.PasswordServiceImpl [main] Initializing an in-memory credential store that won't be persisted
+2025-07-03 00:46:49,065 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [main] Adding welcome page: class path resource [static/index.html]
+2025-07-03 00:46:51,074 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 1 endpoint beneath base path '/actuator'
+2025-07-03 00:46:51,365 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2025-07-03 00:46:51,414 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path '/'
+2025-07-03 00:46:51,499 INFO o.s.b.StartupInfoLogger [main] Started MigratorApplication in 19.59 seconds (process running for 21.727)
+2025-07-03 00:46:51,575 INFO c.m.m.a.l.LifecycleTaskRunner [main] Executing lifecycle task com.mongodb.migrator.application.lifecycle.tasks.DescriptorVersionMigrationTask
+2025-07-03 00:46:51,650 INFO c.m.m.a.l.LifecycleTaskRunner [main] Executing lifecycle task com.mongodb.migrator.application.lifecycle.tasks.EmbeddedJobStatusCleanUpTask
+2025-07-03 00:46:51,919 INFO c.m.m.a.l.LifecycleTaskRunner [main] Executing lifecycle task com.mongodb.migrator.application.lifecycle.tasks.QueryExecutionResultCleanUpTask
+2025-07-03 00:56:28,668 INFO c.m.m.a.l.LifecycleTaskRunner [SpringApplicationShutdownHook] Executing lifecycle task com.mongodb.migrator.application.lifecycle.tasks.QueryExecutionResultCleanUpTask
+2025-07-03 00:56:28,679 INFO c.m.m.a.l.LifecycleTaskRunner [SpringApplicationShutdownHook] Executing lifecycle task com.mongodb.migrator.application.queryconversion.QueryConversionManager
+2025-07-03 00:56:28,710 INFO o.s.b.w.e.t.GracefulShutdown [SpringApplicationShutdownHook] Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-03 00:56:28,750 INFO o.s.b.w.e.t.GracefulShutdown [tomcat-shutdown] Graceful shutdown complete
+2025-07-03 00:56:48,232 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.2.Final
+2025-07-03 00:56:48,432 INFO o.s.b.StartupInfoLogger [main] Starting MigratorApplication v1.13.2 using Java 17.0.15 with PID 1 (/opt/mongodb-relational-migrator/lib/app/application-1.13.2.jar started by root in /)
+2025-07-03 00:56:48,433 INFO o.s.b.SpringApplication [main] The following 3 profiles are active: "unattended", "embedded", "prod"
+2025-07-03 00:56:53,620 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-07-03 00:56:54,166 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 524 ms. Found 0 MongoDB repository interfaces.
+2025-07-03 00:56:55,988 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2025-07-03 00:56:56,023 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2025-07-03 00:56:56,029 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2025-07-03 00:56:56,030 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-07-03 00:56:56,184 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-07-03 00:56:56,185 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 7596 ms
+2025-07-03 00:56:57,583 WARN c.m.m.a.c.PasswordServiceImpl [main] Initializing an in-memory credential store that won't be persisted
+2025-07-03 00:57:00,094 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [main] Adding welcome page: class path resource [static/index.html]
+2025-07-03 00:57:01,847 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 1 endpoint beneath base path '/actuator'
+2025-07-03 00:57:02,040 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2025-07-03 00:57:02,096 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path '/'
+2025-07-03 00:57:02,129 INFO o.s.b.StartupInfoLogger [main] Started MigratorApplication in 17.584 seconds (process running for 19.458)
+2025-07-03 00:57:02,191 INFO c.m.m.a.l.LifecycleTaskRunner [main] Executing lifecycle task com.mongodb.migrator.application.lifecycle.tasks.DescriptorVersionMigrationTask
+2025-07-03 00:57:02,256 INFO c.m.m.a.l.LifecycleTaskRunner [main] Executing lifecycle task com.mongodb.migrator.application.lifecycle.tasks.EmbeddedJobStatusCleanUpTask
+2025-07-03 00:57:02,474 INFO c.m.m.a.l.LifecycleTaskRunner [main] Executing lifecycle task com.mongodb.migrator.application.lifecycle.tasks.QueryExecutionResultCleanUpTask
+2025-07-03 01:00:17,234 INFO c.m.m.a.l.LifecycleTaskRunner [SpringApplicationShutdownHook] Executing lifecycle task com.mongodb.migrator.application.lifecycle.tasks.QueryExecutionResultCleanUpTask
+2025-07-03 01:00:17,245 INFO c.m.m.a.l.LifecycleTaskRunner [SpringApplicationShutdownHook] Executing lifecycle task com.mongodb.migrator.application.queryconversion.QueryConversionManager
+2025-07-03 01:00:17,265 INFO o.s.b.w.e.t.GracefulShutdown [SpringApplicationShutdownHook] Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-03 01:00:17,292 INFO o.s.b.w.e.t.GracefulShutdown [tomcat-shutdown] Graceful shutdown complete
+2025-07-03 01:00:37,182 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.2.Final
+2025-07-03 01:00:37,392 INFO o.s.b.StartupInfoLogger [main] Starting MigratorApplication v1.13.2 using Java 17.0.15 with PID 1 (/opt/mongodb-relational-migrator/lib/app/application-1.13.2.jar started by root in /)
+2025-07-03 01:00:37,395 INFO o.s.b.SpringApplication [main] The following 3 profiles are active: "unattended", "embedded", "prod"
+2025-07-03 01:00:42,941 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-07-03 01:00:43,618 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 654 ms. Found 0 MongoDB repository interfaces.
+2025-07-03 01:00:45,418 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2025-07-03 01:00:45,457 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2025-07-03 01:00:45,464 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2025-07-03 01:00:45,464 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-07-03 01:00:45,617 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-07-03 01:00:45,618 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 8060 ms
+2025-07-03 01:00:47,066 WARN c.m.m.a.c.PasswordServiceImpl [main] Initializing an in-memory credential store that won't be persisted
+2025-07-03 01:00:49,425 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [main] Adding welcome page: class path resource [static/index.html]
+2025-07-03 01:00:51,619 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 1 endpoint beneath base path '/actuator'
+2025-07-03 01:00:51,846 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2025-07-03 01:00:51,884 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path '/'
+2025-07-03 01:00:51,912 INFO o.s.b.StartupInfoLogger [main] Started MigratorApplication in 18.528 seconds (process running for 20.803)
+2025-07-03 01:00:51,982 INFO c.m.m.a.l.LifecycleTaskRunner [main] Executing lifecycle task com.mongodb.migrator.application.lifecycle.tasks.DescriptorVersionMigrationTask
+2025-07-03 01:00:52,057 INFO c.m.m.a.l.LifecycleTaskRunner [main] Executing lifecycle task com.mongodb.migrator.application.lifecycle.tasks.EmbeddedJobStatusCleanUpTask
+2025-07-03 01:00:52,288 INFO c.m.m.a.l.LifecycleTaskRunner [main] Executing lifecycle task com.mongodb.migrator.application.lifecycle.tasks.QueryExecutionResultCleanUpTask
+2025-07-03 01:03:44,320 INFO c.m.m.a.l.LifecycleTaskRunner [SpringApplicationShutdownHook] Executing lifecycle task com.mongodb.migrator.application.lifecycle.tasks.QueryExecutionResultCleanUpTask
+2025-07-03 01:03:44,341 INFO c.m.m.a.l.LifecycleTaskRunner [SpringApplicationShutdownHook] Executing lifecycle task com.mongodb.migrator.application.queryconversion.QueryConversionManager
+2025-07-03 01:03:44,377 INFO o.s.b.w.e.t.GracefulShutdown [SpringApplicationShutdownHook] Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-03 01:03:44,413 INFO o.s.b.w.e.t.GracefulShutdown [tomcat-shutdown] Graceful shutdown complete
+2025-07-03 01:18:49,482 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.2.Final
+2025-07-03 01:18:49,749 INFO o.s.b.StartupInfoLogger [main] Starting MigratorApplication v1.13.2 using Java 17.0.15 with PID 1 (/opt/mongodb-relational-migrator/lib/app/application-1.13.2.jar started by root in /)
+2025-07-03 01:18:49,751 INFO o.s.b.SpringApplication [main] The following 3 profiles are active: "unattended", "embedded", "prod"
+2025-07-03 01:18:58,633 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-07-03 01:18:59,173 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 515 ms. Found 0 MongoDB repository interfaces.
+2025-07-03 01:19:01,531 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2025-07-03 01:19:01,595 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2025-07-03 01:19:01,605 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2025-07-03 01:19:01,605 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-07-03 01:19:01,853 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-07-03 01:19:01,855 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 11934 ms
+2025-07-03 01:19:04,245 WARN c.m.m.a.c.PasswordServiceImpl [main] Initializing an in-memory credential store that won't be persisted
+2025-07-03 01:19:08,320 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [main] Adding welcome page: class path resource [static/index.html]
+2025-07-03 01:19:11,847 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 1 endpoint beneath base path '/actuator'
+2025-07-03 01:19:12,159 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2025-07-03 01:19:12,219 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path '/'
+2025-07-03 01:19:12,270 INFO o.s.b.StartupInfoLogger [main] Started MigratorApplication in 27.917 seconds (process running for 30.803)
+2025-07-03 01:19:12,485 INFO c.m.m.a.l.LifecycleTaskRunner [main] Executing lifecycle task com.mongodb.migrator.application.lifecycle.tasks.DescriptorVersionMigrationTask
+2025-07-03 01:19:12,632 INFO c.m.m.a.l.LifecycleTaskRunner [main] Executing lifecycle task com.mongodb.migrator.application.lifecycle.tasks.EmbeddedJobStatusCleanUpTask
+2025-07-03 01:19:13,146 INFO c.m.m.a.l.LifecycleTaskRunner [main] Executing lifecycle task com.mongodb.migrator.application.lifecycle.tasks.QueryExecutionResultCleanUpTask
+2025-07-03 01:20:25,857 INFO c.m.m.a.l.LifecycleTaskRunner [SpringApplicationShutdownHook] Executing lifecycle task com.mongodb.migrator.application.lifecycle.tasks.QueryExecutionResultCleanUpTask
+2025-07-03 01:20:25,875 INFO c.m.m.a.l.LifecycleTaskRunner [SpringApplicationShutdownHook] Executing lifecycle task com.mongodb.migrator.application.queryconversion.QueryConversionManager
+2025-07-03 01:20:25,938 INFO o.s.b.w.e.t.GracefulShutdown [SpringApplicationShutdownHook] Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-03 01:20:25,992 INFO o.s.b.w.e.t.GracefulShutdown [tomcat-shutdown] Graceful shutdown complete
+2025-07-03 01:20:42,108 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.2.Final
+2025-07-03 01:20:42,468 INFO o.s.b.StartupInfoLogger [main] Starting MigratorApplication v1.13.2 using Java 17.0.15 with PID 1 (/opt/mongodb-relational-migrator/lib/app/application-1.13.2.jar started by root in /)
+2025-07-03 01:20:42,471 INFO o.s.b.SpringApplication [main] The following 3 profiles are active: "unattended", "embedded", "prod"
+2025-07-03 01:20:51,293 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-07-03 01:20:52,028 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 684 ms. Found 0 MongoDB repository interfaces.
+2025-07-03 01:20:54,509 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2025-07-03 01:20:54,561 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2025-07-03 01:20:54,570 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2025-07-03 01:20:54,570 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-07-03 01:20:54,789 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-07-03 01:20:54,790 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 12106 ms
+2025-07-03 01:20:57,202 WARN c.m.m.a.c.PasswordServiceImpl [main] Initializing an in-memory credential store that won't be persisted
+2025-07-03 01:21:00,838 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [main] Adding welcome page: class path resource [static/index.html]
+2025-07-03 01:21:04,168 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 1 endpoint beneath base path '/actuator'
+2025-07-03 01:21:04,529 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2025-07-03 01:21:04,596 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path '/'
+2025-07-03 01:21:04,648 INFO o.s.b.StartupInfoLogger [main] Started MigratorApplication in 27.433 seconds (process running for 30.713)
+2025-07-03 01:21:04,781 INFO c.m.m.a.l.LifecycleTaskRunner [main] Executing lifecycle task com.mongodb.migrator.application.lifecycle.tasks.DescriptorVersionMigrationTask
+2025-07-03 01:21:04,952 INFO c.m.m.a.l.LifecycleTaskRunner [main] Executing lifecycle task com.mongodb.migrator.application.lifecycle.tasks.EmbeddedJobStatusCleanUpTask
+2025-07-03 01:21:05,421 INFO c.m.m.a.l.LifecycleTaskRunner [main] Executing lifecycle task com.mongodb.migrator.application.lifecycle.tasks.QueryExecutionResultCleanUpTask
+2025-07-03 01:28:26,491 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-03 01:28:26,505 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2025-07-03 01:28:26,591 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 84 ms
+2025-07-03 01:31:44,259 INFO s.t.u.SchemaCrawlerUtility [http-nio-8080-exec-3] Using SchemaCrawler database plugin for postgresql - PostgreSQL
+2025-07-03 01:31:44,330 INFO u.f.u.i.ClasspathInputResource [http-nio-8080-exec-3] Opened input reader to classpath resource, /sql2003_reserved_words.txt
+2025-07-03 01:31:44,342 INFO u.f.u.i.ClasspathInputResource [http-nio-8080-exec-3] Opened input reader to classpath resource, /sql2003_reserved_words.txt
+2025-07-03 01:31:44,398 INFO u.f.u.i.ClasspathInputResource [http-nio-8080-exec-3] Opened input reader to classpath resource, /sql2003_reserved_words.txt
+2025-07-03 01:31:44,504 INFO u.f.u.i.ClasspathInputResource [http-nio-8080-exec-3] Opened input reader to classpath resource, /help/SchemaCrawler.txt
+2025-07-03 01:31:44,516 INFO u.f.u.s.MultiThreadedTaskRunner [http-nio-8080-exec-3] Started thread pool <java.util.concurrent.ThreadPoolExecutor@2f60d835[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]> for <4245d8de-5688-42d7-91c8-03ff934814f1> with <10> threads
+2025-07-03 01:31:44,523 INFO u.f.u.s.TimedTask [pool-4-thread-3] Running <retrieve_database_users> on thread <pool-4-thread-3>
+2025-07-03 01:31:44,524 INFO u.f.u.s.TimedTask [pool-4-thread-4] Running <retrieve_additional_jdbc_driver_info> on thread <pool-4-thread-4>
+2025-07-03 01:31:44,523 INFO u.f.u.s.TimedTask [pool-4-thread-1] Running <retrieve_additional_database_info> on thread <pool-4-thread-1>
+2025-07-03 01:31:44,524 INFO u.f.u.s.TimedTask [pool-4-thread-2] Running <retrieve_server_info> on thread <pool-4-thread-2>
+2025-07-03 01:31:44,540 INFO u.f.u.s.TaskDefinition [pool-4-thread-3] Not running task <retrieveDatabaseUsers>
+2025-07-03 01:31:44,546 INFO u.f.u.s.TaskDefinition [pool-4-thread-1] Not running task <retrieveAdditionalDatabaseInfo>
+2025-07-03 01:31:44,549 INFO u.f.u.s.TaskDefinition [pool-4-thread-4] Not running task <retrieveAdditionalJdbcDriverInfo>
+2025-07-03 01:31:44,584 INFO s.c.SchemaCrawler [http-nio-8080-exec-3] 
+-- generated by: SchemaCrawler 16.21.4
+-- generated on: 2025-07-03T01:31:44.506661343
+-- database: PostgreSQL 17.5 (Debian 17.5-1.pgdg120+1)
+-- driver: PostgreSQL JDBC Driver 42.7.5
+-- operating system: Linux 6.10.14-linuxkit
+-- JVM system: Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.15+6
+
+2025-07-03 01:31:44,588 INFO u.f.u.s.TimedTask [pool-4-thread-5] Running <retrieve_schemas> on thread <pool-4-thread-5>
+2025-07-03 01:31:44,589 INFO s.c.SchemaRetriever [pool-4-thread-5] Retrieving all schemas
+2025-07-03 01:31:44,590 INFO s.c.SchemaRetriever [pool-4-thread-5] Retrieving all catalogs
+2025-07-03 01:31:44,621 INFO s.c.SchemaRetriever [pool-4-thread-5] Processed 3 schemas
+2025-07-03 01:31:44,624 INFO u.f.u.s.TimedTask [pool-4-thread-6] Running <filter_and_sort_schemas> on thread <pool-4-thread-6>
+2025-07-03 01:31:44,626 INFO s.c.SchemaCrawler [http-nio-8080-exec-3] Retrieved 1 schemas
+2025-07-03 01:31:44,628 INFO u.f.u.s.TimedTask [pool-4-thread-7] Running <retrieve_column_data_types> on thread <pool-4-thread-7>
+2025-07-03 01:31:44,628 INFO u.f.u.s.TaskDefinition [pool-4-thread-7] Not running task <retrieveColumnDataTypes>
+2025-07-03 01:31:44,630 INFO u.f.u.s.TimedTask [pool-4-thread-8] Running <retrieve_user_defined_column_data_types> on thread <pool-4-thread-8>
+2025-07-03 01:31:44,630 INFO u.f.u.s.TaskDefinition [pool-4-thread-8] Not running task <retrieveUserDefinedColumnDataTypes>
+2025-07-03 01:31:44,692 INFO u.f.u.s.TimedTask [pool-4-thread-9] Running <retrieve_tables> on thread <pool-4-thread-9>
+2025-07-03 01:31:44,693 INFO s.c.SchemaCrawler [pool-4-thread-9] Retrieving table names
+2025-07-03 01:31:44,695 INFO s.c.TableRetriever [pool-4-thread-9] Retrieving tables
+2025-07-03 01:31:44,695 INFO s.c.TableRetriever [pool-4-thread-9] Retrieving tables for schema <public>
+2025-07-03 01:31:44,734 INFO s.c.TableRetriever [pool-4-thread-9] Processed 8 tables
+2025-07-03 01:31:44,735 INFO s.c.SchemaCrawler [http-nio-8080-exec-3] Retrieved 8 tables
+2025-07-03 01:31:44,737 INFO u.f.u.s.TimedTask [pool-4-thread-10] Running <retrieve_table_columns> on thread <pool-4-thread-10>
+2025-07-03 01:31:44,737 INFO u.f.u.s.TaskDefinition [pool-4-thread-10] Not running task <retrieveTableColumns>
+2025-07-03 01:31:44,739 INFO u.f.u.s.TimedTask [pool-4-thread-3] Running <retrieve_primary_keys> on thread <pool-4-thread-3>
+2025-07-03 01:31:44,739 INFO u.f.u.s.TimedTask [pool-4-thread-2] Running <retrieve_table_constraints> on thread <pool-4-thread-2>
+2025-07-03 01:31:44,739 INFO u.f.u.s.TimedTask [pool-4-thread-5] Running <retrieve_trigger_information> on thread <pool-4-thread-5>
+2025-07-03 01:31:44,739 INFO u.f.u.s.TimedTask [pool-4-thread-1] Running <retrieve_foreign_keys> on thread <pool-4-thread-1>
+2025-07-03 01:31:44,739 INFO u.f.u.s.TaskDefinition [pool-4-thread-3] Not running task <retrievePrimaryKeys>
+2025-07-03 01:31:44,739 INFO u.f.u.s.TimedTask [pool-4-thread-4] Running <retrieve_indexes> on thread <pool-4-thread-4>
+2025-07-03 01:31:44,739 INFO u.f.u.s.TaskDefinition [pool-4-thread-2] Not running task <retrieveTableConstraints>
+2025-07-03 01:31:44,739 INFO u.f.u.s.TaskDefinition [pool-4-thread-5] Not running task <retrieveTriggerInformation>
+2025-07-03 01:31:44,739 INFO u.f.u.s.TaskDefinition [pool-4-thread-1] Not running task <retrieveForeignKeys>
+2025-07-03 01:31:44,741 INFO u.f.u.s.TaskDefinition [pool-4-thread-4] Not running task <retrieveIndexes>
+2025-07-03 01:31:44,743 INFO u.f.u.s.TimedTask [pool-4-thread-6] Running <filter_and_sort_tables> on thread <pool-4-thread-6>
+2025-07-03 01:31:44,757 INFO u.f.u.s.TimedTask [pool-4-thread-7] Running <match_table_constraints> on thread <pool-4-thread-7>
+2025-07-03 01:31:44,757 INFO u.f.u.s.TaskDefinition [pool-4-thread-7] Not running task <matchTableConstraints>
+2025-07-03 01:31:44,759 INFO u.f.u.s.TimedTask [pool-4-thread-8] Running <retrieve_table_constraint_definitions> on thread <pool-4-thread-8>
+2025-07-03 01:31:44,759 INFO u.f.u.s.TimedTask [pool-4-thread-4] Running <retrieve_table_privileges> on thread <pool-4-thread-4>
+2025-07-03 01:31:44,759 INFO u.f.u.s.TimedTask [pool-4-thread-9] Running <retrieve_table_constraint_information> on thread <pool-4-thread-9>
+2025-07-03 01:31:44,759 INFO u.f.u.s.TimedTask [pool-4-thread-10] Running <retrieve_view_information> on thread <pool-4-thread-10>
+2025-07-03 01:31:44,759 INFO u.f.u.s.TimedTask [pool-4-thread-2] Running <retrieve_table_definitions_information> on thread <pool-4-thread-2>
+2025-07-03 01:31:44,759 INFO u.f.u.s.TimedTask [pool-4-thread-3] Running <retrieve_view_table_usage> on thread <pool-4-thread-3>
+2025-07-03 01:31:44,759 INFO u.f.u.s.TimedTask [pool-4-thread-5] Running <retrieve_index_information> on thread <pool-4-thread-5>
+2025-07-03 01:31:44,759 INFO u.f.u.s.TimedTask [pool-4-thread-6] Running <retrieve_table_column_privileges> on thread <pool-4-thread-6>
+2025-07-03 01:31:44,759 INFO u.f.u.s.TaskDefinition [pool-4-thread-8] Not running task <retrieveTableConstraintDefinitions>
+2025-07-03 01:31:44,761 INFO u.f.u.s.TaskDefinition [pool-4-thread-6] Not running task <retrieveTableColumnPrivileges>
+2025-07-03 01:31:44,759 INFO u.f.u.s.TimedTask [pool-4-thread-1] Running <retrieve_additional_table_attributes> on thread <pool-4-thread-1>
+2025-07-03 01:31:44,760 INFO u.f.u.s.TimedTask [pool-4-thread-7] Running <retrieve_additional_column_attributes> on thread <pool-4-thread-7>
+2025-07-03 01:31:44,760 INFO u.f.u.s.TaskDefinition [pool-4-thread-4] Not running task <retrieveTablePrivileges>
+2025-07-03 01:31:44,760 INFO u.f.u.s.TaskDefinition [pool-4-thread-9] Not running task <retrieveTableConstraintInformation>
+2025-07-03 01:31:44,760 INFO u.f.u.s.TaskDefinition [pool-4-thread-10] Not running task <retrieveViewInformation>
+2025-07-03 01:31:44,760 INFO u.f.u.s.TaskDefinition [pool-4-thread-2] Not running task <retrieveTableDefinitionsInformation>
+2025-07-03 01:31:44,760 INFO u.f.u.s.TaskDefinition [pool-4-thread-3] Not running task <retrieveViewTableUsage>
+2025-07-03 01:31:44,760 INFO u.f.u.s.TaskDefinition [pool-4-thread-5] Not running task <retrieveIndexInformation>
+2025-07-03 01:31:44,761 INFO u.f.u.s.TaskDefinition [pool-4-thread-1] Not running task <retrieveAdditionalTableAttributes>
+2025-07-03 01:31:44,762 INFO u.f.u.s.TaskDefinition [pool-4-thread-7] Not running task <retrieveAdditionalColumnAttributes>
+2025-07-03 01:31:44,764 INFO u.f.u.s.TimedTask [pool-4-thread-8] Running <retrieve_additional_column_metadata> on thread <pool-4-thread-8>
+2025-07-03 01:31:44,765 INFO u.f.u.s.TaskDefinition [pool-4-thread-8] Not running task <retrieveAdditionalColumnMetadata>
+2025-07-03 01:31:44,766 INFO s.c.SchemaCrawler [http-nio-8080-exec-3] Not retrieving routines, since this was not requested
+2025-07-03 01:31:44,767 INFO s.c.SchemaCrawler [http-nio-8080-exec-3] Not retrieving synonyms, since this was not requested
+2025-07-03 01:31:44,767 INFO s.c.SchemaCrawler [http-nio-8080-exec-3] Not retrieving sequences, since this was not requested
+2025-07-03 01:31:44,785 INFO s.c.RetrievalTaskRunner [http-nio-8080-exec-3] Total time taken for <4245d8de-5688-42d7-91c8-03ff934814f1> - 00:00:00.205 hours
+- 11.2% - 00:00:00.023 - <retrieve_additional_database_info>
+- 17.1% - 00:00:00.035 - <retrieve_server_info>
+- 11.7% - 00:00:00.024 - <retrieve_database_users>
+-  2.0% - 00:00:00.004 - <retrieve_additional_jdbc_driver_info>
+- 16.6% - 00:00:00.034 - <retrieve_schemas>
+-  0.5% - 00:00:00.001 - <filter_and_sort_schemas>
+-  0.0% - 00:00:00.000 - <retrieve_column_data_types>
+-  0.0% - 00:00:00.000 - <retrieve_user_defined_column_data_types>
+- 20.0% - 00:00:00.041 - <retrieve_tables>
+-  0.0% - 00:00:00.000 - <retrieve_table_columns>
+-  0.0% - 00:00:00.000 - <retrieve_primary_keys>
+-  0.5% - 00:00:00.001 - <retrieve_foreign_keys>
+-  0.5% - 00:00:00.001 - <retrieve_indexes>
+-  0.5% - 00:00:00.001 - <retrieve_table_constraints>
+-  0.5% - 00:00:00.001 - <retrieve_trigger_information>
+-  5.9% - 00:00:00.012 - <filter_and_sort_tables>
+-  0.0% - 00:00:00.000 - <match_table_constraints>
+-  0.5% - 00:00:00.001 - <retrieve_table_constraint_definitions>
+-  1.0% - 00:00:00.002 - <retrieve_table_constraint_information>
+-  1.0% - 00:00:00.002 - <retrieve_view_information>
+-  1.0% - 00:00:00.002 - <retrieve_view_table_usage>
+-  1.0% - 00:00:00.002 - <retrieve_table_definitions_information>
+-  1.0% - 00:00:00.002 - <retrieve_index_information>
+-  0.5% - 00:00:00.001 - <retrieve_additional_table_attributes>
+-  1.0% - 00:00:00.002 - <retrieve_table_privileges>
+-  0.0% - 00:00:00.000 - <retrieve_table_column_privileges>
+-  0.5% - 00:00:00.001 - <retrieve_additional_column_attributes>
+-  0.0% - 00:00:00.000 - <retrieve_additional_column_metadata>
+
+2025-07-03 01:31:44,787 INFO s.l.a.AttributesCatalogLoader [http-nio-8080-exec-3] Retrieving catalog attributes
+2025-07-03 01:31:44,788 INFO u.f.u.s.MultiThreadedTaskRunner [http-nio-8080-exec-3] Started thread pool <java.util.concurrent.ThreadPoolExecutor@1625d60e[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]> for <loadAttributes> with <1> threads
+2025-07-03 01:31:44,790 INFO u.f.u.s.TimedTask [pool-5-thread-1] Running <retrieve_catalog_attributes> on thread <pool-5-thread-1>
+2025-07-03 01:31:44,792 INFO s.l.a.AttributesCatalogLoader [http-nio-8080-exec-3] Total time taken for <loadAttributes> - 00:00:00.000 hours
+-  0.0% - 00:00:00.000 - <retrieve_catalog_attributes>
+
+2025-07-03 01:31:44,793 INFO s.l.c.TableRowCountsCatalogLoader [http-nio-8080-exec-3] Retrieving table row counts
+2025-07-03 01:31:44,793 INFO u.f.u.s.MultiThreadedTaskRunner [http-nio-8080-exec-3] Started thread pool <java.util.concurrent.ThreadPoolExecutor@291ca5de[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]> for <loadTableRowCounts> with <1> threads
+2025-07-03 01:31:44,795 INFO u.f.u.s.TimedTask [pool-6-thread-1] Running <retrieve_table_row_counts> on thread <pool-6-thread-1>
+2025-07-03 01:31:44,795 INFO s.l.c.TableRowCountsCatalogLoader [pool-6-thread-1] Not retrieving table row counts, since this was not requested
+2025-07-03 01:31:44,796 INFO u.f.u.s.TimedTask [pool-6-thread-1] Running <filter_empty_tables> on thread <pool-6-thread-1>
+2025-07-03 01:31:44,797 INFO s.l.c.TableRowCountsCatalogLoader [http-nio-8080-exec-3] Total time taken for <loadTableRowCounts> - 00:00:00.000 hours
+-  0.0% - 00:00:00.000 - <retrieve_table_row_counts>
+-  0.0% - 00:00:00.000 - <filter_empty_tables>
+
+2025-07-03 01:31:44,797 INFO s.l.w.WeakAssociationsCatalogLoader [http-nio-8080-exec-3] Finding weak associations
+2025-07-03 01:31:44,797 INFO u.f.u.s.MultiThreadedTaskRunner [http-nio-8080-exec-3] Started thread pool <java.util.concurrent.ThreadPoolExecutor@c1dc17f[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]> for <loadWeakAssociations> with <1> threads
+2025-07-03 01:31:44,798 INFO u.f.u.s.TimedTask [pool-7-thread-1] Running <retrieve_weak_associations> on thread <pool-7-thread-1>
+2025-07-03 01:31:44,799 INFO s.l.w.WeakAssociationsCatalogLoader [pool-7-thread-1] Not retrieving weak associations, since this was not requested
+2025-07-03 01:31:44,800 INFO s.l.w.WeakAssociationsCatalogLoader [http-nio-8080-exec-3] Total time taken for <loadWeakAssociations> - 00:00:00.000 hours
+-  0.0% - 00:00:00.000 - <retrieve_weak_associations>
+
+2025-07-03 01:32:04,592 INFO s.t.u.SchemaCrawlerUtility [http-nio-8080-exec-2] Using SchemaCrawler database plugin for postgresql - PostgreSQL
+2025-07-03 01:32:04,672 INFO u.f.u.i.ClasspathInputResource [http-nio-8080-exec-2] Opened input reader to classpath resource, /sql2003_reserved_words.txt
+2025-07-03 01:32:04,699 INFO u.f.u.i.ClasspathInputResource [http-nio-8080-exec-2] Opened input reader to classpath resource, /sql2003_reserved_words.txt
+2025-07-03 01:32:04,767 INFO u.f.u.s.MultiThreadedTaskRunner [http-nio-8080-exec-2] Started thread pool <java.util.concurrent.ThreadPoolExecutor@4bc6573f[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]> for <c352a9c8-2ca9-462f-b83e-89beb87fcb25> with <10> threads
+2025-07-03 01:32:04,769 INFO u.f.u.s.TimedTask [pool-8-thread-2] Running <retrieve_server_info> on thread <pool-8-thread-2>
+2025-07-03 01:32:04,769 INFO u.f.u.s.TimedTask [pool-8-thread-1] Running <retrieve_additional_database_info> on thread <pool-8-thread-1>
+2025-07-03 01:32:04,769 INFO u.f.u.s.TimedTask [pool-8-thread-3] Running <retrieve_database_users> on thread <pool-8-thread-3>
+2025-07-03 01:32:04,770 INFO u.f.u.s.TaskDefinition [pool-8-thread-1] Not running task <retrieveAdditionalDatabaseInfo>
+2025-07-03 01:32:04,770 INFO u.f.u.s.TimedTask [pool-8-thread-4] Running <retrieve_additional_jdbc_driver_info> on thread <pool-8-thread-4>
+2025-07-03 01:32:04,770 INFO u.f.u.s.TaskDefinition [pool-8-thread-3] Not running task <retrieveDatabaseUsers>
+2025-07-03 01:32:04,771 INFO u.f.u.s.TaskDefinition [pool-8-thread-4] Not running task <retrieveAdditionalJdbcDriverInfo>
+2025-07-03 01:32:04,789 INFO s.c.SchemaCrawler [http-nio-8080-exec-2] 
+-- generated by: SchemaCrawler 16.21.4
+-- generated on: 2025-07-03T01:32:04.765887464
+-- database: PostgreSQL 17.5 (Debian 17.5-1.pgdg120+1)
+-- driver: PostgreSQL JDBC Driver 42.7.5
+-- operating system: Linux 6.10.14-linuxkit
+-- JVM system: Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.15+6
+
+2025-07-03 01:32:04,791 INFO u.f.u.s.TimedTask [pool-8-thread-5] Running <retrieve_schemas> on thread <pool-8-thread-5>
+2025-07-03 01:32:04,791 INFO s.c.SchemaRetriever [pool-8-thread-5] Retrieving all schemas
+2025-07-03 01:32:04,792 INFO s.c.SchemaRetriever [pool-8-thread-5] Retrieving all catalogs
+2025-07-03 01:32:04,814 INFO s.c.SchemaRetriever [pool-8-thread-5] Processed 3 schemas
+2025-07-03 01:32:04,816 INFO u.f.u.s.TimedTask [pool-8-thread-6] Running <filter_and_sort_schemas> on thread <pool-8-thread-6>
+2025-07-03 01:32:04,817 INFO s.c.SchemaCrawler [http-nio-8080-exec-2] Retrieved 1 schemas
+2025-07-03 01:32:04,819 INFO u.f.u.s.TimedTask [pool-8-thread-7] Running <retrieve_column_data_types> on thread <pool-8-thread-7>
+2025-07-03 01:32:04,821 INFO u.f.u.s.TaskDefinition [pool-8-thread-7] Not running task <retrieveColumnDataTypes>
+2025-07-03 01:32:04,823 INFO u.f.u.s.TimedTask [pool-8-thread-8] Running <retrieve_user_defined_column_data_types> on thread <pool-8-thread-8>
+2025-07-03 01:32:04,825 INFO u.f.u.s.TaskDefinition [pool-8-thread-8] Not running task <retrieveUserDefinedColumnDataTypes>
+2025-07-03 01:32:04,827 INFO u.f.u.s.TimedTask [pool-8-thread-9] Running <retrieve_tables> on thread <pool-8-thread-9>
+2025-07-03 01:32:04,827 INFO s.c.SchemaCrawler [pool-8-thread-9] Retrieving table names
+2025-07-03 01:32:04,827 INFO s.c.TableRetriever [pool-8-thread-9] Retrieving tables
+2025-07-03 01:32:04,827 INFO s.c.TableRetriever [pool-8-thread-9] Retrieving tables for schema <public>
+2025-07-03 01:32:04,848 INFO s.c.TableRetriever [pool-8-thread-9] Processed 8 tables
+2025-07-03 01:32:04,849 INFO s.c.SchemaCrawler [http-nio-8080-exec-2] Retrieved 8 tables
+2025-07-03 01:32:04,851 INFO u.f.u.s.TimedTask [pool-8-thread-10] Running <retrieve_table_columns> on thread <pool-8-thread-10>
+2025-07-03 01:32:04,853 INFO s.c.TableColumnRetriever [pool-8-thread-10] No hidden table columns SQL provided
+2025-07-03 01:32:04,857 INFO s.c.TableColumnRetriever [pool-8-thread-10] Retrieving table columns
+2025-07-03 01:32:04,858 INFO u.f.u.s.MultiThreadedTaskRunner [pool-8-thread-10] Started thread pool <java.util.concurrent.ThreadPoolExecutor@4b0e63a8[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]> for <retrieve-table-columns-from-metadata> with <5> threads
+2025-07-03 01:32:04,860 INFO u.f.u.s.TimedTask [pool-9-thread-1] Running <public.customer> on thread <pool-9-thread-1>
+2025-07-03 01:32:04,861 INFO u.f.u.s.TimedTask [pool-9-thread-2] Running <public.lineitem> on thread <pool-9-thread-2>
+2025-07-03 01:32:04,863 INFO u.f.u.s.TimedTask [pool-9-thread-4] Running <public.orders> on thread <pool-9-thread-4>
+2025-07-03 01:32:04,863 INFO u.f.u.s.TimedTask [pool-9-thread-3] Running <public.nation> on thread <pool-9-thread-3>
+2025-07-03 01:32:04,865 INFO u.f.u.s.TimedTask [pool-9-thread-5] Running <public.part> on thread <pool-9-thread-5>
+2025-07-03 01:32:05,088 INFO u.f.u.s.TimedTask [pool-9-thread-3] Running <public.partsupp> on thread <pool-9-thread-3>
+2025-07-03 01:32:05,089 INFO u.f.u.s.TimedTask [pool-9-thread-1] Running <public.supplier> on thread <pool-9-thread-1>
+2025-07-03 01:32:05,089 INFO u.f.u.s.TimedTask [pool-9-thread-4] Running <public.region> on thread <pool-9-thread-4>
+2025-07-03 01:32:05,160 INFO u.f.u.s.TimedTask [pool-8-thread-1] Running <retrieve_foreign_keys> on thread <pool-8-thread-1>
+2025-07-03 01:32:05,160 INFO u.f.u.s.TimedTask [pool-8-thread-4] Running <retrieve_indexes> on thread <pool-8-thread-4>
+2025-07-03 01:32:05,160 INFO u.f.u.s.TimedTask [pool-8-thread-5] Running <retrieve_trigger_information> on thread <pool-8-thread-5>
+2025-07-03 01:32:05,160 INFO u.f.u.s.TimedTask [pool-8-thread-3] Running <retrieve_primary_keys> on thread <pool-8-thread-3>
+2025-07-03 01:32:05,160 INFO u.f.u.s.TimedTask [pool-8-thread-2] Running <retrieve_table_constraints> on thread <pool-8-thread-2>
+2025-07-03 01:32:05,164 INFO u.f.u.s.TaskDefinition [pool-8-thread-5] Not running task <retrieveTriggerInformation>
+2025-07-03 01:32:05,164 INFO u.f.u.s.TaskDefinition [pool-8-thread-2] Not running task <retrieveTableConstraints>
+2025-07-03 01:32:05,165 INFO s.c.PrimaryKeyRetriever [pool-8-thread-3] Retrieving primary keys
+2025-07-03 01:32:05,165 INFO s.c.IndexRetriever [pool-8-thread-4] Retrieving indexes
+2025-07-03 01:32:05,165 INFO s.c.ForeignKeyRetriever [pool-8-thread-1] Retrieving foreign keys
+2025-07-03 01:32:05,444 INFO u.f.u.s.TimedTask [pool-8-thread-6] Running <filter_and_sort_tables> on thread <pool-8-thread-6>
+2025-07-03 01:32:05,451 INFO u.f.u.s.TimedTask [pool-8-thread-7] Running <match_table_constraints> on thread <pool-8-thread-7>
+2025-07-03 01:32:05,454 INFO u.f.u.s.TimedTask [pool-8-thread-8] Running <retrieve_table_constraint_definitions> on thread <pool-8-thread-8>
+2025-07-03 01:32:05,454 INFO u.f.u.s.TimedTask [pool-8-thread-1] Running <retrieve_index_information> on thread <pool-8-thread-1>
+2025-07-03 01:32:05,454 INFO u.f.u.s.TimedTask [pool-8-thread-9] Running <retrieve_table_constraint_information> on thread <pool-8-thread-9>
+2025-07-03 01:32:05,454 INFO u.f.u.s.TimedTask [pool-8-thread-5] Running <retrieve_view_table_usage> on thread <pool-8-thread-5>
+2025-07-03 01:32:05,454 INFO u.f.u.s.TimedTask [pool-8-thread-10] Running <retrieve_view_information> on thread <pool-8-thread-10>
+2025-07-03 01:32:05,454 INFO u.f.u.s.TimedTask [pool-8-thread-2] Running <retrieve_table_definitions_information> on thread <pool-8-thread-2>
+2025-07-03 01:32:05,454 INFO u.f.u.s.TimedTask [pool-8-thread-4] Running <retrieve_additional_table_attributes> on thread <pool-8-thread-4>
+2025-07-03 01:32:05,454 INFO u.f.u.s.TaskDefinition [pool-8-thread-8] Not running task <retrieveTableConstraintDefinitions>
+2025-07-03 01:32:05,454 INFO u.f.u.s.TimedTask [pool-8-thread-3] Running <retrieve_table_privileges> on thread <pool-8-thread-3>
+2025-07-03 01:32:05,454 INFO u.f.u.s.TimedTask [pool-8-thread-6] Running <retrieve_table_column_privileges> on thread <pool-8-thread-6>
+2025-07-03 01:32:05,454 INFO u.f.u.s.TimedTask [pool-8-thread-7] Running <retrieve_additional_column_attributes> on thread <pool-8-thread-7>
+2025-07-03 01:32:05,455 INFO u.f.u.s.TaskDefinition [pool-8-thread-1] Not running task <retrieveIndexInformation>
+2025-07-03 01:32:05,455 INFO u.f.u.s.TaskDefinition [pool-8-thread-9] Not running task <retrieveTableConstraintInformation>
+2025-07-03 01:32:05,455 INFO u.f.u.s.TaskDefinition [pool-8-thread-5] Not running task <retrieveViewTableUsage>
+2025-07-03 01:32:05,456 INFO u.f.u.s.TaskDefinition [pool-8-thread-10] Not running task <retrieveViewInformation>
+2025-07-03 01:32:05,456 INFO u.f.u.s.TaskDefinition [pool-8-thread-4] Not running task <retrieveAdditionalTableAttributes>
+2025-07-03 01:32:05,456 INFO u.f.u.s.TaskDefinition [pool-8-thread-2] Not running task <retrieveTableDefinitionsInformation>
+2025-07-03 01:32:05,456 INFO u.f.u.s.TaskDefinition [pool-8-thread-3] Not running task <retrieveTablePrivileges>
+2025-07-03 01:32:05,456 INFO u.f.u.s.TaskDefinition [pool-8-thread-6] Not running task <retrieveTableColumnPrivileges>
+2025-07-03 01:32:05,457 INFO u.f.u.s.TaskDefinition [pool-8-thread-7] Not running task <retrieveAdditionalColumnAttributes>
+2025-07-03 01:32:05,459 INFO u.f.u.s.TimedTask [pool-8-thread-8] Running <retrieve_additional_column_metadata> on thread <pool-8-thread-8>
+2025-07-03 01:32:05,460 INFO u.f.u.s.TaskDefinition [pool-8-thread-8] Not running task <retrieveAdditionalColumnMetadata>
+2025-07-03 01:32:05,461 INFO s.c.SchemaCrawler [http-nio-8080-exec-2] Not retrieving routines, since this was not requested
+2025-07-03 01:32:05,462 INFO s.c.SchemaCrawler [http-nio-8080-exec-2] Not retrieving synonyms, since this was not requested
+2025-07-03 01:32:05,463 INFO s.c.SchemaCrawler [http-nio-8080-exec-2] Not retrieving sequences, since this was not requested
+2025-07-03 01:32:05,469 INFO s.c.RetrievalTaskRunner [http-nio-8080-exec-2] Total time taken for <c352a9c8-2ca9-462f-b83e-89beb87fcb25> - 00:00:01.136 hours
+-  0.1% - 00:00:00.001 - <retrieve_additional_database_info>
+-  1.7% - 00:00:00.019 - <retrieve_server_info>
+-  0.0% - 00:00:00.000 - <retrieve_database_users>
+-  0.0% - 00:00:00.000 - <retrieve_additional_jdbc_driver_info>
+-  2.1% - 00:00:00.024 - <retrieve_schemas>
+-  0.0% - 00:00:00.000 - <filter_and_sort_schemas>
+-  0.0% - 00:00:00.000 - <retrieve_column_data_types>
+-  0.0% - 00:00:00.000 - <retrieve_user_defined_column_data_types>
+-  1.8% - 00:00:00.021 - <retrieve_tables>
+- 26.9% - 00:00:00.306 - <retrieve_table_columns>
+- 24.6% - 00:00:00.279 - <retrieve_primary_keys>
+- 18.8% - 00:00:00.213 - <retrieve_foreign_keys>
+- 21.0% - 00:00:00.238 - <retrieve_indexes>
+-  0.0% - 00:00:00.000 - <retrieve_table_constraints>
+-  0.0% - 00:00:00.000 - <retrieve_trigger_information>
+-  0.4% - 00:00:00.005 - <filter_and_sort_tables>
+-  0.1% - 00:00:00.001 - <match_table_constraints>
+-  0.1% - 00:00:00.001 - <retrieve_table_constraint_definitions>
+-  0.2% - 00:00:00.002 - <retrieve_table_constraint_information>
+-  0.1% - 00:00:00.001 - <retrieve_view_information>
+-  0.2% - 00:00:00.002 - <retrieve_view_table_usage>
+-  0.2% - 00:00:00.002 - <retrieve_table_definitions_information>
+-  0.2% - 00:00:00.002 - <retrieve_index_information>
+-  0.2% - 00:00:00.002 - <retrieve_additional_table_attributes>
+-  0.1% - 00:00:00.001 - <retrieve_table_privileges>
+-  0.1% - 00:00:00.001 - <retrieve_table_column_privileges>
+-  0.2% - 00:00:00.002 - <retrieve_additional_column_attributes>
+-  0.0% - 00:00:00.000 - <retrieve_additional_column_metadata>
+
+2025-07-03 01:32:05,470 INFO s.l.a.AttributesCatalogLoader [http-nio-8080-exec-2] Retrieving catalog attributes
+2025-07-03 01:32:05,471 INFO u.f.u.s.MultiThreadedTaskRunner [http-nio-8080-exec-2] Started thread pool <java.util.concurrent.ThreadPoolExecutor@4a94d395[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]> for <loadAttributes> with <1> threads
+2025-07-03 01:32:05,473 INFO u.f.u.s.TimedTask [pool-10-thread-1] Running <retrieve_catalog_attributes> on thread <pool-10-thread-1>
+2025-07-03 01:32:05,475 INFO s.l.a.AttributesCatalogLoader [http-nio-8080-exec-2] Total time taken for <loadAttributes> - 00:00:00.000 hours
+-  0.0% - 00:00:00.000 - <retrieve_catalog_attributes>
+
+2025-07-03 01:32:05,476 INFO s.l.c.TableRowCountsCatalogLoader [http-nio-8080-exec-2] Retrieving table row counts
+2025-07-03 01:32:05,477 INFO u.f.u.s.MultiThreadedTaskRunner [http-nio-8080-exec-2] Started thread pool <java.util.concurrent.ThreadPoolExecutor@34e615f4[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]> for <loadTableRowCounts> with <1> threads
+2025-07-03 01:32:05,478 INFO u.f.u.s.TimedTask [pool-11-thread-1] Running <retrieve_table_row_counts> on thread <pool-11-thread-1>
+2025-07-03 01:32:05,478 INFO s.l.c.TableRowCountsCatalogLoader [pool-11-thread-1] Not retrieving table row counts, since this was not requested
+2025-07-03 01:32:05,479 INFO u.f.u.s.TimedTask [pool-11-thread-1] Running <filter_empty_tables> on thread <pool-11-thread-1>
+2025-07-03 01:32:05,481 INFO s.l.c.TableRowCountsCatalogLoader [http-nio-8080-exec-2] Total time taken for <loadTableRowCounts> - 00:00:00.000 hours
+-  0.0% - 00:00:00.000 - <retrieve_table_row_counts>
+-  0.0% - 00:00:00.000 - <filter_empty_tables>
+
+2025-07-03 01:32:05,482 INFO s.l.w.WeakAssociationsCatalogLoader [http-nio-8080-exec-2] Finding weak associations
+2025-07-03 01:32:05,483 INFO u.f.u.s.MultiThreadedTaskRunner [http-nio-8080-exec-2] Started thread pool <java.util.concurrent.ThreadPoolExecutor@11770dc7[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]> for <loadWeakAssociations> with <1> threads
+2025-07-03 01:32:05,483 INFO u.f.u.s.TimedTask [pool-12-thread-1] Running <retrieve_weak_associations> on thread <pool-12-thread-1>
+2025-07-03 01:32:05,484 INFO s.l.w.WeakAssociationsCatalogLoader [pool-12-thread-1] Not retrieving weak associations, since this was not requested
+2025-07-03 01:32:05,484 INFO s.l.w.WeakAssociationsCatalogLoader [http-nio-8080-exec-2] Total time taken for <loadWeakAssociations> - 00:00:00.000 hours
+-  0.0% - 00:00:00.000 - <retrieve_weak_associations>
+
+2025-07-03 01:33:44,985 INFO c.m.m.a.s.j.a.SchemaCrawlerJdbcAnalysisService [http-nio-8080-exec-10] Looking for JDBC drivers
+2025-07-03 01:33:44,993 INFO c.m.m.a.s.j.a.SchemaCrawlerJdbcAnalysisService [http-nio-8080-exec-10] Predefined databases: [Oracle, SQL Server, MySQL, PostgreSQL, Db2, Sybase ASE, Cockroach DB, Yugabyte, SybaseIQ, SQL Anywhere]
+2025-07-03 01:33:44,995 INFO c.m.m.a.s.j.a.SchemaCrawlerJdbcAnalysisService [http-nio-8080-exec-10] Custom databases: []
+2025-07-03 01:33:45,030 WARN c.m.m.a.s.j.a.SchemaCrawlerJdbcAnalysisService [http-nio-8080-exec-10] Can not find JDBC driver class com.mysql.cj.jdbc.Driver for MySQL
+2025-07-03 01:33:45,035 WARN c.m.m.a.s.j.a.SchemaCrawlerJdbcAnalysisService [http-nio-8080-exec-10] Can not find JDBC driver class com.ibm.db2.jcc.DB2Driver for Db2
+2025-07-03 01:33:45,039 WARN c.m.m.a.s.j.a.SchemaCrawlerJdbcAnalysisService [http-nio-8080-exec-10] Can not find JDBC driver class com.yugabyte.Driver for Yugabyte
+2025-07-03 01:33:45,042 WARN c.m.m.a.s.j.a.SchemaCrawlerJdbcAnalysisService [http-nio-8080-exec-10] Can not find JDBC driver class com.sybase.jdbc4.jdbc.SybDriver for SybaseIQ
+2025-07-03 01:33:45,044 WARN c.m.m.a.s.j.a.SchemaCrawlerJdbcAnalysisService [http-nio-8080-exec-10] Can not find JDBC driver class sap.jdbc4.sqlanywhere.IDriver for SQL Anywhere
+2025-07-03 01:33:57,182 INFO s.t.u.SchemaCrawlerUtility [pool-2-thread-1] Using SchemaCrawler database plugin for postgresql - PostgreSQL
+2025-07-03 01:33:57,280 INFO u.f.u.i.ClasspathInputResource [pool-2-thread-1] Opened input reader to classpath resource, /sql2003_reserved_words.txt
+2025-07-03 01:33:57,323 INFO u.f.u.i.ClasspathInputResource [pool-2-thread-1] Opened input reader to classpath resource, /sql2003_reserved_words.txt
+2025-07-03 01:33:57,349 INFO u.f.u.s.MultiThreadedTaskRunner [pool-2-thread-1] Started thread pool <java.util.concurrent.ThreadPoolExecutor@53d9fec3[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]> for <44a4dcdb-3f3c-4056-a8f5-8ac5c85a515b> with <10> threads
+2025-07-03 01:33:57,351 INFO u.f.u.s.TimedTask [pool-13-thread-1] Running <retrieve_additional_database_info> on thread <pool-13-thread-1>
+2025-07-03 01:33:57,351 INFO u.f.u.s.TaskDefinition [pool-13-thread-1] Not running task <retrieveAdditionalDatabaseInfo>
+2025-07-03 01:33:57,351 INFO u.f.u.s.TimedTask [pool-13-thread-2] Running <retrieve_server_info> on thread <pool-13-thread-2>
+2025-07-03 01:33:57,352 INFO u.f.u.s.TimedTask [pool-13-thread-3] Running <retrieve_database_users> on thread <pool-13-thread-3>
+2025-07-03 01:33:57,353 INFO u.f.u.s.TimedTask [pool-13-thread-4] Running <retrieve_additional_jdbc_driver_info> on thread <pool-13-thread-4>
+2025-07-03 01:33:57,354 INFO u.f.u.s.TaskDefinition [pool-13-thread-3] Not running task <retrieveDatabaseUsers>
+2025-07-03 01:33:57,354 INFO u.f.u.s.TaskDefinition [pool-13-thread-4] Not running task <retrieveAdditionalJdbcDriverInfo>
+2025-07-03 01:33:57,377 INFO s.c.SchemaCrawler [pool-2-thread-1] 
+-- generated by: SchemaCrawler 16.21.4
+-- generated on: 2025-07-03T01:33:57.348144002
+-- database: PostgreSQL 17.5 (Debian 17.5-1.pgdg120+1)
+-- driver: PostgreSQL JDBC Driver 42.7.5
+-- operating system: Linux 6.10.14-linuxkit
+-- JVM system: Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.15+6
+
+2025-07-03 01:33:57,378 INFO u.f.u.s.TimedTask [pool-13-thread-5] Running <retrieve_schemas> on thread <pool-13-thread-5>
+2025-07-03 01:33:57,379 INFO s.c.SchemaRetriever [pool-13-thread-5] Retrieving all schemas
+2025-07-03 01:33:57,380 INFO s.c.SchemaRetriever [pool-13-thread-5] Retrieving all catalogs
+2025-07-03 01:33:57,396 INFO s.c.SchemaRetriever [pool-13-thread-5] Processed 3 schemas
+2025-07-03 01:33:57,399 INFO u.f.u.s.TimedTask [pool-13-thread-6] Running <filter_and_sort_schemas> on thread <pool-13-thread-6>
+2025-07-03 01:33:57,399 INFO s.c.SchemaCrawler [pool-2-thread-1] Retrieved 1 schemas
+2025-07-03 01:33:57,400 INFO u.f.u.s.TimedTask [pool-13-thread-7] Running <retrieve_column_data_types> on thread <pool-13-thread-7>
+2025-07-03 01:33:57,401 INFO u.f.u.s.TaskDefinition [pool-13-thread-7] Not running task <retrieveColumnDataTypes>
+2025-07-03 01:33:57,402 INFO u.f.u.s.TimedTask [pool-13-thread-8] Running <retrieve_user_defined_column_data_types> on thread <pool-13-thread-8>
+2025-07-03 01:33:57,402 INFO u.f.u.s.TaskDefinition [pool-13-thread-8] Not running task <retrieveUserDefinedColumnDataTypes>
+2025-07-03 01:33:57,404 INFO u.f.u.s.TimedTask [pool-13-thread-9] Running <retrieve_tables> on thread <pool-13-thread-9>
+2025-07-03 01:33:57,404 INFO s.c.SchemaCrawler [pool-13-thread-9] Retrieving table names
+2025-07-03 01:33:57,404 INFO s.c.TableRetriever [pool-13-thread-9] Retrieving tables
+2025-07-03 01:33:57,405 INFO s.c.TableRetriever [pool-13-thread-9] Retrieving tables for schema <public>
+2025-07-03 01:33:57,435 INFO s.c.TableRetriever [pool-13-thread-9] Processed 8 tables
+2025-07-03 01:33:57,437 INFO s.c.SchemaCrawler [pool-2-thread-1] Retrieved 8 tables
+2025-07-03 01:33:57,439 INFO u.f.u.s.TimedTask [pool-13-thread-10] Running <retrieve_table_columns> on thread <pool-13-thread-10>
+2025-07-03 01:33:57,440 INFO s.c.TableColumnRetriever [pool-13-thread-10] No hidden table columns SQL provided
+2025-07-03 01:33:57,440 INFO s.c.TableColumnRetriever [pool-13-thread-10] Retrieving table columns
+2025-07-03 01:33:57,441 INFO u.f.u.s.MultiThreadedTaskRunner [pool-13-thread-10] Started thread pool <java.util.concurrent.ThreadPoolExecutor@1cc41fe2[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]> for <retrieve-table-columns-from-metadata> with <5> threads
+2025-07-03 01:33:57,443 INFO u.f.u.s.TimedTask [pool-14-thread-1] Running <public.customer> on thread <pool-14-thread-1>
+2025-07-03 01:33:57,444 INFO u.f.u.s.TimedTask [pool-14-thread-2] Running <public.lineitem> on thread <pool-14-thread-2>
+2025-07-03 01:33:57,445 INFO u.f.u.s.TimedTask [pool-14-thread-3] Running <public.nation> on thread <pool-14-thread-3>
+2025-07-03 01:33:57,446 INFO u.f.u.s.TimedTask [pool-14-thread-4] Running <public.orders> on thread <pool-14-thread-4>
+2025-07-03 01:33:57,447 INFO u.f.u.s.TimedTask [pool-14-thread-5] Running <public.part> on thread <pool-14-thread-5>
+2025-07-03 01:33:57,526 INFO u.f.u.s.TimedTask [pool-14-thread-3] Running <public.partsupp> on thread <pool-14-thread-3>
+2025-07-03 01:33:57,532 INFO u.f.u.s.TimedTask [pool-14-thread-5] Running <public.supplier> on thread <pool-14-thread-5>
+2025-07-03 01:33:57,532 INFO u.f.u.s.TimedTask [pool-14-thread-4] Running <public.region> on thread <pool-14-thread-4>
+2025-07-03 01:33:57,571 INFO u.f.u.s.TimedTask [pool-13-thread-1] Running <retrieve_primary_keys> on thread <pool-13-thread-1>
+2025-07-03 01:33:57,571 INFO u.f.u.s.TimedTask [pool-13-thread-5] Running <retrieve_trigger_information> on thread <pool-13-thread-5>
+2025-07-03 01:33:57,571 INFO u.f.u.s.TimedTask [pool-13-thread-3] Running <retrieve_foreign_keys> on thread <pool-13-thread-3>
+2025-07-03 01:33:57,571 INFO u.f.u.s.TimedTask [pool-13-thread-4] Running <retrieve_indexes> on thread <pool-13-thread-4>
+2025-07-03 01:33:57,571 INFO u.f.u.s.TimedTask [pool-13-thread-2] Running <retrieve_table_constraints> on thread <pool-13-thread-2>
+2025-07-03 01:33:57,574 INFO s.c.ForeignKeyRetriever [pool-13-thread-3] Retrieving foreign keys
+2025-07-03 01:33:57,574 INFO s.c.PrimaryKeyRetriever [pool-13-thread-1] Retrieving primary keys
+2025-07-03 01:33:57,574 INFO s.c.IndexRetriever [pool-13-thread-4] Retrieving indexes
+2025-07-03 01:33:57,580 INFO u.f.u.s.TaskDefinition [pool-13-thread-2] Not running task <retrieveTableConstraints>
+2025-07-03 01:33:57,578 INFO s.c.TriggerRetriever [pool-13-thread-5] Retrieving trigger definitions
+2025-07-03 01:33:57,784 INFO u.f.u.s.TimedTask [pool-13-thread-6] Running <filter_and_sort_tables> on thread <pool-13-thread-6>
+2025-07-03 01:33:57,788 INFO u.f.u.s.TimedTask [pool-13-thread-7] Running <match_table_constraints> on thread <pool-13-thread-7>
+2025-07-03 01:33:57,789 INFO u.f.u.s.TimedTask [pool-13-thread-8] Running <retrieve_table_constraint_definitions> on thread <pool-13-thread-8>
+2025-07-03 01:33:57,789 INFO u.f.u.s.TimedTask [pool-13-thread-4] Running <retrieve_table_privileges> on thread <pool-13-thread-4>
+2025-07-03 01:33:57,789 INFO u.f.u.s.TimedTask [pool-13-thread-7] Running <retrieve_additional_column_attributes> on thread <pool-13-thread-7>
+2025-07-03 01:33:57,789 INFO u.f.u.s.TimedTask [pool-13-thread-2] Running <retrieve_view_table_usage> on thread <pool-13-thread-2>
+2025-07-03 01:33:57,789 INFO u.f.u.s.TimedTask [pool-13-thread-3] Running <retrieve_index_information> on thread <pool-13-thread-3>
+2025-07-03 01:33:57,789 INFO u.f.u.s.TimedTask [pool-13-thread-5] Running <retrieve_table_definitions_information> on thread <pool-13-thread-5>
+2025-07-03 01:33:57,789 INFO u.f.u.s.TimedTask [pool-13-thread-1] Running <retrieve_additional_table_attributes> on thread <pool-13-thread-1>
+2025-07-03 01:33:57,789 INFO u.f.u.s.TimedTask [pool-13-thread-10] Running <retrieve_view_information> on thread <pool-13-thread-10>
+2025-07-03 01:33:57,789 INFO u.f.u.s.TimedTask [pool-13-thread-9] Running <retrieve_table_constraint_information> on thread <pool-13-thread-9>
+2025-07-03 01:33:57,794 INFO u.f.u.s.TimedTask [pool-13-thread-6] Running <retrieve_table_column_privileges> on thread <pool-13-thread-6>
+2025-07-03 01:33:57,794 INFO u.f.u.s.TaskDefinition [pool-13-thread-2] Not running task <retrieveViewTableUsage>
+2025-07-03 01:33:57,795 INFO u.f.u.s.TaskDefinition [pool-13-thread-8] Not running task <retrieveTableConstraintDefinitions>
+2025-07-03 01:33:57,794 INFO u.f.u.s.TaskDefinition [pool-13-thread-4] Not running task <retrieveTablePrivileges>
+2025-07-03 01:33:57,794 INFO u.f.u.s.TaskDefinition [pool-13-thread-1] Not running task <retrieveAdditionalTableAttributes>
+2025-07-03 01:33:57,794 INFO u.f.u.s.TaskDefinition [pool-13-thread-7] Not running task <retrieveAdditionalColumnAttributes>
+2025-07-03 01:33:57,794 INFO s.c.ViewExtRetriever [pool-13-thread-10] Retrieving additional view information
+2025-07-03 01:33:57,794 INFO u.f.u.s.TaskDefinition [pool-13-thread-9] Not running task <retrieveTableConstraintInformation>
+2025-07-03 01:33:57,794 INFO u.f.u.s.TaskDefinition [pool-13-thread-3] Not running task <retrieveIndexInformation>
+2025-07-03 01:33:57,795 INFO u.f.u.s.TaskDefinition [pool-13-thread-5] Not running task <retrieveTableDefinitionsInformation>
+2025-07-03 01:33:57,797 INFO u.f.u.s.TaskDefinition [pool-13-thread-6] Not running task <retrieveTableColumnPrivileges>
+2025-07-03 01:33:57,867 INFO u.f.u.s.TimedTask [pool-13-thread-2] Running <retrieve_additional_column_metadata> on thread <pool-13-thread-2>
+2025-07-03 01:33:57,868 INFO u.f.u.s.TaskDefinition [pool-13-thread-2] Not running task <retrieveAdditionalColumnMetadata>
+2025-07-03 01:33:57,880 INFO u.f.u.s.TimedTask [pool-13-thread-8] Running <retrieve_routines> on thread <pool-13-thread-8>
+2025-07-03 01:33:57,880 INFO s.c.RoutineRetriever [pool-13-thread-8] Retrieving procedure names
+2025-07-03 01:33:57,881 INFO s.c.RoutineRetriever [pool-13-thread-8] Retrieving procedures
+2025-07-03 01:33:57,881 INFO s.c.RoutineRetriever [pool-13-thread-8] Retrieving procedures for schema <public>
+2025-07-03 01:33:57,905 INFO s.c.RoutineRetriever [pool-13-thread-8] Processed 0 procedures
+2025-07-03 01:33:57,905 INFO s.c.RoutineRetriever [pool-13-thread-8] Retrieving function names
+2025-07-03 01:33:57,905 INFO s.c.RoutineRetriever [pool-13-thread-8] Retrieving functions
+2025-07-03 01:33:57,906 INFO s.c.RoutineRetriever [pool-13-thread-8] Retrieving functions for schema <public>
+2025-07-03 01:33:57,925 INFO s.c.RoutineRetriever [pool-13-thread-8] Processed 0 functions
+2025-07-03 01:33:57,925 INFO s.c.SchemaCrawler [pool-2-thread-1] Retrieved 0 routines
+2025-07-03 01:33:57,926 INFO s.c.SchemaCrawler [pool-2-thread-1] Not retrieving synonyms, since this was not requested
+2025-07-03 01:33:57,926 INFO s.c.SchemaCrawler [pool-2-thread-1] Not retrieving sequences, since this was not requested
+2025-07-03 01:33:57,933 INFO s.c.RetrievalTaskRunner [pool-2-thread-1] Total time taken for <44a4dcdb-3f3c-4056-a8f5-8ac5c85a515b> - 00:00:00.999 hours
+-  0.0% - 00:00:00.000 - <retrieve_additional_database_info>
+-  2.3% - 00:00:00.023 - <retrieve_server_info>
+-  0.0% - 00:00:00.000 - <retrieve_database_users>
+-  0.0% - 00:00:00.000 - <retrieve_additional_jdbc_driver_info>
+-  1.7% - 00:00:00.017 - <retrieve_schemas>
+-  0.0% - 00:00:00.000 - <filter_and_sort_schemas>
+-  0.0% - 00:00:00.000 - <retrieve_column_data_types>
+-  0.0% - 00:00:00.000 - <retrieve_user_defined_column_data_types>
+-  3.2% - 00:00:00.032 - <retrieve_tables>
+- 12.9% - 00:00:00.129 - <retrieve_table_columns>
+- 20.9% - 00:00:00.209 - <retrieve_primary_keys>
+- 14.3% - 00:00:00.143 - <retrieve_foreign_keys>
+- 20.8% - 00:00:00.208 - <retrieve_indexes>
+-  1.0% - 00:00:00.010 - <retrieve_table_constraints>
+-  5.3% - 00:00:00.053 - <retrieve_trigger_information>
+-  0.2% - 00:00:00.002 - <filter_and_sort_tables>
+-  0.0% - 00:00:00.000 - <match_table_constraints>
+-  0.4% - 00:00:00.004 - <retrieve_table_constraint_definitions>
+-  0.5% - 00:00:00.005 - <retrieve_table_constraint_information>
+-  7.4% - 00:00:00.074 - <retrieve_view_information>
+-  0.3% - 00:00:00.003 - <retrieve_view_table_usage>
+-  0.6% - 00:00:00.006 - <retrieve_table_definitions_information>
+-  0.5% - 00:00:00.005 - <retrieve_index_information>
+-  0.4% - 00:00:00.004 - <retrieve_additional_table_attributes>
+-  0.4% - 00:00:00.004 - <retrieve_table_privileges>
+-  0.3% - 00:00:00.003 - <retrieve_table_column_privileges>
+-  0.4% - 00:00:00.004 - <retrieve_additional_column_attributes>
+-  0.1% - 00:00:00.001 - <retrieve_additional_column_metadata>
+-  4.5% - 00:00:00.045 - <retrieve_routines>
+
+2025-07-03 01:33:57,934 INFO s.l.a.AttributesCatalogLoader [pool-2-thread-1] Retrieving catalog attributes
+2025-07-03 01:33:57,935 INFO u.f.u.s.MultiThreadedTaskRunner [pool-2-thread-1] Started thread pool <java.util.concurrent.ThreadPoolExecutor@280bc515[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]> for <loadAttributes> with <1> threads
+2025-07-03 01:33:57,935 INFO u.f.u.s.TimedTask [pool-15-thread-1] Running <retrieve_catalog_attributes> on thread <pool-15-thread-1>
+2025-07-03 01:33:57,936 INFO s.l.a.AttributesCatalogLoader [pool-2-thread-1] Total time taken for <loadAttributes> - 00:00:00.000 hours
+-  0.0% - 00:00:00.000 - <retrieve_catalog_attributes>
+
+2025-07-03 01:33:57,937 INFO s.l.c.TableRowCountsCatalogLoader [pool-2-thread-1] Retrieving table row counts
+2025-07-03 01:33:57,937 INFO u.f.u.s.MultiThreadedTaskRunner [pool-2-thread-1] Started thread pool <java.util.concurrent.ThreadPoolExecutor@76e35f73[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]> for <loadTableRowCounts> with <1> threads
+2025-07-03 01:33:57,938 INFO u.f.u.s.TimedTask [pool-16-thread-1] Running <retrieve_table_row_counts> on thread <pool-16-thread-1>
+2025-07-03 01:33:57,938 INFO s.l.c.TableRowCountsCatalogLoader [pool-16-thread-1] Not retrieving table row counts, since this was not requested
+2025-07-03 01:33:57,939 INFO u.f.u.s.TimedTask [pool-16-thread-1] Running <filter_empty_tables> on thread <pool-16-thread-1>
+2025-07-03 01:33:57,939 INFO s.l.c.TableRowCountsCatalogLoader [pool-2-thread-1] Total time taken for <loadTableRowCounts> - 00:00:00.000 hours
+-  0.0% - 00:00:00.000 - <retrieve_table_row_counts>
+-  0.0% - 00:00:00.000 - <filter_empty_tables>
+
+2025-07-03 01:33:57,940 INFO s.l.w.WeakAssociationsCatalogLoader [pool-2-thread-1] Finding weak associations
+2025-07-03 01:33:57,940 INFO u.f.u.s.MultiThreadedTaskRunner [pool-2-thread-1] Started thread pool <java.util.concurrent.ThreadPoolExecutor@58a6be05[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]> for <loadWeakAssociations> with <1> threads
+2025-07-03 01:33:57,940 INFO u.f.u.s.TimedTask [pool-17-thread-1] Running <retrieve_weak_associations> on thread <pool-17-thread-1>
+2025-07-03 01:33:57,941 INFO s.l.w.WeakAssociationsCatalogLoader [pool-17-thread-1] Not retrieving weak associations, since this was not requested
+2025-07-03 01:33:57,941 INFO s.l.w.WeakAssociationsCatalogLoader [pool-2-thread-1] Total time taken for <loadWeakAssociations> - 00:00:00.000 hours
+-  0.0% - 00:00:00.000 - <retrieve_weak_associations>
+
+2025-07-03 01:34:36,303 INFO c.m.i.d.l.SLF4JLogger [cluster-ClusterId{value='6865de2b9a10b5590013366a', description='MongoDBRelationalMigrator'}-host.docker.internal:27017] Monitor thread successfully connected to server with description ServerDescription{address=host.docker.internal:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=169262334, minRoundTripTimeNanos=0}
+2025-07-03 01:34:36,302 INFO c.m.i.d.l.SLF4JLogger [http-nio-8080-exec-7] MongoClient with metadata {"application": {"name": "MongoDBRelationalMigrator"}, "driver": {"name": "mongo-java-driver|sync", "version": "5.5.0"}, "os": {"type": "Linux", "name": "Linux", "architecture": "amd64", "version": "6.10.14-linuxkit"}, "platform": "Java/Eclipse Adoptium/17.0.15+6", "env": {"container": {"runtime": "docker"}}} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=1, wTimeout=null ms, journal=true}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@6442f8d9, com.mongodb.Jep395RecordCodecProvider@7d9e4e26, com.mongodb.KotlinCodecProvider@35e3d9f9]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[host.docker.internal:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='MongoDBRelationalMigrator', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2025-07-03 01:34:44,431 INFO c.m.i.d.l.SLF4JLogger [cluster-ClusterId{value='6865de349a10b5590013366d', description='MongoDBRelationalMigrator'}-host.docker.internal:27017] Monitor thread successfully connected to server with description ServerDescription{address=host.docker.internal:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=56784125, minRoundTripTimeNanos=0}
+2025-07-03 01:34:44,430 INFO c.m.i.d.l.SLF4JLogger [cluster-ClusterId{value='6865de349a10b5590013366c', description='MongoDBRelationalMigrator'}-host.docker.internal:27017] Monitor thread successfully connected to server with description ServerDescription{address=host.docker.internal:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=56784167, minRoundTripTimeNanos=0}
+2025-07-03 01:34:44,454 INFO c.m.i.d.l.SLF4JLogger [http-nio-8080-exec-9] MongoClient with metadata {"application": {"name": "MongoDBRelationalMigrator"}, "driver": {"name": "mongo-java-driver|sync", "version": "5.5.0"}, "os": {"type": "Linux", "name": "Linux", "architecture": "amd64", "version": "6.10.14-linuxkit"}, "platform": "Java/Eclipse Adoptium/17.0.15+6", "env": {"container": {"runtime": "docker"}}} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=1, wTimeout=null ms, journal=true}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@6442f8d9, com.mongodb.Jep395RecordCodecProvider@7d9e4e26, com.mongodb.KotlinCodecProvider@35e3d9f9]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[host.docker.internal:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='MongoDBRelationalMigrator', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2025-07-03 01:34:44,460 INFO c.m.i.d.l.SLF4JLogger [http-nio-8080-exec-7] MongoClient with metadata {"application": {"name": "MongoDBRelationalMigrator"}, "driver": {"name": "mongo-java-driver|sync", "version": "5.5.0"}, "os": {"type": "Linux", "name": "Linux", "architecture": "amd64", "version": "6.10.14-linuxkit"}, "platform": "Java/Eclipse Adoptium/17.0.15+6", "env": {"container": {"runtime": "docker"}}} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=1, wTimeout=null ms, journal=true}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@6442f8d9, com.mongodb.Jep395RecordCodecProvider@7d9e4e26, com.mongodb.KotlinCodecProvider@35e3d9f9]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[host.docker.internal:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='MongoDBRelationalMigrator', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2025-07-03 01:34:44,715 INFO c.m.i.d.l.SLF4JLogger [http-nio-8080-exec-1] MongoClient with metadata {"application": {"name": "MongoDBRelationalMigrator"}, "driver": {"name": "mongo-java-driver|sync", "version": "5.5.0"}, "os": {"type": "Linux", "name": "Linux", "architecture": "amd64", "version": "6.10.14-linuxkit"}, "platform": "Java/Eclipse Adoptium/17.0.15+6", "env": {"container": {"runtime": "docker"}}} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=1, wTimeout=null ms, journal=true}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@6442f8d9, com.mongodb.Jep395RecordCodecProvider@7d9e4e26, com.mongodb.KotlinCodecProvider@35e3d9f9]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[host.docker.internal:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='MongoDBRelationalMigrator', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2025-07-03 01:34:44,720 INFO c.m.i.d.l.SLF4JLogger [cluster-ClusterId{value='6865de349a10b55900133670', description='MongoDBRelationalMigrator'}-host.docker.internal:27017] Monitor thread successfully connected to server with description ServerDescription{address=host.docker.internal:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2542916, minRoundTripTimeNanos=0}
+2025-07-03 01:34:44,742 INFO c.m.i.d.l.SLF4JLogger [http-nio-8080-exec-1] Waiting for server to become available for operation with ID 39. Remaining time: 29979 ms. Selector: ReadPreferenceServerSelector{readPreference=primary}, topology description: {type=UNKNOWN, servers=[{address=host.docker.internal:27017, type=UNKNOWN, state=CONNECTING}].
+2025-07-03 01:34:44,779 INFO c.m.m.a.m.j.m.OrderByRelationalTableFilters [http-nio-8080-exec-1] Attempting to populate snapshot.select.statement.overrides with tables we can ORDER BY to improve migration performance.
+2025-07-03 01:34:44,782 INFO c.m.m.a.m.j.m.OrderByRelationalTableFilters [http-nio-8080-exec-1] Found table with an EMBEDDED_ARRAY mapping that we may be able to sort on: "public"."lineitem".
+2025-07-03 01:34:44,784 INFO c.m.m.a.m.j.m.OrderByRelationalTableFilters [http-nio-8080-exec-1] Unable to build ORDER BY statement override on "public"."lineitem" as no common embedding fields were found.
+2025-07-03 01:34:44,785 INFO c.m.m.a.m.j.m.OrderByRelationalTableFilters [http-nio-8080-exec-1] Found table with an EMBEDDED_ARRAY mapping that we may be able to sort on: "public"."partsupp".
+2025-07-03 01:34:44,785 INFO c.m.m.a.m.j.m.OrderByRelationalTableFilters [http-nio-8080-exec-1] Unable to build ORDER BY statement override on "public"."partsupp" as no common embedding fields were found.
+2025-07-03 01:34:45,053 INFO c.m.m.a.m.j.l.JobUpdateLogger [http-nio-8080-exec-1] Job started
+2025-07-03 01:34:45,742 INFO c.m.m.a.m.s.MigrationStateMachine$1 [pool-19-thread-1] Transition from: NOT_STARTED, trigger: COMPLETE
+2025-07-03 01:34:45,767 INFO c.m.i.d.l.SLF4JLogger [pool-19-thread-1] MongoClient with metadata {"application": {"name": "MongoDBRelationalMigrator"}, "driver": {"name": "mongo-java-driver|sync", "version": "5.5.0"}, "os": {"type": "Linux", "name": "Linux", "architecture": "amd64", "version": "6.10.14-linuxkit"}, "platform": "Java/Eclipse Adoptium/17.0.15+6", "env": {"container": {"runtime": "docker"}}} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=1, wTimeout=null ms, journal=true}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@6442f8d9, com.mongodb.Jep395RecordCodecProvider@7d9e4e26, com.mongodb.KotlinCodecProvider@35e3d9f9]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[host.docker.internal:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='MongoDBRelationalMigrator', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2025-07-03 01:34:45,772 INFO c.m.m.a.p.t.MongoCollectionCleanUpTask [pool-19-thread-1] Skipping MongoDB collection clean up
+2025-07-03 01:34:45,788 INFO c.m.i.d.l.SLF4JLogger [cluster-ClusterId{value='6865de359a10b55900133671', description='MongoDBRelationalMigrator'}-host.docker.internal:27017] Monitor thread successfully connected to server with description ServerDescription{address=host.docker.internal:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=19087542, minRoundTripTimeNanos=0}
+2025-07-03 01:34:45,794 INFO c.m.m.a.p.t.MongoIndexerTask [pool-19-thread-1] Creating index in collection supplier: IndexModel{keys={"sSuppkey": 1}, options=IndexOptions{background=false, unique=true, name='_RM_sSuppkey', sparse=true, expireAfterSeconds=null, version=null, weights=null, defaultLanguage='null', languageOverride='null', textVersion=null, sphereVersion=null, bits=null, min=null, max=null, storageEngine=null, partialFilterExpression=null, collation=null, wildcardProjection=null, hidden=false}}
+2025-07-03 01:34:45,835 INFO c.m.m.a.p.t.MongoIndexerTask [pool-19-thread-1] Creating index in collection supplier: IndexModel{keys={"nation.nRegionkey": 1}, options=IndexOptions{background=false, unique=false, name='_RM_nation.nRegionkey', sparse=false, expireAfterSeconds=null, version=null, weights=null, defaultLanguage='null', languageOverride='null', textVersion=null, sphereVersion=null, bits=null, min=null, max=null, storageEngine=null, partialFilterExpression=null, collation=null, wildcardProjection=null, hidden=false}}
+2025-07-03 01:34:45,857 INFO c.m.m.a.p.t.MongoIndexerTask [pool-19-thread-1] Creating index in collection supplier: IndexModel{keys={"sNationkey": 1}, options=IndexOptions{background=false, unique=false, name='_RM_sNationkey', sparse=false, expireAfterSeconds=null, version=null, weights=null, defaultLanguage='null', languageOverride='null', textVersion=null, sphereVersion=null, bits=null, min=null, max=null, storageEngine=null, partialFilterExpression=null, collation=null, wildcardProjection=null, hidden=false}}
+2025-07-03 01:34:45,865 INFO c.m.m.a.p.t.MongoIndexerTask [pool-19-thread-1] Creating index in collection part: IndexModel{keys={"pPartkey": 1}, options=IndexOptions{background=false, unique=true, name='_RM_pPartkey', sparse=true, expireAfterSeconds=null, version=null, weights=null, defaultLanguage='null', languageOverride='null', textVersion=null, sphereVersion=null, bits=null, min=null, max=null, storageEngine=null, partialFilterExpression=null, collation=null, wildcardProjection=null, hidden=false}}
+2025-07-03 01:34:45,909 INFO c.m.m.a.p.t.MongoIndexerTask [pool-19-thread-1] Creating index in collection orders: IndexModel{keys={"oOrderkey": 1}, options=IndexOptions{background=false, unique=true, name='_RM_oOrderkey', sparse=true, expireAfterSeconds=null, version=null, weights=null, defaultLanguage='null', languageOverride='null', textVersion=null, sphereVersion=null, bits=null, min=null, max=null, storageEngine=null, partialFilterExpression=null, collation=null, wildcardProjection=null, hidden=false}}
+2025-07-03 01:34:45,934 INFO c.m.m.a.p.t.MongoIndexerTask [pool-19-thread-1] Creating index in collection customer: IndexModel{keys={"cCustkey": 1}, options=IndexOptions{background=false, unique=true, name='_RM_cCustkey', sparse=true, expireAfterSeconds=null, version=null, weights=null, defaultLanguage='null', languageOverride='null', textVersion=null, sphereVersion=null, bits=null, min=null, max=null, storageEngine=null, partialFilterExpression=null, collation=null, wildcardProjection=null, hidden=false}}
+2025-07-03 01:34:45,960 INFO c.m.m.a.p.t.MongoIndexerTask [pool-19-thread-1] Creating index in collection customer: IndexModel{keys={"nation.nRegionkey": 1}, options=IndexOptions{background=false, unique=false, name='_RM_nation.nRegionkey', sparse=false, expireAfterSeconds=null, version=null, weights=null, defaultLanguage='null', languageOverride='null', textVersion=null, sphereVersion=null, bits=null, min=null, max=null, storageEngine=null, partialFilterExpression=null, collation=null, wildcardProjection=null, hidden=false}}
+2025-07-03 01:34:45,997 INFO c.m.m.a.p.t.MongoIndexerTask [pool-19-thread-1] Creating index in collection customer: IndexModel{keys={"cNationkey": 1}, options=IndexOptions{background=false, unique=false, name='_RM_cNationkey', sparse=false, expireAfterSeconds=null, version=null, weights=null, defaultLanguage='null', languageOverride='null', textVersion=null, sphereVersion=null, bits=null, min=null, max=null, storageEngine=null, partialFilterExpression=null, collation=null, wildcardProjection=null, hidden=false}}
+2025-07-03 01:34:46,075 INFO c.m.m.a.m.s.MigrationStateMachine$1 [pool-19-thread-1] Transitioned to: PRE_TASKS
+2025-07-03 01:34:46,090 INFO c.m.m.a.m.s.MigrationStateMachine$1 [pool-19-thread-1] Transition from: PRE_TASKS, trigger: COMPLETE
+2025-07-03 01:34:46,092 INFO c.m.m.a.m.e.EmbeddedDebeziumService [pool-19-thread-1] Configuring engine for job 5270f87fcbeb481aa7974a8c96fe9191
+2025-07-03 01:34:52,548 INFO c.m.i.d.l.SLF4JLogger [pool-19-thread-1] MongoClient with metadata {"application": {"name": "MongoDBRelationalMigrator"}, "driver": {"name": "mongo-java-driver|sync", "version": "5.5.0"}, "os": {"type": "Linux", "name": "Linux", "architecture": "amd64", "version": "6.10.14-linuxkit"}, "platform": "Java/Eclipse Adoptium/17.0.15+6", "env": {"container": {"runtime": "docker"}}} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=1, wTimeout=null ms, journal=true}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@6442f8d9, com.mongodb.Jep395RecordCodecProvider@7d9e4e26, com.mongodb.KotlinCodecProvider@35e3d9f9]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[host.docker.internal:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='MongoDBRelationalMigrator', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2025-07-03 01:34:52,579 INFO c.m.i.d.l.SLF4JLogger [cluster-ClusterId{value='6865de3c9a10b55900133672', description='MongoDBRelationalMigrator'}-host.docker.internal:27017] Monitor thread successfully connected to server with description ServerDescription{address=host.docker.internal:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=26101125, minRoundTripTimeNanos=0}
+2025-07-03 01:34:52,582 INFO c.m.i.d.l.SLF4JLogger [pool-19-thread-1] Waiting for server to become available for operation with ID 58. Remaining time: 29998 ms. Selector: ReadPreferenceServerSelector{readPreference=primary}, topology description: {type=UNKNOWN, servers=[{address=host.docker.internal:27017, type=UNKNOWN, state=CONNECTING}].
+2025-07-03 01:34:52,739 INFO i.d.e.a.AsyncEmbeddedEngine$AsyncEngineBuilder [pool-19-thread-1] Consumer doesn't support tombstone events, setting 'tombstones.on.delete' to false.
+2025-07-03 01:34:52,816 INFO o.a.k.c.c.AbstractConfig [pool-19-thread-1] EmbeddedWorkerConfig values: 
+	access.control.allow.methods = 
+	access.control.allow.origin = 
+	admin.listeners = null
+	auto.include.jmx.reporter = true
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	config.providers = []
+	connector.client.config.override.policy = All
+	header.converter = class org.apache.kafka.connect.storage.SimpleHeaderConverter
+	key.converter = class org.apache.kafka.connect.json.JsonConverter
+	listeners = [http://:8083]
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	offset.flush.interval.ms = 0
+	offset.flush.timeout.ms = 5000
+	offset.storage.file.filename = /root/Migrator/Debezium/5270f87fcbeb481aa7974a8c96fe9191-offset-store.dat
+	offset.storage.partitions = null
+	offset.storage.replication.factor = null
+	offset.storage.topic = 
+	plugin.discovery = hybrid_warn
+	plugin.path = null
+	response.http.headers.config = 
+	rest.advertised.host.name = null
+	rest.advertised.listener = null
+	rest.advertised.port = null
+	rest.extension.classes = []
+	ssl.cipher.suites = null
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	task.shutdown.graceful.timeout.ms = 5000
+	topic.creation.enable = true
+	topic.tracking.allow.reset = true
+	topic.tracking.enable = true
+	value.converter = class org.apache.kafka.connect.json.JsonConverter
+
+2025-07-03 01:34:52,833 INFO o.a.k.c.c.AbstractConfig [pool-19-thread-1] JsonConverterConfig values: 
+	converter.type = key
+	decimal.format = BASE64
+	replace.null.with.default = true
+	schemas.cache.size = 1000
+	schemas.enable = false
+
+2025-07-03 01:34:52,836 INFO o.a.k.c.c.AbstractConfig [pool-19-thread-1] JsonConverterConfig values: 
+	converter.type = value
+	decimal.format = BASE64
+	replace.null.with.default = true
+	schemas.cache.size = 1000
+	schemas.enable = false
+
+2025-07-03 01:34:52,837 INFO c.m.m.a.m.s.MigrationStateMachine$1 [pool-19-thread-1] Transitioned to: SNAPSHOTTING
+2025-07-03 01:34:52,838 INFO i.d.e.a.AsyncEmbeddedEngine [pool-20-thread-1] Engine state has changed from 'CREATING' to 'INITIALIZING'
+2025-07-03 01:34:52,907 INFO i.d.c.CommonConnectorConfig [pool-20-thread-1] Loading the custom source info struct maker plugin: io.debezium.connector.postgresql.PostgresSourceInfoStructMaker
+2025-07-03 01:34:53,039 INFO i.d.c.p.PostgresConnector [pool-20-thread-1] Successfully tested connection for jdbc:postgresql://host.docker.internal:5433/tpch with user 'postgres'
+2025-07-03 01:34:53,084 INFO i.d.j.JdbcConnection [pool-25-thread-1] Connection gracefully closed
+2025-07-03 01:34:53,103 INFO o.a.k.c.c.AbstractConfig [pool-20-thread-1] JsonConverterConfig values: 
+	converter.type = key
+	decimal.format = BASE64
+	replace.null.with.default = true
+	schemas.cache.size = 1000
+	schemas.enable = false
+
+2025-07-03 01:34:53,105 INFO o.a.k.c.s.FileOffsetBackingStore [pool-20-thread-1] Starting FileOffsetBackingStore with file /root/Migrator/Debezium/5270f87fcbeb481aa7974a8c96fe9191-offset-store.dat
+2025-07-03 01:34:53,115 INFO i.d.e.a.AsyncEmbeddedEngine [pool-20-thread-1] Engine state has changed from 'INITIALIZING' to 'CREATING_TASKS'
+2025-07-03 01:34:53,130 INFO i.d.e.a.AsyncEmbeddedEngine [pool-20-thread-1] Engine state has changed from 'CREATING_TASKS' to 'STARTING_TASKS'
+2025-07-03 01:34:53,132 INFO i.d.e.a.AsyncEmbeddedEngine [pool-20-thread-1] Waiting max. for 180000 ms for individual source tasks to start.
+2025-07-03 01:34:53,136 INFO i.d.c.c.BaseSourceTask [pool-23-thread-1] Starting PostgresConnectorTask with configuration:
+   connector.class = io.debezium.connector.postgresql.PostgresConnector
+   transforms.timescaledb.database.hostname = host.docker.internal
+   transforms.timescaledb.database.password = ********
+   max.queue.size = 8192
+   transforms.timescaledb.database.user = postgres
+   transforms.timescaledb.type = io.debezium.connector.postgresql.transforms.timescaledb.TimescaleDb
+   slot.name = 5270f87fcbeb481aa7974a8c96fe9191
+   record.processing.shutdown.timeout.ms = 1000
+   publication.name = relational_migrator_publication
+   transforms.timescaledb.database.port = 5433
+   retriable.restart.connector.wait.ms = 60000
+   include.schema.changes = false
+   schema.history.internal.store.only.captured.tables.ddl = true
+   record.processing.order = ORDERED
+   schema.history.internal.file.filename = /root/Migrator/Debezium/5270f87fcbeb481aa7974a8c96fe9191-schema-history-store.dat
+   tombstones.on.delete = false
+   topic.prefix = tpch
+   offset.storage.file.filename = /root/Migrator/Debezium/5270f87fcbeb481aa7974a8c96fe9191-offset-store.dat
+   record.processing.threads = 
+   errors.retry.delay.initial.ms = 30000
+   value.converter = org.apache.kafka.connect.json.JsonConverter
+   key.converter = org.apache.kafka.connect.json.JsonConverter
+   publication.autocreate.mode = filtered
+   database.user = postgres
+   database.dbname = tpch
+   transforms.timescaledb.database.dbname = tpch
+   offset.storage = org.apache.kafka.connect.storage.FileOffsetBackingStore
+   time.precision.mode = connect
+   errors.retry.delay.max.ms = 60000
+   offset.flush.timeout.ms = 5000
+   event.processing.failure.handling.mode = fail
+   plugin.name = pgoutput
+   database.port = 5433
+   offset.flush.interval.ms = 0
+   internal.task.management.timeout.ms = 180000
+   schema.history.internal = io.debezium.storage.file.history.FileSchemaHistory
+   record.processing.with.serial.consumer = false
+   errors.max.retries = 0
+   database.hostname = host.docker.internal
+   database.password = ********
+   name = engine-5270f87fcbeb481aa7974a8c96fe9191
+   max.batch.size = 4096
+   table.include.list = ^public.customer$,^public.orders$,^public.part$,^public.supplier$,^public.lineitem$,^public.nation$,^public.partsupp$,^public.region$
+   snapshot.mode = initial_only
+
+2025-07-03 01:34:53,137 INFO i.d.c.CommonConnectorConfig [pool-23-thread-1] Loading the custom source info struct maker plugin: io.debezium.connector.postgresql.PostgresSourceInfoStructMaker
+2025-07-03 01:34:53,138 INFO i.d.c.CommonConnectorConfig [pool-23-thread-1] Loading the custom topic naming strategy plugin: io.debezium.schema.SchemaTopicNamingStrategy
+2025-07-03 01:34:53,151 INFO i.d.j.JdbcConnection [pool-26-thread-1] Connection gracefully closed
+2025-07-03 01:34:53,207 WARN i.d.c.p.TypeRegistry [pool-23-thread-1] Type [oid:13557, name:_pg_user_mappings] is already mapped
+2025-07-03 01:34:53,211 WARN i.d.c.p.TypeRegistry [pool-23-thread-1] Type [oid:13233, name:cardinal_number] is already mapped
+2025-07-03 01:34:53,211 WARN i.d.c.p.TypeRegistry [pool-23-thread-1] Type [oid:13236, name:character_data] is already mapped
+2025-07-03 01:34:53,211 WARN i.d.c.p.TypeRegistry [pool-23-thread-1] Type [oid:13238, name:sql_identifier] is already mapped
+2025-07-03 01:34:53,211 WARN i.d.c.p.TypeRegistry [pool-23-thread-1] Type [oid:13244, name:time_stamp] is already mapped
+2025-07-03 01:34:53,212 WARN i.d.c.p.TypeRegistry [pool-23-thread-1] Type [oid:13246, name:yes_or_no] is already mapped
+2025-07-03 01:34:53,261 INFO i.d.c.c.BaseSourceTask [pool-23-thread-1] No previous offsets found
+2025-07-03 01:34:53,287 WARN i.d.c.p.TypeRegistry [pool-23-thread-1] Type [oid:13557, name:_pg_user_mappings] is already mapped
+2025-07-03 01:34:53,288 WARN i.d.c.p.TypeRegistry [pool-23-thread-1] Type [oid:13233, name:cardinal_number] is already mapped
+2025-07-03 01:34:53,288 WARN i.d.c.p.TypeRegistry [pool-23-thread-1] Type [oid:13236, name:character_data] is already mapped
+2025-07-03 01:34:53,288 WARN i.d.c.p.TypeRegistry [pool-23-thread-1] Type [oid:13238, name:sql_identifier] is already mapped
+2025-07-03 01:34:53,288 WARN i.d.c.p.TypeRegistry [pool-23-thread-1] Type [oid:13244, name:time_stamp] is already mapped
+2025-07-03 01:34:53,288 WARN i.d.c.p.TypeRegistry [pool-23-thread-1] Type [oid:13246, name:yes_or_no] is already mapped
+2025-07-03 01:34:53,332 WARN i.d.c.p.PostgresConnectorTask [pool-23-thread-1] WAL_LEVEL check failed but this is ignored as CDC was not requested
+2025-07-03 01:34:53,333 INFO i.d.c.c.BaseSourceTask [pool-23-thread-1] Connector started for the first time.
+2025-07-03 01:34:53,334 INFO i.d.c.p.PostgresConnectorTask [pool-23-thread-1] No previous offset found
+2025-07-03 01:34:53,353 INFO i.d.c.p.PostgresConnectorTask [pool-23-thread-1] user 'postgres' connected to database 'tpch' on PostgreSQL 17.5 (Debian 17.5-1.pgdg120+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit with roles:
+	role 'pg_read_all_settings' [superuser: false, replication: false, inherit: true, create role: false, create db: false, can log in: false]
+	role 'pg_database_owner' [superuser: false, replication: false, inherit: true, create role: false, create db: false, can log in: false]
+	role 'pg_stat_scan_tables' [superuser: false, replication: false, inherit: true, create role: false, create db: false, can log in: false]
+	role 'pg_checkpoint' [superuser: false, replication: false, inherit: true, create role: false, create db: false, can log in: false]
+	role 'pg_write_server_files' [superuser: false, replication: false, inherit: true, create role: false, create db: false, can log in: false]
+	role 'pg_use_reserved_connections' [superuser: false, replication: false, inherit: true, create role: false, create db: false, can log in: false]
+	role 'pg_read_all_data' [superuser: false, replication: false, inherit: true, create role: false, create db: false, can log in: false]
+	role 'pg_write_all_data' [superuser: false, replication: false, inherit: true, create role: false, create db: false, can log in: false]
+	role 'pg_monitor' [superuser: false, replication: false, inherit: true, create role: false, create db: false, can log in: false]
+	role 'pg_read_server_files' [superuser: false, replication: false, inherit: true, create role: false, create db: false, can log in: false]
+	role 'pg_create_subscription' [superuser: false, replication: false, inherit: true, create role: false, create db: false, can log in: false]
+	role 'pg_execute_server_program' [superuser: false, replication: false, inherit: true, create role: false, create db: false, can log in: false]
+	role 'pg_read_all_stats' [superuser: false, replication: false, inherit: true, create role: false, create db: false, can log in: false]
+	role 'pg_signal_backend' [superuser: false, replication: false, inherit: true, create role: false, create db: false, can log in: false]
+	role 'pg_maintain' [superuser: false, replication: false, inherit: true, create role: false, create db: false, can log in: false]
+	role 'postgres' [superuser: true, replication: true, inherit: true, create role: true, create db: true, can log in: true]
+2025-07-03 01:34:53,360 INFO i.d.c.p.c.PostgresConnection [pool-23-thread-1] Obtained valid replication slot ReplicationSlot [active=false, latestFlushedLsn=null, catalogXmin=null]
+2025-07-03 01:34:53,379 INFO i.d.u.Threads [pool-23-thread-1] Requested thread factory for component PostgresConnector, id = tpch named = SignalProcessor
+2025-07-03 01:34:53,401 INFO i.d.u.Threads [pool-23-thread-1] Requested thread factory for component PostgresConnector, id = tpch named = change-event-source-coordinator
+2025-07-03 01:34:53,401 INFO i.d.u.Threads [pool-23-thread-1] Requested thread factory for component PostgresConnector, id = tpch named = blocking-snapshot
+2025-07-03 01:34:53,415 INFO i.d.u.Threads$3 [pool-23-thread-1] Creating thread debezium-postgresconnector-tpch-change-event-source-coordinator
+2025-07-03 01:34:53,420 INFO i.d.e.a.AsyncEmbeddedEngine [pool-20-thread-1] All tasks have started successfully.
+2025-07-03 01:34:53,421 INFO i.d.e.a.AsyncEmbeddedEngine [pool-20-thread-1] Engine state has changed from 'STARTING_TASKS' to 'POLLING_TASKS'
+2025-07-03 01:34:53,423 INFO i.d.e.a.AsyncEmbeddedEngine [pool-20-thread-1] Using io.debezium.embedded.async.ParallelSmtAndConvertBatchProcessor processor
+2025-07-03 01:34:53,430 INFO i.d.p.ChangeEventSourceCoordinator [debezium-postgresconnector-tpch-change-event-source-coordinator] Metrics registered
+2025-07-03 01:34:53,430 INFO i.d.p.ChangeEventSourceCoordinator [debezium-postgresconnector-tpch-change-event-source-coordinator] Context created
+2025-07-03 01:34:53,440 INFO i.d.c.p.PostgresSnapshotChangeEventSource [debezium-postgresconnector-tpch-change-event-source-coordinator] According to the connector configuration data will be snapshotted
+2025-07-03 01:34:53,443 INFO i.d.r.RelationalSnapshotChangeEventSource [debezium-postgresconnector-tpch-change-event-source-coordinator] Snapshot step 1 - Preparing
+2025-07-03 01:34:53,444 INFO i.d.c.p.PostgresSnapshotChangeEventSource [debezium-postgresconnector-tpch-change-event-source-coordinator] Setting isolation level
+2025-07-03 01:34:53,444 INFO i.d.c.p.PostgresSnapshotChangeEventSource [debezium-postgresconnector-tpch-change-event-source-coordinator] Opening transaction with statement SET TRANSACTION ISOLATION LEVEL SERIALIZABLE, READ ONLY, DEFERRABLE;
+2025-07-03 01:34:53,643 INFO i.d.r.RelationalSnapshotChangeEventSource [debezium-postgresconnector-tpch-change-event-source-coordinator] Snapshot step 2 - Determining captured tables
+2025-07-03 01:34:53,646 INFO i.d.r.RelationalSnapshotChangeEventSource [debezium-postgresconnector-tpch-change-event-source-coordinator] Adding table tpch.public.supplier to the list of capture schema tables
+2025-07-03 01:34:53,646 INFO i.d.r.RelationalSnapshotChangeEventSource [debezium-postgresconnector-tpch-change-event-source-coordinator] Adding table tpch.public.lineitem to the list of capture schema tables
+2025-07-03 01:34:53,646 INFO i.d.r.RelationalSnapshotChangeEventSource [debezium-postgresconnector-tpch-change-event-source-coordinator] Adding table tpch.public.partsupp to the list of capture schema tables
+2025-07-03 01:34:53,646 INFO i.d.r.RelationalSnapshotChangeEventSource [debezium-postgresconnector-tpch-change-event-source-coordinator] Adding table tpch.public.part to the list of capture schema tables
+2025-07-03 01:34:53,646 INFO i.d.r.RelationalSnapshotChangeEventSource [debezium-postgresconnector-tpch-change-event-source-coordinator] Adding table tpch.public.region to the list of capture schema tables
+2025-07-03 01:34:53,646 INFO i.d.r.RelationalSnapshotChangeEventSource [debezium-postgresconnector-tpch-change-event-source-coordinator] Adding table tpch.public.nation to the list of capture schema tables
+2025-07-03 01:34:53,647 INFO i.d.r.RelationalSnapshotChangeEventSource [debezium-postgresconnector-tpch-change-event-source-coordinator] Adding table tpch.public.orders to the list of capture schema tables
+2025-07-03 01:34:53,647 INFO i.d.r.RelationalSnapshotChangeEventSource [debezium-postgresconnector-tpch-change-event-source-coordinator] Adding table tpch.public.customer to the list of capture schema tables
+2025-07-03 01:34:53,651 INFO i.d.r.RelationalSnapshotChangeEventSource [debezium-postgresconnector-tpch-change-event-source-coordinator] Created connection pool with 1 threads
+2025-07-03 01:34:53,651 INFO i.d.r.RelationalSnapshotChangeEventSource [debezium-postgresconnector-tpch-change-event-source-coordinator] Snapshot step 3 - Locking captured tables [tpch.public.customer, tpch.public.orders, tpch.public.part, tpch.public.supplier, tpch.public.lineitem, tpch.public.nation, tpch.public.partsupp, tpch.public.region]
+2025-07-03 01:34:53,660 INFO i.d.r.RelationalSnapshotChangeEventSource [debezium-postgresconnector-tpch-change-event-source-coordinator] Snapshot step 4 - Determining snapshot offset
+2025-07-03 01:34:53,663 INFO i.d.c.p.PostgresOffsetContext [debezium-postgresconnector-tpch-change-event-source-coordinator] Creating initial offset context
+2025-07-03 01:34:53,669 INFO i.d.c.p.PostgresOffsetContext [debezium-postgresconnector-tpch-change-event-source-coordinator] Read xlogStart at 'LSN{0/7FE14048}' from transaction '774'
+2025-07-03 01:34:53,677 INFO i.d.c.p.PostgresSnapshotChangeEventSource [debezium-postgresconnector-tpch-change-event-source-coordinator] Read xlogStart at 'LSN{0/7FE14048}' from transaction '774'
+2025-07-03 01:34:53,677 INFO i.d.r.RelationalSnapshotChangeEventSource [debezium-postgresconnector-tpch-change-event-source-coordinator] Snapshot step 5 - Reading structure of captured tables
+2025-07-03 01:34:53,678 INFO i.d.c.p.PostgresSnapshotChangeEventSource [debezium-postgresconnector-tpch-change-event-source-coordinator] Reading structure of schema 'public' of catalog 'tpch'
+2025-07-03 01:34:53,756 INFO i.d.r.RelationalSnapshotChangeEventSource [debezium-postgresconnector-tpch-change-event-source-coordinator] Snapshot step 6 - Persisting schema history
+2025-07-03 01:34:53,758 INFO i.d.r.RelationalSnapshotChangeEventSource [debezium-postgresconnector-tpch-change-event-source-coordinator] Snapshot step 7 - Snapshotting data
+2025-07-03 01:34:53,759 INFO i.d.r.RelationalSnapshotChangeEventSource [debezium-postgresconnector-tpch-change-event-source-coordinator] Creating snapshot worker pool with 1 worker thread(s)
+2025-07-03 01:34:53,762 INFO i.d.r.RelationalSnapshotChangeEventSource [debezium-postgresconnector-tpch-change-event-source-coordinator] For table 'tpch.public.customer' using select statement: 'SELECT "c_custkey", "c_name", "c_address", "c_nationkey", "c_phone", "c_acctbal", "c_mktsegment", "c_comment" FROM "tpch"."public"."customer"'
+2025-07-03 01:34:53,762 INFO i.d.r.RelationalSnapshotChangeEventSource [debezium-postgresconnector-tpch-change-event-source-coordinator] For table 'tpch.public.orders' using select statement: 'SELECT "o_orderkey", "o_custkey", "o_orderstatus", "o_totalprice", "o_orderdate", "o_orderpriority", "o_clerk", "o_shippriority", "o_comment" FROM "tpch"."public"."orders"'
+2025-07-03 01:34:53,763 INFO i.d.r.RelationalSnapshotChangeEventSource [debezium-postgresconnector-tpch-change-event-source-coordinator] For table 'tpch.public.part' using select statement: 'SELECT "p_partkey", "p_name", "p_mfgr", "p_brand", "p_type", "p_size", "p_container", "p_retailprice", "p_comment" FROM "tpch"."public"."part"'
+2025-07-03 01:34:53,764 INFO i.d.r.RelationalSnapshotChangeEventSource [debezium-postgresconnector-tpch-change-event-source-coordinator] For table 'tpch.public.supplier' using select statement: 'SELECT "s_suppkey", "s_name", "s_address", "s_nationkey", "s_phone", "s_acctbal", "s_comment" FROM "tpch"."public"."supplier"'
+2025-07-03 01:34:53,764 INFO i.d.r.RelationalSnapshotChangeEventSource [debezium-postgresconnector-tpch-change-event-source-coordinator] For table 'tpch.public.lineitem' using select statement: 'SELECT "l_orderkey", "l_partkey", "l_suppkey", "l_linenumber", "l_quantity", "l_extendedprice", "l_discount", "l_tax", "l_returnflag", "l_linestatus", "l_shipdate", "l_commitdate", "l_receiptdate", "l_shipinstruct", "l_shipmode", "l_comment" FROM "tpch"."public"."lineitem"'
+2025-07-03 01:34:53,764 INFO i.d.r.RelationalSnapshotChangeEventSource [debezium-postgresconnector-tpch-change-event-source-coordinator] For table 'tpch.public.nation' using select statement: 'SELECT "n_nationkey", "n_name", "n_regionkey", "n_comment" FROM "tpch"."public"."nation"'
+2025-07-03 01:34:53,765 INFO i.d.r.RelationalSnapshotChangeEventSource [debezium-postgresconnector-tpch-change-event-source-coordinator] For table 'tpch.public.partsupp' using select statement: 'SELECT "ps_partkey", "ps_suppkey", "ps_availqty", "ps_supplycost", "ps_comment" FROM "tpch"."public"."partsupp"'
+2025-07-03 01:34:53,765 INFO i.d.r.RelationalSnapshotChangeEventSource [debezium-postgresconnector-tpch-change-event-source-coordinator] For table 'tpch.public.region' using select statement: 'SELECT "r_regionkey", "r_name", "r_comment" FROM "tpch"."public"."region"'
+2025-07-03 01:34:53,774 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] Exporting data from table 'tpch.public.customer' (1 of 8 tables)
+2025-07-03 01:34:54,373 INFO c.m.m.k.c.MigratorSinkTask [pool-23-thread-1] Received first record: tpch.public.customer-0
+2025-07-03 01:34:54,441 INFO i.d.c.c.BaseSourceTask [pool-23-thread-1] Found previous partition offset PostgresPartition [sourcePartition={server=tpch}]: {last_snapshot_record=false, lsn=2145468488, txId=774, ts_usec=1751506493445270, snapshot=INITIAL, snapshot_completed=false}
+2025-07-03 01:34:58,708 INFO i.d.c.c.BaseSourceTask [pool-23-thread-1] 16767 records sent during previous 00:00:05.574, last recorded offset of {server=tpch} partition is {last_snapshot_record=false, lsn=2145468488, txId=774, ts_usec=1751506493445270, snapshot=INITIAL, snapshot_completed=false}
+2025-07-03 01:35:04,034 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 53634 records for table 'tpch.public.customer' after 00:00:10.258
+2025-07-03 01:35:08,157 INFO i.d.c.c.BaseSourceTask [pool-23-thread-1] 73728 records sent during previous 00:00:09.454, last recorded offset of {server=tpch} partition is {last_snapshot_record=false, lsn=2145468488, txId=774, ts_usec=1751506493445270, snapshot=INITIAL, snapshot_completed=false}
+2025-07-03 01:35:12,856 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Finished exporting 150000 records for table 'tpch.public.customer' (1 of 8 tables); total duration '00:00:19.079'
+2025-07-03 01:35:12,908 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] Exporting data from table 'tpch.public.orders' (2 of 8 tables)
+2025-07-03 01:35:14,087 INFO c.m.m.k.c.MigratorSinkTask [pool-23-thread-1] Received last record in data collection: tpch.public.customer-0
+2025-07-03 01:35:14,100 INFO c.m.m.k.c.MigratorSinkTask [pool-23-thread-1] Received first record in data collection: tpch.public.orders-0
+2025-07-03 01:35:17,675 INFO c.m.m.a.m.j.l.JobUpdateLogger [pool-22-thread-1] Processed snapshot of table: tpch.public.customer
+2025-07-03 01:35:22,984 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 107098 records for table 'tpch.public.orders' after 00:00:10.075
+2025-07-03 01:35:28,327 INFO i.d.c.c.BaseSourceTask [pool-23-thread-1] 212992 records sent during previous 00:00:20.172, last recorded offset of {server=tpch} partition is {last_snapshot_record=false, lsn=2145468488, txId=774, ts_usec=1751506493445270, snapshot=INITIAL, snapshot_completed=false}
+2025-07-03 01:35:33,148 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 214930 records for table 'tpch.public.orders' after 00:00:20.236
+2025-07-03 01:35:43,229 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 321426 records for table 'tpch.public.orders' after 00:00:30.32
+2025-07-03 01:35:53,241 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 421849 records for table 'tpch.public.orders' after 00:00:40.327
+2025-07-03 01:36:03,321 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 530322 records for table 'tpch.public.orders' after 00:00:50.411
+2025-07-03 01:36:08,471 INFO i.d.c.c.BaseSourceTask [pool-23-thread-1] 425984 records sent during previous 00:00:40.144, last recorded offset of {server=tpch} partition is {last_snapshot_record=false, lsn=2145468488, txId=774, ts_usec=1751506493445270, snapshot=INITIAL, snapshot_completed=false}
+2025-07-03 01:36:13,408 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 636818 records for table 'tpch.public.orders' after 00:01:00.498
+2025-07-03 01:36:23,439 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 747521 records for table 'tpch.public.orders' after 00:01:10.528
+2025-07-03 01:36:33,766 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 858002 records for table 'tpch.public.orders' after 00:01:20.857
+2025-07-03 01:36:43,952 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 968594 records for table 'tpch.public.orders' after 00:01:31.044
+2025-07-03 01:36:54,157 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 1083282 records for table 'tpch.public.orders' after 00:01:41.247
+2025-07-03 01:37:04,304 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 1189778 records for table 'tpch.public.orders' after 00:01:51.395
+2025-07-03 01:37:14,362 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 1296274 records for table 'tpch.public.orders' after 00:02:01.453
+2025-07-03 01:37:24,553 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 1410962 records for table 'tpch.public.orders' after 00:02:11.644
+2025-07-03 01:37:28,233 INFO i.d.c.c.BaseSourceTask [pool-23-thread-1] 868352 records sent during previous 00:01:19.762, last recorded offset of {server=tpch} partition is {last_snapshot_record=false, lsn=2145468488, txId=774, ts_usec=1751506493445270, snapshot=INITIAL, snapshot_completed=false}
+2025-07-03 01:37:32,513 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Finished exporting 1500000 records for table 'tpch.public.orders' (2 of 8 tables); total duration '00:02:19.605'
+2025-07-03 01:37:32,528 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] Exporting data from table 'tpch.public.part' (3 of 8 tables)
+2025-07-03 01:37:33,799 INFO c.m.m.k.c.MigratorSinkTask [pool-23-thread-1] Received last record in data collection: tpch.public.orders-0
+2025-07-03 01:37:33,809 INFO c.m.m.k.c.MigratorSinkTask [pool-23-thread-1] Received first record in data collection: tpch.public.part-0
+2025-07-03 01:37:37,650 INFO c.m.m.a.m.j.l.JobUpdateLogger [pool-22-thread-1] Processed snapshot of table: tpch.public.orders
+2025-07-03 01:37:42,861 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 107570 records for table 'tpch.public.part' after 00:00:10.334
+2025-07-03 01:37:50,694 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Finished exporting 200000 records for table 'tpch.public.part' (3 of 8 tables); total duration '00:00:18.168'
+2025-07-03 01:37:50,706 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] Exporting data from table 'tpch.public.supplier' (4 of 8 tables)
+2025-07-03 01:37:51,632 INFO c.m.m.k.c.MigratorSinkTask [pool-23-thread-1] Received last record in data collection: tpch.public.part-0
+2025-07-03 01:37:51,634 INFO c.m.m.k.c.MigratorSinkTask [pool-23-thread-1] Received first record in data collection: tpch.public.supplier-0
+2025-07-03 01:37:51,642 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Finished exporting 10000 records for table 'tpch.public.supplier' (4 of 8 tables); total duration '00:00:00.935'
+2025-07-03 01:37:51,648 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] Exporting data from table 'tpch.public.lineitem' (5 of 8 tables)
+2025-07-03 01:37:52,652 INFO c.m.m.a.m.j.l.JobUpdateLogger [pool-22-thread-1] Processed snapshot of table: tpch.public.part
+2025-07-03 01:37:55,598 INFO c.m.m.k.c.MigratorSinkTask [pool-23-thread-1] Received last record in data collection: tpch.public.supplier-0
+2025-07-03 01:37:55,603 INFO c.m.m.k.c.MigratorSinkTask [pool-23-thread-1] Received first record in data collection: tpch.public.lineitem-0
+2025-07-03 01:37:57,650 INFO c.m.m.a.m.j.l.JobUpdateLogger [pool-22-thread-1] Processed snapshot of table: tpch.public.supplier
+2025-07-03 01:38:03,884 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 24546 records for table 'tpch.public.lineitem' after 00:00:12.234
+2025-07-03 01:38:14,997 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 36834 records for table 'tpch.public.lineitem' after 00:00:23.349
+2025-07-03 01:38:25,009 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 53117 records for table 'tpch.public.lineitem' after 00:00:33.361
+2025-07-03 01:38:39,218 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 61410 records for table 'tpch.public.lineitem' after 00:00:47.566
+2025-07-03 01:38:50,239 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 73698 records for table 'tpch.public.lineitem' after 00:00:58.59
+2025-07-03 01:39:00,772 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 90082 records for table 'tpch.public.lineitem' after 00:01:09.124
+2025-07-03 01:39:12,071 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 110562 records for table 'tpch.public.lineitem' after 00:01:20.417
+2025-07-03 01:39:23,119 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 131042 records for table 'tpch.public.lineitem' after 00:01:31.471
+2025-07-03 01:39:33,893 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 151522 records for table 'tpch.public.lineitem' after 00:01:42.245
+2025-07-03 01:39:45,363 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 172002 records for table 'tpch.public.lineitem' after 00:01:53.715
+2025-07-03 01:39:57,336 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 192482 records for table 'tpch.public.lineitem' after 00:02:05.688
+2025-07-03 01:40:08,100 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 208866 records for table 'tpch.public.lineitem' after 00:02:16.452
+2025-07-03 01:40:10,441 INFO i.d.c.c.BaseSourceTask [pool-23-thread-1] 471040 records sent during previous 00:02:42.206, last recorded offset of {server=tpch} partition is {last_snapshot_record=false, lsn=2145468488, txId=774, ts_usec=1751506493445270, snapshot=INITIAL, snapshot_completed=false}
+2025-07-03 01:40:18,275 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 225250 records for table 'tpch.public.lineitem' after 00:02:26.628
+2025-07-03 01:40:28,535 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 241634 records for table 'tpch.public.lineitem' after 00:02:36.887
+2025-07-03 01:40:39,473 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 258018 records for table 'tpch.public.lineitem' after 00:02:47.823
+2025-07-03 01:40:49,963 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 274402 records for table 'tpch.public.lineitem' after 00:02:58.315
+2025-07-03 01:41:01,103 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 290786 records for table 'tpch.public.lineitem' after 00:03:09.455
+2025-07-03 01:41:12,899 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 307170 records for table 'tpch.public.lineitem' after 00:03:21.25
+2025-07-03 01:41:24,015 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 319458 records for table 'tpch.public.lineitem' after 00:03:32.368
+2025-07-03 01:41:35,099 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 335842 records for table 'tpch.public.lineitem' after 00:03:43.451
+2025-07-03 01:41:47,244 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 352226 records for table 'tpch.public.lineitem' after 00:03:55.596
+2025-07-03 01:41:59,574 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 368610 records for table 'tpch.public.lineitem' after 00:04:07.924
+2025-07-03 01:42:11,711 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 384994 records for table 'tpch.public.lineitem' after 00:04:20.063
+2025-07-03 01:42:22,438 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 401378 records for table 'tpch.public.lineitem' after 00:04:30.787
+2025-07-03 01:42:34,060 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 417762 records for table 'tpch.public.lineitem' after 00:04:42.409
+2025-07-03 01:42:45,037 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 434146 records for table 'tpch.public.lineitem' after 00:04:53.388
+2025-07-03 01:42:56,820 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 450530 records for table 'tpch.public.lineitem' after 00:05:05.173
+2025-07-03 01:43:08,152 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 466914 records for table 'tpch.public.lineitem' after 00:05:16.504
+2025-07-03 01:43:19,244 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 483298 records for table 'tpch.public.lineitem' after 00:05:27.595
+2025-07-03 01:43:30,303 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 499682 records for table 'tpch.public.lineitem' after 00:05:38.656
+2025-07-03 01:43:42,489 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 516066 records for table 'tpch.public.lineitem' after 00:05:50.84
+2025-07-03 01:43:52,648 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 528354 records for table 'tpch.public.lineitem' after 00:06:01.0
+2025-07-03 01:44:05,357 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 544738 records for table 'tpch.public.lineitem' after 00:06:13.701
+2025-07-03 01:44:17,267 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 552930 records for table 'tpch.public.lineitem' after 00:06:25.618
+2025-07-03 01:44:27,877 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 557026 records for table 'tpch.public.lineitem' after 00:06:36.228
+2025-07-03 01:44:56,759 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 565218 records for table 'tpch.public.lineitem' after 00:07:05.094
+2025-07-03 01:45:10,378 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 569314 records for table 'tpch.public.lineitem' after 00:07:18.729
+2025-07-03 01:45:23,437 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 577506 records for table 'tpch.public.lineitem' after 00:07:31.788
+2025-07-03 01:45:32,235 INFO i.d.c.c.BaseSourceTask [pool-23-thread-1] 368640 records sent during previous 00:05:21.793, last recorded offset of {server=tpch} partition is {last_snapshot_record=false, lsn=2145468488, txId=774, ts_usec=1751506493445270, snapshot=INITIAL, snapshot_completed=false}
+2025-07-03 01:45:38,589 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 585698 records for table 'tpch.public.lineitem' after 00:07:46.94
+2025-07-03 01:45:52,957 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 593890 records for table 'tpch.public.lineitem' after 00:08:01.308
+2025-07-03 01:46:16,143 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 602082 records for table 'tpch.public.lineitem' after 00:08:24.486
+2025-07-03 01:46:48,884 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 606178 records for table 'tpch.public.lineitem' after 00:08:57.207
+2025-07-03 01:47:14,547 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 610274 records for table 'tpch.public.lineitem' after 00:09:22.886
+2025-07-03 01:47:25,772 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 614370 records for table 'tpch.public.lineitem' after 00:09:34.117
+2025-07-03 01:47:42,267 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 618466 records for table 'tpch.public.lineitem' after 00:09:50.617
+2025-07-03 01:47:56,696 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 622562 records for table 'tpch.public.lineitem' after 00:10:05.041
+2025-07-03 01:48:14,261 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 630754 records for table 'tpch.public.lineitem' after 00:10:22.611
+2025-07-03 01:48:26,923 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 638946 records for table 'tpch.public.lineitem' after 00:10:35.271
+2025-07-03 01:48:37,907 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 643042 records for table 'tpch.public.lineitem' after 00:10:46.257
+2025-07-03 01:49:04,784 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 647138 records for table 'tpch.public.lineitem' after 00:11:13.126
+2025-07-03 01:49:17,461 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 651234 records for table 'tpch.public.lineitem' after 00:11:25.799
+2025-07-03 01:49:33,570 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 655330 records for table 'tpch.public.lineitem' after 00:11:41.906
+2025-07-03 01:49:44,052 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 659426 records for table 'tpch.public.lineitem' after 00:11:52.396
+2025-07-03 01:49:59,936 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 663522 records for table 'tpch.public.lineitem' after 00:12:08.285
+2025-07-03 01:50:13,297 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 667618 records for table 'tpch.public.lineitem' after 00:12:21.646
+2025-07-03 01:50:25,691 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 671714 records for table 'tpch.public.lineitem' after 00:12:34.043
+2025-07-03 01:50:44,015 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 675810 records for table 'tpch.public.lineitem' after 00:12:52.348
+2025-07-03 01:51:22,427 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 679906 records for table 'tpch.public.lineitem' after 00:13:30.764
+2025-07-03 01:51:42,979 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 684002 records for table 'tpch.public.lineitem' after 00:13:51.317
+2025-07-03 01:52:00,741 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 688098 records for table 'tpch.public.lineitem' after 00:14:09.089
+2025-07-03 01:52:12,917 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 692194 records for table 'tpch.public.lineitem' after 00:14:21.269
+2025-07-03 01:52:25,668 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 696290 records for table 'tpch.public.lineitem' after 00:14:34.016
+2025-07-03 01:52:35,716 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 701482 records for table 'tpch.public.lineitem' after 00:14:44.068
+2025-07-03 01:52:50,125 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 704482 records for table 'tpch.public.lineitem' after 00:14:58.472
+2025-07-03 01:53:00,214 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 712480 records for table 'tpch.public.lineitem' after 00:15:08.525
+2025-07-03 01:53:20,201 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 712674 records for table 'tpch.public.lineitem' after 00:15:28.548
+2025-07-03 01:53:32,941 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 716770 records for table 'tpch.public.lineitem' after 00:15:41.291
+2025-07-03 01:53:46,243 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 720866 records for table 'tpch.public.lineitem' after 00:15:54.59
+2025-07-03 01:53:58,454 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 724962 records for table 'tpch.public.lineitem' after 00:16:06.802
+2025-07-03 01:54:12,758 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 729058 records for table 'tpch.public.lineitem' after 00:16:21.107
+2025-07-03 01:54:26,526 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 733154 records for table 'tpch.public.lineitem' after 00:16:34.876
+2025-07-03 01:54:40,707 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 737250 records for table 'tpch.public.lineitem' after 00:16:49.04
+2025-07-03 01:55:13,696 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 741346 records for table 'tpch.public.lineitem' after 00:17:21.976
+2025-07-03 01:55:30,394 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 745442 records for table 'tpch.public.lineitem' after 00:17:38.726
+2025-07-03 01:55:49,103 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 749538 records for table 'tpch.public.lineitem' after 00:17:57.441
+2025-07-03 01:56:05,951 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 753634 records for table 'tpch.public.lineitem' after 00:18:14.297
+2025-07-03 01:56:24,556 INFO i.d.c.c.BaseSourceTask [pool-23-thread-1] 176128 records sent during previous 00:10:52.296, last recorded offset of {server=tpch} partition is {last_snapshot_record=false, lsn=2145468488, txId=774, ts_usec=1751506493445270, snapshot=INITIAL, snapshot_completed=false}
+2025-07-03 01:56:24,550 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 757730 records for table 'tpch.public.lineitem' after 00:18:32.894
+2025-07-03 01:56:43,195 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 761826 records for table 'tpch.public.lineitem' after 00:18:51.539
+2025-07-03 01:56:55,511 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 765922 records for table 'tpch.public.lineitem' after 00:19:03.858
+2025-07-03 01:57:06,991 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 770018 records for table 'tpch.public.lineitem' after 00:19:15.338
+2025-07-03 01:57:26,168 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 774114 records for table 'tpch.public.lineitem' after 00:19:34.518
+2025-07-03 01:57:45,674 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 778210 records for table 'tpch.public.lineitem' after 00:19:54.019
+2025-07-03 01:58:06,010 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 782306 records for table 'tpch.public.lineitem' after 00:20:14.355
+2025-07-03 01:58:24,240 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 786402 records for table 'tpch.public.lineitem' after 00:20:32.551
+2025-07-03 01:59:06,180 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 790498 records for table 'tpch.public.lineitem' after 00:21:14.5
+2025-07-03 01:59:23,311 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 794594 records for table 'tpch.public.lineitem' after 00:21:31.658
+2025-07-03 01:59:58,162 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 798690 records for table 'tpch.public.lineitem' after 00:22:06.422
+2025-07-03 02:00:48,810 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 802786 records for table 'tpch.public.lineitem' after 00:22:57.158
+2025-07-03 02:01:08,049 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 806882 records for table 'tpch.public.lineitem' after 00:23:16.392
+2025-07-03 02:01:29,928 INFO i.d.r.RelationalSnapshotChangeEventSource [pool-27-thread-1] 	 Exported 810978 records for table 'tpch.public.lineitem' after 00:23:38.266
+2025-07-03 02:18:16,104 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.2.Final
+2025-07-03 02:18:16,654 INFO o.s.b.StartupInfoLogger [main] Starting MigratorApplication v1.13.2 using Java 17.0.15 with PID 1 (/opt/mongodb-relational-migrator/lib/app/application-1.13.2.jar started by root in /)
+2025-07-03 02:18:16,660 INFO o.s.b.SpringApplication [main] The following 3 profiles are active: "unattended", "embedded", "prod"
+2025-07-03 02:18:27,729 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-07-03 02:18:28,675 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 911 ms. Found 0 MongoDB repository interfaces.
+2025-07-03 02:18:33,759 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2025-07-03 02:18:34,015 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2025-07-03 02:18:34,054 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2025-07-03 02:18:34,054 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-07-03 02:18:34,887 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-07-03 02:18:34,894 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 17883 ms
+2025-07-03 02:18:41,229 WARN c.m.m.a.c.PasswordServiceImpl [main] Initializing an in-memory credential store that won't be persisted
+2025-07-03 02:18:45,827 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [main] Adding welcome page: class path resource [static/index.html]
+2025-07-03 02:18:48,622 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 1 endpoint beneath base path '/actuator'
+2025-07-03 02:18:48,924 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2025-07-03 02:18:49,003 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path '/'
+2025-07-03 02:18:49,059 INFO o.s.b.StartupInfoLogger [main] Started MigratorApplication in 447.851 seconds (process running for 44.585)
+2025-07-03 02:18:49,399 INFO c.m.m.a.l.LifecycleTaskRunner [main] Executing lifecycle task com.mongodb.migrator.application.lifecycle.tasks.DescriptorVersionMigrationTask
+2025-07-03 02:18:49,636 INFO c.m.m.a.l.LifecycleTaskRunner [main] Executing lifecycle task com.mongodb.migrator.application.lifecycle.tasks.EmbeddedJobStatusCleanUpTask
+2025-07-03 02:18:50,461 INFO c.m.m.a.l.LifecycleTaskRunner [main] Executing lifecycle task com.mongodb.migrator.application.lifecycle.tasks.QueryExecutionResultCleanUpTask
+2025-07-03 02:18:57,346 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-03 02:18:57,348 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-07-03 02:18:57,368 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 18 ms
+2025-07-03 02:30:02,186 INFO c.m.m.a.l.LifecycleTaskRunner [SpringApplicationShutdownHook] Executing lifecycle task com.mongodb.migrator.application.lifecycle.tasks.QueryExecutionResultCleanUpTask
+2025-07-03 02:30:02,350 INFO c.m.m.a.l.LifecycleTaskRunner [SpringApplicationShutdownHook] Executing lifecycle task com.mongodb.migrator.application.queryconversion.QueryConversionManager
+2025-07-03 02:30:02,849 INFO o.s.b.w.e.t.GracefulShutdown [SpringApplicationShutdownHook] Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-03 02:30:03,217 INFO o.s.b.w.e.t.GracefulShutdown [tomcat-shutdown] Graceful shutdown complete

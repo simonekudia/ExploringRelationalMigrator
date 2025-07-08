@@ -1,0 +1,13 @@
+{"timestamp":"2025-07-07T19:40:58.352610045Z","eventType":"INFO","locationName":"","locationType":null,"fieldName":"","key":null,"message":"Job started","details":""}
+{"timestamp":"2025-07-07T19:41:11.005224926Z","eventType":"INFO","locationName":"","locationType":null,"fieldName":"","key":null,"message":"Processed snapshot of table: pagila.public.customer","details":""}
+{"timestamp":"2025-07-07T19:41:11.062297635Z","eventType":"INFO","locationName":"","locationType":null,"fieldName":"","key":null,"message":"Processed snapshot of table: pagila.public.store","details":""}
+{"timestamp":"2025-07-07T19:41:11.065040260Z","eventType":"INFO","locationName":"","locationType":null,"fieldName":"","key":null,"message":"Processed snapshot of table: pagila.public.address","details":""}
+{"timestamp":"2025-07-07T19:41:16.007007804Z","eventType":"INFO","locationName":"","locationType":null,"fieldName":"","key":null,"message":"Processed snapshot of table: pagila.public.staff","details":""}
+{"timestamp":"2025-07-07T19:41:16.046174679Z","eventType":"INFO","locationName":"","locationType":null,"fieldName":"","key":null,"message":"Processed snapshot of table: pagila.public.city","details":""}
+{"timestamp":"2025-07-07T19:41:16.048952137Z","eventType":"INFO","locationName":"","locationType":null,"fieldName":"","key":null,"message":"Processed snapshot of table: pagila.public.inventory","details":""}
+{"timestamp":"2025-07-07T19:41:25.993324003Z","eventType":"INFO","locationName":"","locationType":null,"fieldName":"","key":null,"message":"Processed snapshot of table: pagila.public.film","details":""}
+{"timestamp":"2025-07-07T19:41:34.934455049Z","eventType":"INFO","locationName":"","locationType":null,"fieldName":"","key":null,"message":"Processed snapshot of table: pagila.public.country","details":""}
+{"timestamp":"2025-07-07T19:41:34.939639132Z","eventType":"INFO","locationName":"","locationType":null,"fieldName":"","key":null,"message":"Processed snapshot of table: pagila.public.rental","details":""}
+{"timestamp":"2025-07-07T19:41:35.652382257Z","eventType":"INFO","locationName":"","locationType":null,"fieldName":"","key":null,"message":"Verification started","details":""}
+{"timestamp":"2025-07-07T19:41:35.849579424Z","eventType":"INFO","locationName":"","locationType":null,"fieldName":"","key":null,"message":"Job completed","details":""}
+{"timestamp":"2025-07-07T20:27:47.411493083Z","eventType":"ERROR","locationName":"","locationType":null,"fieldName":"","key":null,"message":"Verification error","details":"Java heap space"}

@@ -1,0 +1,1198 @@
+{
+  "id" : "440bd5297bbb4b1cb1c3107966eceeb8",
+  "full" : {
+    "databases" : {
+      "tpch" : {
+        "schemas" : {
+          "public" : {
+            "tables" : {
+              "partsupp" : {
+                "type" : "TABLE",
+                "size" : -1,
+                "columns" : {
+                  "ps_suppkey" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 2,
+                    "primaryKey" : {
+                      "name" : "partsupp_pkey"
+                    },
+                    "foreignKey" : {
+                      "name" : "partsupp_ps_suppkey_fkey",
+                      "schema" : "public",
+                      "table" : "supplier",
+                      "column" : "s_suppkey",
+                      "cardinality" : "ZERO_TO_MANY",
+                      "synthetic" : null
+                    },
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : true
+                  },
+                  "ps_availqty" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 3,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "ps_comment" : {
+                    "type" : {
+                      "databaseSpecificType" : "varchar",
+                      "precision" : 199,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 5,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "ps_partkey" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 1,
+                    "primaryKey" : {
+                      "name" : "partsupp_pkey"
+                    },
+                    "foreignKey" : {
+                      "name" : "partsupp_ps_partkey_fkey",
+                      "schema" : "public",
+                      "table" : "part",
+                      "column" : "p_partkey",
+                      "cardinality" : "ZERO_TO_MANY",
+                      "synthetic" : null
+                    },
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : true
+                  },
+                  "ps_supplycost" : {
+                    "type" : {
+                      "databaseSpecificType" : "numeric",
+                      "precision" : 15,
+                      "scale" : 2
+                    },
+                    "ordinalPosition" : 4,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  }
+                },
+                "uniqueIndexes" : {
+                  "partsupp_pkey" : [ "ps_partkey", "ps_suppkey" ]
+                },
+                "nonUniqueIndexes" : { },
+                "filter" : null
+              },
+              "lineitem" : {
+                "type" : "TABLE",
+                "size" : -1,
+                "columns" : {
+                  "l_returnflag" : {
+                    "type" : {
+                      "databaseSpecificType" : "bpchar",
+                      "precision" : 1,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 9,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "l_receiptdate" : {
+                    "type" : {
+                      "databaseSpecificType" : "date",
+                      "precision" : 13,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 13,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "l_tax" : {
+                    "type" : {
+                      "databaseSpecificType" : "numeric",
+                      "precision" : 15,
+                      "scale" : 2
+                    },
+                    "ordinalPosition" : 8,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "l_shipmode" : {
+                    "type" : {
+                      "databaseSpecificType" : "bpchar",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 15,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "l_suppkey" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 3,
+                    "primaryKey" : null,
+                    "foreignKey" : {
+                      "name" : "lineitem_l_suppkey_fkey",
+                      "schema" : "public",
+                      "table" : "supplier",
+                      "column" : "s_suppkey",
+                      "cardinality" : "ZERO_TO_MANY",
+                      "synthetic" : null
+                    },
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "l_shipdate" : {
+                    "type" : {
+                      "databaseSpecificType" : "date",
+                      "precision" : 13,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 11,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "l_commitdate" : {
+                    "type" : {
+                      "databaseSpecificType" : "date",
+                      "precision" : 13,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 12,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "l_partkey" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 2,
+                    "primaryKey" : null,
+                    "foreignKey" : {
+                      "name" : "lineitem_l_partkey_fkey",
+                      "schema" : "public",
+                      "table" : "part",
+                      "column" : "p_partkey",
+                      "cardinality" : "ZERO_TO_MANY",
+                      "synthetic" : null
+                    },
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "l_orderkey" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 1,
+                    "primaryKey" : {
+                      "name" : "lineitem_pkey"
+                    },
+                    "foreignKey" : {
+                      "name" : "lineitem_l_orderkey_fkey",
+                      "schema" : "public",
+                      "table" : "orders",
+                      "column" : "o_orderkey",
+                      "cardinality" : "ZERO_TO_MANY",
+                      "synthetic" : null
+                    },
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : true
+                  },
+                  "l_quantity" : {
+                    "type" : {
+                      "databaseSpecificType" : "numeric",
+                      "precision" : 15,
+                      "scale" : 2
+                    },
+                    "ordinalPosition" : 5,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "l_linestatus" : {
+                    "type" : {
+                      "databaseSpecificType" : "bpchar",
+                      "precision" : 1,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 10,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "l_comment" : {
+                    "type" : {
+                      "databaseSpecificType" : "varchar",
+                      "precision" : 44,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 16,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "l_extendedprice" : {
+                    "type" : {
+                      "databaseSpecificType" : "numeric",
+                      "precision" : 15,
+                      "scale" : 2
+                    },
+                    "ordinalPosition" : 6,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "l_linenumber" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 4,
+                    "primaryKey" : {
+                      "name" : "lineitem_pkey"
+                    },
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : true
+                  },
+                  "l_discount" : {
+                    "type" : {
+                      "databaseSpecificType" : "numeric",
+                      "precision" : 15,
+                      "scale" : 2
+                    },
+                    "ordinalPosition" : 7,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "l_shipinstruct" : {
+                    "type" : {
+                      "databaseSpecificType" : "bpchar",
+                      "precision" : 25,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 14,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  }
+                },
+                "uniqueIndexes" : {
+                  "lineitem_pkey" : [ "l_orderkey", "l_linenumber" ]
+                },
+                "nonUniqueIndexes" : { },
+                "filter" : null
+              },
+              "nation" : {
+                "type" : "TABLE",
+                "size" : -1,
+                "columns" : {
+                  "n_comment" : {
+                    "type" : {
+                      "databaseSpecificType" : "varchar",
+                      "precision" : 152,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 4,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "n_nationkey" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 1,
+                    "primaryKey" : {
+                      "name" : "nation_pkey"
+                    },
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : true
+                  },
+                  "n_regionkey" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 3,
+                    "primaryKey" : null,
+                    "foreignKey" : {
+                      "name" : "nation_n_regionkey_fkey",
+                      "schema" : "public",
+                      "table" : "region",
+                      "column" : "r_regionkey",
+                      "cardinality" : "ZERO_TO_MANY",
+                      "synthetic" : null
+                    },
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "n_name" : {
+                    "type" : {
+                      "databaseSpecificType" : "bpchar",
+                      "precision" : 25,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 2,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  }
+                },
+                "uniqueIndexes" : {
+                  "nation_pkey" : [ "n_nationkey" ]
+                },
+                "nonUniqueIndexes" : { },
+                "filter" : null
+              },
+              "part" : {
+                "type" : "TABLE",
+                "size" : -1,
+                "columns" : {
+                  "p_partkey" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 1,
+                    "primaryKey" : {
+                      "name" : "part_pkey"
+                    },
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : true
+                  },
+                  "p_container" : {
+                    "type" : {
+                      "databaseSpecificType" : "bpchar",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 7,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "p_name" : {
+                    "type" : {
+                      "databaseSpecificType" : "varchar",
+                      "precision" : 55,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 2,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "p_comment" : {
+                    "type" : {
+                      "databaseSpecificType" : "varchar",
+                      "precision" : 23,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 9,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "p_brand" : {
+                    "type" : {
+                      "databaseSpecificType" : "bpchar",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 4,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "p_type" : {
+                    "type" : {
+                      "databaseSpecificType" : "varchar",
+                      "precision" : 25,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 5,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "p_retailprice" : {
+                    "type" : {
+                      "databaseSpecificType" : "numeric",
+                      "precision" : 15,
+                      "scale" : 2
+                    },
+                    "ordinalPosition" : 8,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "p_mfgr" : {
+                    "type" : {
+                      "databaseSpecificType" : "bpchar",
+                      "precision" : 25,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 3,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "p_size" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 6,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  }
+                },
+                "uniqueIndexes" : {
+                  "part_pkey" : [ "p_partkey" ]
+                },
+                "nonUniqueIndexes" : { },
+                "filter" : null
+              },
+              "supplier" : {
+                "type" : "TABLE",
+                "size" : -1,
+                "columns" : {
+                  "s_comment" : {
+                    "type" : {
+                      "databaseSpecificType" : "varchar",
+                      "precision" : 101,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 7,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "s_phone" : {
+                    "type" : {
+                      "databaseSpecificType" : "bpchar",
+                      "precision" : 15,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 5,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "s_nationkey" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 4,
+                    "primaryKey" : null,
+                    "foreignKey" : {
+                      "name" : "supplier_s_nationkey_fkey",
+                      "schema" : "public",
+                      "table" : "nation",
+                      "column" : "n_nationkey",
+                      "cardinality" : "ZERO_TO_MANY",
+                      "synthetic" : null
+                    },
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "s_name" : {
+                    "type" : {
+                      "databaseSpecificType" : "bpchar",
+                      "precision" : 25,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 2,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "s_address" : {
+                    "type" : {
+                      "databaseSpecificType" : "varchar",
+                      "precision" : 40,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 3,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "s_acctbal" : {
+                    "type" : {
+                      "databaseSpecificType" : "numeric",
+                      "precision" : 15,
+                      "scale" : 2
+                    },
+                    "ordinalPosition" : 6,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "s_suppkey" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 1,
+                    "primaryKey" : {
+                      "name" : "supplier_pkey"
+                    },
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : true
+                  }
+                },
+                "uniqueIndexes" : {
+                  "supplier_pkey" : [ "s_suppkey" ]
+                },
+                "nonUniqueIndexes" : { },
+                "filter" : null
+              },
+              "orders" : {
+                "type" : "TABLE",
+                "size" : -1,
+                "columns" : {
+                  "o_orderstatus" : {
+                    "type" : {
+                      "databaseSpecificType" : "bpchar",
+                      "precision" : 1,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 3,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "o_clerk" : {
+                    "type" : {
+                      "databaseSpecificType" : "bpchar",
+                      "precision" : 15,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 7,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "o_orderdate" : {
+                    "type" : {
+                      "databaseSpecificType" : "date",
+                      "precision" : 13,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 5,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "o_shippriority" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 8,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "o_custkey" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 2,
+                    "primaryKey" : null,
+                    "foreignKey" : {
+                      "name" : "orders_o_custkey_fkey",
+                      "schema" : "public",
+                      "table" : "customer",
+                      "column" : "c_custkey",
+                      "cardinality" : "ZERO_TO_MANY",
+                      "synthetic" : null
+                    },
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "o_totalprice" : {
+                    "type" : {
+                      "databaseSpecificType" : "numeric",
+                      "precision" : 15,
+                      "scale" : 2
+                    },
+                    "ordinalPosition" : 4,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "o_orderkey" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 1,
+                    "primaryKey" : {
+                      "name" : "orders_pkey"
+                    },
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : true
+                  },
+                  "o_comment" : {
+                    "type" : {
+                      "databaseSpecificType" : "varchar",
+                      "precision" : 79,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 9,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "o_orderpriority" : {
+                    "type" : {
+                      "databaseSpecificType" : "bpchar",
+                      "precision" : 15,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 6,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  }
+                },
+                "uniqueIndexes" : {
+                  "orders_pkey" : [ "o_orderkey" ]
+                },
+                "nonUniqueIndexes" : { },
+                "filter" : null
+              },
+              "region" : {
+                "type" : "TABLE",
+                "size" : -1,
+                "columns" : {
+                  "r_regionkey" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 1,
+                    "primaryKey" : {
+                      "name" : "region_pkey"
+                    },
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : true
+                  },
+                  "r_comment" : {
+                    "type" : {
+                      "databaseSpecificType" : "varchar",
+                      "precision" : 152,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 3,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "r_name" : {
+                    "type" : {
+                      "databaseSpecificType" : "bpchar",
+                      "precision" : 25,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 2,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  }
+                },
+                "uniqueIndexes" : {
+                  "region_pkey" : [ "r_regionkey" ]
+                },
+                "nonUniqueIndexes" : { },
+                "filter" : null
+              },
+              "customer" : {
+                "type" : "TABLE",
+                "size" : -1,
+                "columns" : {
+                  "c_custkey" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 1,
+                    "primaryKey" : {
+                      "name" : "customer_pkey"
+                    },
+                    "foreignKey" : null,
+                    "nullable" : false,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : true,
+                    "uniqueIndexed" : true
+                  },
+                  "c_phone" : {
+                    "type" : {
+                      "databaseSpecificType" : "bpchar",
+                      "precision" : 15,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 5,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "c_acctbal" : {
+                    "type" : {
+                      "databaseSpecificType" : "numeric",
+                      "precision" : 15,
+                      "scale" : 2
+                    },
+                    "ordinalPosition" : 6,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "c_mktsegment" : {
+                    "type" : {
+                      "databaseSpecificType" : "bpchar",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 7,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "c_address" : {
+                    "type" : {
+                      "databaseSpecificType" : "varchar",
+                      "precision" : 40,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 3,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "c_nationkey" : {
+                    "type" : {
+                      "databaseSpecificType" : "int4",
+                      "precision" : 10,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 4,
+                    "primaryKey" : null,
+                    "foreignKey" : {
+                      "name" : "customer_c_nationkey_fkey",
+                      "schema" : "public",
+                      "table" : "nation",
+                      "column" : "n_nationkey",
+                      "cardinality" : "ZERO_TO_MANY",
+                      "synthetic" : null
+                    },
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "c_name" : {
+                    "type" : {
+                      "databaseSpecificType" : "varchar",
+                      "precision" : 25,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 2,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  },
+                  "c_comment" : {
+                    "type" : {
+                      "databaseSpecificType" : "varchar",
+                      "precision" : 117,
+                      "scale" : 0
+                    },
+                    "ordinalPosition" : 8,
+                    "primaryKey" : null,
+                    "foreignKey" : null,
+                    "nullable" : true,
+                    "autoIncremented" : false,
+                    "generated" : false,
+                    "hidden" : false,
+                    "indexed" : false,
+                    "uniqueIndexed" : false
+                  }
+                },
+                "uniqueIndexes" : {
+                  "customer_pkey" : [ "c_custkey" ]
+                },
+                "nonUniqueIndexes" : { },
+                "filter" : null
+              }
+            },
+            "views" : { },
+            "routines" : { },
+            "triggers" : { },
+            "packages" : { }
+          }
+        }
+      }
+    },
+    "metadata" : {
+      "databaseType" : "POSTGRESQL",
+      "databaseVersion" : "17.5 (Debian 17.5-1.pgdg120+1)"
+    }
+  },
+  "imported" : {
+    "tpch" : {
+      "public" : {
+        "lineitem" : { },
+        "partsupp" : { },
+        "nation" : { },
+        "part" : { },
+        "supplier" : { },
+        "orders" : { },
+        "region" : { },
+        "customer" : { }
+      }
+    }
+  },
+  "all" : {
+    "tpch" : {
+      "public" : {
+        "lineitem" : { },
+        "partsupp" : { },
+        "nation" : { },
+        "part" : { },
+        "supplier" : { },
+        "orders" : { },
+        "region" : { },
+        "customer" : { }
+      }
+    }
+  }
+}

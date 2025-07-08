@@ -1,0 +1,5 @@
+{"timestamp":"2025-07-03T01:34:45.042000260Z","eventType":"INFO","locationName":"","locationType":null,"fieldName":"","key":null,"message":"Job started","details":""}
+{"timestamp":"2025-07-03T01:35:17.669185136Z","eventType":"INFO","locationName":"","locationType":null,"fieldName":"","key":null,"message":"Processed snapshot of table: tpch.public.customer","details":""}
+{"timestamp":"2025-07-03T01:37:37.645067506Z","eventType":"INFO","locationName":"","locationType":null,"fieldName":"","key":null,"message":"Processed snapshot of table: tpch.public.orders","details":""}
+{"timestamp":"2025-07-03T01:37:52.646821805Z","eventType":"INFO","locationName":"","locationType":null,"fieldName":"","key":null,"message":"Processed snapshot of table: tpch.public.part","details":""}
+{"timestamp":"2025-07-03T01:37:57.647866793Z","eventType":"INFO","locationName":"","locationType":null,"fieldName":"","key":null,"message":"Processed snapshot of table: tpch.public.supplier","details":""}

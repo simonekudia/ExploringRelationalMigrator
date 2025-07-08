@@ -1,4 +1,3 @@
-version: '3.8'
 
 services:
   postgres:
@@ -13,15 +12,33 @@ services:
     volumes:
       - ./pagila-schema.sql:/docker-entrypoint-initdb.d/01-schema.sql
       - ./pagila-data.sql:/docker-entrypoint-initdb.d/02-data.sql
-    
+    #verbose mode, see logs
+    command: ["postgres", "-c", "log_statement=all"]
+  
+  tpch_db:
+    image: postgres:latest
+    container_name: tpch_pg
+    environment: 
+      POSTGRES_DB: tpch
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123456
+    ports:
+      - "5433:5432"
+    volumes:
+      - ./data:/docker-entrypoint-initdb.d
+    restart: unless-stopped
+    command: ["postgres", "-c", "log_statement=all"]
   mongodb:
     image: mongo:latest
     container_name: mongo_test
     ports:
       - "27017:27017"
+    #verbose mode, see logs
+    command: ["mongod", "--verbose"]
 
   migrator:
     image: public.ecr.aws/v4d7k6c9/relational-migrator:1.13.2
+    platform: linux/amd64
     ports:
       - "8080:8080"
     volumes:
