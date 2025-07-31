@@ -45,6 +45,7 @@ mongosh "mongodb://localhost:27017"
 Since Data files are big, generate data when running for the first time:
 
 ```
+git clone https://github.com/electrum/tpch-dbgen.git dbgen
 cd dbgen
 make
 ./dbgen -s 1
@@ -54,7 +55,7 @@ The one represents a scale factor of 1 (~1 GB of data)
 Now move .tbl files to data directory
 
 ```
-mv tpch-dbgen/*.tbl data/
+mv dbgen/*.tbl data/
 ```
 
 Now start docker containers and run the migrator!

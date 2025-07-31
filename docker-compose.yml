@@ -3,7 +3,7 @@ services:
   postgres:
     image: postgres:latest
     container_name: pg_test
-    environment: 
+    environment:
       POSTGRES_DB: pagila
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: 123456
@@ -13,12 +13,17 @@ services:
       - ./pagila-schema.sql:/docker-entrypoint-initdb.d/01-schema.sql
       - ./pagila-data.sql:/docker-entrypoint-initdb.d/02-data.sql
     #verbose mode, see logs
-    command: ["postgres", "-c", "log_statement=all"]
-  
+    command: ["postgres",
+      "-c", "log_statement=all",
+      "-c", "wal_level=logical",           # Enable logical replication
+      "-c", "max_wal_senders=10",          # Allow replication connections
+      "-c", "max_replication_slots=10"     # Allow replication slots
+    ]
+
   tpch_db:
     image: postgres:latest
     container_name: tpch_pg
-    environment: 
+    environment:
       POSTGRES_DB: tpch
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: 123456
@@ -27,14 +32,25 @@ services:
     volumes:
       - ./data:/docker-entrypoint-initdb.d
     restart: unless-stopped
-    command: ["postgres", "-c", "log_statement=all"]
+    command: ["postgres",
+      "-c", "log_statement=all",
+      "-c", "wal_level=logical",           # Enable logical replication
+      "-c", "max_wal_senders=10",          # Allow replication connections
+      "-c", "max_replication_slots=10"     # Allow replication slots
+    ]
   mongodb:
     image: mongo:latest
     container_name: mongo_test
     ports:
       - "27017:27017"
-    #verbose mode, see logs
-    command: ["mongod", "--verbose"]
+    deploy:
+      resources:
+        limits:
+          memory: 8G          # ✅ Increase memory
+        reservations:
+          memory: 4G
+    command: --wiredTigerCacheSizeGB 6  # ✅ Increase cache
+
 
   migrator:
     image: public.ecr.aws/v4d7k6c9/relational-migrator:1.13.2
@@ -47,7 +63,7 @@ services:
     depends_on:
       - postgres
       - mongodb
-  
+
 # MongoDB Relational Migrator deployed in local mode
 # Environment variables:
 # MIGRATOR_PATH_DATA - required - Path to a local folder for persisting Migrator application data
